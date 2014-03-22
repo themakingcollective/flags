@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8321C70818DDDD7300970E8F /* Quiz-Easy-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70618DDDD7300970E8F /* Quiz-Easy-Button.png */; };
+		8321C70918DDDD7300970E8F /* Quiz-Hard-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70718DDDD7300970E8F /* Quiz-Hard-Button.png */; };
+		8321C70B18DDDD7A00970E8F /* Quiz-View-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70A18DDDD7A00970E8F /* Quiz-View-Button.png */; };
+		8321C70E18DDDEE400970E8F /* Puzzles-Easy-Explain.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70C18DDDEE400970E8F /* Puzzles-Easy-Explain.png */; };
+		8321C70F18DDDEE400970E8F /* Puzzles-Hard-Explain.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70D18DDDEE400970E8F /* Puzzles-Hard-Explain.png */; };
+		8321C71218DDDEF100970E8F /* Play-Colours-Puzzle-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C71018DDDEF100970E8F /* Play-Colours-Puzzle-Button.png */; };
+		8321C71318DDDEF100970E8F /* Play-Colours+Shapes-Puzzle-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C71118DDDEF100970E8F /* Play-Colours+Shapes-Puzzle-Button.png */; };
 		8378484118DDAF8E00C5AC61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378484018DDAF8E00C5AC61 /* Foundation.framework */; };
 		8378484318DDAF8E00C5AC61 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378484218DDAF8E00C5AC61 /* CoreGraphics.framework */; };
 		8378484518DDAF8E00C5AC61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378484418DDAF8E00C5AC61 /* UIKit.framework */; };
@@ -28,6 +35,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8321C70618DDDD7300970E8F /* Quiz-Easy-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Easy-Button.png"; sourceTree = "<group>"; };
+		8321C70718DDDD7300970E8F /* Quiz-Hard-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Hard-Button.png"; sourceTree = "<group>"; };
+		8321C70A18DDDD7A00970E8F /* Quiz-View-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-View-Button.png"; sourceTree = "<group>"; };
+		8321C70C18DDDEE400970E8F /* Puzzles-Easy-Explain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Puzzles-Easy-Explain.png"; sourceTree = "<group>"; };
+		8321C70D18DDDEE400970E8F /* Puzzles-Hard-Explain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Puzzles-Hard-Explain.png"; sourceTree = "<group>"; };
+		8321C71018DDDEF100970E8F /* Play-Colours-Puzzle-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play-Colours-Puzzle-Button.png"; sourceTree = "<group>"; };
+		8321C71118DDDEF100970E8F /* Play-Colours+Shapes-Puzzle-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play-Colours+Shapes-Puzzle-Button.png"; sourceTree = "<group>"; };
 		8378483D18DDAF8E00C5AC61 /* flags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flags.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8378484018DDAF8E00C5AC61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8378484218DDAF8E00C5AC61 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -134,6 +148,13 @@
 		8378487E18DDBCC500C5AC61 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8321C71018DDDEF100970E8F /* Play-Colours-Puzzle-Button.png */,
+				8321C71118DDDEF100970E8F /* Play-Colours+Shapes-Puzzle-Button.png */,
+				8321C70C18DDDEE400970E8F /* Puzzles-Easy-Explain.png */,
+				8321C70D18DDDEE400970E8F /* Puzzles-Hard-Explain.png */,
+				8321C70A18DDDD7A00970E8F /* Quiz-View-Button.png */,
+				8321C70618DDDD7300970E8F /* Quiz-Easy-Button.png */,
+				8321C70718DDDD7300970E8F /* Quiz-Hard-Button.png */,
 				8378488D18DDCF5900C5AC61 /* Puzzles-Hard-Button.png */,
 				8378488B18DDCEB600C5AC61 /* Puzzles-Easy-Button.png */,
 				8378487C18DDB8DC00C5AC61 /* Puzzles-Menu-Button.png */,
@@ -217,13 +238,20 @@
 				8378485918DDAF8E00C5AC61 /* Images.xcassets in Resources */,
 				8378488A18DDBCD500C5AC61 /* SIL Open Font License.txt in Resources */,
 				8378488818DDBCD500C5AC61 /* BPreplay-Italic.ttf in Resources */,
+				8321C71218DDDEF100970E8F /* Play-Colours-Puzzle-Button.png in Resources */,
 				8378484B18DDAF8E00C5AC61 /* InfoPlist.strings in Resources */,
+				8321C71318DDDEF100970E8F /* Play-Colours+Shapes-Puzzle-Button.png in Resources */,
 				8378487D18DDB8DC00C5AC61 /* Puzzles-Menu-Button.png in Resources */,
+				8321C70E18DDDEE400970E8F /* Puzzles-Easy-Explain.png in Resources */,
 				8378485418DDAF8E00C5AC61 /* Main.storyboard in Resources */,
 				8378488918DDBCD500C5AC61 /* BPreplay.ttf in Resources */,
 				8378488618DDBCD500C5AC61 /* BPreplay-Bold.ttf in Resources */,
+				8321C70B18DDDD7A00970E8F /* Quiz-View-Button.png in Resources */,
 				8378488E18DDCF5900C5AC61 /* Puzzles-Hard-Button.png in Resources */,
 				8378488718DDBCD500C5AC61 /* BPreplay-BoldItalic.ttf in Resources */,
+				8321C70818DDDD7300970E8F /* Quiz-Easy-Button.png in Resources */,
+				8321C70918DDDD7300970E8F /* Quiz-Hard-Button.png in Resources */,
+				8321C70F18DDDEE400970E8F /* Puzzles-Hard-Explain.png in Resources */,
 				8378487B18DDB69B00C5AC61 /* Quiz-Menu-Button.png in Resources */,
 				8378488C18DDCEB600C5AC61 /* Puzzles-Easy-Button.png in Resources */,
 			);
@@ -381,6 +409,7 @@
 				8378487118DDAF8E00C5AC61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

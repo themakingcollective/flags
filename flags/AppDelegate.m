@@ -12,7 +12,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    UIFont *font = [UIFont fontWithName:@"BPreplay" size:18];
+    UIFont *font = [UIFont fontWithName:@"BPreplay" size:17];
     [[UILabel appearance] setFont:font];
     
     [[UINavigationBar appearance] setTitleTextAttributes:
