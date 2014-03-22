@@ -192,9 +192,6 @@
                                 <state key="normal" backgroundImage="Quiz-Easy-Button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="bo8-G4-xwY" kind="push" id="b3L-Om-QZ8"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoI-YJ-aGM">
                                 <rect key="frame" x="20" y="211" width="280" height="46"/>
@@ -202,9 +199,6 @@
                                 <state key="normal" backgroundImage="Quiz-Hard-Button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="vLs-S4-BSw" kind="push" id="q4Y-Sb-gRc"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBq-7n-w3v">
                                 <rect key="frame" x="20" y="87" width="280" height="46"/>
@@ -213,7 +207,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="g2R-rZ-WRU" kind="push" id="BQa-3v-0zP"/>
+                                    <segue destination="dc5-RQ-q7j" kind="push" id="gju-SA-WUJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -225,62 +219,49 @@
             </objects>
             <point key="canvasLocation" x="1017" y="518"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="A8C-JW-Cio">
+        <!--Table View Controller - all flags-->
+        <scene sceneID="jyj-G3-ajV">
             <objects>
-                <viewController id="g2R-rZ-WRU" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="mlz-a3-Mjc"/>
-                        <viewControllerLayoutGuide type="bottom" id="Kc2-z6-ULv"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="e2i-uQ-zwK">
+                <tableViewController id="dc5-RQ-q7j" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="FaP-99-KZX">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="0.88235300779342651" green="0.92941182851791382" blue="0.87843143939971924" alpha="1" colorSpace="deviceRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="hSi-z4-nGH"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="g2f-ux-ejI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexTrackingBackgroundColor" red="0.88235300780000003" green="0.92941182850000004" blue="0.87843143940000001" alpha="1" colorSpace="deviceRGB"/>
+                        <sections>
+                            <tableViewSection id="pmB-Cs-GsH">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="CWX-Fy-ftI" imageView="ucV-QN-fmc" rowHeight="80" style="IBUITableViewCellStyleDefault" id="BT6-do-W9m">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BT6-do-W9m" id="cKw-0q-fn4">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Afghanistan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CWX-Fy-ftI">
+                                                    <rect key="frame" x="144" y="0.0" width="161" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Afghanistan.png" id="ucV-QN-fmc">
+                                                    <rect key="frame" x="15" y="0.0" width="114" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.88235300780000003" green="0.92941182850000004" blue="0.87843143940000001" alpha="1" colorSpace="deviceRGB"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="all flags" id="4D0-63-cxB"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qsX-JW-zjg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="611" y="1262"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="NHS-Lj-eR0">
-            <objects>
-                <viewController id="bo8-G4-xwY" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Yl6-Zv-6pb"/>
-                        <viewControllerLayoutGuide type="bottom" id="bNz-5n-pIq"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="app-CE-8ew">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="0.88235300779342651" green="0.92941182851791382" blue="0.87843143939971924" alpha="1" colorSpace="deviceRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="y1J-Yt-y9A"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pzm-JR-lGJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1017" y="1262"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="BTU-UM-lTV">
-            <objects>
-                <viewController id="vLs-S4-BSw" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aBe-1i-vuI"/>
-                        <viewControllerLayoutGuide type="bottom" id="lm9-D4-5Zs"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="RPi-bf-3B7">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="0.88235300779342651" green="0.92941182851791382" blue="0.87843143939971924" alpha="1" colorSpace="deviceRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="9is-pl-HcT"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QQ1-T9-d50" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="165" y="1262"/>
+            <point key="canvasLocation" x="533" y="1258"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="J99-1u-n0Y">
@@ -308,6 +289,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Afghanistan.png" width="248" height="172"/>
         <image name="Play-Colours+Shapes-Puzzle-Button.png" width="1189" height="179"/>
         <image name="Play-Colours-Puzzle-Button.png" width="1188" height="180"/>
         <image name="Puzzles-Easy-Button.png" width="1364" height="237"/>

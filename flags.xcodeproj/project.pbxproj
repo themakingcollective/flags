@@ -14,6 +14,7 @@
 		8321C70F18DDDEE400970E8F /* Puzzles-Hard-Explain.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70D18DDDEE400970E8F /* Puzzles-Hard-Explain.png */; };
 		8321C71218DDDEF100970E8F /* Play-Colours-Puzzle-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C71018DDDEF100970E8F /* Play-Colours-Puzzle-Button.png */; };
 		8321C71318DDDEF100970E8F /* Play-Colours+Shapes-Puzzle-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C71118DDDEF100970E8F /* Play-Colours+Shapes-Puzzle-Button.png */; };
+		8321C71618DDE97600970E8F /* Afghanistan.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C71518DDE97600970E8F /* Afghanistan.png */; };
 		8378484118DDAF8E00C5AC61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378484018DDAF8E00C5AC61 /* Foundation.framework */; };
 		8378484318DDAF8E00C5AC61 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378484218DDAF8E00C5AC61 /* CoreGraphics.framework */; };
 		8378484518DDAF8E00C5AC61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378484418DDAF8E00C5AC61 /* UIKit.framework */; };
@@ -42,6 +43,7 @@
 		8321C70D18DDDEE400970E8F /* Puzzles-Hard-Explain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Puzzles-Hard-Explain.png"; sourceTree = "<group>"; };
 		8321C71018DDDEF100970E8F /* Play-Colours-Puzzle-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play-Colours-Puzzle-Button.png"; sourceTree = "<group>"; };
 		8321C71118DDDEF100970E8F /* Play-Colours+Shapes-Puzzle-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play-Colours+Shapes-Puzzle-Button.png"; sourceTree = "<group>"; };
+		8321C71518DDE97600970E8F /* Afghanistan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Afghanistan.png; sourceTree = "<group>"; };
 		8378483D18DDAF8E00C5AC61 /* flags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flags.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8378484018DDAF8E00C5AC61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8378484218DDAF8E00C5AC61 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8321C71418DDE96F00970E8F /* Flags */ = {
+			isa = PBXGroup;
+			children = (
+				8321C71518DDE97600970E8F /* Afghanistan.png */,
+			);
+			name = Flags;
+			sourceTree = "<group>";
+		};
 		8378483418DDAF8E00C5AC61 = {
 			isa = PBXGroup;
 			children = (
@@ -113,12 +123,11 @@
 		8378484618DDAF8E00C5AC61 /* flags */ = {
 			isa = PBXGroup;
 			children = (
+				83EF84A518DDF57E00486186 /* Views */,
+				83D9548618DDEF3B00783A27 /* Controllers */,
 				8378487518DDB1B100C5AC61 /* Assets */,
 				8378484F18DDAF8E00C5AC61 /* AppDelegate.h */,
 				8378485018DDAF8E00C5AC61 /* AppDelegate.m */,
-				8378485218DDAF8E00C5AC61 /* Main.storyboard */,
-				8378485518DDAF8E00C5AC61 /* ViewController.h */,
-				8378485618DDAF8E00C5AC61 /* ViewController.m */,
 				8378485818DDAF8E00C5AC61 /* Images.xcassets */,
 				8378484718DDAF8E00C5AC61 /* Supporting Files */,
 			);
@@ -148,6 +157,7 @@
 		8378487E18DDBCC500C5AC61 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8321C71418DDE96F00970E8F /* Flags */,
 				8321C71018DDDEF100970E8F /* Play-Colours-Puzzle-Button.png */,
 				8321C71118DDDEF100970E8F /* Play-Colours+Shapes-Puzzle-Button.png */,
 				8321C70C18DDDEE400970E8F /* Puzzles-Easy-Explain.png */,
@@ -181,6 +191,23 @@
 				8378488518DDBCD500C5AC61 /* SIL Open Font License.txt */,
 			);
 			path = BPreplay;
+			sourceTree = "<group>";
+		};
+		83D9548618DDEF3B00783A27 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8378485518DDAF8E00C5AC61 /* ViewController.h */,
+				8378485618DDAF8E00C5AC61 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		83EF84A518DDF57E00486186 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8378485218DDAF8E00C5AC61 /* Main.storyboard */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +264,7 @@
 			files = (
 				8378485918DDAF8E00C5AC61 /* Images.xcassets in Resources */,
 				8378488A18DDBCD500C5AC61 /* SIL Open Font License.txt in Resources */,
+				8321C71618DDE97600970E8F /* Afghanistan.png in Resources */,
 				8378488818DDBCD500C5AC61 /* BPreplay-Italic.ttf in Resources */,
 				8321C71218DDDEF100970E8F /* Play-Colours-Puzzle-Button.png in Resources */,
 				8378484B18DDAF8E00C5AC61 /* InfoPlist.strings in Resources */,
