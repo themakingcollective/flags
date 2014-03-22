@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1627BD93-DAB3-46CC-8EDE-1F20568BCB8B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>flags</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BE0C881B-5B0D-48F0-B23A-1E799C843C8C</key>
+		<string>https://github.com/flags-of-the-world/flags.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>flags.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BE0C881B-5B0D-48F0-B23A-1E799C843C8C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/flags-of-the-world/flags.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BE0C881B-5B0D-48F0-B23A-1E799C843C8C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BE0C881B-5B0D-48F0-B23A-1E799C843C8C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>flags</string>
+		</dict>
+	</array>
+</dict>
+</plist>
