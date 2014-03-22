@@ -12,6 +12,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    UIFont *font = [UIFont fontWithName:@"BPreplay" size:14];
+    [[UILabel appearance] setFont:font];
+    
     // Override point for customization after application launch.
     return YES;
 }

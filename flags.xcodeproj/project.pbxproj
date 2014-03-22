@@ -16,20 +16,14 @@
 		8378485418DDAF8E00C5AC61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8378485218DDAF8E00C5AC61 /* Main.storyboard */; };
 		8378485718DDAF8E00C5AC61 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8378485618DDAF8E00C5AC61 /* ViewController.m */; };
 		8378485918DDAF8E00C5AC61 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8378485818DDAF8E00C5AC61 /* Images.xcassets */; };
-		8378486018DDAF8E00C5AC61 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378485F18DDAF8E00C5AC61 /* XCTest.framework */; };
-		8378486118DDAF8E00C5AC61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378484018DDAF8E00C5AC61 /* Foundation.framework */; };
-		8378486218DDAF8E00C5AC61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378484418DDAF8E00C5AC61 /* UIKit.framework */; };
+		8378487B18DDB69B00C5AC61 /* Quiz-Menu-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8378487A18DDB69B00C5AC61 /* Quiz-Menu-Button.png */; };
+		8378487D18DDB8DC00C5AC61 /* Puzzles-Menu-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8378487C18DDB8DC00C5AC61 /* Puzzles-Menu-Button.png */; };
+		8378488618DDBCD500C5AC61 /* BPreplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8378488118DDBCD500C5AC61 /* BPreplay-Bold.ttf */; };
+		8378488718DDBCD500C5AC61 /* BPreplay-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8378488218DDBCD500C5AC61 /* BPreplay-BoldItalic.ttf */; };
+		8378488818DDBCD500C5AC61 /* BPreplay-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8378488318DDBCD500C5AC61 /* BPreplay-Italic.ttf */; };
+		8378488918DDBCD500C5AC61 /* BPreplay.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8378488418DDBCD500C5AC61 /* BPreplay.ttf */; };
+		8378488A18DDBCD500C5AC61 /* SIL Open Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8378488518DDBCD500C5AC61 /* SIL Open Font License.txt */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		8378486318DDAF8E00C5AC61 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8378483518DDAF8E00C5AC61 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8378483C18DDAF8E00C5AC61;
-			remoteInfo = flags;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8378483D18DDAF8E00C5AC61 /* flags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flags.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,8 +40,14 @@
 		8378485518DDAF8E00C5AC61 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8378485618DDAF8E00C5AC61 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8378485818DDAF8E00C5AC61 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8378485E18DDAF8E00C5AC61 /* flagsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flagsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8378485F18DDAF8E00C5AC61 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8378487A18DDB69B00C5AC61 /* Quiz-Menu-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Menu-Button.png"; sourceTree = "<group>"; };
+		8378487C18DDB8DC00C5AC61 /* Puzzles-Menu-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Puzzles-Menu-Button.png"; sourceTree = "<group>"; };
+		8378488118DDBCD500C5AC61 /* BPreplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BPreplay-Bold.ttf"; sourceTree = "<group>"; };
+		8378488218DDBCD500C5AC61 /* BPreplay-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BPreplay-BoldItalic.ttf"; sourceTree = "<group>"; };
+		8378488318DDBCD500C5AC61 /* BPreplay-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BPreplay-Italic.ttf"; sourceTree = "<group>"; };
+		8378488418DDBCD500C5AC61 /* BPreplay.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BPreplay.ttf; sourceTree = "<group>"; };
+		8378488518DDBCD500C5AC61 /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SIL Open Font License.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +58,6 @@
 				8378484318DDAF8E00C5AC61 /* CoreGraphics.framework in Frameworks */,
 				8378484518DDAF8E00C5AC61 /* UIKit.framework in Frameworks */,
 				8378484118DDAF8E00C5AC61 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8378485B18DDAF8E00C5AC61 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8378486018DDAF8E00C5AC61 /* XCTest.framework in Frameworks */,
-				8378486218DDAF8E00C5AC61 /* UIKit.framework in Frameworks */,
-				8378486118DDAF8E00C5AC61 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				8378483D18DDAF8E00C5AC61 /* flags.app */,
-				8378485E18DDAF8E00C5AC61 /* flagsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +95,7 @@
 		8378484618DDAF8E00C5AC61 /* flags */ = {
 			isa = PBXGroup;
 			children = (
+				8378487518DDB1B100C5AC61 /* Assets */,
 				8378484F18DDAF8E00C5AC61 /* AppDelegate.h */,
 				8378485018DDAF8E00C5AC61 /* AppDelegate.m */,
 				8378485218DDAF8E00C5AC61 /* Main.storyboard */,
@@ -128,6 +118,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8378487518DDB1B100C5AC61 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8378487F18DDBCCE00C5AC61 /* Fonts */,
+				8378487E18DDBCC500C5AC61 /* Images */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		8378487E18DDBCC500C5AC61 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8378487C18DDB8DC00C5AC61 /* Puzzles-Menu-Button.png */,
+				8378487A18DDB69B00C5AC61 /* Quiz-Menu-Button.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		8378487F18DDBCCE00C5AC61 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8378488018DDBCD500C5AC61 /* BPreplay */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		8378488018DDBCD500C5AC61 /* BPreplay */ = {
+			isa = PBXGroup;
+			children = (
+				8378488118DDBCD500C5AC61 /* BPreplay-Bold.ttf */,
+				8378488218DDBCD500C5AC61 /* BPreplay-BoldItalic.ttf */,
+				8378488318DDBCD500C5AC61 /* BPreplay-Italic.ttf */,
+				8378488418DDBCD500C5AC61 /* BPreplay.ttf */,
+				8378488518DDBCD500C5AC61 /* SIL Open Font License.txt */,
+			);
+			path = BPreplay;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,24 +176,6 @@
 			productReference = 8378483D18DDAF8E00C5AC61 /* flags.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8378485D18DDAF8E00C5AC61 /* flagsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8378487218DDAF8E00C5AC61 /* Build configuration list for PBXNativeTarget "flagsTests" */;
-			buildPhases = (
-				8378485A18DDAF8E00C5AC61 /* Sources */,
-				8378485B18DDAF8E00C5AC61 /* Frameworks */,
-				8378485C18DDAF8E00C5AC61 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8378486418DDAF8E00C5AC61 /* PBXTargetDependency */,
-			);
-			name = flagsTests;
-			productName = flagsTests;
-			productReference = 8378485E18DDAF8E00C5AC61 /* flagsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -174,11 +184,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = chris;
-				TargetAttributes = {
-					8378485D18DDAF8E00C5AC61 = {
-						TestTargetID = 8378483C18DDAF8E00C5AC61;
-					};
-				};
 			};
 			buildConfigurationList = 8378483818DDAF8E00C5AC61 /* Build configuration list for PBXProject "flags" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -194,7 +199,6 @@
 			projectRoot = "";
 			targets = (
 				8378483C18DDAF8E00C5AC61 /* flags */,
-				8378485D18DDAF8E00C5AC61 /* flagsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -205,15 +209,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8378485918DDAF8E00C5AC61 /* Images.xcassets in Resources */,
+				8378488A18DDBCD500C5AC61 /* SIL Open Font License.txt in Resources */,
+				8378488818DDBCD500C5AC61 /* BPreplay-Italic.ttf in Resources */,
 				8378484B18DDAF8E00C5AC61 /* InfoPlist.strings in Resources */,
+				8378487D18DDB8DC00C5AC61 /* Puzzles-Menu-Button.png in Resources */,
 				8378485418DDAF8E00C5AC61 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8378485C18DDAF8E00C5AC61 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				8378488918DDBCD500C5AC61 /* BPreplay.ttf in Resources */,
+				8378488618DDBCD500C5AC61 /* BPreplay-Bold.ttf in Resources */,
+				8378488718DDBCD500C5AC61 /* BPreplay-BoldItalic.ttf in Resources */,
+				8378487B18DDB69B00C5AC61 /* Quiz-Menu-Button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,22 +234,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8378485A18DDAF8E00C5AC61 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		8378486418DDAF8E00C5AC61 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8378483C18DDAF8E00C5AC61 /* flags */;
-			targetProxy = 8378486318DDAF8E00C5AC61 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8378484918DDAF8E00C5AC61 /* InfoPlist.strings */ = {
@@ -365,48 +354,6 @@
 			};
 			name = Release;
 		};
-		8378487318DDAF8E00C5AC61 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/flags.app/flags";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "flags/flags-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "flagsTests/flagsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		8378487418DDAF8E00C5AC61 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/flags.app/flags";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "flags/flags-Prefix.pch";
-				INFOPLIST_FILE = "flagsTests/flagsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -424,14 +371,6 @@
 			buildConfigurations = (
 				8378487018DDAF8E00C5AC61 /* Debug */,
 				8378487118DDAF8E00C5AC61 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		8378487218DDAF8E00C5AC61 /* Build configuration list for PBXNativeTarget "flagsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8378487318DDAF8E00C5AC61 /* Debug */,
-				8378487418DDAF8E00C5AC61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
