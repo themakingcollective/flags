@@ -219,10 +219,10 @@
             </objects>
             <point key="canvasLocation" x="1017" y="518"/>
         </scene>
-        <!--Table View Controller - all flags-->
+        <!--Table Controller - all flags-->
         <scene sceneID="jyj-G3-ajV">
             <objects>
-                <tableViewController id="dc5-RQ-q7j" sceneMemberID="viewController">
+                <tableViewController id="dc5-RQ-q7j" customClass="TableController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="FaP-99-KZX">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
