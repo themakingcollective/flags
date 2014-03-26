@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 chris. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MenuController.h"
 
-@interface ViewController ()
+@interface MenuController ()
 
 @end
 
-@implementation ViewController
+@implementation MenuController
 
 - (void)viewDidLoad
 {
