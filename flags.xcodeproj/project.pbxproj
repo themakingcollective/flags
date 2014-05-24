@@ -34,6 +34,9 @@
 		8378488C18DDCEB600C5AC61 /* Puzzles-Easy-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8378488B18DDCEB600C5AC61 /* Puzzles-Easy-Button.png */; };
 		8378488E18DDCF5900C5AC61 /* Puzzles-Hard-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8378488D18DDCF5900C5AC61 /* Puzzles-Hard-Button.png */; };
 		837ADE7B18E2E32B00455FF7 /* TableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837ADE7A18E2E32B00455FF7 /* TableController.m */; };
+		F94D93481930A4FC008CDB1A /* PuzzleController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94D93471930A4FC008CDB1A /* PuzzleController.m */; };
+		F94D934B1930AEC2008CDB1A /* LayeredView.m in Sources */ = {isa = PBXBuildFile; fileRef = F94D934A1930AEC2008CDB1A /* LayeredView.m */; };
+		F94D93601930B90B008CDB1A /* France in Resources */ = {isa = PBXBuildFile; fileRef = F94D935F1930B90B008CDB1A /* France */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +74,11 @@
 		8378488D18DDCF5900C5AC61 /* Puzzles-Hard-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Puzzles-Hard-Button.png"; sourceTree = "<group>"; };
 		837ADE7918E2E32B00455FF7 /* TableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableController.h; sourceTree = "<group>"; };
 		837ADE7A18E2E32B00455FF7 /* TableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableController.m; sourceTree = "<group>"; };
+		F94D93461930A4FC008CDB1A /* PuzzleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzleController.h; sourceTree = "<group>"; };
+		F94D93471930A4FC008CDB1A /* PuzzleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzleController.m; sourceTree = "<group>"; };
+		F94D93491930AEC2008CDB1A /* LayeredView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayeredView.h; sourceTree = "<group>"; };
+		F94D934A1930AEC2008CDB1A /* LayeredView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayeredView.m; sourceTree = "<group>"; };
+		F94D935F1930B90B008CDB1A /* France */ = {isa = PBXFileReference; lastKnownFileType = folder; path = France; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +159,7 @@
 		8378487518DDB1B100C5AC61 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F94D934C1930B235008CDB1A /* Puzzles */,
 				8378487F18DDBCCE00C5AC61 /* Fonts */,
 				8378487E18DDBCC500C5AC61 /* Images */,
 			);
@@ -203,6 +212,8 @@
 				837ADE7A18E2E32B00455FF7 /* TableController.m */,
 				8378485518DDAF8E00C5AC61 /* MenuController.h */,
 				8378485618DDAF8E00C5AC61 /* MenuController.m */,
+				F94D93461930A4FC008CDB1A /* PuzzleController.h */,
+				F94D93471930A4FC008CDB1A /* PuzzleController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -211,8 +222,18 @@
 			isa = PBXGroup;
 			children = (
 				8378485218DDAF8E00C5AC61 /* Main.storyboard */,
+				F94D93491930AEC2008CDB1A /* LayeredView.h */,
+				F94D934A1930AEC2008CDB1A /* LayeredView.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		F94D934C1930B235008CDB1A /* Puzzles */ = {
+			isa = PBXGroup;
+			children = (
+				F94D935F1930B90B008CDB1A /* France */,
+			);
+			name = Puzzles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +307,7 @@
 				8321C70918DDDD7300970E8F /* Quiz-Hard-Button.png in Resources */,
 				8321C70F18DDDEE400970E8F /* Puzzles-Hard-Explain.png in Resources */,
 				8378487B18DDB69B00C5AC61 /* Quiz-Menu-Button.png in Resources */,
+				F94D93601930B90B008CDB1A /* France in Resources */,
 				8378488C18DDCEB600C5AC61 /* Puzzles-Easy-Button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +321,8 @@
 			files = (
 				837ADE7B18E2E32B00455FF7 /* TableController.m in Sources */,
 				8378485718DDAF8E00C5AC61 /* MenuController.m in Sources */,
+				F94D93481930A4FC008CDB1A /* PuzzleController.m in Sources */,
+				F94D934B1930AEC2008CDB1A /* LayeredView.m in Sources */,
 				8378485118DDAF8E00C5AC61 /* AppDelegate.m in Sources */,
 				8378484D18DDAF8E00C5AC61 /* main.m in Sources */,
 			);

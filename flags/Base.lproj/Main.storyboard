@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="x1h-XZ-iCb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="x1h-XZ-iCb">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
         <!--Menu Controller-->
@@ -63,6 +63,9 @@
                                 <state key="normal" backgroundImage="Play-Colours-Puzzle-Button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="5AU-KU-zeq" kind="push" id="8Sg-cL-wfr"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Puzzles-Easy-Explain.png" translatesAutoresizingMaskIntoConstraints="NO" id="utF-lO-gU0">
                                 <rect key="frame" x="0.0" y="72" width="320" height="320"/>
@@ -111,6 +114,9 @@
                                 <state key="normal" backgroundImage="Play-Colours+Shapes-Puzzle-Button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="5AU-KU-zeq" kind="push" id="DRB-3Y-QWP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -120,6 +126,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q7I-qZ-1wo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="782" y="-947"/>
+        </scene>
+        <!--Puzzle Controller-->
+        <scene sceneID="hRQ-42-rgq">
+            <objects>
+                <viewController id="5AU-KU-zeq" customClass="PuzzleController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9g0-jp-VWC"/>
+                        <viewControllerLayoutGuide type="bottom" id="T0z-NS-BcV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NGG-TX-YM2">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gMj-bp-hFz" customClass="LayeredView">
+                                <rect key="frame" x="10" y="61" width="301" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mzm-ZG-czd"/>
+                    <connections>
+                        <outlet property="layeredView" destination="gMj-bp-hFz" id="WgS-7W-2bM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pZR-ar-UH3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1291" y="-947"/>
         </scene>
         <!--View Controller - puzzles-->
         <scene sceneID="uQL-1p-G8R">
@@ -304,4 +339,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="8Sg-cL-wfr"/>
+    </inferredMetricsTieBreakers>
 </document>
