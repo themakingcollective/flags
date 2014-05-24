@@ -37,6 +37,7 @@
 		F94D93481930A4FC008CDB1A /* PuzzleController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94D93471930A4FC008CDB1A /* PuzzleController.m */; };
 		F94D934B1930AEC2008CDB1A /* LayeredView.m in Sources */ = {isa = PBXBuildFile; fileRef = F94D934A1930AEC2008CDB1A /* LayeredView.m */; };
 		F94D93601930B90B008CDB1A /* France in Resources */ = {isa = PBXBuildFile; fileRef = F94D935F1930B90B008CDB1A /* France */; };
+		F94D93641930EA33008CDB1A /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = F94D93631930EA33008CDB1A /* Utils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,8 @@
 		F94D93491930AEC2008CDB1A /* LayeredView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayeredView.h; sourceTree = "<group>"; };
 		F94D934A1930AEC2008CDB1A /* LayeredView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayeredView.m; sourceTree = "<group>"; };
 		F94D935F1930B90B008CDB1A /* France */ = {isa = PBXFileReference; lastKnownFileType = folder; path = France; sourceTree = "<group>"; };
+		F94D93621930EA33008CDB1A /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		F94D93631930EA33008CDB1A /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,7 @@
 		8378484618DDAF8E00C5AC61 /* flags */ = {
 			isa = PBXGroup;
 			children = (
+				F94D93611930EA14008CDB1A /* Utils */,
 				83EF84A518DDF57E00486186 /* Views */,
 				83D9548618DDEF3B00783A27 /* Controllers */,
 				8378487518DDB1B100C5AC61 /* Assets */,
@@ -236,6 +240,15 @@
 			name = Puzzles;
 			sourceTree = "<group>";
 		};
+		F94D93611930EA14008CDB1A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F94D93621930EA33008CDB1A /* Utils.h */,
+				F94D93631930EA33008CDB1A /* Utils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -324,6 +337,7 @@
 				F94D93481930A4FC008CDB1A /* PuzzleController.m in Sources */,
 				F94D934B1930AEC2008CDB1A /* LayeredView.m in Sources */,
 				8378485118DDAF8E00C5AC61 /* AppDelegate.m in Sources */,
+				F94D93641930EA33008CDB1A /* Utils.m in Sources */,
 				8378484D18DDAF8E00C5AC61 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
