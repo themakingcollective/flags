@@ -23,6 +23,18 @@
     [self setNeedsDisplay];
 }
 
+- (BOOL)isCorrect
+{
+    for (LayerView *layer in [self subviews]) {
+        
+        if (![layer isCorrect]) {
+            return NO;
+        }
+    }
+    
+    return YES;
+}
+
 - (NSArray *)layerViewsFor:(NSString *)flagName
 {
     NSMutableArray *layerViews = [[NSMutableArray alloc] init];

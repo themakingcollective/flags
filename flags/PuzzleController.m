@@ -29,4 +29,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)submit
+{
+    if ([self.layeredView isCorrect]) {
+        NSLog(@"correct!");
+    }
+    else {
+        NSLog(@"incorrect!");
+    }
+}
+
 @end
