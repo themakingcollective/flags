@@ -29,8 +29,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.layeredView setFlag:@"Dominica"];
-	
+    [self.layeredView setFlag:@"France"];
 }
 
 - (void)didReceiveMemoryWarning

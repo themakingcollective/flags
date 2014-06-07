@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		83199A8619431B4F00C70AAF /* Dominica in Resources */ = {isa = PBXBuildFile; fileRef = 83199A8519431B4F00C70AAF /* Dominica */; };
+		83199A8C194331CE00C70AAF /* France in Resources */ = {isa = PBXBuildFile; fileRef = 83199A8B194331CE00C70AAF /* France */; };
 		8321C70818DDDD7300970E8F /* Quiz-Easy-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70618DDDD7300970E8F /* Quiz-Easy-Button.png */; };
 		8321C70918DDDD7300970E8F /* Quiz-Hard-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70718DDDD7300970E8F /* Quiz-Hard-Button.png */; };
 		8321C70B18DDDD7A00970E8F /* Quiz-View-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70A18DDDD7A00970E8F /* Quiz-View-Button.png */; };
@@ -41,7 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		83199A8519431B4F00C70AAF /* Dominica */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Dominica; sourceTree = "<group>"; };
+		83199A8B194331CE00C70AAF /* France */ = {isa = PBXFileReference; lastKnownFileType = folder; path = France; sourceTree = "<group>"; };
 		8321C70618DDDD7300970E8F /* Quiz-Easy-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Easy-Button.png"; sourceTree = "<group>"; };
 		8321C70718DDDD7300970E8F /* Quiz-Hard-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Hard-Button.png"; sourceTree = "<group>"; };
 		8321C70A18DDDD7A00970E8F /* Quiz-View-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-View-Button.png"; sourceTree = "<group>"; };
@@ -235,7 +235,7 @@
 		F94D934C1930B235008CDB1A /* Puzzles */ = {
 			isa = PBXGroup;
 			children = (
-				83199A8519431B4F00C70AAF /* Dominica */,
+				83199A8B194331CE00C70AAF /* France */,
 			);
 			name = Puzzles;
 			sourceTree = "<group>";
@@ -301,7 +301,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83199A8619431B4F00C70AAF /* Dominica in Resources */,
 				8378485918DDAF8E00C5AC61 /* Images.xcassets in Resources */,
 				8378488A18DDBCD500C5AC61 /* SIL Open Font License.txt in Resources */,
 				8321C71618DDE97600970E8F /* Afghanistan.png in Resources */,
@@ -320,6 +319,7 @@
 				8321C70818DDDD7300970E8F /* Quiz-Easy-Button.png in Resources */,
 				8321C70918DDDD7300970E8F /* Quiz-Hard-Button.png in Resources */,
 				8321C70F18DDDEE400970E8F /* Puzzles-Hard-Explain.png in Resources */,
+				83199A8C194331CE00C70AAF /* France in Resources */,
 				8378487B18DDB69B00C5AC61 /* Quiz-Menu-Button.png in Resources */,
 				8378488C18DDCEB600C5AC61 /* Puzzles-Easy-Button.png in Resources */,
 			);

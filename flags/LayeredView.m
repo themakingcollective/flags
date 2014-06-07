@@ -19,9 +19,6 @@
         [self addSubview:view];
     }
     
-//    self.layer.borderColor = [UIColor redColor].CGColor;
-//    self.layer.borderWidth = 3.0f;
-    
     [self setNeedsDisplay];
 }
 
@@ -34,15 +31,6 @@
     }
     return self;
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 - (NSArray *)imageViewsFor:(NSString *)flagName
 {
@@ -81,17 +69,34 @@
 {
     UITouch *touch = [[event allTouches] anyObject];
     CGPoint viewPoint = [touch locationInView:self];
-    CGPoint subviewPoint = [self subviewPoint:viewPoint];
     
+    CGPoint subviewPoint = [self subviewPoint:viewPoint];
     if (subviewPoint.x == -1 || subviewPoint.y == 1) return;
 
     CGPoint imagePoint = [self imagePoint:subviewPoint];
+    UIImageView *touchedSubview = [self touchedSubview:imagePoint];
     
-    NSLog(@"%f, %f", imagePoint.x, imagePoint.y);
+    if ([touchedSubview isEqual:[self template]]) return;
     
+    touchedSubview.image = [Utils colorImage:touchedSubview.image withColor:[UIColor redColor]];
+}
+
+- (UIImageView *)touchedSubview:(CGPoint)point
+{
+    UIImageView *touchedView;
     
-    //[Utils getRGBAsFromImage:[self template].image atX:flagPoint.x andY:flagPoint.y];
+    for (UIImageView *imageView in [self.subviews reverseObjectEnumerator]) {
+        UIColor *color = [Utils getRGBAsFromImage:imageView.image atX:point.x andY:point.y];
+        CGFloat red, green, blue, alpha;
+        [color getRed: &red green: &green blue: &blue alpha: &alpha];
+
+        if (alpha != 0) {
+            touchedView = imageView;
+            break;
+        }
+    }
     
+    return touchedView;
 }
 
 - (CGPoint)subviewPoint:(CGPoint)point
@@ -107,12 +112,12 @@
     
     CGPoint subviewPoint = CGPointMake(pointX, pointY);
     
-//    if ([self outOfSubviewBounds:subviewPoint]) {
-//        return CGPointMake(-1, -1);
-//    }
-//    else {
+    if ([self outOfSubviewBounds:subviewPoint]) {
+        return CGPointMake(-1, -1);
+    }
+    else {
         return subviewPoint;
-//    }
+    }
 }
 
 - (CGPoint)imagePoint:(CGPoint)point
