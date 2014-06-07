@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83199A8619431B4F00C70AAF /* Dominica in Resources */ = {isa = PBXBuildFile; fileRef = 83199A8519431B4F00C70AAF /* Dominica */; };
 		8321C70818DDDD7300970E8F /* Quiz-Easy-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70618DDDD7300970E8F /* Quiz-Easy-Button.png */; };
 		8321C70918DDDD7300970E8F /* Quiz-Hard-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70718DDDD7300970E8F /* Quiz-Hard-Button.png */; };
 		8321C70B18DDDD7A00970E8F /* Quiz-View-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70A18DDDD7A00970E8F /* Quiz-View-Button.png */; };
@@ -36,11 +37,11 @@
 		837ADE7B18E2E32B00455FF7 /* TableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837ADE7A18E2E32B00455FF7 /* TableController.m */; };
 		F94D93481930A4FC008CDB1A /* PuzzleController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94D93471930A4FC008CDB1A /* PuzzleController.m */; };
 		F94D934B1930AEC2008CDB1A /* LayeredView.m in Sources */ = {isa = PBXBuildFile; fileRef = F94D934A1930AEC2008CDB1A /* LayeredView.m */; };
-		F94D93601930B90B008CDB1A /* France in Resources */ = {isa = PBXBuildFile; fileRef = F94D935F1930B90B008CDB1A /* France */; };
 		F94D93641930EA33008CDB1A /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = F94D93631930EA33008CDB1A /* Utils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		83199A8519431B4F00C70AAF /* Dominica */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Dominica; sourceTree = "<group>"; };
 		8321C70618DDDD7300970E8F /* Quiz-Easy-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Easy-Button.png"; sourceTree = "<group>"; };
 		8321C70718DDDD7300970E8F /* Quiz-Hard-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Hard-Button.png"; sourceTree = "<group>"; };
 		8321C70A18DDDD7A00970E8F /* Quiz-View-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-View-Button.png"; sourceTree = "<group>"; };
@@ -79,7 +80,6 @@
 		F94D93471930A4FC008CDB1A /* PuzzleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzleController.m; sourceTree = "<group>"; };
 		F94D93491930AEC2008CDB1A /* LayeredView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayeredView.h; sourceTree = "<group>"; };
 		F94D934A1930AEC2008CDB1A /* LayeredView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayeredView.m; sourceTree = "<group>"; };
-		F94D935F1930B90B008CDB1A /* France */ = {isa = PBXFileReference; lastKnownFileType = folder; path = France; sourceTree = "<group>"; };
 		F94D93621930EA33008CDB1A /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		F94D93631930EA33008CDB1A /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -235,7 +235,7 @@
 		F94D934C1930B235008CDB1A /* Puzzles */ = {
 			isa = PBXGroup;
 			children = (
-				F94D935F1930B90B008CDB1A /* France */,
+				83199A8519431B4F00C70AAF /* Dominica */,
 			);
 			name = Puzzles;
 			sourceTree = "<group>";
@@ -301,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83199A8619431B4F00C70AAF /* Dominica in Resources */,
 				8378485918DDAF8E00C5AC61 /* Images.xcassets in Resources */,
 				8378488A18DDBCD500C5AC61 /* SIL Open Font License.txt in Resources */,
 				8321C71618DDE97600970E8F /* Afghanistan.png in Resources */,
@@ -320,7 +321,6 @@
 				8321C70918DDDD7300970E8F /* Quiz-Hard-Button.png in Resources */,
 				8321C70F18DDDEE400970E8F /* Puzzles-Hard-Explain.png in Resources */,
 				8378487B18DDB69B00C5AC61 /* Quiz-Menu-Button.png in Resources */,
-				F94D93601930B90B008CDB1A /* France in Resources */,
 				8378488C18DDCEB600C5AC61 /* Puzzles-Easy-Button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
