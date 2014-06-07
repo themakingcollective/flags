@@ -96,55 +96,75 @@
 
 - (CGPoint)subviewPoint:(CGPoint)point
 {
-    CGPoint imageSize = [self imageSize];
+    CGPoint subviewSize = [self subviewSize];
+    CGPoint viewSize = [self viewSize];
     
-    float xOffset = (self.bounds.size.width - imageSize.x) / 2;
-    float yOffset = (self.bounds.size.height - imageSize.y) / 2;
+    float xOffset = (viewSize.x - subviewSize.x) / 2;
+    float yOffset = (viewSize.y - subviewSize.y) / 2;
     
     float pointX = roundf(point.x - xOffset);
     float pointY = roundf(point.y - yOffset);
     
-    CGPoint imagePoint = CGPointMake(pointX, pointY);
+    CGPoint subviewPoint = CGPointMake(pointX, pointY);
     
-    if ([self outOfBounds:imagePoint]) {
-        return CGPointMake(-1, -1);
-    }
-    else {
-        return imagePoint;
-    }
+//    if ([self outOfSubviewBounds:subviewPoint]) {
+//        return CGPointMake(-1, -1);
+//    }
+//    else {
+        return subviewPoint;
+//    }
 }
 
 - (CGPoint)imagePoint:(CGPoint)point
 {
-    CGFloat subviewWidth = [self template].bounds.size.width;
-    CGFloat subviewHeight = [self template].bounds.size.height;
+    CGPoint subviewSize = [self subviewSize];
+    CGPoint imageSize = [self imageSize];
     
-    CGFloat imageWidth = [[self template] image].size.width;
-    CGFloat imageHeight = [[self template] image].size.height;
+    float xRatio = imageSize.x / subviewSize.x;
+    float yRatio = imageSize.y / subviewSize.y;
     
-    CGFloat imageX = (imageWidth / subviewWidth) * point.x;
-    CGFloat imageY = (imageHeight / subviewHeight) * point.y;
+    float imageX = point.x * xRatio;
+    float imageY = point.y * yRatio;
     
     return CGPointMake(imageX, imageY);
+}
+
+- (CGPoint)viewSize
+{
+    float viewWidth = self.bounds.size.width;
+    float viewHeight = self.bounds.size.height;
+    
+    return CGPointMake(viewWidth, viewHeight);
+}
+
+- (CGPoint)subviewSize
+{
+    UIImageView *t = [self template];
+    float widthRatio = t.bounds.size.width / t.image.size.width;
+    float heightRatio = t.bounds.size.height / t.image.size.height;
+    
+    float scale = MIN(widthRatio, heightRatio);
+    
+    CGPoint imageSize = [self imageSize];
+    float imageWidth = scale * imageSize.x;
+    float imageHeight = scale * imageSize.y;
+    
+    return CGPointMake(imageWidth, imageHeight);
 }
 
 - (CGPoint)imageSize
 {
     UIImageView *t = [self template];
     
-    float widthRatio = t.bounds.size.width / t.image.size.width;
-    float heightRatio = t.bounds.size.height / t.image.size.height;
-    float scale = MIN(widthRatio, heightRatio);
-
-    float imageWidth = scale * t.image.size.width;
-    float imageHeight = scale * t.image.size.height;
+    float imageWidth = t.image.size.width;
+    float imageHeight = t.image.size.height;
     
     return CGPointMake(imageWidth, imageHeight);
 }
 
-- (BOOL)outOfBounds:(CGPoint)point
+- (BOOL)outOfSubviewBounds:(CGPoint)point
 {
-    CGPoint s = [self imageSize];
+    CGPoint s = [self subviewSize];
     return (point.x < 0 || point.x > s.x || point.y < 0 || point.y > s.y);
 }
 
