@@ -81,16 +81,20 @@
 {
     UITouch *touch = [[event allTouches] anyObject];
     CGPoint viewPoint = [touch locationInView:self];
-    CGPoint flagPoint = [self convertViewPoint:viewPoint];
+    CGPoint subviewPoint = [self subviewPoint:viewPoint];
     
-    if (flagPoint.x == -1 || flagPoint.y == 1) return;
+    if (subviewPoint.x == -1 || subviewPoint.y == 1) return;
+
+    CGPoint imagePoint = [self imagePoint:subviewPoint];
+    
+    NSLog(@"%f, %f", imagePoint.x, imagePoint.y);
     
     
-    [Utils getRGBAsFromImage:[self template].image atX:flagPoint.x andY:flagPoint.y];
+    //[Utils getRGBAsFromImage:[self template].image atX:flagPoint.x andY:flagPoint.y];
     
 }
 
-- (CGPoint)convertViewPoint:(CGPoint)point
+- (CGPoint)subviewPoint:(CGPoint)point
 {
     CGPoint imageSize = [self imageSize];
     
@@ -110,6 +114,20 @@
     }
 }
 
+- (CGPoint)imagePoint:(CGPoint)point
+{
+    CGFloat subviewWidth = [self template].bounds.size.width;
+    CGFloat subviewHeight = [self template].bounds.size.height;
+    
+    CGFloat imageWidth = [[self template] image].size.width;
+    CGFloat imageHeight = [[self template] image].size.height;
+    
+    CGFloat imageX = (imageWidth / subviewWidth) * point.x;
+    CGFloat imageY = (imageHeight / subviewHeight) * point.y;
+    
+    return CGPointMake(imageX, imageY);
+}
+
 - (CGPoint)imageSize
 {
     UIImageView *t = [self template];
@@ -117,6 +135,7 @@
     float widthRatio = t.bounds.size.width / t.image.size.width;
     float heightRatio = t.bounds.size.height / t.image.size.height;
     float scale = MIN(widthRatio, heightRatio);
+
     float imageWidth = scale * t.image.size.width;
     float imageHeight = scale * t.image.size.height;
     
