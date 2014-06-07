@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		83199A8C194331CE00C70AAF /* France in Resources */ = {isa = PBXBuildFile; fileRef = 83199A8B194331CE00C70AAF /* France */; };
+		83199A931943487D00C70AAF /* LayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83199A921943487D00C70AAF /* LayerView.m */; };
 		8321C70818DDDD7300970E8F /* Quiz-Easy-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70618DDDD7300970E8F /* Quiz-Easy-Button.png */; };
 		8321C70918DDDD7300970E8F /* Quiz-Hard-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70718DDDD7300970E8F /* Quiz-Hard-Button.png */; };
 		8321C70B18DDDD7A00970E8F /* Quiz-View-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70A18DDDD7A00970E8F /* Quiz-View-Button.png */; };
@@ -42,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		83199A8B194331CE00C70AAF /* France */ = {isa = PBXFileReference; lastKnownFileType = folder; path = France; sourceTree = "<group>"; };
+		83199A911943487D00C70AAF /* LayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerView.h; sourceTree = "<group>"; };
+		83199A921943487D00C70AAF /* LayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerView.m; sourceTree = "<group>"; };
 		8321C70618DDDD7300970E8F /* Quiz-Easy-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Easy-Button.png"; sourceTree = "<group>"; };
 		8321C70718DDDD7300970E8F /* Quiz-Hard-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Hard-Button.png"; sourceTree = "<group>"; };
 		8321C70A18DDDD7A00970E8F /* Quiz-View-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-View-Button.png"; sourceTree = "<group>"; };
@@ -98,6 +101,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83199A8D1943470500C70AAF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				83199A911943487D00C70AAF /* LayerView.h */,
+				83199A921943487D00C70AAF /* LayerView.m */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
 		8321C71418DDE96F00970E8F /* Flags */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +237,7 @@
 		83EF84A518DDF57E00486186 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				83199A8D1943470500C70AAF /* Components */,
 				8378485218DDAF8E00C5AC61 /* Main.storyboard */,
 				F94D93491930AEC2008CDB1A /* LayeredView.h */,
 				F94D934A1930AEC2008CDB1A /* LayeredView.m */,
@@ -338,6 +351,7 @@
 				F94D934B1930AEC2008CDB1A /* LayeredView.m in Sources */,
 				8378485118DDAF8E00C5AC61 /* AppDelegate.m in Sources */,
 				F94D93641930EA33008CDB1A /* Utils.m in Sources */,
+				83199A931943487D00C70AAF /* LayerView.m in Sources */,
 				8378484D18DDAF8E00C5AC61 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

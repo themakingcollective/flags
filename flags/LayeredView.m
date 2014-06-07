@@ -7,57 +7,37 @@
 //
 
 #import "LayeredView.h"
+#import "LayerView.h"
 #import "Utils.h"
 
 @implementation LayeredView
 
 - (void)setFlag:(NSString *)flagName
 {
-    NSArray *imageViews = [self imageViewsFor:flagName];
+    NSArray *layerViews = [self layerViewsFor:flagName];
     
-    for (UIImageView *view in imageViews) {
+    for (LayerView *view in layerViews) {
         [self addSubview:view];
     }
     
     [self setNeedsDisplay];
 }
 
-- (id)initWithCoder:(NSCoder *)aDecoder
+- (NSArray *)layerViewsFor:(NSString *)flagName
 {
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        NSLog(@"rendering view");
-        
-    }
-    return self;
-}
-
-- (NSArray *)imageViewsFor:(NSString *)flagName
-{
-    NSMutableArray *imageViews = [[NSMutableArray alloc] init];
-    
-    for (UIImage *image in [self imagesFor:flagName]) {
-        UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
-        
-        [imageView sizeToFit];
-        [imageView setFrame:self.bounds];
-        [imageView setContentMode:UIViewContentModeScaleAspectFit];
-        
-        [imageViews addObject:imageView];
-    }
-    
-    return [NSArray arrayWithArray:imageViews];
-}
-
-- (NSArray *)imagesFor:(NSString *)flagName
-{
-    NSMutableArray *images = [[NSMutableArray alloc] init];
+    NSMutableArray *layerViews = [[NSMutableArray alloc] init];
     
     for (NSString *path in [self pathsFor:flagName]) {
-        [images addObject:[UIImage imageWithContentsOfFile:path]];
+        LayerView *layerView = [[LayerView alloc] initWithPath:path];
+        
+        [layerView sizeToFit];
+        [layerView setFrame:self.bounds];
+        [layerView setContentMode:UIViewContentModeScaleAspectFit];
+        
+        [layerViews addObject:layerView];
     }
     
-    return [NSArray arrayWithArray:images];
+    return [NSArray arrayWithArray:layerViews];
 }
 
 - (NSArray *)pathsFor:(NSString *)flagName
@@ -74,24 +54,24 @@
     if (subviewPoint.x == -1 || subviewPoint.y == 1) return;
 
     CGPoint imagePoint = [self imagePoint:subviewPoint];
-    UIImageView *touchedSubview = [self touchedSubview:imagePoint];
+    LayerView *touchedSubview = [self touchedSubview:imagePoint];
     
     if ([touchedSubview isEqual:[self template]]) return;
     
-    touchedSubview.image = [Utils colorImage:touchedSubview.image withColor:[UIColor redColor]];
+    [touchedSubview setColor:[UIColor redColor]];
 }
 
-- (UIImageView *)touchedSubview:(CGPoint)point
+- (LayerView *)touchedSubview:(CGPoint)point
 {
-    UIImageView *touchedView;
+    LayerView *touchedView;
     
-    for (UIImageView *imageView in [self.subviews reverseObjectEnumerator]) {
-        UIColor *color = [Utils getRGBAsFromImage:imageView.image atX:point.x andY:point.y];
+    for (LayerView *layerView in [self.subviews reverseObjectEnumerator]) {
+        UIColor *color = [Utils getRGBAsFromImage:layerView.image atX:point.x andY:point.y];
         CGFloat red, green, blue, alpha;
         [color getRed: &red green: &green blue: &blue alpha: &alpha];
 
         if (alpha != 0) {
-            touchedView = imageView;
+            touchedView = layerView;
             break;
         }
     }
