@@ -29,6 +29,7 @@
     NSArray *paths = [Utils pathsFor:flagName];
     NSMutableArray *array = [[NSMutableArray alloc] init];
     
+    // TODO: deal with duplicate colors for regions
     for (NSString *path in paths) {
         UIColor *color = [self colorFromPath:path];
         if (color) {
@@ -50,7 +51,22 @@
 
 + (NSMutableArray *)incorrectColors:(NSString *)flagName
 {
-    return [NSMutableArray arrayWithArray:@[[UIColor blueColor]]];
+    NSDictionary *metadata = [self metadata:flagName];
+    NSArray *incorrectColors = [metadata objectForKey:@"incorrectColors"];
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+    
+    for (NSString *hex in incorrectColors) {
+        [array addObject:[Utils colorWithHexString:hex]];
+    }
+    
+    return array;
+}
+
++ (NSDictionary *)metadata:(NSString *)flagName
+{
+    NSString *filename = [[NSBundle mainBundle] pathForResource:@"metadata" ofType:@"json" inDirectory:flagName];
+    NSData *json = [NSData dataWithContentsOfFile:filename options:NSDataReadingMappedIfSafe error:nil];
+    return [NSJSONSerialization JSONObjectWithData:json options:NSJSONReadingMutableContainers error:nil];
 }
 
 // This can be removed once we have verified the colors are correct.
