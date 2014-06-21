@@ -15,6 +15,19 @@
     return [[NSBundle mainBundle] pathsForResourcesOfType:@"png" inDirectory:flagName];
 }
 
++ (NSArray *)shuffle:(NSArray *)array
+{
+    NSMutableArray *a = [NSMutableArray arrayWithArray:array];
+    NSInteger count = [a count];
+    
+    for (int i = 0; i < count; i++) {
+        int rand = arc4random() % count;
+        [a exchangeObjectAtIndex:i withObjectAtIndex:rand];
+    }
+    
+    return [NSArray arrayWithArray:a];
+}
+
 + (UIColor *)getRGBAsFromImage:(UIImage *)image atX:(int)xx andY:(int)yy
 {
     // First get the image into your data buffer
@@ -86,12 +99,12 @@
     NSString *cString = [[hex stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
     
     // String should be 6 or 8 characters
-    if ([cString length] < 6) return [UIColor grayColor];
+    if ([cString length] < 6) return nil;
     
     // strip 0X if it appears
     if ([cString hasPrefix:@"0X"]) cString = [cString substringFromIndex:2];
     
-    if ([cString length] != 6) return  [UIColor grayColor];
+    if ([cString length] != 6) return  nil;
     
     // Separate into r, g, b substrings
     NSRange range;

@@ -45,16 +45,15 @@
 
 - (void)setupPaintPots
 {
+    NSArray *pots = [self paintPotViews];
     NSArray *colors = [PaletteService shuffledColors:@"France"];
-    NSInteger index = 0;
     
-    for (PaintPotView *pot in [self paintPotViews]) {
-        [pot setDelegate:self];
+    for (NSInteger i = 0; i < [pots count]; i++) {
+        PaintPotView *pot = [pots objectAtIndex:i];
+        UIColor *color = [colors objectAtIndex:i];
         
-        if (index < [colors count]) {
-            [pot setBackgroundColor:[colors objectAtIndex:index]];
-            index++;
-        }
+        [pot setDelegate:self];
+        [pot setBackgroundColor:color];
     }
 }
 
