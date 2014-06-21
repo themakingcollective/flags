@@ -11,6 +11,7 @@
 @interface LayeredView : UIView
 
 - (void)setFlag:(NSString *)flagName;
+- (void)setPaintColor:(UIColor *)color;
 - (BOOL)isCorrect;
 
 @end

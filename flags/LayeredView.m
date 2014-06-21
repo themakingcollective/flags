@@ -10,7 +10,15 @@
 #import "LayerView.h"
 #import "Utils.h"
 
+@interface LayeredView ()
+
+@property (strong, nonatomic) UIColor *paintColor;
+
+@end
+
 @implementation LayeredView
+
+@synthesize paintColor=_paintColor;
 
 - (void)setFlag:(NSString *)flagName
 {
@@ -59,6 +67,8 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    if (self.paintColor == nil) return;
+    
     UITouch *touch = [[event allTouches] anyObject];
     CGPoint viewPoint = [touch locationInView:self];
     
@@ -70,7 +80,7 @@
     
     if ([touchedSubview isEqual:[self template]]) return;
     
-    [touchedSubview setColor:[UIColor redColor]];
+    [touchedSubview setColor:self.paintColor];
 }
 
 - (LayerView *)touchedSubview:(CGPoint)point
