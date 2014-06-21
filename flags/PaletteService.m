@@ -17,11 +17,7 @@
     NSMutableArray *incorrect = [self incorrectColors:flagName];
     
     NSArray *colors = [correct arrayByAddingObjectsFromArray:incorrect];
-    
-    colors = [Utils shuffle:colors];
-    colors = [self pad:colors with:[UIColor lightGrayColor] upto:6];
-    
-    return colors;
+    return [Utils shuffle:colors];
 }
 
 + (NSMutableArray *)correctColors:(NSString *)flagName
@@ -67,24 +63,6 @@
     NSString *filename = [[NSBundle mainBundle] pathForResource:@"metadata" ofType:@"json" inDirectory:flagName];
     NSData *json = [NSData dataWithContentsOfFile:filename options:NSDataReadingMappedIfSafe error:nil];
     return [NSJSONSerialization JSONObjectWithData:json options:NSJSONReadingMutableContainers error:nil];
-}
-
-// This can be removed once we have verified the colors are correct.
-+ (NSArray *)pad:(NSArray *)colors with:(UIColor *)color upto:(NSInteger)count
-{
-    if ([colors count] != count) {
-        NSLog(@"Warning: Palette is being padded");
-    }
-    
-    NSMutableArray *array = [NSMutableArray arrayWithArray:colors];
-    
-    while ([array count] < count) {
-        [array addObject:color];
-    }
-    
-    [array subarrayWithRange:(NSRange){0, count}];
-    
-    return [NSArray arrayWithArray:array];
 }
 
 

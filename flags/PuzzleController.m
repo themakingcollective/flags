@@ -48,6 +48,10 @@
     NSArray *pots = [self paintPotViews];
     NSArray *colors = [PaletteService shuffledColors:@"France"];
     
+    if ([pots count] != [colors count]) {
+        [NSException raise:@"Counts do not match" format:@"For flag %@", @"France"];
+    }
+    
     for (NSInteger i = 0; i < [pots count]; i++) {
         PaintPotView *pot = [pots objectAtIndex:i];
         UIColor *color = [colors objectAtIndex:i];
