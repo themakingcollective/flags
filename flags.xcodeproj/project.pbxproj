@@ -104,17 +104,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		83199A8D1943470500C70AAF /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				83199A911943487D00C70AAF /* LayerView.h */,
-				83199A921943487D00C70AAF /* LayerView.m */,
-				83198FC61955EA4400F3665E /* PaintPotView.h */,
-				83198FC71955EA4400F3665E /* PaintPotView.m */,
-			);
-			name = Components;
-			sourceTree = "<group>";
-		};
 		8321C71418DDE96F00970E8F /* Flags */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,10 +231,13 @@
 		83EF84A518DDF57E00486186 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				83199A8D1943470500C70AAF /* Components */,
 				8378485218DDAF8E00C5AC61 /* Main.storyboard */,
 				F94D93491930AEC2008CDB1A /* LayeredView.h */,
 				F94D934A1930AEC2008CDB1A /* LayeredView.m */,
+				83199A911943487D00C70AAF /* LayerView.h */,
+				83199A921943487D00C70AAF /* LayerView.m */,
+				83198FC61955EA4400F3665E /* PaintPotView.h */,
+				83198FC71955EA4400F3665E /* PaintPotView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
