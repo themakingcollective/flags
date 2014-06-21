@@ -9,6 +9,7 @@
 #import "PuzzleController.h"
 #import "LayeredView.h"
 #import "PaintPotView.h"
+#import "PaletteService.h"
 
 @interface PuzzleController () <PaintPotViewDelegate>
 
@@ -44,11 +45,30 @@
 
 - (void)setupPaintPots
 {
-    for (UIView *subview in self.view.subviews) {
-        if ([subview isKindOfClass:[PaintPotView class]]) {
-            [(PaintPotView *)subview setDelegate:self];
+    NSArray *colors = [PaletteService shuffledColors:@"France"];
+    NSInteger index = 0;
+    
+    for (PaintPotView *pot in [self paintPotViews]) {
+        [pot setDelegate:self];
+        
+        if (index < [colors count]) {
+            [pot setBackgroundColor:[colors objectAtIndex:index]];
+            index++;
         }
     }
+}
+
+- (NSArray *)paintPotViews
+{
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+    
+    for (UIView *subview in self.view.subviews) {
+        if ([subview isKindOfClass:[PaintPotView class]]) {
+            [array addObject:subview];
+        }
+    }
+    
+    return [NSArray arrayWithArray:array];
 }
 
 - (void)touchedPaintPot:(UIColor *)color

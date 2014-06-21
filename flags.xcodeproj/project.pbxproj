@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		83198FC81955EA4400F3665E /* PaintPotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83198FC71955EA4400F3665E /* PaintPotView.m */; };
+		83198FD41955FE6400F3665E /* PaletteService.m in Sources */ = {isa = PBXBuildFile; fileRef = 83198FD31955FE6400F3665E /* PaletteService.m */; };
 		83199A8C194331CE00C70AAF /* France in Resources */ = {isa = PBXBuildFile; fileRef = 83199A8B194331CE00C70AAF /* France */; };
 		83199A931943487D00C70AAF /* LayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83199A921943487D00C70AAF /* LayerView.m */; };
 		8321C70818DDDD7300970E8F /* Quiz-Easy-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70618DDDD7300970E8F /* Quiz-Easy-Button.png */; };
@@ -45,6 +46,8 @@
 /* Begin PBXFileReference section */
 		83198FC61955EA4400F3665E /* PaintPotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaintPotView.h; sourceTree = "<group>"; };
 		83198FC71955EA4400F3665E /* PaintPotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaintPotView.m; sourceTree = "<group>"; };
+		83198FD21955FE6400F3665E /* PaletteService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaletteService.h; sourceTree = "<group>"; };
+		83198FD31955FE6400F3665E /* PaletteService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaletteService.m; sourceTree = "<group>"; };
 		83199A8B194331CE00C70AAF /* France */ = {isa = PBXFileReference; lastKnownFileType = folder; path = France; sourceTree = "<group>"; };
 		83199A911943487D00C70AAF /* LayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerView.h; sourceTree = "<group>"; };
 		83199A921943487D00C70AAF /* LayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerView.m; sourceTree = "<group>"; };
@@ -104,6 +107,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83198FD11955FE5700F3665E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				83198FD21955FE6400F3665E /* PaletteService.h */,
+				83198FD31955FE6400F3665E /* PaletteService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		8321C71418DDE96F00970E8F /* Flags */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +155,7 @@
 		8378484618DDAF8E00C5AC61 /* flags */ = {
 			isa = PBXGroup;
 			children = (
+				83198FD11955FE5700F3665E /* Services */,
 				F94D93611930EA14008CDB1A /* Utils */,
 				83EF84A518DDF57E00486186 /* Views */,
 				83D9548618DDEF3B00783A27 /* Controllers */,
@@ -351,6 +364,7 @@
 				F94D93641930EA33008CDB1A /* Utils.m in Sources */,
 				83199A931943487D00C70AAF /* LayerView.m in Sources */,
 				8378484D18DDAF8E00C5AC61 /* main.m in Sources */,
+				83198FD41955FE6400F3665E /* PaletteService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
