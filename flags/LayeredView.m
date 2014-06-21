@@ -47,7 +47,7 @@
 {
     NSMutableArray *layerViews = [[NSMutableArray alloc] init];
     
-    for (NSString *path in [self pathsFor:flagName]) {
+    for (NSString *path in [Utils pathsFor:flagName]) {
         LayerView *layerView = [[LayerView alloc] initWithPath:path];
         
         [layerView sizeToFit];
@@ -58,11 +58,6 @@
     }
     
     return [NSArray arrayWithArray:layerViews];
-}
-
-- (NSArray *)pathsFor:(NSString *)flagName
-{
-    return [[NSBundle mainBundle] pathsForResourcesOfType:@"png" inDirectory:flagName];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event

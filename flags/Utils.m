@@ -10,6 +10,11 @@
 
 @implementation Utils
 
++ (NSArray *)pathsFor:(NSString *)flagName
+{
+    return [[NSBundle mainBundle] pathsForResourcesOfType:@"png" inDirectory:flagName];
+}
+
 + (UIColor *)getRGBAsFromImage:(UIImage *)image atX:(int)xx andY:(int)yy
 {
     // First get the image into your data buffer

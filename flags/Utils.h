@@ -10,6 +10,7 @@
 
 @interface Utils : NSObject
 
++ (NSArray *)pathsFor:(NSString *)flagName;
 + (UIColor *)getRGBAsFromImage:(UIImage *)image atX:(int)xx andY:(int)yy;
 + (UIImage *)colorImage:(UIImage *)image withColor:(UIColor *)color;
 + (UIColor *)colorWithHexString:(NSString*)hex;
