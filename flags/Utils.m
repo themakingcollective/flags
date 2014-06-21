@@ -15,6 +15,11 @@
     return [[NSBundle mainBundle] pathsForResourcesOfType:@"png" inDirectory:flagName];
 }
 
++ (NSArray *)unique:(NSArray *)array
+{
+    return [[NSSet setWithArray:array] allObjects];
+}
+
 + (NSArray *)shuffle:(NSArray *)array
 {
     NSMutableArray *a = [NSMutableArray arrayWithArray:array];

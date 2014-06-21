@@ -17,7 +17,11 @@
     NSMutableArray *incorrect = [self incorrectColors:flagName];
     
     NSArray *colors = [correct arrayByAddingObjectsFromArray:incorrect];
-    return [Utils shuffle:colors];
+
+    colors = [Utils unique:colors];
+    colors = [Utils shuffle:colors];
+    
+    return colors;
 }
 
 + (NSMutableArray *)correctColors:(NSString *)flagName

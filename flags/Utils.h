@@ -11,6 +11,7 @@
 @interface Utils : NSObject
 
 + (NSArray *)pathsFor:(NSString *)flagName;
++ (NSArray *)unique:(NSArray *)array;
 + (NSArray *)shuffle:(NSArray *)array;
 + (UIColor *)getRGBAsFromImage:(UIImage *)image atX:(int)xx andY:(int)yy;
 + (UIImage *)colorImage:(UIImage *)image withColor:(UIColor *)color;
