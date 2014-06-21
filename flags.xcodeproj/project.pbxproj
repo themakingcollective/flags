@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83198FC81955EA4400F3665E /* PaintPotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83198FC71955EA4400F3665E /* PaintPotView.m */; };
 		83199A8C194331CE00C70AAF /* France in Resources */ = {isa = PBXBuildFile; fileRef = 83199A8B194331CE00C70AAF /* France */; };
 		83199A931943487D00C70AAF /* LayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83199A921943487D00C70AAF /* LayerView.m */; };
 		8321C70818DDDD7300970E8F /* Quiz-Easy-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70618DDDD7300970E8F /* Quiz-Easy-Button.png */; };
@@ -42,6 +43,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		83198FC61955EA4400F3665E /* PaintPotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaintPotView.h; sourceTree = "<group>"; };
+		83198FC71955EA4400F3665E /* PaintPotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaintPotView.m; sourceTree = "<group>"; };
 		83199A8B194331CE00C70AAF /* France */ = {isa = PBXFileReference; lastKnownFileType = folder; path = France; sourceTree = "<group>"; };
 		83199A911943487D00C70AAF /* LayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerView.h; sourceTree = "<group>"; };
 		83199A921943487D00C70AAF /* LayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerView.m; sourceTree = "<group>"; };
@@ -106,6 +109,8 @@
 			children = (
 				83199A911943487D00C70AAF /* LayerView.h */,
 				83199A921943487D00C70AAF /* LayerView.m */,
+				83198FC61955EA4400F3665E /* PaintPotView.h */,
+				83198FC71955EA4400F3665E /* PaintPotView.m */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -345,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83198FC81955EA4400F3665E /* PaintPotView.m in Sources */,
 				837ADE7B18E2E32B00455FF7 /* TableController.m in Sources */,
 				8378485718DDAF8E00C5AC61 /* MenuController.m in Sources */,
 				F94D93481930A4FC008CDB1A /* PuzzleController.m in Sources */,

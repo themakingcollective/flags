@@ -8,8 +8,9 @@
 
 #import "PuzzleController.h"
 #import "LayeredView.h"
+#import "PaintPotView.h"
 
-@interface PuzzleController ()
+@interface PuzzleController () <PaintPotViewDelegate>
 
 @property (weak, nonatomic) IBOutlet LayeredView *layeredView;
 
@@ -20,7 +21,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.layeredView setBackgroundColor:[UIColor clearColor]];
     [self.layeredView setFlag:@"France"];
+    [self setupPaintPots];
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,6 +40,22 @@
     else {
         NSLog(@"incorrect!");
     }
+}
+
+- (void)setupPaintPots
+{
+    for (UIView *subview in self.view.subviews) {
+        if ([subview isKindOfClass:[PaintPotView class]]) {
+            [(PaintPotView *)subview setDelegate:self];
+        }
+    }
+}
+
+- (void)touchedPaintPot:(UIColor *)color
+{
+    CGFloat red = 0.0, green = 0.0, blue = 0.0, alpha =0.0;
+    [color getRed:&red green:&green blue:&blue alpha:&alpha];
+    NSLog(@"touched paint pot with color: %f,%f,%f,%f",red,green,blue,alpha);
 }
 
 @end
