@@ -22,6 +22,8 @@
 
 - (void)setFlag:(NSString *)flagName
 {
+    [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    
     NSArray *layerViews = [self layerViewsFor:flagName];
     
     for (LayerView *view in layerViews) {
