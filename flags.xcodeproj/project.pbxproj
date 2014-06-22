@@ -22,6 +22,7 @@
 		832D816A1956CB3B000600DA /* Barbados in Resources */ = {isa = PBXBuildFile; fileRef = 832D81691956CB3B000600DA /* Barbados */; };
 		832D816E1956CB91000600DA /* metadata.json in Resources */ = {isa = PBXBuildFile; fileRef = 832D816D1956CB91000600DA /* metadata.json */; };
 		832D81721956CD30000600DA /* Quiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 832D81711956CD30000600DA /* Quiz.m */; };
+		832D81751956D6E6000600DA /* ResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 832D81741956D6E6000600DA /* ResultsController.m */; };
 		8378484118DDAF8E00C5AC61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378484018DDAF8E00C5AC61 /* Foundation.framework */; };
 		8378484318DDAF8E00C5AC61 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378484218DDAF8E00C5AC61 /* CoreGraphics.framework */; };
 		8378484518DDAF8E00C5AC61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378484418DDAF8E00C5AC61 /* UIKit.framework */; };
@@ -66,6 +67,8 @@
 		832D816D1956CB91000600DA /* metadata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = metadata.json; path = flags/Barbados/metadata.json; sourceTree = "<group>"; };
 		832D81701956CD30000600DA /* Quiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quiz.h; sourceTree = "<group>"; };
 		832D81711956CD30000600DA /* Quiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quiz.m; sourceTree = "<group>"; };
+		832D81731956D6E6000600DA /* ResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsController.h; sourceTree = "<group>"; };
+		832D81741956D6E6000600DA /* ResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsController.m; sourceTree = "<group>"; };
 		8378483D18DDAF8E00C5AC61 /* flags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flags.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8378484018DDAF8E00C5AC61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8378484218DDAF8E00C5AC61 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -255,6 +258,8 @@
 				8378485618DDAF8E00C5AC61 /* MenuController.m */,
 				F94D93461930A4FC008CDB1A /* PuzzleController.h */,
 				F94D93471930A4FC008CDB1A /* PuzzleController.m */,
+				832D81731956D6E6000600DA /* ResultsController.h */,
+				832D81741956D6E6000600DA /* ResultsController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -389,6 +394,7 @@
 				832D81721956CD30000600DA /* Quiz.m in Sources */,
 				8378485118DDAF8E00C5AC61 /* AppDelegate.m in Sources */,
 				F94D93641930EA33008CDB1A /* Utils.m in Sources */,
+				832D81751956D6E6000600DA /* ResultsController.m in Sources */,
 				83199A931943487D00C70AAF /* LayerView.m in Sources */,
 				8378484D18DDAF8E00C5AC61 /* main.m in Sources */,
 				83198FD41955FE6400F3665E /* PaletteService.m in Sources */,

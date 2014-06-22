@@ -11,6 +11,7 @@
 #import "PaintPotView.h"
 #import "PaletteService.h"
 #import "Quiz.h"
+#import "ResultsController.h"
 
 @interface PuzzleController () <PaintPotViewDelegate>
 
@@ -40,7 +41,7 @@
         [self setupPaintPots:flagName];
     }
     else {
-        [self.navigationController popToRootViewControllerAnimated:TRUE];
+        [self showResults];
     }
 }
 
@@ -56,6 +57,15 @@
     }
     
     [self nextFlag];
+}
+
+- (void)showResults
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+    ResultsController *results = [storyboard instantiateViewControllerWithIdentifier:@"ResultsController"];
+    results.quiz = self.quiz;
+    
+    [self.navigationController pushViewController:results animated:YES];
 }
 
 - (void)setupPaintPots:(NSString *)flagName

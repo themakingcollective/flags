@@ -15,12 +15,13 @@
 @property (nonatomic, assign) NSInteger rounds;
 @property (nonatomic, strong) NSArray *chosenElements;
 @property (nonatomic, assign) NSInteger currentRound;
-@property (nonatomic, assign) NSInteger correctCount;
-@property (nonatomic, assign) NSInteger incorrectCount;
 
 @end
 
 @implementation Quiz
+
+@synthesize correctCount=_correctCount;
+@synthesize incorrectCount=_incorrectCount;
 
 - (id)initWithArray:(NSArray *)array andRounds:(NSInteger)rounds
 {

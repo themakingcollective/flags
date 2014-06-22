@@ -196,6 +196,35 @@
             </objects>
             <point key="canvasLocation" x="1291" y="-947"/>
         </scene>
+        <!--Results Controller-->
+        <scene sceneID="MNb-nU-Gwh">
+            <objects>
+                <viewController storyboardIdentifier="ResultsController" id="sf6-OT-CDf" customClass="ResultsController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hn6-ek-U23"/>
+                        <viewControllerLayoutGuide type="bottom" id="EzU-k9-u2H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gs6-vV-6St">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJN-oQ-9LH">
+                                <rect key="frame" x="31" y="273" width="269" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultsLabel" destination="wJN-oQ-9LH" id="mRv-Hd-8k8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GT3-TV-fS8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1747" y="-947"/>
+        </scene>
         <!--View Controller - puzzles-->
         <scene sceneID="uQL-1p-G8R">
             <objects>

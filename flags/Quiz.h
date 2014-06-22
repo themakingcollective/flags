@@ -10,6 +10,9 @@
 
 @interface Quiz : NSObject
 
+@property (nonatomic, assign) NSInteger correctCount;
+@property (nonatomic, assign) NSInteger incorrectCount;
+
 - (id)initWithArray:(NSArray *)array andRounds:(NSInteger)rounds;
 - (id)currentElement;
 - (void)correct;
