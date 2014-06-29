@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Flag.h"
 
 @interface LayeredView : UIView
 
-- (void)setFlag:(NSString *)flagName;
+- (void)setFlag:(Flag *)flag;
 - (void)setPaintColor:(UIColor *)color;
 - (BOOL)isCorrect;
 

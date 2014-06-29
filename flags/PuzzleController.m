@@ -12,7 +12,7 @@
 #import "PaletteService.h"
 #import "Quiz.h"
 #import "ResultsController.h"
-#import "Utils.h"
+#import "Flag.h"
 
 @interface PuzzleController () <PaintPotViewDelegate>
 
@@ -31,7 +31,7 @@
     [super viewDidLoad];
     
     self.layeredView.backgroundColor = [UIColor clearColor];
-    self.quiz = [[Quiz alloc] initWithArray:[Utils puzzleFlags] andRounds:8];
+    self.quiz = [[Quiz alloc] initWithArray:[Flag all] andRounds:8];
     
     [self nextFlag:nil];
 }
@@ -41,14 +41,13 @@
     [self setUserInteraction:YES];
     [self.layeredView setPaintColor:nil];
     
-    NSString *flagName = [self.quiz currentElement];
-    NSLog(@"displaying %@", flagName);
+    Flag *flag = [self.quiz currentElement];
     
-    if (flagName) {
-        [self.nameLabel setText:flagName];
+    if (flag) {
+        [self.nameLabel setText:[flag name]];
         [self.feedbackLabel setText:@""];
-        [self.layeredView setFlag:flagName];
-        [self setupPaintPots:flagName];
+        [self.layeredView setFlag:flag];
+        [self setupPaintPots:flag];
         [self touchFirstPaintPot];
     }
     else {
@@ -80,13 +79,13 @@
     [self.navigationController pushViewController:results animated:YES];
 }
 
-- (void)setupPaintPots:(NSString *)flagName
+- (void)setupPaintPots:(Flag *)flag
 {
     self.paintPots = [self paintPotViews];
-    NSArray *colors = [PaletteService shuffledColors:flagName];
+    NSArray *colors = [PaletteService shuffledColors:flag];
     
     if ([self.paintPots count] != [colors count]) {
-        [NSException raise:@"Counts do not match" format:@"For flag %@", flagName];
+        [NSException raise:@"Counts do not match" format:@"For flag %@", [flag name]];
     }
     
     for (NSInteger i = 0; i < [self.paintPots count]; i++) {

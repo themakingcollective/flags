@@ -11,63 +11,16 @@
 
 @implementation PaletteService
 
-+ (NSArray *)shuffledColors:(NSString *)flagName
++ (NSArray *)shuffledColors:(Flag *)flag
 {
-    NSMutableArray *correct = [self correctColors:flagName];
-    NSMutableArray *incorrect = [self incorrectColors:flagName];
+    NSMutableArray *colors = [[NSMutableArray alloc] init];
     
-    NSArray *colors = [correct arrayByAddingObjectsFromArray:incorrect];
-
-    colors = [Utils unique:colors];
-    colors = [Utils shuffle:colors];
+    colors = (NSMutableArray *)[colors arrayByAddingObjectsFromArray:[flag correctColors]];
+    colors = (NSMutableArray *)[colors arrayByAddingObjectsFromArray:[flag incorrectColors]];
+    colors = (NSMutableArray *)[Utils unique:colors];
+    colors = (NSMutableArray *)[Utils shuffle:colors];
     
     return colors;
-}
-
-+ (NSMutableArray *)correctColors:(NSString *)flagName
-{
-    NSArray *paths = [Utils pathsFor:flagName];
-    NSMutableArray *array = [[NSMutableArray alloc] init];
-    
-    // TODO: deal with duplicate colors for regions
-    for (NSString *path in paths) {
-        UIColor *color = [self colorFromPath:path];
-        if (color) {
-            [array addObject:color];
-        }
-    }
-    
-    return array;
-}
-
-+ (UIColor *)colorFromPath:(NSString *)path
-{
-    NSString *name = [path lastPathComponent];
-    name = [name stringByDeletingPathExtension];
-    name = [[name componentsSeparatedByString:@"-"] lastObject];
-    
-    return [Utils colorWithHexString:name];
-}
-
-+ (NSMutableArray *)incorrectColors:(NSString *)flagName
-{
-    NSDictionary *metadata = [self metadata:flagName];
-    NSArray *incorrectColors = [metadata objectForKey:@"incorrect_colors"];
-    NSMutableArray *array = [[NSMutableArray alloc] init];
-    
-    for (NSString *hex in incorrectColors) {
-        [array addObject:[Utils colorWithHexString:hex]];
-    }
-    
-    return array;
-}
-
-+ (NSDictionary *)metadata:(NSString *)flagName
-{
-    NSString *directory = [NSString stringWithFormat:@"Puzzles/%@", flagName];
-    NSString *filename = [[NSBundle mainBundle] pathForResource:@"metadata" ofType:@"json" inDirectory:directory];
-    NSData *json = [NSData dataWithContentsOfFile:filename options:NSDataReadingMappedIfSafe error:nil];
-    return [NSJSONSerialization JSONObjectWithData:json options:NSJSONReadingMutableContainers error:nil];
 }
 
 

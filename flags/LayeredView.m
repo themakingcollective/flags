@@ -20,11 +20,11 @@
 
 @synthesize paintColor=_paintColor;
 
-- (void)setFlag:(NSString *)flagName
+- (void)setFlag:(Flag *)flag
 {
     [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
-    NSArray *layerViews = [self layerViewsFor:flagName];
+    NSArray *layerViews = [self layerViewsFor:flag];
     
     for (LayerView *view in layerViews) {
         [self addSubview:view];
@@ -45,11 +45,11 @@
     return YES;
 }
 
-- (NSArray *)layerViewsFor:(NSString *)flagName
+- (NSArray *)layerViewsFor:(Flag *)flag
 {
     NSMutableArray *layerViews = [[NSMutableArray alloc] init];
     
-    for (NSString *path in [Utils pathsFor:flagName]) {
+    for (NSString *path in [flag imagePaths]) {
         LayerView *layerView = [[LayerView alloc] initWithPath:path];
         
         [layerView sizeToFit];

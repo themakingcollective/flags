@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Flag.h"
 
 @interface PaletteService : NSObject
 
-+ (NSArray *)shuffledColors:(NSString *)flagName;
++ (NSArray *)shuffledColors:(Flag *)flag;
 
 @end
