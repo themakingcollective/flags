@@ -14,7 +14,8 @@
 
 + (NSArray *)all;
 - (NSDictionary *)metadata;
-- (NSArray *)imagePaths;
+- (NSArray *)layeredImagePaths;
 - (NSArray *)shuffledColors;
+- (UIImage *)image;
 
 @end

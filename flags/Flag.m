@@ -42,11 +42,20 @@ static NSArray *allCache;
     return self.metadataCache;
 }
 
-- (NSArray *)imagePaths
+- (NSArray *)layeredImagePaths
 {
     if (!self.imagePathsCache) {
         NSString *directoryName = [NSString stringWithFormat:@"Puzzles/%@", self.name];
-        self.imagePathsCache = [[NSBundle mainBundle] pathsForResourcesOfType:@"png" inDirectory:directoryName];
+        NSArray *paths = [[NSBundle mainBundle] pathsForResourcesOfType:@"png" inDirectory:directoryName];
+        NSMutableArray *layerPaths = [NSMutableArray arrayWithArray:paths];
+
+        [layerPaths enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(NSString *s, NSUInteger index, BOOL *stop) {
+            if ([s rangeOfString:@"original"].location != NSNotFound) {
+                [layerPaths removeObjectAtIndex:index];
+            }
+        }];
+        
+        self.imagePathsCache = [NSArray arrayWithArray:layerPaths];
     }
 
     return self.imagePathsCache;
@@ -66,7 +75,7 @@ static NSArray *allCache;
 
 - (NSArray *)correctColors
 {
-    NSArray *paths = [self imagePaths];
+    NSArray *paths = [self layeredImagePaths];
     NSMutableArray *array = [[NSMutableArray alloc] init];
     
     for (NSString *path in paths) {
@@ -113,6 +122,12 @@ static NSArray *allCache;
     }
     
     return allCache;
+}
+
+- (UIImage *)image
+{
+    NSString *filename = [NSString stringWithFormat:@"%@/%@/original.png", [self.class directoryName], self.name];
+    return [UIImage imageWithContentsOfFile:filename];
 }
 
 + (NSArray *)flagNames

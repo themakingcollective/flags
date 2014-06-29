@@ -166,6 +166,7 @@
 			children = (
 				8378484F18DDAF8E00C5AC61 /* AppDelegate.h */,
 				8378485018DDAF8E00C5AC61 /* AppDelegate.m */,
+				8378485218DDAF8E00C5AC61 /* Main.storyboard */,
 				832D816F1956CD1F000600DA /* Models */,
 				83EF84A518DDF57E00486186 /* Views */,
 				83D9548618DDEF3B00783A27 /* Controllers */,
@@ -254,7 +255,6 @@
 		83EF84A518DDF57E00486186 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8378485218DDAF8E00C5AC61 /* Main.storyboard */,
 				F94D93491930AEC2008CDB1A /* LayeredView.h */,
 				F94D934A1930AEC2008CDB1A /* LayeredView.m */,
 				83199A911943487D00C70AAF /* LayerView.h */,

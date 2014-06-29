@@ -49,7 +49,7 @@
 {
     NSMutableArray *layerViews = [[NSMutableArray alloc] init];
     
-    for (NSString *path in [flag imagePaths]) {
+    for (NSString *path in [flag layeredImagePaths]) {
         LayerView *layerView = [[LayerView alloc] initWithPath:path];
         
         [layerView sizeToFit];
