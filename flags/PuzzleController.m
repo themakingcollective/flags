@@ -18,6 +18,7 @@
 
 @property (nonatomic, weak) IBOutlet LayeredView *layeredView;
 @property (nonatomic, strong) Quiz *quiz;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 
 @end
 
@@ -28,7 +29,7 @@
     [super viewDidLoad];
     
     self.layeredView.backgroundColor = [UIColor clearColor];
-    self.quiz = [[Quiz alloc] initWithArray:[Utils puzzleFlags] andRounds:1];
+    self.quiz = [[Quiz alloc] initWithArray:[Utils puzzleFlags] andRounds:2];
     
     [self nextFlag];
 }
@@ -38,6 +39,7 @@
     NSString *flagName = [self.quiz currentElement];
     
     if (flagName) {
+        [self.nameLabel setText:flagName];
         [self.layeredView setFlag:flagName];
         [self setupPaintPots:flagName];
     }
