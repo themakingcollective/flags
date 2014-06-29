@@ -7,6 +7,7 @@
 //
 
 #import "TableController.h"
+#import "Flag.h"
 
 @interface TableController ()
 
@@ -36,15 +37,16 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return [[Flag all] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    
-    cell.imageView.image = [UIImage imageNamed:@"Afghanistan"];
-    cell.textLabel.text = @"Testing";
+    Flag *flag = [[Flag all] objectAtIndex:indexPath.row];
+
+    cell.textLabel.text = flag.name;
+    cell.imageView.image = flag.image;
     
     return cell;
 }

@@ -16,7 +16,6 @@
 		8321C70F18DDDEE400970E8F /* Puzzles-Hard-Explain.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70D18DDDEE400970E8F /* Puzzles-Hard-Explain.png */; };
 		8321C71218DDDEF100970E8F /* Play-Colours-Puzzle-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C71018DDDEF100970E8F /* Play-Colours-Puzzle-Button.png */; };
 		8321C71318DDDEF100970E8F /* Play-Colours+Shapes-Puzzle-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C71118DDDEF100970E8F /* Play-Colours+Shapes-Puzzle-Button.png */; };
-		8321C71618DDE97600970E8F /* Afghanistan.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C71518DDE97600970E8F /* Afghanistan.png */; };
 		832D81721956CD30000600DA /* Quiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 832D81711956CD30000600DA /* Quiz.m */; };
 		832D81751956D6E6000600DA /* ResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 832D81741956D6E6000600DA /* ResultsController.m */; };
 		8378484118DDAF8E00C5AC61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378484018DDAF8E00C5AC61 /* Foundation.framework */; };
@@ -57,7 +56,6 @@
 		8321C70D18DDDEE400970E8F /* Puzzles-Hard-Explain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Puzzles-Hard-Explain.png"; sourceTree = "<group>"; };
 		8321C71018DDDEF100970E8F /* Play-Colours-Puzzle-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play-Colours-Puzzle-Button.png"; sourceTree = "<group>"; };
 		8321C71118DDDEF100970E8F /* Play-Colours+Shapes-Puzzle-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play-Colours+Shapes-Puzzle-Button.png"; sourceTree = "<group>"; };
-		8321C71518DDE97600970E8F /* Afghanistan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Afghanistan.png; sourceTree = "<group>"; };
 		832D81701956CD30000600DA /* Quiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quiz.h; sourceTree = "<group>"; };
 		832D81711956CD30000600DA /* Quiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quiz.m; sourceTree = "<group>"; };
 		832D81731956D6E6000600DA /* ResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsController.h; sourceTree = "<group>"; };
@@ -113,14 +111,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8321C71418DDE96F00970E8F /* Flags */ = {
-			isa = PBXGroup;
-			children = (
-				8321C71518DDE97600970E8F /* Afghanistan.png */,
-			);
-			name = Flags;
-			sourceTree = "<group>";
-		};
 		832D816F1956CD1F000600DA /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,7 +191,6 @@
 		8378487E18DDBCC500C5AC61 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				8321C71418DDE96F00970E8F /* Flags */,
 				8321C71018DDDEF100970E8F /* Play-Colours-Puzzle-Button.png */,
 				8321C71118DDDEF100970E8F /* Play-Colours+Shapes-Puzzle-Button.png */,
 				8321C70C18DDDEE400970E8F /* Puzzles-Easy-Explain.png */,
@@ -333,7 +322,6 @@
 			files = (
 				8378485918DDAF8E00C5AC61 /* Images.xcassets in Resources */,
 				8378488A18DDBCD500C5AC61 /* SIL Open Font License.txt in Resources */,
-				8321C71618DDE97600970E8F /* Afghanistan.png in Resources */,
 				8378488818DDBCD500C5AC61 /* BPreplay-Italic.ttf in Resources */,
 				8321C71218DDDEF100970E8F /* Play-Colours-Puzzle-Button.png in Resources */,
 				8378484B18DDAF8E00C5AC61 /* InfoPlist.strings in Resources */,

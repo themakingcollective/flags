@@ -368,24 +368,20 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexTrackingBackgroundColor" red="0.88235300780000003" green="0.92941182850000004" blue="0.87843143940000001" alpha="1" colorSpace="deviceRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="cell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="CWX-Fy-ftI" imageView="ucV-QN-fmc" rowHeight="80" style="IBUITableViewCellStyleDefault" id="BT6-do-W9m">
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="cell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="CWX-Fy-ftI" rowHeight="80" style="IBUITableViewCellStyleDefault" id="BT6-do-W9m">
                                 <rect key="frame" x="0.0" y="22" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BT6-do-W9m" id="cKw-0q-fn4">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Afghanistan" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CWX-Fy-ftI">
-                                            <rect key="frame" x="144" y="0.0" width="161" height="79"/>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="flagName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CWX-Fy-ftI">
+                                            <rect key="frame" x="15" y="0.0" width="290" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Afghanistan.png" id="ucV-QN-fmc">
-                                            <rect key="frame" x="15" y="0.0" width="114" height="79"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.88235300780000003" green="0.92941182850000004" blue="0.87843143940000001" alpha="1" colorSpace="deviceRGB"/>
@@ -425,7 +421,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Afghanistan.png" width="248" height="172"/>
         <image name="Play-Colours+Shapes-Puzzle-Button.png" width="1189" height="179"/>
         <image name="Play-Colours-Puzzle-Button.png" width="1188" height="180"/>
         <image name="Puzzles-Easy-Button.png" width="1364" height="237"/>
