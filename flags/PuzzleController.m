@@ -28,7 +28,7 @@
     [super viewDidLoad];
     
     self.layeredView.backgroundColor = [UIColor clearColor];
-    self.quiz = [[Quiz alloc] initWithArray:[Utils puzzleFlags] andRounds:5];
+    self.quiz = [[Quiz alloc] initWithArray:[Utils puzzleFlags] andRounds:1];
     
     [self nextFlag];
 }

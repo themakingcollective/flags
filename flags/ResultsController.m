@@ -20,11 +20,12 @@
 
 - (void)viewDidLoad
 {
-    self.resultsLabel.text = [NSString stringWithFormat:@"Correct: %d, Incorrect: %d", self.quiz.correctCount, self.quiz.incorrectCount];
+    NSInteger total = self.quiz.correctCount + self.quiz.incorrectCount;
+    self.resultsLabel.text = [NSString stringWithFormat:@"%d out of %d", self.quiz.correctCount, total];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    [self.navigationController setNavigationBarHidden:YES animated:animated];
+    [self.navigationItem setHidesBackButton:YES animated:animated];
     [super viewWillAppear:animated];
 }
 
