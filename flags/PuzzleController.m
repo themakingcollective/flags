@@ -12,6 +12,7 @@
 #import "PaletteService.h"
 #import "Quiz.h"
 #import "ResultsController.h"
+#import "Utils.h"
 
 @interface PuzzleController () <PaintPotViewDelegate>
 
@@ -27,7 +28,7 @@
     [super viewDidLoad];
     
     self.layeredView.backgroundColor = [UIColor clearColor];
-    self.quiz = [[Quiz alloc] initWithArray:@[@"France", @"Barbados"] andRounds:2];
+    self.quiz = [[Quiz alloc] initWithArray:[Utils puzzleFlags] andRounds:5];
     
     [self nextFlag];
 }

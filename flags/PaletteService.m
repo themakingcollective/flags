@@ -52,7 +52,7 @@
 + (NSMutableArray *)incorrectColors:(NSString *)flagName
 {
     NSDictionary *metadata = [self metadata:flagName];
-    NSArray *incorrectColors = [metadata objectForKey:@"incorrectColors"];
+    NSArray *incorrectColors = [metadata objectForKey:@"incorrect_colors"];
     NSMutableArray *array = [[NSMutableArray alloc] init];
     
     for (NSString *hex in incorrectColors) {
@@ -64,7 +64,8 @@
 
 + (NSDictionary *)metadata:(NSString *)flagName
 {
-    NSString *filename = [[NSBundle mainBundle] pathForResource:@"metadata" ofType:@"json" inDirectory:flagName];
+    NSString *directory = [NSString stringWithFormat:@"Puzzles/%@", flagName];
+    NSString *filename = [[NSBundle mainBundle] pathForResource:@"metadata" ofType:@"json" inDirectory:directory];
     NSData *json = [NSData dataWithContentsOfFile:filename options:NSDataReadingMappedIfSafe error:nil];
     return [NSJSONSerialization JSONObjectWithData:json options:NSJSONReadingMutableContainers error:nil];
 }

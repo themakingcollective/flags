@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		83198FC81955EA4400F3665E /* PaintPotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83198FC71955EA4400F3665E /* PaintPotView.m */; };
 		83198FD41955FE6400F3665E /* PaletteService.m in Sources */ = {isa = PBXBuildFile; fileRef = 83198FD31955FE6400F3665E /* PaletteService.m */; };
-		83199A8C194331CE00C70AAF /* France in Resources */ = {isa = PBXBuildFile; fileRef = 83199A8B194331CE00C70AAF /* France */; };
 		83199A931943487D00C70AAF /* LayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83199A921943487D00C70AAF /* LayerView.m */; };
 		8321C70818DDDD7300970E8F /* Quiz-Easy-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70618DDDD7300970E8F /* Quiz-Easy-Button.png */; };
 		8321C70918DDDD7300970E8F /* Quiz-Hard-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70718DDDD7300970E8F /* Quiz-Hard-Button.png */; };
@@ -19,7 +18,6 @@
 		8321C71218DDDEF100970E8F /* Play-Colours-Puzzle-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C71018DDDEF100970E8F /* Play-Colours-Puzzle-Button.png */; };
 		8321C71318DDDEF100970E8F /* Play-Colours+Shapes-Puzzle-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C71118DDDEF100970E8F /* Play-Colours+Shapes-Puzzle-Button.png */; };
 		8321C71618DDE97600970E8F /* Afghanistan.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C71518DDE97600970E8F /* Afghanistan.png */; };
-		832D816E1956CB91000600DA /* metadata.json in Resources */ = {isa = PBXBuildFile; fileRef = 832D816D1956CB91000600DA /* metadata.json */; };
 		832D81721956CD30000600DA /* Quiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 832D81711956CD30000600DA /* Quiz.m */; };
 		832D81751956D6E6000600DA /* ResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 832D81741956D6E6000600DA /* ResultsController.m */; };
 		8378484118DDAF8E00C5AC61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378484018DDAF8E00C5AC61 /* Foundation.framework */; };
@@ -41,7 +39,7 @@
 		8378488C18DDCEB600C5AC61 /* Puzzles-Easy-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8378488B18DDCEB600C5AC61 /* Puzzles-Easy-Button.png */; };
 		8378488E18DDCF5900C5AC61 /* Puzzles-Hard-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8378488D18DDCF5900C5AC61 /* Puzzles-Hard-Button.png */; };
 		837ADE7B18E2E32B00455FF7 /* TableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837ADE7A18E2E32B00455FF7 /* TableController.m */; };
-		83D971361960274900350AF0 /* Barbados in Resources */ = {isa = PBXBuildFile; fileRef = 83D971351960274900350AF0 /* Barbados */; };
+		83D971381960379600350AF0 /* Puzzles in Resources */ = {isa = PBXBuildFile; fileRef = 83D971371960379600350AF0 /* Puzzles */; };
 		F94D93481930A4FC008CDB1A /* PuzzleController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94D93471930A4FC008CDB1A /* PuzzleController.m */; };
 		F94D934B1930AEC2008CDB1A /* LayeredView.m in Sources */ = {isa = PBXBuildFile; fileRef = F94D934A1930AEC2008CDB1A /* LayeredView.m */; };
 		F94D93641930EA33008CDB1A /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = F94D93631930EA33008CDB1A /* Utils.m */; };
@@ -52,7 +50,6 @@
 		83198FC71955EA4400F3665E /* PaintPotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaintPotView.m; sourceTree = "<group>"; };
 		83198FD21955FE6400F3665E /* PaletteService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaletteService.h; sourceTree = "<group>"; };
 		83198FD31955FE6400F3665E /* PaletteService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaletteService.m; sourceTree = "<group>"; };
-		83199A8B194331CE00C70AAF /* France */ = {isa = PBXFileReference; lastKnownFileType = folder; path = France; sourceTree = "<group>"; };
 		83199A911943487D00C70AAF /* LayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerView.h; sourceTree = "<group>"; };
 		83199A921943487D00C70AAF /* LayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerView.m; sourceTree = "<group>"; };
 		8321C70618DDDD7300970E8F /* Quiz-Easy-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Easy-Button.png"; sourceTree = "<group>"; };
@@ -63,7 +60,6 @@
 		8321C71018DDDEF100970E8F /* Play-Colours-Puzzle-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play-Colours-Puzzle-Button.png"; sourceTree = "<group>"; };
 		8321C71118DDDEF100970E8F /* Play-Colours+Shapes-Puzzle-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play-Colours+Shapes-Puzzle-Button.png"; sourceTree = "<group>"; };
 		8321C71518DDE97600970E8F /* Afghanistan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Afghanistan.png; sourceTree = "<group>"; };
-		832D816D1956CB91000600DA /* metadata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = metadata.json; path = flags/Barbados/metadata.json; sourceTree = "<group>"; };
 		832D81701956CD30000600DA /* Quiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quiz.h; sourceTree = "<group>"; };
 		832D81711956CD30000600DA /* Quiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quiz.m; sourceTree = "<group>"; };
 		832D81731956D6E6000600DA /* ResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsController.h; sourceTree = "<group>"; };
@@ -94,7 +90,7 @@
 		8378488D18DDCF5900C5AC61 /* Puzzles-Hard-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Puzzles-Hard-Button.png"; sourceTree = "<group>"; };
 		837ADE7918E2E32B00455FF7 /* TableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableController.h; sourceTree = "<group>"; };
 		837ADE7A18E2E32B00455FF7 /* TableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableController.m; sourceTree = "<group>"; };
-		83D971351960274900350AF0 /* Barbados */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Barbados; sourceTree = "<group>"; };
+		83D971371960379600350AF0 /* Puzzles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Puzzles; sourceTree = "<group>"; };
 		F94D93461930A4FC008CDB1A /* PuzzleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzleController.h; sourceTree = "<group>"; };
 		F94D93471930A4FC008CDB1A /* PuzzleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzleController.m; sourceTree = "<group>"; };
 		F94D93491930AEC2008CDB1A /* LayeredView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayeredView.h; sourceTree = "<group>"; };
@@ -146,7 +142,6 @@
 		8378483418DDAF8E00C5AC61 = {
 			isa = PBXGroup;
 			children = (
-				832D816D1956CB91000600DA /* metadata.json */,
 				8378484618DDAF8E00C5AC61 /* flags */,
 				8378483F18DDAF8E00C5AC61 /* Frameworks */,
 				8378483E18DDAF8E00C5AC61 /* Products */,
@@ -203,7 +198,7 @@
 		8378487518DDB1B100C5AC61 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				F94D934C1930B235008CDB1A /* Puzzles */,
+				83D971371960379600350AF0 /* Puzzles */,
 				8378487F18DDBCCE00C5AC61 /* Fonts */,
 				8378487E18DDBCC500C5AC61 /* Images */,
 			);
@@ -276,15 +271,6 @@
 				83198FC71955EA4400F3665E /* PaintPotView.m */,
 			);
 			name = Views;
-			sourceTree = "<group>";
-		};
-		F94D934C1930B235008CDB1A /* Puzzles */ = {
-			isa = PBXGroup;
-			children = (
-				83D971351960274900350AF0 /* Barbados */,
-				83199A8B194331CE00C70AAF /* France */,
-			);
-			name = Puzzles;
 			sourceTree = "<group>";
 		};
 		F94D93611930EA14008CDB1A /* Utils */ = {
@@ -363,17 +349,15 @@
 				8378487D18DDB8DC00C5AC61 /* Puzzles-Menu-Button.png in Resources */,
 				8321C70E18DDDEE400970E8F /* Puzzles-Easy-Explain.png in Resources */,
 				8378485418DDAF8E00C5AC61 /* Main.storyboard in Resources */,
+				83D971381960379600350AF0 /* Puzzles in Resources */,
 				8378488918DDBCD500C5AC61 /* BPreplay.ttf in Resources */,
 				8378488618DDBCD500C5AC61 /* BPreplay-Bold.ttf in Resources */,
 				8321C70B18DDDD7A00970E8F /* Quiz-View-Button.png in Resources */,
 				8378488E18DDCF5900C5AC61 /* Puzzles-Hard-Button.png in Resources */,
 				8378488718DDBCD500C5AC61 /* BPreplay-BoldItalic.ttf in Resources */,
-				832D816E1956CB91000600DA /* metadata.json in Resources */,
 				8321C70818DDDD7300970E8F /* Quiz-Easy-Button.png in Resources */,
-				83D971361960274900350AF0 /* Barbados in Resources */,
 				8321C70918DDDD7300970E8F /* Quiz-Hard-Button.png in Resources */,
 				8321C70F18DDDEE400970E8F /* Puzzles-Hard-Explain.png in Resources */,
-				83199A8C194331CE00C70AAF /* France in Resources */,
 				8378487B18DDB69B00C5AC61 /* Quiz-Menu-Button.png in Resources */,
 				8378488C18DDCEB600C5AC61 /* Puzzles-Easy-Button.png in Resources */,
 			);

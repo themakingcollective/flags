@@ -12,7 +12,16 @@
 
 + (NSArray *)pathsFor:(NSString *)flagName
 {
-    return [[NSBundle mainBundle] pathsForResourcesOfType:@"png" inDirectory:flagName];
+    NSString *directory = [NSString stringWithFormat:@"Puzzles/%@", flagName];
+    return [[NSBundle mainBundle] pathsForResourcesOfType:@"png" inDirectory:directory];
+}
+
++ (NSArray *)puzzleFlags
+{
+    NSString *bundlePathName = [[NSBundle mainBundle] bundlePath];
+    NSString *puzzlesPath = [bundlePathName stringByAppendingPathComponent:@"Puzzles"];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    return [fileManager contentsOfDirectoryAtPath:puzzlesPath error:nil];
 }
 
 + (NSArray *)unique:(NSArray *)array
