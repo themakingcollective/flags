@@ -75,7 +75,7 @@
 		8378485318DDAF8E00C5AC61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8378485518DDAF8E00C5AC61 /* MenuController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuController.h; sourceTree = "<group>"; };
 		8378485618DDAF8E00C5AC61 /* MenuController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuController.m; sourceTree = "<group>"; };
-		8378485818DDAF8E00C5AC61 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8378485818DDAF8E00C5AC61 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = flags/Images.xcassets; sourceTree = "<group>"; };
 		8378485F18DDAF8E00C5AC61 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8378487A18DDB69B00C5AC61 /* Quiz-Menu-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Menu-Button.png"; sourceTree = "<group>"; };
 		8378487C18DDB8DC00C5AC61 /* Puzzles-Menu-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Puzzles-Menu-Button.png"; sourceTree = "<group>"; };
@@ -136,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				8378484618DDAF8E00C5AC61 /* flags */,
+				8378485818DDAF8E00C5AC61 /* Images.xcassets */,
 				8378483F18DDAF8E00C5AC61 /* Frameworks */,
 				8378483E18DDAF8E00C5AC61 /* Products */,
 			);
@@ -163,14 +164,13 @@
 		8378484618DDAF8E00C5AC61 /* flags */ = {
 			isa = PBXGroup;
 			children = (
-				832D816F1956CD1F000600DA /* Models */,
-				F94D93611930EA14008CDB1A /* Utils */,
-				83EF84A518DDF57E00486186 /* Views */,
-				83D9548618DDEF3B00783A27 /* Controllers */,
 				8378484F18DDAF8E00C5AC61 /* AppDelegate.h */,
 				8378485018DDAF8E00C5AC61 /* AppDelegate.m */,
+				832D816F1956CD1F000600DA /* Models */,
+				83EF84A518DDF57E00486186 /* Views */,
+				83D9548618DDEF3B00783A27 /* Controllers */,
+				F94D93611930EA14008CDB1A /* Utils */,
 				8378487518DDB1B100C5AC61 /* Assets */,
-				8378485818DDAF8E00C5AC61 /* Images.xcassets */,
 				8378484718DDAF8E00C5AC61 /* Supporting Files */,
 			);
 			path = flags;
