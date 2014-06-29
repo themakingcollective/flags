@@ -108,9 +108,14 @@
     return [NSArray arrayWithArray:array];
 }
 
-- (void)touchedPaintPot:(UIColor *)color
+- (void)touchedPaintPot:(PaintPotView *)paintPot
 {
-    [self.layeredView setPaintColor:color];
+    [self.layeredView setPaintColor:paintPot.backgroundColor];
+    
+    for (PaintPotView *view in [self paintPotViews]) {
+        [view setHighlighted:NO];
+    }
+    [paintPot setHighlighted:YES];
 }
 
 - (void)setUserInteraction:(BOOL)state

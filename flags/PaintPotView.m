@@ -16,6 +16,18 @@
 
 @synthesize delegate=_delegate;
 
+- (void)setHighlighted:(BOOL)state
+{
+    if (state) {
+        self.layer.borderColor = [UIColor redColor].CGColor;
+        self.layer.borderWidth = 3.0f;
+    }
+    else {
+        self.layer.borderColor = [UIColor clearColor].CGColor;
+        self.layer.borderWidth = 0;
+    }
+}
+
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
     self = [super initWithCoder:aDecoder];
@@ -27,7 +39,7 @@
 
 - (void)onTap
 {
-    [self.delegate touchedPaintPot:[self backgroundColor]];
+    [self.delegate touchedPaintPot:self];
 }
 
 - (UITapGestureRecognizer *)tapGesture

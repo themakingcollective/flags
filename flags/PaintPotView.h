@@ -10,12 +10,14 @@
 
 @protocol PaintPotViewDelegate <NSObject>
 
-- (void)touchedPaintPot:(UIColor *)color;
+- (void)touchedPaintPot:(id)paintPot;
 
 @end
 
 @interface PaintPotView : UIView
 
 @property (weak, nonatomic) id delegate;
+
+- (void)setHighlighted:(BOOL)state;
 
 @end
