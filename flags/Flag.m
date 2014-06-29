@@ -52,6 +52,18 @@ static NSArray *allCache;
     return self.imagePathsCache;
 }
 
+- (NSArray *)shuffledColors
+{
+    NSArray *colors = [[NSMutableArray alloc] init];
+    
+    colors = [colors arrayByAddingObjectsFromArray:[self correctColors]];
+    colors = [colors arrayByAddingObjectsFromArray:[self incorrectColors]];
+    colors = [Utils unique:colors];
+    colors = [Utils shuffle:colors];
+    
+    return colors;
+}
+
 - (NSArray *)correctColors
 {
     NSArray *paths = [self imagePaths];

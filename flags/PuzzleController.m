@@ -9,7 +9,6 @@
 #import "PuzzleController.h"
 #import "LayeredView.h"
 #import "PaintPotView.h"
-#import "PaletteService.h"
 #import "Quiz.h"
 #import "ResultsController.h"
 #import "Flag.h"
@@ -82,7 +81,7 @@
 - (void)setupPaintPots:(Flag *)flag
 {
     self.paintPots = [self paintPotViews];
-    NSArray *colors = [PaletteService shuffledColors:flag];
+    NSArray *colors = [flag shuffledColors];
     
     if ([self.paintPots count] != [colors count]) {
         [NSException raise:@"Counts do not match" format:@"For flag %@", [flag name]];
