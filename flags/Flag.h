@@ -13,5 +13,6 @@
 @property (nonatomic, strong, readonly) NSString *name;
 
 + (NSArray *)all;
+- (NSDictionary *)metadata;
 
 @end

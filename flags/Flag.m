@@ -27,6 +27,13 @@
     return self;
 }
 
+- (NSDictionary *)metadata
+{
+    NSString *filename = [NSString stringWithFormat:@"%@/%@/metadata.json", [self.class directoryName], self.name];
+    NSData *json = [NSData dataWithContentsOfFile:filename options:NSDataReadingMappedIfSafe error:nil];
+    return [NSJSONSerialization JSONObjectWithData:json options:NSJSONReadingMutableContainers error:nil];
+}
+
 + (NSArray *)all
 {
     NSMutableArray *flags = [[NSMutableArray alloc] init];

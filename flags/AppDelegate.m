@@ -23,6 +23,7 @@
      }];
     
     NSArray *flags = [Flag all];
+    Flag *first = (Flag *)[flags firstObject];
     
     
     // Override point for customization after application launch.
