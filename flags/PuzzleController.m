@@ -18,8 +18,9 @@
 
 @property (nonatomic, weak) IBOutlet LayeredView *layeredView;
 @property (nonatomic, strong) Quiz *quiz;
-@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *feedbackLabel;
+@property (nonatomic, weak) IBOutlet UILabel *nameLabel;
+@property (nonatomic, weak) IBOutlet UILabel *feedbackLabel;
+@property (nonatomic, strong) NSArray *paintPots;
 
 @end
 
@@ -47,6 +48,7 @@
         [self.feedbackLabel setText:@""];
         [self.layeredView setFlag:flagName];
         [self setupPaintPots:flagName];
+        [self touchFirstPaintPot];
     }
     else {
         [self showResults];
@@ -79,15 +81,15 @@
 
 - (void)setupPaintPots:(NSString *)flagName
 {
-    NSArray *pots = [self paintPotViews];
+    self.paintPots = [self paintPotViews];
     NSArray *colors = [PaletteService shuffledColors:flagName];
     
-    if ([pots count] != [colors count]) {
+    if ([self.paintPots count] != [colors count]) {
         [NSException raise:@"Counts do not match" format:@"For flag %@", flagName];
     }
     
-    for (NSInteger i = 0; i < [pots count]; i++) {
-        PaintPotView *pot = [pots objectAtIndex:i];
+    for (NSInteger i = 0; i < [self.paintPots count]; i++) {
+        PaintPotView *pot = [self.paintPots objectAtIndex:i];
         UIColor *color = [colors objectAtIndex:i];
         
         [pot setDelegate:self];
@@ -112,10 +114,15 @@
 {
     [self.layeredView setPaintColor:paintPot.backgroundColor];
     
-    for (PaintPotView *view in [self paintPotViews]) {
+    for (PaintPotView *view in self.paintPots) {
         [view setHighlighted:NO];
     }
     [paintPot setHighlighted:YES];
+}
+
+- (void)touchFirstPaintPot
+{
+    [self touchedPaintPot:[self.paintPots firstObject]];
 }
 
 - (void)setUserInteraction:(BOOL)state
