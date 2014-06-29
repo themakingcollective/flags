@@ -19,6 +19,7 @@
 @property (nonatomic, weak) IBOutlet LayeredView *layeredView;
 @property (nonatomic, strong) Quiz *quiz;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *feedbackLabel;
 
 @end
 
@@ -31,15 +32,19 @@
     self.layeredView.backgroundColor = [UIColor clearColor];
     self.quiz = [[Quiz alloc] initWithArray:[Utils puzzleFlags] andRounds:2];
     
-    [self nextFlag];
+    [self nextFlag:nil];
 }
 
-- (void)nextFlag
+- (void)nextFlag:(NSTimer *)timer
 {
+    [self setUserInteraction:YES];
+    [self.layeredView setPaintColor:nil];
+    
     NSString *flagName = [self.quiz currentElement];
     
     if (flagName) {
         [self.nameLabel setText:flagName];
+        [self.feedbackLabel setText:@""];
         [self.layeredView setFlag:flagName];
         [self setupPaintPots:flagName];
     }
@@ -52,14 +57,15 @@
 {
     if ([self.layeredView isCorrect]) {
         [self.quiz correct];
-        NSLog(@"correct");
+        [self.feedbackLabel setText:@"correct"];
     }
     else {
         [self.quiz incorrect];
-        NSLog(@"incorrect");
+        [self.feedbackLabel setText:@"incorrect"];
     }
     
-    [self nextFlag];
+    [self setUserInteraction:NO];
+    [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(nextFlag:) userInfo:nil repeats:NO];
 }
 
 - (void)showResults
@@ -105,6 +111,16 @@
 - (void)touchedPaintPot:(UIColor *)color
 {
     [self.layeredView setPaintColor:color];
+}
+
+- (void)setUserInteraction:(BOOL)state
+{
+    self.view.userInteractionEnabled = state;
+    self.navigationController.view.userInteractionEnabled = state;
+    
+    for (UIView *view in self.view.subviews) {
+        [view setUserInteractionEnabled:state];
+    }
 }
 
 @end
