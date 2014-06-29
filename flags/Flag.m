@@ -7,11 +7,13 @@
 //
 
 #import "Flag.h"
+#import "Utils.h"
 
 @interface Flag ()
 
 @property (nonatomic, strong, readwrite) NSString *name;
 @property (nonatomic, strong) NSDictionary *metadataCache;
+@property (nonatomic, strong) NSArray *imagePathsCache;
 
 @end
 
@@ -38,6 +40,52 @@ static NSArray *allCache;
     }
     
     return self.metadataCache;
+}
+
+- (NSArray *)imagePaths
+{
+    if (!self.imagePathsCache) {
+        NSString *directoryName = [NSString stringWithFormat:@"Puzzles/%@", self.name];
+        self.imagePathsCache = [[NSBundle mainBundle] pathsForResourcesOfType:@"png" inDirectory:directoryName];
+    }
+
+    return self.imagePathsCache;
+}
+
+- (NSArray *)correctColors
+{
+    NSArray *paths = [self imagePaths];
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+    
+    for (NSString *path in paths) {
+        UIColor *color = [self colorFromPath:path];
+        if (color) {
+            [array addObject:color];
+        }
+    }
+    
+    return array;
+}
+
+- (NSArray *)incorrectColors
+{
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+    NSArray *hexes = [[self metadata] objectForKey:@"incorrect_colors"];
+    
+    for (NSString *hex in hexes) {
+        [array addObject:[Utils colorWithHexString:hex]];
+    }
+    
+    return array;
+}
+
+- (UIColor *)colorFromPath:(NSString *)path
+{
+    NSString *name = [path lastPathComponent];
+    name = [name stringByDeletingPathExtension];
+    name = [[name componentsSeparatedByString:@"-"] lastObject];
+    
+    return [Utils colorWithHexString:name];
 }
 
 + (NSArray *)all

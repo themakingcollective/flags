@@ -14,5 +14,8 @@
 
 + (NSArray *)all;
 - (NSDictionary *)metadata;
+- (NSArray *)imagePaths;
+- (NSArray *)correctColors;
+- (NSArray *)incorrectColors;
 
 @end
