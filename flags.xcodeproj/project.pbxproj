@@ -40,6 +40,7 @@
 		8378488E18DDCF5900C5AC61 /* Puzzles-Hard-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8378488D18DDCF5900C5AC61 /* Puzzles-Hard-Button.png */; };
 		837ADE7B18E2E32B00455FF7 /* TableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837ADE7A18E2E32B00455FF7 /* TableController.m */; };
 		83D971381960379600350AF0 /* Puzzles in Resources */ = {isa = PBXBuildFile; fileRef = 83D971371960379600350AF0 /* Puzzles */; };
+		83D9713B1960598200350AF0 /* Flag.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D9713A1960598200350AF0 /* Flag.m */; };
 		F94D93481930A4FC008CDB1A /* PuzzleController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94D93471930A4FC008CDB1A /* PuzzleController.m */; };
 		F94D934B1930AEC2008CDB1A /* LayeredView.m in Sources */ = {isa = PBXBuildFile; fileRef = F94D934A1930AEC2008CDB1A /* LayeredView.m */; };
 		F94D93641930EA33008CDB1A /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = F94D93631930EA33008CDB1A /* Utils.m */; };
@@ -91,6 +92,8 @@
 		837ADE7918E2E32B00455FF7 /* TableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableController.h; sourceTree = "<group>"; };
 		837ADE7A18E2E32B00455FF7 /* TableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableController.m; sourceTree = "<group>"; };
 		83D971371960379600350AF0 /* Puzzles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Puzzles; sourceTree = "<group>"; };
+		83D971391960598200350AF0 /* Flag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flag.h; sourceTree = "<group>"; };
+		83D9713A1960598200350AF0 /* Flag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flag.m; sourceTree = "<group>"; };
 		F94D93461930A4FC008CDB1A /* PuzzleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzleController.h; sourceTree = "<group>"; };
 		F94D93471930A4FC008CDB1A /* PuzzleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzleController.m; sourceTree = "<group>"; };
 		F94D93491930AEC2008CDB1A /* LayeredView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayeredView.h; sourceTree = "<group>"; };
@@ -135,6 +138,8 @@
 			children = (
 				832D81701956CD30000600DA /* Quiz.h */,
 				832D81711956CD30000600DA /* Quiz.m */,
+				83D971391960598200350AF0 /* Flag.h */,
+				83D9713A1960598200350AF0 /* Flag.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -175,9 +180,9 @@
 				F94D93611930EA14008CDB1A /* Utils */,
 				83EF84A518DDF57E00486186 /* Views */,
 				83D9548618DDEF3B00783A27 /* Controllers */,
-				8378487518DDB1B100C5AC61 /* Assets */,
 				8378484F18DDAF8E00C5AC61 /* AppDelegate.h */,
 				8378485018DDAF8E00C5AC61 /* AppDelegate.m */,
+				8378487518DDB1B100C5AC61 /* Assets */,
 				8378485818DDAF8E00C5AC61 /* Images.xcassets */,
 				8378484718DDAF8E00C5AC61 /* Supporting Files */,
 			);
@@ -370,6 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83D9713B1960598200350AF0 /* Flag.m in Sources */,
 				83198FC81955EA4400F3665E /* PaintPotView.m in Sources */,
 				837ADE7B18E2E32B00455FF7 /* TableController.m in Sources */,
 				8378485718DDAF8E00C5AC61 /* MenuController.m in Sources */,

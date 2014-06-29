@@ -31,7 +31,7 @@
     [super viewDidLoad];
     
     self.layeredView.backgroundColor = [UIColor clearColor];
-    self.quiz = [[Quiz alloc] initWithArray:[Utils puzzleFlags] andRounds:2];
+    self.quiz = [[Quiz alloc] initWithArray:[Utils puzzleFlags] andRounds:8];
     
     [self nextFlag:nil];
 }
@@ -42,6 +42,7 @@
     [self.layeredView setPaintColor:nil];
     
     NSString *flagName = [self.quiz currentElement];
+    NSLog(@"displaying %@", flagName);
     
     if (flagName) {
         [self.nameLabel setText:flagName];

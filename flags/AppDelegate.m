@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Flag.h"
 
 @implementation AppDelegate
 
@@ -20,6 +21,9 @@
        NSForegroundColorAttributeName: [UIColor whiteColor],
        NSFontAttributeName: [UIFont fontWithName:@"BPreplay" size:24]
      }];
+    
+    NSArray *flags = [Flag all];
+    
     
     // Override point for customization after application launch.
     return YES;
