@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "Quiz.h"
+#import "BaseViewController.h"
 
-@interface ResultsController : UIViewController
+@interface ResultsController : BaseViewController
 
 @property (nonatomic, strong) Quiz *quiz;
 

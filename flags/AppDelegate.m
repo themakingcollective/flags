@@ -16,7 +16,12 @@
     UIFont *font = [UIFont fontWithName:@"BPreplay" size:17];
     [[UILabel appearance] setFont:font];
     
-    // Override point for customization after application launch.
+    [[UINavigationBar appearance] setTitleTextAttributes:
+     @{
+       NSForegroundColorAttributeName: [UIColor whiteColor],
+       NSFontAttributeName: [UIFont fontWithName:@"BPreplay" size:24]
+     }];
+    
     return YES;
 }
 							

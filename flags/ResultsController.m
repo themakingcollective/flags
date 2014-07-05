@@ -21,6 +21,8 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
+    
     NSInteger total = self.quiz.correctCount + self.quiz.incorrectCount;
     
     UIFont *font = [UIFont fontWithName:@"Pacifico" size:60];
@@ -32,8 +34,8 @@
     self.scoreLabel.textColor = pink;
     self.totalLabel.textColor = pink;
     
-    self.scoreLabel.text = [NSString stringWithFormat:@"%ld", self.quiz.correctCount];
-    self.totalLabel.text = [NSString stringWithFormat:@"%ld", total];
+    self.scoreLabel.text = [NSString stringWithFormat:@"%d", self.quiz.correctCount];
+    self.totalLabel.text = [NSString stringWithFormat:@"%d", total];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

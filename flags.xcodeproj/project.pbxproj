@@ -18,6 +18,7 @@
 		8321C71318DDDEF100970E8F /* Play-Colours+Shapes-Puzzle-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C71118DDDEF100970E8F /* Play-Colours+Shapes-Puzzle-Button.png */; };
 		832D81721956CD30000600DA /* Quiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 832D81711956CD30000600DA /* Quiz.m */; };
 		832D81751956D6E6000600DA /* ResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 832D81741956D6E6000600DA /* ResultsController.m */; };
+		83523D1A1968C1E500D8B9E9 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83523D191968C1E500D8B9E9 /* BaseViewController.m */; };
 		8378484118DDAF8E00C5AC61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378484018DDAF8E00C5AC61 /* Foundation.framework */; };
 		8378484318DDAF8E00C5AC61 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378484218DDAF8E00C5AC61 /* CoreGraphics.framework */; };
 		8378484518DDAF8E00C5AC61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378484418DDAF8E00C5AC61 /* UIKit.framework */; };
@@ -72,6 +73,8 @@
 		832D81711956CD30000600DA /* Quiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quiz.m; sourceTree = "<group>"; };
 		832D81731956D6E6000600DA /* ResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsController.h; sourceTree = "<group>"; };
 		832D81741956D6E6000600DA /* ResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsController.m; sourceTree = "<group>"; };
+		83523D181968C1E500D8B9E9 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		83523D191968C1E500D8B9E9 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		8378483D18DDAF8E00C5AC61 /* flags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flags.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8378484018DDAF8E00C5AC61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8378484218DDAF8E00C5AC61 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -291,6 +294,8 @@
 				F94D93471930A4FC008CDB1A /* PuzzleController.m */,
 				832D81731956D6E6000600DA /* ResultsController.h */,
 				832D81741956D6E6000600DA /* ResultsController.m */,
+				83523D181968C1E500D8B9E9 /* BaseViewController.h */,
+				83523D191968C1E500D8B9E9 /* BaseViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -420,6 +425,7 @@
 				837ADE7B18E2E32B00455FF7 /* TableController.m in Sources */,
 				8378485718DDAF8E00C5AC61 /* MenuController.m in Sources */,
 				F94D93481930A4FC008CDB1A /* PuzzleController.m in Sources */,
+				83523D1A1968C1E500D8B9E9 /* BaseViewController.m in Sources */,
 				F94D934B1930AEC2008CDB1A /* LayeredView.m in Sources */,
 				832D81721956CD30000600DA /* Quiz.m in Sources */,
 				8378485118DDAF8E00C5AC61 /* AppDelegate.m in Sources */,

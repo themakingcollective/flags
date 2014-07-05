@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ezN-pw-HHY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xD-mb-Ihx">
@@ -46,16 +46,16 @@
             </objects>
             <point key="canvasLocation" x="549" y="138"/>
         </scene>
-        <!--View Controller - colours-->
+        <!--Base View Controller - colours-->
         <scene sceneID="WJ7-Ya-jpr">
             <objects>
-                <viewController id="LVE-5r-Cca" sceneMemberID="viewController">
+                <viewController id="LVE-5r-Cca" customClass="BaseViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2Ft-Vs-g1E"/>
                         <viewControllerLayoutGuide type="bottom" id="edy-vi-rVe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZwB-da-d1L">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRO-k7-Iuv">
@@ -87,10 +87,10 @@
             </objects>
             <point key="canvasLocation" x="354" y="-947"/>
         </scene>
-        <!--View Controller - colours + shapes-->
+        <!--Base View Controller - colours + shapes-->
         <scene sceneID="Frg-dF-GNM">
             <objects>
-                <viewController id="R2e-D7-tC1" sceneMemberID="viewController">
+                <viewController id="R2e-D7-tC1" customClass="BaseViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Txp-aP-wqf"/>
                         <viewControllerLayoutGuide type="bottom" id="xVE-gz-pLe"/>
@@ -141,7 +141,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gMj-bp-hFz" customClass="LayeredView">
-                                <rect key="frame" x="20" y="72" width="281" height="194"/>
+                                <rect key="frame" x="20" y="72" width="281" height="238"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -273,16 +273,16 @@
             </objects>
             <point key="canvasLocation" x="782" y="-1652"/>
         </scene>
-        <!--View Controller - puzzles-->
+        <!--Base View Controller - puzzles-->
         <scene sceneID="uQL-1p-G8R">
             <objects>
-                <viewController id="hWC-i2-gza" sceneMemberID="viewController">
+                <viewController id="hWC-i2-gza" customClass="BaseViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dnZ-IP-wh7"/>
                         <viewControllerLayoutGuide type="bottom" id="X2h-Hc-c4e"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5bP-PC-pYa">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How well do you know the flags of the world?" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="1z7-a0-uqe">
@@ -311,34 +311,6 @@
                                     <segue destination="R2e-D7-tC1" kind="push" id="k2l-nE-vb1"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mNu-R9-Fbq">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yqx-Qq-aMY">
-                                        <rect key="frame" x="20" y="6" width="51" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="Menu-Button.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="vXZ-lx-hvc" kind="push" id="BB4-aZ-f7l"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="puzzles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4J7-lz-ned">
-                                        <rect key="frame" x="64" y="9" width="193" height="25"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Puzzles-Bar-Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="hIY-3h-qj4">
-                                        <rect key="frame" x="272" y="8" width="28" height="28"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.80392163991928101" green="0.25490197539329529" blue="0.37647062540054321" alpha="1" colorSpace="deviceRGB"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.92156862750000001" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                     </view>
@@ -348,16 +320,16 @@
             </objects>
             <point key="canvasLocation" x="1017" y="-263"/>
         </scene>
-        <!--View Controller - quiz-->
+        <!--Base View Controller - quiz-->
         <scene sceneID="g7p-mb-kk0">
             <objects>
-                <viewController id="oBj-Ec-OQp" sceneMemberID="viewController">
+                <viewController id="oBj-Ec-OQp" customClass="BaseViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rLn-fi-6dz"/>
                         <viewControllerLayoutGuide type="bottom" id="m5i-P2-XTa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3J7-F0-p0J">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Learn new flags and test your knowledge!" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="UVX-sh-kHL">
@@ -404,7 +376,7 @@
             <objects>
                 <tableViewController id="dc5-RQ-q7j" customClass="TableController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="FaP-99-KZX">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexTrackingBackgroundColor" red="0.88235300780000003" green="0.92941182850000004" blue="0.87843143940000001" alpha="1" colorSpace="deviceRGB"/>
@@ -429,6 +401,10 @@
                             </tableViewCell>
                         </prototypes>
                         <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="dc5-RQ-q7j" id="usZ-w2-OGA"/>
+                            <outlet property="delegate" destination="dc5-RQ-q7j" id="spt-AG-xw2"/>
+                        </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="all flags" id="4D0-63-cxB"/>
                 </tableViewController>
@@ -439,7 +415,7 @@
         <!--Navigation Controller-->
         <scene sceneID="J99-1u-n0Y">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="x1h-XZ-iCb" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="x1h-XZ-iCb" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="vTK-nh-I1Q">
@@ -467,10 +443,8 @@
         <image name="Easy-Play-Again.png" width="638" height="179"/>
         <image name="Easy-Switch-to-Hard.png" width="638" height="179"/>
         <image name="Easy-results-rosette.png" width="1318" height="1070"/>
-        <image name="Menu-Button.png" width="221" height="135"/>
         <image name="Play-Colours+Shapes-Puzzle-Button.png" width="1189" height="179"/>
         <image name="Play-Colours-Puzzle-Button.png" width="1188" height="180"/>
-        <image name="Puzzles-Bar-Icon.png" width="131" height="131"/>
         <image name="Puzzles-Easy-Button.png" width="1364" height="237"/>
         <image name="Puzzles-Easy-Explain.png" width="1350" height="1345"/>
         <image name="Puzzles-Hard-Button.png" width="1364" height="237"/>
@@ -487,8 +461,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="POs-O3-vYW"/>
         <segue reference="pjc-HZ-CnR"/>
-        <segue reference="BB4-aZ-f7l"/>
+        <segue reference="POs-O3-vYW"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface PuzzleController : UIViewController
+@interface PuzzleController : BaseViewController
 
 @end

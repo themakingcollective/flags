@@ -134,7 +134,7 @@
 - (void)setUserInteraction:(BOOL)state
 {
     self.view.userInteractionEnabled = state;
-    // disable menu bar
+    self.navigationController.view.userInteractionEnabled = state;
     
     for (UIView *view in self.view.subviews) {
         [view setUserInteractionEnabled:state];
