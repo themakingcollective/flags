@@ -10,7 +10,8 @@
 
 @interface ResultsController ()
 
-@property (weak, nonatomic) IBOutlet UILabel *resultsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@property (weak, nonatomic) IBOutlet UILabel *totalLabel;
 
 @end
 
@@ -21,7 +22,18 @@
 - (void)viewDidLoad
 {
     NSInteger total = self.quiz.correctCount + self.quiz.incorrectCount;
-    self.resultsLabel.text = [NSString stringWithFormat:@"%d out of %d", self.quiz.correctCount, total];
+    
+    UIFont *font = [UIFont fontWithName:@"Pacifico" size:60];
+    [self.scoreLabel setFont:font];
+    [self.totalLabel setFont:font];
+
+    // blue is 20, 96, 137
+    UIColor *pink = [UIColor colorWithRed:(207 / 255.0f) green:(62 / 255.0f) blue:(96 / 255.0f) alpha:1.0f];
+    self.scoreLabel.textColor = pink;
+    self.totalLabel.textColor = pink;
+    
+    self.scoreLabel.text = [NSString stringWithFormat:@"%ld", self.quiz.correctCount];
+    self.totalLabel.text = [NSString stringWithFormat:@"%ld", total];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

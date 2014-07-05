@@ -30,7 +30,10 @@
     [super viewDidLoad];
     
     self.layeredView.backgroundColor = [UIColor clearColor];
-    self.quiz = [[Quiz alloc] initWithArray:[Flag all] andRounds:8];
+    self.quiz = [[Quiz alloc] initWithArray:[Flag all] andRounds:2];
+    
+    UIFont *font = [UIFont fontWithName:@"BPreplay-Bold" size:30];
+    [self.nameLabel setFont:font];
     
     [self nextFlag:nil];
 }
@@ -58,11 +61,13 @@
 {
     if ([self.layeredView isCorrect]) {
         [self.quiz correct];
-        [self.feedbackLabel setText:@"correct"];
+        [self.feedbackLabel setTextColor:[UIColor colorWithRed:(73 / 255.0f) green:(142 / 255.0f) blue:(93 / 255.0f) alpha:1.0f]];
+        [self.feedbackLabel setText:@"correct!"];
     }
     else {
         [self.quiz incorrect];
-        [self.feedbackLabel setText:@"incorrect"];
+        [self.feedbackLabel setTextColor:[UIColor colorWithRed:(194 / 255.0f) green:(32 / 255.0f) blue:(38 / 255.0f) alpha:1.0f]];
+        [self.feedbackLabel setText:@"try again!"];
     }
     
     [self setUserInteraction:NO];
@@ -92,7 +97,7 @@
         UIColor *color = [colors objectAtIndex:i];
         
         [pot setDelegate:self];
-        [pot setBackgroundColor:color];
+        [pot setColor:color];
     }
 }
 

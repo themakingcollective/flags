@@ -28,6 +28,7 @@
     
     for (LayerView *view in layerViews) {
         [self addSubview:view];
+        [view setupBorders];
     }
     
     [self setNeedsDisplay];

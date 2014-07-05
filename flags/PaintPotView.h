@@ -19,5 +19,6 @@
 @property (weak, nonatomic) id delegate;
 
 - (void)setHighlighted:(BOOL)state;
+- (void)setColor:(UIColor *)color;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "PaintPotView.h"
+#import "Utils.h"
 
 @interface PaintPotView () <UIGestureRecognizerDelegate>
 
@@ -18,13 +19,16 @@
 
 - (void)setHighlighted:(BOOL)state
 {
+    self.layer.shadowColor = [UIColor blackColor].CGColor;
+    self.layer.shadowOffset = CGSizeMake(0,2);
+    self.layer.shadowRadius = 5.0f;
+    self.layer.shadowOpacity = 1;
+    
     if (state) {
-        self.layer.borderColor = [UIColor redColor].CGColor;
-        self.layer.borderWidth = 3.0f;
+        self.clipsToBounds = NO;
     }
     else {
-        self.layer.borderColor = [UIColor clearColor].CGColor;
-        self.layer.borderWidth = 0;
+        self.clipsToBounds = YES;
     }
 }
 
@@ -33,6 +37,7 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         [self addGestureRecognizer:[self tapGesture]];
+        [self.layer setCornerRadius:3.0f];
     }
     return self;
 }
@@ -50,6 +55,15 @@
     [tap setNumberOfTapsRequired:1];
     
     return tap;
+}
+
+- (void)setColor:(UIColor *)color
+{
+    [self setBackgroundColor:color];
+
+    if ([Utils equalColors:color and:[UIColor whiteColor]]) {
+        NSLog(@"setting border - todo");
+    }
 }
 
 @end
