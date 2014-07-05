@@ -38,7 +38,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.91299181099397586" green="0.93917074548192769" blue="0.9013671875" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.95686274509803915" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                     </view>
                     <navigationItem key="navigationItem" id="Bnx-WQ-db7"/>
                 </viewController>
@@ -141,7 +141,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gMj-bp-hFz" customClass="LayeredView">
-                                <rect key="frame" x="20" y="72" width="281" height="258"/>
+                                <rect key="frame" x="20" y="72" width="281" height="194"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -199,7 +199,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.88235300780000003" green="0.92941182850000004" blue="0.87843143940000001" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                     </view>
                     <navigationItem key="navigationItem" id="Mzm-ZG-czd"/>
                     <connections>
@@ -262,7 +262,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.88235300780000003" green="0.92941182850000004" blue="0.87843143940000001" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                     </view>
                     <connections>
                         <outlet property="scoreLabel" destination="XFo-Cz-W3T" id="bAE-bY-WYv"/>
@@ -316,7 +316,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yqx-Qq-aMY">
-                                        <rect key="frame" x="20" y="6" width="51" height="31"/>
+                                        <rect key="frame" x="20" y="6" width="51" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="Menu-Button.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -340,7 +340,7 @@
                                 <color key="backgroundColor" red="0.80392163991928101" green="0.25490197539329529" blue="0.37647062540054321" alpha="1" colorSpace="deviceRGB"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.88235300779342651" green="0.92941182851791382" blue="0.87843143939971924" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                     </view>
                     <navigationItem key="navigationItem" title="puzzles" id="2vq-Iw-r3a"/>
                 </viewController>
@@ -391,7 +391,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.88235300779342651" green="0.92941182851791382" blue="0.87843143939971924" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                     </view>
                     <navigationItem key="navigationItem" title="quiz" id="0dO-SU-RE3"/>
                 </viewController>
@@ -425,7 +425,7 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.88235300780000003" green="0.92941182850000004" blue="0.87843143940000001" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -487,8 +487,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="POs-O3-vYW"/>
+        <segue reference="pjc-HZ-CnR"/>
         <segue reference="BB4-aZ-f7l"/>
-        <segue reference="k2l-nE-vb1"/>
-        <segue reference="8Sg-cL-wfr"/>
     </inferredMetricsTieBreakers>
 </document>
