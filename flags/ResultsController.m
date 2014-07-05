@@ -37,7 +37,6 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    [self.navigationItem setHidesBackButton:YES animated:animated];
     [super viewWillAppear:animated];
 }
 

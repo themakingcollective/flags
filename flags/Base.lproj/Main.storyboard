@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ezN-pw-HHY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xD-mb-Ihx">
@@ -54,7 +54,7 @@
                         <viewControllerLayoutGuide type="bottom" id="edy-vi-rVe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZwB-da-d1L">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRO-k7-Iuv">
@@ -136,11 +136,11 @@
                         <viewControllerLayoutGuide type="bottom" id="T0z-NS-BcV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="NGG-TX-YM2">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gMj-bp-hFz" customClass="LayeredView">
-                                <rect key="frame" x="20" y="72" width="281" height="194"/>
+                                <rect key="frame" x="20" y="72" width="281" height="258"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -281,7 +281,7 @@
                         <viewControllerLayoutGuide type="bottom" id="X2h-Hc-c4e"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5bP-PC-pYa">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How well do you know the flags of the world?" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="1z7-a0-uqe">
@@ -328,7 +328,7 @@
                         <viewControllerLayoutGuide type="bottom" id="m5i-P2-XTa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3J7-F0-p0J">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Learn new flags and test your knowledge!" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="UVX-sh-kHL">
@@ -375,7 +375,7 @@
             <objects>
                 <tableViewController id="dc5-RQ-q7j" customClass="TableController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="FaP-99-KZX">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexTrackingBackgroundColor" red="0.88235300780000003" green="0.92941182850000004" blue="0.87843143940000001" alpha="1" colorSpace="deviceRGB"/>
@@ -410,7 +410,7 @@
         <!--Navigation Controller-->
         <scene sceneID="J99-1u-n0Y">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="x1h-XZ-iCb" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="x1h-XZ-iCb" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="vTK-nh-I1Q">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
