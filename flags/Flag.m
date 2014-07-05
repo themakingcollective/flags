@@ -42,6 +42,11 @@ static NSArray *allCache;
     return self.metadataCache;
 }
 
+- (NSInteger)difficulty
+{
+    return [[[self metadata] valueForKey:@"category"] intValue];
+}
+
 - (NSArray *)layeredImagePaths
 {
     if (!self.imagePathsCache) {

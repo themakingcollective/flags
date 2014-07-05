@@ -30,7 +30,8 @@
     [super viewDidLoad];
     
     self.layeredView.backgroundColor = [UIColor clearColor];
-    self.quiz = [[Quiz alloc] initWithArray:[Flag all] andRounds:2];
+    NSArray *flags = [DifficultyScaler scale:[Flag all] forDifficultyKey:@"puzzle-easy"];
+    self.quiz = [[Quiz alloc] initWithArray:flags andRounds:1];
     
     UIFont *font = [UIFont fontWithName:@"BPreplay-Bold" size:30];
     [self.nameLabel setFont:font];
@@ -46,6 +47,7 @@
     Flag *flag = [self.quiz currentElement];
     
     if (flag) {
+        [DifficultyScaler increaseDifficultyForKey:@"puzzle-easy"];
         [self.nameLabel setText:[flag name]];
         [self.feedbackLabel setText:@""];
         [self.layeredView setFlag:flag];

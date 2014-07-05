@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DifficultyScaler.h"
 
-@interface Flag : NSObject
+@interface Flag : NSObject <ScalableDifficulty>
 
 @property (nonatomic, strong, readonly) NSString *name;
 
@@ -17,5 +18,6 @@
 - (NSArray *)layeredImagePaths;
 - (NSArray *)shuffledColors;
 - (UIImage *)image;
+- (NSInteger)difficulty;
 
 @end

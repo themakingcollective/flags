@@ -48,6 +48,7 @@
 		83D4A02B196819EE00C0D694 /* Quiz-Bar-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A029196819EE00C0D694 /* Quiz-Bar-Icon.png */; };
 		83D4A02C1968304500C0D694 /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A01B1968143C00C0D694 /* Pacifico.ttf */; };
 		83D4A02E196838A100C0D694 /* Menu-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A02D196838A100C0D694 /* Menu-Button.png */; };
+		83D4A03219683D0000C0D694 /* DifficultyScaler.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D4A03119683D0000C0D694 /* DifficultyScaler.m */; };
 		83D971381960379600350AF0 /* Puzzles in Resources */ = {isa = PBXBuildFile; fileRef = 83D971371960379600350AF0 /* Puzzles */; };
 		83D9713B1960598200350AF0 /* Flag.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D9713A1960598200350AF0 /* Flag.m */; };
 		F94D93481930A4FC008CDB1A /* PuzzleController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94D93471930A4FC008CDB1A /* PuzzleController.m */; };
@@ -108,6 +109,8 @@
 		83D4A028196819EE00C0D694 /* Puzzles-Bar-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Puzzles-Bar-Icon.png"; sourceTree = "<group>"; };
 		83D4A029196819EE00C0D694 /* Quiz-Bar-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Bar-Icon.png"; sourceTree = "<group>"; };
 		83D4A02D196838A100C0D694 /* Menu-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu-Button.png"; sourceTree = "<group>"; };
+		83D4A03019683D0000C0D694 /* DifficultyScaler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DifficultyScaler.h; sourceTree = "<group>"; };
+		83D4A03119683D0000C0D694 /* DifficultyScaler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DifficultyScaler.m; sourceTree = "<group>"; };
 		83D971371960379600350AF0 /* Puzzles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Puzzles; sourceTree = "<group>"; };
 		83D971391960598200350AF0 /* Flag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flag.h; sourceTree = "<group>"; };
 		83D9713A1960598200350AF0 /* Flag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flag.m; sourceTree = "<group>"; };
@@ -179,6 +182,7 @@
 				8378484F18DDAF8E00C5AC61 /* AppDelegate.h */,
 				8378485018DDAF8E00C5AC61 /* AppDelegate.m */,
 				8378485218DDAF8E00C5AC61 /* Main.storyboard */,
+				83D4A02F19683CE600C0D694 /* Services */,
 				832D816F1956CD1F000600DA /* Models */,
 				83EF84A518DDF57E00486186 /* Views */,
 				83D9548618DDEF3B00783A27 /* Controllers */,
@@ -265,6 +269,15 @@
 				83D4A01B1968143C00C0D694 /* Pacifico.ttf */,
 			);
 			name = Pacifico;
+			sourceTree = "<group>";
+		};
+		83D4A02F19683CE600C0D694 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				83D4A03019683D0000C0D694 /* DifficultyScaler.h */,
+				83D4A03119683D0000C0D694 /* DifficultyScaler.m */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		83D9548618DDEF3B00783A27 /* Controllers */ = {
@@ -413,6 +426,7 @@
 				F94D93641930EA33008CDB1A /* Utils.m in Sources */,
 				832D81751956D6E6000600DA /* ResultsController.m in Sources */,
 				83199A931943487D00C70AAF /* LayerView.m in Sources */,
+				83D4A03219683D0000C0D694 /* DifficultyScaler.m in Sources */,
 				8378484D18DDAF8E00C5AC61 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
