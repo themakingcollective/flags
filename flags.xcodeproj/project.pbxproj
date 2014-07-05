@@ -47,6 +47,7 @@
 		83D4A02A196819EE00C0D694 /* Puzzles-Bar-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A028196819EE00C0D694 /* Puzzles-Bar-Icon.png */; };
 		83D4A02B196819EE00C0D694 /* Quiz-Bar-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A029196819EE00C0D694 /* Quiz-Bar-Icon.png */; };
 		83D4A02C1968304500C0D694 /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A01B1968143C00C0D694 /* Pacifico.ttf */; };
+		83D4A02E196838A100C0D694 /* Menu-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A02D196838A100C0D694 /* Menu-Button.png */; };
 		83D971381960379600350AF0 /* Puzzles in Resources */ = {isa = PBXBuildFile; fileRef = 83D971371960379600350AF0 /* Puzzles */; };
 		83D9713B1960598200350AF0 /* Flag.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D9713A1960598200350AF0 /* Flag.m */; };
 		F94D93481930A4FC008CDB1A /* PuzzleController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94D93471930A4FC008CDB1A /* PuzzleController.m */; };
@@ -106,6 +107,7 @@
 		83D4A0231968187B00C0D694 /* Hard-Switch-to-Easy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hard-Switch-to-Easy.png"; sourceTree = "<group>"; };
 		83D4A028196819EE00C0D694 /* Puzzles-Bar-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Puzzles-Bar-Icon.png"; sourceTree = "<group>"; };
 		83D4A029196819EE00C0D694 /* Quiz-Bar-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Bar-Icon.png"; sourceTree = "<group>"; };
+		83D4A02D196838A100C0D694 /* Menu-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu-Button.png"; sourceTree = "<group>"; };
 		83D971371960379600350AF0 /* Puzzles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Puzzles; sourceTree = "<group>"; };
 		83D971391960598200350AF0 /* Flag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flag.h; sourceTree = "<group>"; };
 		83D9713A1960598200350AF0 /* Flag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flag.m; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 		8378487E18DDBCC500C5AC61 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				83D4A02D196838A100C0D694 /* Menu-Button.png */,
 				83D4A028196819EE00C0D694 /* Puzzles-Bar-Icon.png */,
 				83D4A029196819EE00C0D694 /* Quiz-Bar-Icon.png */,
 				83D4A0201968187B00C0D694 /* Easy-Play-Again.png */,
@@ -367,6 +370,7 @@
 				83D4A0251968187B00C0D694 /* Easy-Switch-to-Hard.png in Resources */,
 				83D4A0261968187B00C0D694 /* Hard-Play-Again.png in Resources */,
 				8321C71318DDDEF100970E8F /* Play-Colours+Shapes-Puzzle-Button.png in Resources */,
+				83D4A02E196838A100C0D694 /* Menu-Button.png in Resources */,
 				8378487D18DDB8DC00C5AC61 /* Puzzles-Menu-Button.png in Resources */,
 				8321C70E18DDDEE400970E8F /* Puzzles-Easy-Explain.png in Resources */,
 				8378485418DDAF8E00C5AC61 /* Main.storyboard in Resources */,
