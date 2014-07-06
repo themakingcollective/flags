@@ -22,6 +22,8 @@
        NSFontAttributeName: [UIFont fontWithName:@"BPreplay" size:24]
      }];
     
+    [[UINavigationBar appearance] setTitleVerticalPositionAdjustment:2 forBarMetrics:UIBarMetricsDefault];
+    
     return YES;
 }
 							
