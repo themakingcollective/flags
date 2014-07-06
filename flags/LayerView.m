@@ -49,7 +49,7 @@
     NSString *hex = [self pathSubstring];
     UIColor *correctColor = [Utils colorWithHexString:hex];
     
-    return [self.currentColor isEqual:correctColor];
+    return [Utils equalColors:self.currentColor and:correctColor];
 }
 
 - (BOOL)isTemplate
