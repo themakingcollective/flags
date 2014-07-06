@@ -65,6 +65,9 @@
         self.layer.borderColor = [Utils colorWithHexString:@"d1d2d4"].CGColor;
         self.layer.borderWidth = 2.0f;
     }
+    else {
+        self.layer.borderColor = [UIColor clearColor].CGColor;
+    }
 }
 
 @end
