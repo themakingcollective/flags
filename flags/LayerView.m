@@ -22,16 +22,14 @@
 {
     self.currentColor = [UIColor whiteColor];
     self.path = path;
-    
     return [super initWithImage:[UIImage imageWithContentsOfFile:path]];
 }
 
 - (void)setupBorders
 {
-//    self.layer.masksToBounds = YES;
-//    self.layer.borderColor = [Utils colorWithHexString:@"#58585b"].CGColor;
-//    self.layer.borderWidth = 2.0f;
-//    [self.layer setCornerRadius:5.0f];
+    self.layer.borderColor = [Utils colorWithHexString:@"777779"].CGColor;
+    self.layer.borderWidth = 2.0f;
+    [self.layer setCornerRadius:5.0f];
 }
 
 - (void)setColor:(UIColor *)color

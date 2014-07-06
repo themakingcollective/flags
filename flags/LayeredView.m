@@ -57,6 +57,7 @@
         [layerView sizeToFit];
         [layerView setFrame:self.bounds];
         [layerView setContentMode:UIViewContentModeScaleAspectFit];
+        [self resizeFrameToFitImage:layerView];
         
         [layerViews addObject:layerView];
     }
@@ -179,6 +180,21 @@
 - (UIImageView *)template
 {
     return [[self subviews] firstObject];
+}
+
+- (void)resizeFrameToFitImage:(LayerView *)layerView
+{
+    CGRect frame = [Utils getFrameSizeForImage:layerView.image inImageView:layerView];
+    
+    CGRect imageViewFrame = CGRectMake(
+        layerView.frame.origin.x + frame.origin.x,
+        layerView.frame.origin.y + frame.origin.y,
+        frame.size.width,
+        frame.size.height
+    );
+    
+    layerView.frame = imageViewFrame;
+    layerView.layer.masksToBounds = YES;
 }
 
 

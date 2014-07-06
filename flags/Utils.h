@@ -16,5 +16,6 @@
 + (UIImage *)colorImage:(UIImage *)image withColor:(UIColor *)color;
 + (UIColor *)colorWithHexString:(NSString*)hex;
 + (BOOL) equalColors:(UIColor *)a and:(UIColor *)b;
++ (CGRect)getFrameSizeForImage:(UIImage *)image inImageView:(UIImageView *)imageView;
 
 @end
