@@ -22,9 +22,17 @@
     [menuButton setImage:[UIImage imageNamed:@"Menu-Button"] forState:UIControlStateNormal];
     [menuButton addTarget:self action:@selector(returnToMenu:)forControlEvents:UIControlEventTouchUpInside];
     [menuButton setFrame:CGRectMake(0, 0, 50, 30)];
-    menuButton.imageEdgeInsets = UIEdgeInsetsMake(0, -7, 0, 7);
+    menuButton.imageEdgeInsets = UIEdgeInsetsMake(0, -6, 0, 6);
     UIBarButtonItem *menuItem = [[UIBarButtonItem alloc] initWithCustomView:menuButton];
     self.navigationItem.leftBarButtonItem = menuItem;
+    
+    UIButton *iconButton =  [UIButton buttonWithType:UIButtonTypeCustom];
+    [iconButton setImage:[UIImage imageNamed:@"Puzzles-Bar-Icon"] forState:UIControlStateNormal];
+    [iconButton setFrame:CGRectMake(0, 0, 28, 28)];
+    iconButton.imageEdgeInsets = UIEdgeInsetsMake(0, 6, 0, -6);
+    iconButton.userInteractionEnabled = NO;
+    UIBarButtonItem *iconItem = [[UIBarButtonItem alloc] initWithCustomView:iconButton];
+    self.navigationItem.rightBarButtonItem = iconItem;
 }
 
 - (void)returnToMenu:(UIButton *)menuButton

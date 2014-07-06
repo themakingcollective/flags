@@ -21,6 +21,8 @@
         }
     }
     
+    NSLog(@"Number of flags for difficulty: %d", [mutableArray count]);
+    
     return [NSArray arrayWithArray:mutableArray];
 }
 
