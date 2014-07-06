@@ -21,8 +21,6 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    
     self.navigationItem.title = @"colours";
     
     NSInteger total = self.quiz.correctCount + self.quiz.incorrectCount;
@@ -38,6 +36,8 @@
     
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", self.quiz.correctCount];
     self.totalLabel.text = [NSString stringWithFormat:@"%d", total];
+    
+    [super viewDidLoad];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
