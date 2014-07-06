@@ -160,6 +160,7 @@
         imageName = @"Done-Button-Easy-Disabled";
     }
     
+    [self.submitButton setUserInteractionEnabled:state];
     [self.submitButton setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
 }
 
