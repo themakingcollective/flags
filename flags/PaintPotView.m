@@ -62,7 +62,8 @@
     [self setBackgroundColor:color];
 
     if ([Utils equalColors:color and:[UIColor whiteColor]]) {
-        NSLog(@"setting border - todo");
+        self.layer.borderColor = [Utils colorWithHexString:@"d1d2d4"].CGColor;
+        self.layer.borderWidth = 2.0f;
     }
 }
 
