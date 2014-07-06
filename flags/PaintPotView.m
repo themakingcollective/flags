@@ -19,8 +19,8 @@
 
 - (void)setHighlighted:(BOOL)state
 {
-    self.layer.shadowColor = [UIColor blackColor].CGColor;
-    self.layer.shadowOffset = CGSizeMake(0,2);
+    self.layer.shadowColor = [UIColor colorWithRed:(16 / 255.0) green:(234 / 255.0) blue:(238 / 255.0) alpha:1.0f].CGColor;
+    self.layer.shadowOffset = CGSizeMake(0,0);
     self.layer.shadowRadius = 5.0f;
     self.layer.shadowOpacity = 1;
     
