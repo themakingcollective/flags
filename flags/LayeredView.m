@@ -19,6 +19,7 @@
 @implementation LayeredView
 
 @synthesize paintColor=_paintColor;
+@synthesize delegate=_delegate;
 
 - (void)setFlag:(Flag *)flag
 {
@@ -79,6 +80,8 @@
     if ([touchedSubview isEqual:[self template]]) return;
     
     [touchedSubview setColor:self.paintColor];
+    
+    [self.delegate touchedLayeredView:self];
 }
 
 - (LayerView *)touchedSubview:(CGPoint)point

@@ -214,6 +214,7 @@
                         <outlet property="feedbackLabel" destination="JVs-tn-7zO" id="lTA-O4-XhL"/>
                         <outlet property="layeredView" destination="gMj-bp-hFz" id="WgS-7W-2bM"/>
                         <outlet property="nameLabel" destination="JoW-bV-coG" id="2xy-Qc-hqN"/>
+                        <outlet property="submitButton" destination="wIF-RH-ZVO" id="ObS-41-ja7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pZR-ar-UH3" userLabel="First Responder" sceneMemberID="firstResponder"/>

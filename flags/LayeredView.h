@@ -9,7 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "Flag.h"
 
+@protocol LayeredViewDelegate <NSObject>
+
+- (void)touchedLayeredView:layeredView;
+
+@end
+
 @interface LayeredView : UIView
+
+@property (nonatomic, strong) id delegate;
 
 - (void)setFlag:(Flag *)flag;
 - (void)setPaintColor:(UIColor *)color;

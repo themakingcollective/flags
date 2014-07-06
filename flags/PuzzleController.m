@@ -13,13 +13,14 @@
 #import "ResultsController.h"
 #import "Flag.h"
 
-@interface PuzzleController () <PaintPotViewDelegate>
+@interface PuzzleController () <PaintPotViewDelegate, LayeredViewDelegate>
 
 @property (nonatomic, weak) IBOutlet LayeredView *layeredView;
 @property (nonatomic, strong) Quiz *quiz;
 @property (nonatomic, weak) IBOutlet UILabel *nameLabel;
 @property (nonatomic, weak) IBOutlet UILabel *feedbackLabel;
 @property (nonatomic, strong) NSArray *paintPots;
+@property (nonatomic, weak) IBOutlet UIButton *submitButton;
 
 @end
 
@@ -30,8 +31,9 @@
     [super viewDidLoad];
     
     self.layeredView.backgroundColor = [UIColor clearColor];
+    [self.layeredView setDelegate:self];
     NSArray *flags = [DifficultyScaler scale:[Flag all] forDifficultyKey:@"puzzle-easy"];
-    self.quiz = [[Quiz alloc] initWithArray:flags andRounds:1];
+    self.quiz = [[Quiz alloc] initWithArray:flags andRounds:3];
     
     UIFont *font = [UIFont fontWithName:@"BPreplay-Bold" size:30];
     [self.nameLabel setFont:font];
@@ -48,6 +50,7 @@
     
     if (flag) {
         [DifficultyScaler increaseDifficultyForKey:@"puzzle-easy"];
+        [self setSubmitButtonState:NO];
         [self.nameLabel setText:[flag name]];
         [self.feedbackLabel setText:@""];
         [self.layeredView setFlag:flag];
@@ -126,6 +129,11 @@
     [paintPot setHighlighted:YES];
 }
 
+- (void)touchedLayeredView:(LayeredView *)layeredView
+{
+    [self setSubmitButtonState:YES];
+}
+
 - (void)touchFirstPaintPot
 {
     [self touchedPaintPot:[self.paintPots firstObject]];
@@ -139,6 +147,20 @@
     for (UIView *view in self.view.subviews) {
         [view setUserInteractionEnabled:state];
     }
+}
+
+- (void)setSubmitButtonState:(BOOL)state
+{
+    NSString *imageName;
+    
+    if (state) {
+        imageName = @"Done-Button-Easy-Enabled";
+    }
+    else {
+        imageName = @"Done-Button-Easy-Disabled";
+    }
+    
+    [self.submitButton setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
 }
 
 @end

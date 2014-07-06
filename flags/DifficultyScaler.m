@@ -64,7 +64,7 @@
 
 + (NSArray *)thresholds
 {
-    return @[@20, @100];
+    return @[@1, @100];
 }
 
 @end
