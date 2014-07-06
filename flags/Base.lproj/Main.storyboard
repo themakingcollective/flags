@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ezN-pw-HHY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xD-mb-Ihx">
@@ -41,6 +41,8 @@
                         <color key="backgroundColor" red="0.92156862745098034" green="0.95686274509803915" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                     </view>
                     <navigationItem key="navigationItem" id="Bnx-WQ-db7"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,6 +84,8 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="colours" id="zIw-XA-BCH"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VxN-qC-QgL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -96,7 +100,7 @@
                         <viewControllerLayoutGuide type="bottom" id="xVE-gz-pLe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hkV-RR-jSl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap to select the correct shapes and colours on the flag" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="RV5-zf-dhf">
@@ -123,12 +127,14 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="colours + shapes" id="xst-hb-3YN"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q7I-qZ-1wo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="782" y="-947"/>
         </scene>
-        <!--Puzzle Controller-->
+        <!--Puzzle Controller - colours-->
         <scene sceneID="hRQ-42-rgq">
             <objects>
                 <viewController id="5AU-KU-zeq" customClass="PuzzleController" sceneMemberID="viewController">
@@ -137,11 +143,11 @@
                         <viewControllerLayoutGuide type="bottom" id="T0z-NS-BcV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="NGG-TX-YM2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gMj-bp-hFz" customClass="LayeredView">
-                                <rect key="frame" x="20" y="72" width="281" height="238"/>
+                                <rect key="frame" x="20" y="72" width="281" height="194"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -201,7 +207,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.92156862750000001" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Mzm-ZG-czd"/>
+                    <navigationItem key="navigationItem" title="colours" id="Mzm-ZG-czd"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="feedbackLabel" destination="JVs-tn-7zO" id="lTA-O4-XhL"/>
                         <outlet property="layeredView" destination="gMj-bp-hFz" id="WgS-7W-2bM"/>
@@ -221,7 +229,7 @@
                         <viewControllerLayoutGuide type="bottom" id="EzU-k9-u2H"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Gs6-vV-6St">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yW-YX-JU5">
@@ -264,6 +272,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.92156862750000001" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="scoreLabel" destination="XFo-Cz-W3T" id="bAE-bY-WYv"/>
                         <outlet property="totalLabel" destination="Leg-SX-4Bg" id="4OT-5j-idK"/>
@@ -315,6 +325,7 @@
                         <color key="backgroundColor" red="0.92156862750000001" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                     </view>
                     <navigationItem key="navigationItem" title="puzzles" id="2vq-Iw-r3a"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lOf-DH-OkC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -366,6 +377,8 @@
                         <color key="backgroundColor" red="0.92156862750000001" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                     </view>
                     <navigationItem key="navigationItem" title="quiz" id="0dO-SU-RE3"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UzO-Gj-Uex" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -407,6 +420,8 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="all flags" id="4D0-63-cxB"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qsX-JW-zjg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

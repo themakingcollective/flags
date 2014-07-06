@@ -23,6 +23,8 @@
 {
     [super viewDidLoad];
     
+    self.navigationItem.title = @"colours";
+    
     NSInteger total = self.quiz.correctCount + self.quiz.incorrectCount;
     
     UIFont *font = [UIFont fontWithName:@"Pacifico" size:60];
