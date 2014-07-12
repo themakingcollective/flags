@@ -37,6 +37,8 @@
 		8378488C18DDCEB600C5AC61 /* Puzzles-Easy-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8378488B18DDCEB600C5AC61 /* Puzzles-Easy-Button.png */; };
 		8378488E18DDCF5900C5AC61 /* Puzzles-Hard-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8378488D18DDCF5900C5AC61 /* Puzzles-Hard-Button.png */; };
 		837ADE7B18E2E32B00455FF7 /* TableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837ADE7A18E2E32B00455FF7 /* TableController.m */; };
+		83D09E081971212D0088965E /* Done-Button-Hard-Disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09E061971212D0088965E /* Done-Button-Hard-Disabled.png */; };
+		83D09E091971212D0088965E /* Done-Button-Hard-Enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09E071971212D0088965E /* Done-Button-Hard-Enabled.png */; };
 		83D4A01819680E8F00C0D694 /* Done-Button-Easy-Disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A01619680E8F00C0D694 /* Done-Button-Easy-Disabled.png */; };
 		83D4A01919680E8F00C0D694 /* Done-Button-Easy-Enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A01719680E8F00C0D694 /* Done-Button-Easy-Enabled.png */; };
 		83D4A01E1968163600C0D694 /* Easy-results-rosette.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A01C1968163600C0D694 /* Easy-results-rosette.png */; };
@@ -100,6 +102,8 @@
 		8378488D18DDCF5900C5AC61 /* Puzzles-Hard-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Puzzles-Hard-Button.png"; sourceTree = "<group>"; };
 		837ADE7918E2E32B00455FF7 /* TableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableController.h; sourceTree = "<group>"; };
 		837ADE7A18E2E32B00455FF7 /* TableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableController.m; sourceTree = "<group>"; };
+		83D09E061971212D0088965E /* Done-Button-Hard-Disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Done-Button-Hard-Disabled.png"; sourceTree = "<group>"; };
+		83D09E071971212D0088965E /* Done-Button-Hard-Enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Done-Button-Hard-Enabled.png"; sourceTree = "<group>"; };
 		83D4A01619680E8F00C0D694 /* Done-Button-Easy-Disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Done-Button-Easy-Disabled.png"; sourceTree = "<group>"; };
 		83D4A01719680E8F00C0D694 /* Done-Button-Easy-Enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Done-Button-Easy-Enabled.png"; sourceTree = "<group>"; };
 		83D4A01B1968143C00C0D694 /* Pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pacifico.ttf; sourceTree = "<group>"; };
@@ -231,6 +235,8 @@
 				83D4A01D1968163600C0D694 /* Hard-results-rosette.png */,
 				83D4A01619680E8F00C0D694 /* Done-Button-Easy-Disabled.png */,
 				83D4A01719680E8F00C0D694 /* Done-Button-Easy-Enabled.png */,
+				83D09E061971212D0088965E /* Done-Button-Hard-Disabled.png */,
+				83D09E071971212D0088965E /* Done-Button-Hard-Enabled.png */,
 				8321C71018DDDEF100970E8F /* Play-Colours-Puzzle-Button.png */,
 				8321C71118DDDEF100970E8F /* Play-Colours+Shapes-Puzzle-Button.png */,
 				8321C70C18DDDEE400970E8F /* Puzzles-Easy-Explain.png */,
@@ -395,6 +401,7 @@
 				83D971381960379600350AF0 /* Puzzles in Resources */,
 				8378488918DDBCD500C5AC61 /* BPreplay.ttf in Resources */,
 				83D4A01F1968163600C0D694 /* Hard-results-rosette.png in Resources */,
+				83D09E081971212D0088965E /* Done-Button-Hard-Disabled.png in Resources */,
 				83D4A02B196819EE00C0D694 /* Quiz-Bar-Icon.png in Resources */,
 				8378488618DDBCD500C5AC61 /* BPreplay-Bold.ttf in Resources */,
 				8321C70B18DDDD7A00970E8F /* Quiz-View-Button.png in Resources */,
@@ -410,6 +417,7 @@
 				8378488C18DDCEB600C5AC61 /* Puzzles-Easy-Button.png in Resources */,
 				83D4A01819680E8F00C0D694 /* Done-Button-Easy-Disabled.png in Resources */,
 				83D4A0271968187B00C0D694 /* Hard-Switch-to-Easy.png in Resources */,
+				83D09E091971212D0088965E /* Done-Button-Hard-Enabled.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

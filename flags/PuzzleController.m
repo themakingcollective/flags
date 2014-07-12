@@ -21,18 +21,32 @@
 @property (nonatomic, weak) IBOutlet UILabel *feedbackLabel;
 @property (nonatomic, strong) NSArray *paintPots;
 @property (nonatomic, weak) IBOutlet UIButton *submitButton;
+@property (nonatomic, strong) DifficultyScaler *difficultyScaler;
 
 @end
 
 @implementation PuzzleController
 
+@synthesize difficulty=_difficulty;
+
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+    self.difficulty = @"hard"; // TODO
+    
+    if ([self.difficulty isEqualToString:@"easy"]) {
+        self.navigationItem.title = @"colours";
+    }
+    else {
+        self.navigationItem.title = @"colours + shapes";
+    }
     
     self.layeredView.backgroundColor = [UIColor clearColor];
     [self.layeredView setDelegate:self];
-    NSArray *flags = [DifficultyScaler scale:[Flag all] forDifficultyKey:@"puzzle-easy"];
+    
+    NSString *difficultyKey = [NSString stringWithFormat:@"puzzle-%@", self.difficulty];
+    self.difficultyScaler = [[DifficultyScaler alloc] initWithDifficultyKey:difficultyKey];
+    
+    NSArray *flags = [self.difficultyScaler scale:[Flag all]];
     self.quiz = [[Quiz alloc] initWithArray:flags andRounds:3];
     
     UIFont *titleFont = [UIFont fontWithName:@"BPreplay-Bold" size:30];
@@ -42,6 +56,8 @@
     [self.feedbackLabel setFont:feedbackFont];
     
     [self nextFlag:nil];
+    
+    [super viewDidLoad];
 }
 
 - (void)nextFlag:(NSTimer *)timer
@@ -52,7 +68,7 @@
     Flag *flag = [self.quiz currentElement];
     
     if (flag) {
-        [DifficultyScaler increaseDifficultyForKey:@"puzzle-easy"];
+        [self.difficultyScaler increaseDifficulty];
         [self setSubmitButtonState:NO];
         [self.nameLabel setText:[flag name]];
         [self.feedbackLabel setText:@""];
@@ -154,14 +170,9 @@
 
 - (void)setSubmitButtonState:(BOOL)state
 {
-    NSString *imageName;
-    
-    if (state) {
-        imageName = @"Done-Button-Easy-Enabled";
-    }
-    else {
-        imageName = @"Done-Button-Easy-Disabled";
-    }
+    NSString *difficulty = [self.difficulty isEqualToString:@"easy"] ? @"Easy" : @"Hard";
+    NSString *active = state ? @"Enabled" : @"Disabled";
+    NSString *imageName = [NSString stringWithFormat:@"Done-Button-%@-%@", difficulty, active];
     
     [self.submitButton setUserInteractionEnabled:state];
     [self.submitButton setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];

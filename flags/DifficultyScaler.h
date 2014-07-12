@@ -16,7 +16,8 @@
 
 @interface DifficultyScaler : NSObject
 
-+ (NSArray *)scale:(NSArray *)array forDifficultyKey:(NSString *)key;
-+ (void)increaseDifficultyForKey:(NSString *)key;
+- (id)initWithDifficultyKey:(NSString *)key;
+- (NSArray *)scale:(NSArray *)array;
+- (void)increaseDifficulty;
 
 @end

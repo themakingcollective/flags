@@ -8,11 +8,26 @@
 
 #import "DifficultyScaler.h"
 
+@interface DifficultyScaler ()
+
+@property (nonatomic, strong) NSString *key;
+
+@end
+
 @implementation DifficultyScaler
 
-+ (NSArray *)scale:(NSArray *)array forDifficultyKey:(NSString *)key
+- (id)initWithDifficultyKey:(NSString *)key
 {
-    NSInteger currentDifficulty = [self currentDifficulty:key];
+    self = [super init];
+    if (self) {
+        self.key = key;
+    }
+    return self;
+}
+
+- (NSArray *)scale:(NSArray *)array
+{
+    NSInteger currentDifficulty = [self currentDifficulty];
     NSMutableArray *mutableArray = [[NSMutableArray alloc] init];
     
     for (id<ScalableDifficulty> element in array) {
@@ -26,16 +41,16 @@
     return [NSArray arrayWithArray:mutableArray];
 }
 
-+ (void)increaseDifficultyForKey:(NSString *)key
+- (void)increaseDifficulty
 {
-    NSInteger numberSeen = [self get:key];
+    NSInteger numberSeen = [self get:self.key];
     numberSeen++;
-    [self set:key value:numberSeen];
+    [self set:self.key value:numberSeen];
 }
 
-+ (NSInteger)currentDifficulty:(NSString *)key
+- (NSInteger)currentDifficulty
 {
-    NSInteger numberSeen = [self get:key];
+    NSInteger numberSeen = [self get:self.key];
     NSArray *thresholds = [self thresholds];
     
     for (NSInteger i = 0; i < [thresholds count]; i++) {
@@ -49,20 +64,20 @@
     return [thresholds count] + 1;
 }
 
-+ (NSInteger)get:(NSString *)key
+- (NSInteger)get:(NSString *)key
 {
     NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
     return [preferences integerForKey:key];
 }
 
-+ (void)set:(NSString *)key value:(NSInteger)value
+- (void)set:(NSString *)key value:(NSInteger)value
 {
     NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
     [preferences setInteger:value forKey:key];
     [preferences synchronize];
 }
 
-+ (NSArray *)thresholds
+- (NSArray *)thresholds
 {
     return @[@1, @100];
 }
