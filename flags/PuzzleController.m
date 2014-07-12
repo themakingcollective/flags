@@ -9,19 +9,22 @@
 #import "PuzzleController.h"
 #import "LayeredView.h"
 #import "PaintPotView.h"
+#import "PatternView.h"
 #import "Quiz.h"
 #import "ResultsController.h"
 #import "Flag.h"
 
-@interface PuzzleController () <PaintPotViewDelegate, LayeredViewDelegate>
+@interface PuzzleController () <PaintPotViewDelegate, PatternViewDelegate, LayeredViewDelegate>
 
 @property (nonatomic, weak) IBOutlet LayeredView *layeredView;
 @property (nonatomic, strong) Quiz *quiz;
 @property (nonatomic, weak) IBOutlet UILabel *nameLabel;
 @property (nonatomic, weak) IBOutlet UILabel *feedbackLabel;
 @property (nonatomic, strong) NSArray *paintPots;
+@property (nonatomic, strong) NSArray *patterns;
 @property (nonatomic, weak) IBOutlet UIButton *submitButton;
 @property (nonatomic, strong) DifficultyScaler *difficultyScaler;
+@property (nonatomic, strong) Flag *currentPatternFlag;
 
 @end
 
@@ -70,6 +73,7 @@
         [self.feedbackLabel setText:@""];
         [self.layeredView setFlag:flag];
         [self setupPaintPots:flag];
+        [self setupPatterns:flag];
         [self touchFirstPaintPot];
     }
     else {
@@ -79,7 +83,7 @@
 
 - (IBAction)submit
 {
-    if ([self.layeredView isCorrect]) {
+    if ([self isCorrect]) {
         [self.quiz correct];
         [self.feedbackLabel setTextColor:[UIColor colorWithRed:(73 / 255.0f) green:(142 / 255.0f) blue:(93 / 255.0f) alpha:1.0f]];
         [self.feedbackLabel setText:@"correct!"];
@@ -106,7 +110,7 @@
 
 - (void)setupPaintPots:(Flag *)flag
 {
-    self.paintPots = [self paintPotViews];
+    self.paintPots = [self viewsForClass:[PaintPotView class]];
     NSArray *colors = [flag shuffledColors];
     
     if ([self.paintPots count] != [colors count]) {
@@ -119,20 +123,30 @@
         
         [pot setDelegate:self];
         [pot setColor:color];
-        
-        // TODO - resize and move the colour pots
-//        CGRect frame = pot.frame;
-//        frame.size.height = 200;
-//        [pot setFrame:frame];
     }
 }
 
-- (NSArray *)paintPotViews
+- (void)setupPatterns:(Flag *)flag
+{
+    self.patterns = [self viewsForClass:[PatternView class]];
+    NSArray *patternFlags = [self.quiz.currentElement patternFlags];
+    
+    for (NSInteger i = 0; i < [self.patterns count]; i++) {
+        PatternView *pattern = [self.patterns objectAtIndex:i];
+        Flag *patternFlag = [patternFlags objectAtIndex:i];
+        
+        [pattern setFlag:patternFlag];
+        [pattern setFlagImage];
+        [pattern setDelegate:self];
+    }
+}
+
+- (NSArray *)viewsForClass:(id)class
 {
     NSMutableArray *array = [[NSMutableArray alloc] init];
     
     for (UIView *subview in self.view.subviews) {
-        if ([subview isKindOfClass:[PaintPotView class]]) {
+        if ([subview isKindOfClass:[class class]]) {
             [array addObject:subview];
         }
     }
@@ -148,6 +162,14 @@
         [view setHighlighted:NO];
     }
     [paintPot setHighlighted:YES];
+}
+
+- (void)touchedPattern:(PatternView *)pattern
+{
+    NSLog(@"touched flag: %@", pattern.flag.name);
+//    [self.layeredView setFlag:[[Flag all] firstObject]];
+    
+    self.currentPatternFlag = pattern.flag;
 }
 
 - (void)touchedLayeredView:(LayeredView *)layeredView
@@ -185,6 +207,16 @@
     NSInteger previousIndex = [self.navigationController.viewControllers count] - 2;
     UIViewController *previousController = [self.navigationController.viewControllers objectAtIndex:previousIndex];
     return previousController.navigationItem.title;
+}
+
+- (BOOL)isCorrect
+{
+    if ([self.difficulty isEqualToString:@"easy"]) {
+        return [self.layeredView isCorrect];
+    }
+    else {
+        return [self.layeredView isCorrect] && [self.currentPatternFlag isEqualTo:self.quiz.currentElement];
+    }
 }
 
 @end

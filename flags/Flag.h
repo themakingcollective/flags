@@ -19,5 +19,8 @@
 - (NSArray *)shuffledColors;
 - (UIImage *)image;
 - (NSInteger)difficulty;
+- (NSArray *)patternFlags;
+- (UIImage *)patternImage;
+- (BOOL)isEqualTo:(Flag *)other;
 
 @end

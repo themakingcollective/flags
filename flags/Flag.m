@@ -141,10 +141,25 @@ static NSArray *allCache;
     return [fileManager contentsOfDirectoryAtPath:[self directoryName] error:nil];
 }
 
+- (NSArray *)patternFlags
+{
+    return @[self]; // TODO return self + 3 flags that are red herrings
+}
+
+- (UIImage *)patternImage
+{
+    return self.image; // TODO use the real thumbnail/pattern image
+}
+
 + (NSString *)directoryName
 {
     NSString *bundlePathName = [[NSBundle mainBundle] bundlePath];
     return [bundlePathName stringByAppendingPathComponent:@"Puzzles"];
+}
+
+- (BOOL)isEqualTo:(Flag *)other
+{
+    return [self.name isEqualToString:other.name];
 }
 
 @end
