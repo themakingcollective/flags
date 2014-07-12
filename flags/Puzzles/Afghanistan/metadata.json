@@ -11,8 +11,11 @@
     "000088"
   ],
   "incorrect_patterns": [
-    "Angola",
+    "Afghanistan",
+    "Albania",
+    "Algeria",
     "Argentina",
-    "Albania"
+    "Angola",
+    "Andorra"
   ]
 }

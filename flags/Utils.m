@@ -178,4 +178,9 @@
     return CGRectMake(leftOffset, topOffset, newWidth, newHeight);
 }
 
++ (NSArray *)pickSample:(NSArray *)array size:(NSInteger)size
+{
+    return [array subarrayWithRange:NSMakeRange(0, size)];
+}
+
 @end

@@ -23,7 +23,7 @@
      }];
     
     [[UINavigationBar appearance] setTitleVerticalPositionAdjustment:2 forBarMetrics:UIBarMetricsDefault];
-    
+
     return YES;
 }
 							

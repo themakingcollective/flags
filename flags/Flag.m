@@ -167,9 +167,12 @@ static NSArray *allCache;
 
 - (NSArray *)patternFlags
 {
-    NSMutableArray *array = [NSMutableArray arrayWithArray:[self incorrectFlags]];
-    [array addObject:self];
-    return [NSArray arrayWithArray:[Utils shuffle:array]];
+    NSArray *array = [self incorrectFlags];
+    array = [Utils pickSample:array size:3];
+    NSMutableArray *mutableArray = [NSMutableArray arrayWithArray:array];
+    [mutableArray addObject:self];
+    array = [NSArray arrayWithArray:mutableArray];
+    return [Utils shuffle:array];
 }
 
 - (UIImage *)patternImage

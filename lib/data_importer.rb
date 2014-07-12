@@ -50,7 +50,7 @@ class DataImporter
   end
 
   def incorrect_patterns_for(row)
-    row[14..16]
+    row[14..19].select { |c| !c.empty? }
   end
 
   def rows_with_flags
