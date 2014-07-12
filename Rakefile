@@ -4,13 +4,29 @@ require "data_importer"
 
 task default: [:unzip, :import]
 
-task :unzip do
-  puts "Unzipping flags..."
-  sh "unzip -q -o flags.zip -d flags/Puzzles"
-  sh "rm -rf flags/Puzzles/__MACOSX"
+def import_patterns
+  sh "unzip -q -o patterns.zip -d patterns"
+  Dir["patterns/*.png"].each do |f|
+    name = File.basename(f).gsub(".png", "")
+
+    source = f
+    destination = "flags/Puzzles/#{name}/pattern.png"
+
+    sh "mv #{source} #{destination}"
+  end
+  sh "rm -rf patterns"
 end
 
-task :import do
+task :unzip do
+  puts "Importing flags..."
+  sh "unzip -q -o flags.zip -d flags/Puzzles"
+  sh "rm -rf flags/Puzzles/__MACOSX"
+
+  puts "Importing patterns..."
+  import_patterns
+end
+
+task import: :unzip do
   puts "Importing data..."
   DataImporter.import
 end

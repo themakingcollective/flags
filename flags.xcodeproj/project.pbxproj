@@ -315,11 +315,11 @@
 				F94D93491930AEC2008CDB1A /* LayeredView.h */,
 				F94D934A1930AEC2008CDB1A /* LayeredView.m */,
 				830C17BA19714D8E0085ED23 /* PatternView.h */,
+				830C17BB19714D8E0085ED23 /* PatternView.m */,
 				83199A911943487D00C70AAF /* LayerView.h */,
 				83199A921943487D00C70AAF /* LayerView.m */,
 				83198FC61955EA4400F3665E /* PaintPotView.h */,
 				83198FC71955EA4400F3665E /* PaintPotView.m */,
-				830C17BB19714D8E0085ED23 /* PatternView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";

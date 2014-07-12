@@ -58,6 +58,9 @@ static NSArray *allCache;
             if ([s rangeOfString:@"original"].location != NSNotFound) {
                 [layerPaths removeObjectAtIndex:index];
             }
+            if ([s rangeOfString:@"pattern"].location != NSNotFound) {
+                [layerPaths removeObjectAtIndex:index];
+            }
         }];
         
         self.imagePathsCache = [NSArray arrayWithArray:layerPaths];
@@ -159,6 +162,12 @@ static NSArray *allCache;
     return [UIImage imageWithContentsOfFile:filename];
 }
 
+- (UIImage *)patternImage
+{
+    NSString *filename = [NSString stringWithFormat:@"%@/%@/pattern.png", [self.class directoryName], self.name];
+    return [UIImage imageWithContentsOfFile:filename];
+}
+
 + (NSArray *)flagNames
 {
     NSFileManager *fileManager = [NSFileManager defaultManager];
@@ -173,11 +182,6 @@ static NSArray *allCache;
     [mutableArray addObject:self];
     array = [NSArray arrayWithArray:mutableArray];
     return [Utils shuffle:array];
-}
-
-- (UIImage *)patternImage
-{
-    return self.image; // TODO use the real thumbnail/pattern image
 }
 
 + (NSString *)directoryName

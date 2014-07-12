@@ -1,4 +1,5 @@
 .DS_Store
 flags.zip
+patterns.zip
 flags/Puzzles/*
 !flags/Puzzles/Afghanistan
