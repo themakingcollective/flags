@@ -46,7 +46,7 @@
     self.difficultyScaler = [[DifficultyScaler alloc] initWithDifficultyKey:difficultyKey];
     
     NSArray *flags = [self.difficultyScaler scale:[Flag all]];
-    self.quiz = [[Quiz alloc] initWithArray:flags andRounds:3];
+    self.quiz = [[Quiz alloc] initWithArray:flags andRounds:1];
     
     UIFont *titleFont = [UIFont fontWithName:@"BPreplay-Bold" size:30];
     [self.nameLabel setFont:titleFont];
@@ -165,6 +165,7 @@
 - (void)setupChoices:(Flag *)flag
 {
     [self setupPaintPots:flag];
+    [self positionElements];
     
     if ([self.difficulty isEqualToString:@"easy"]) {
         [self.layeredView setFlag:flag];
@@ -254,6 +255,23 @@
     
     [self showPaintPots];
     [self touchFirstPaintPot];
+}
+
+// TODO - does nothing at the moment... :-(
+- (void)positionElements
+{
+    NSInteger offset = 0;
+    if (![self.difficulty isEqualToString:@"easy"]) {
+        offset = -100;
+    }
+
+    NSMutableArray *elements = [NSMutableArray arrayWithArray:self.paintPots];
+    [elements addObject:self.submitButton];
+    [elements addObject:self.feedbackLabel];
+    
+    for (UIView *element in elements) {
+        element.frame = CGRectOffset(element.frame, 0, offset);
+    }
 }
 
 @end
