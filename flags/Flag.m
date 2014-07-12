@@ -35,7 +35,6 @@ static NSArray *allCache;
 {
     if (!self.metadataCache) {
         NSString *filename = [NSString stringWithFormat:@"%@/%@/metadata.json", [self.class directoryName], self.name];
-        NSLog(filename);
         NSData *json = [NSData dataWithContentsOfFile:filename options:NSDataReadingMappedIfSafe error:nil];
         self.metadataCache = [NSJSONSerialization JSONObjectWithData:json options:NSJSONReadingMutableContainers error:nil];
     }
@@ -112,7 +111,6 @@ static NSArray *allCache;
     NSArray *flagNames = [[self metadata] objectForKey:@"incorrect_patterns"];
     
     for (NSString *name in flagNames) {
-        NSLog(name);
         [array addObject:[[self class] find_by_name:name]];
     }
     
@@ -171,7 +169,7 @@ static NSArray *allCache;
 {
     NSMutableArray *array = [NSMutableArray arrayWithArray:[self incorrectFlags]];
     [array addObject:self];
-    return [NSArray arrayWithArray:array];
+    return [NSArray arrayWithArray:[Utils shuffle:array]];
 }
 
 - (UIImage *)patternImage
