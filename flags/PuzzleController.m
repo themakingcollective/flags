@@ -166,8 +166,7 @@
 
 - (void)touchedPattern:(PatternView *)pattern
 {
-    NSLog(@"touched flag: %@", pattern.flag.name);
-//    [self.layeredView setFlag:[[Flag all] firstObject]];
+    [self.layeredView setFlag:pattern.flag];
     
     self.currentPatternFlag = pattern.flag;
 }

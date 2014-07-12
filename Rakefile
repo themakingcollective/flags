@@ -20,4 +20,7 @@ task :clean do
     simulator = File.expand_path('~/Library/Application\ Support/iPhone\ Simulator')
     sh "rm -rf #{simulator}/#{version}/Applications/*"
   end
+
+  derived = File.expand_path("~/Library/Developer/Xcode/DerivedData/flags-*")
+  sh "rm -rf #{derived}"
 end

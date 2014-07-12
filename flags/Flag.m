@@ -35,6 +35,7 @@ static NSArray *allCache;
 {
     if (!self.metadataCache) {
         NSString *filename = [NSString stringWithFormat:@"%@/%@/metadata.json", [self.class directoryName], self.name];
+        NSLog(filename);
         NSData *json = [NSData dataWithContentsOfFile:filename options:NSDataReadingMappedIfSafe error:nil];
         self.metadataCache = [NSJSONSerialization JSONObjectWithData:json options:NSJSONReadingMutableContainers error:nil];
     }
@@ -105,6 +106,19 @@ static NSArray *allCache;
     return array;
 }
 
+- (NSArray *)incorrectFlags
+{
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+    NSArray *flagNames = [[self metadata] objectForKey:@"incorrect_patterns"];
+    
+    for (NSString *name in flagNames) {
+        NSLog(name);
+        [array addObject:[[self class] find_by_name:name]];
+    }
+    
+    return array;
+}
+
 - (UIColor *)colorFromPath:(NSString *)path
 {
     NSString *name = [path lastPathComponent];
@@ -129,6 +143,18 @@ static NSArray *allCache;
     return allCache;
 }
 
++ (Flag *)find_by_name:(NSString *)name
+{
+    for (Flag *flag in [[self class] all]) {
+        
+        if ([flag.name isEqualToString:name]) {
+            return flag;
+        }
+    }
+    
+    return nil;
+}
+
 - (UIImage *)image
 {
     NSString *filename = [NSString stringWithFormat:@"%@/%@/original.png", [self.class directoryName], self.name];
@@ -143,7 +169,9 @@ static NSArray *allCache;
 
 - (NSArray *)patternFlags
 {
-    return @[self]; // TODO return self + 3 flags that are red herrings
+    NSMutableArray *array = [NSMutableArray arrayWithArray:[self incorrectFlags]];
+    [array addObject:self];
+    return [NSArray arrayWithArray:array];
 }
 
 - (UIImage *)patternImage

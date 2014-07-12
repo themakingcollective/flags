@@ -30,13 +30,14 @@ class DataImporter
   def import
     rows_with_flags.each do |row|
       data = {
-        continent:        row[0],
-        name:             row[1],
-        category:         row[2].to_i,
-        population:       row[3].to_i,
-        area:             row[4].to_i,
-        image_url:        row[5],
-        incorrect_colors: incorrect_colors_for(row),
+        continent:          row[0],
+        name:               row[1],
+        category:           row[2].to_i,
+        population:         row[3].to_i,
+        area:               row[4].to_i,
+        image_url:          row[5],
+        incorrect_colors:   incorrect_colors_for(row),
+        incorrect_patterns: incorrect_patterns_for(row),
       }
 
       write(data);
@@ -46,6 +47,10 @@ class DataImporter
   private
   def incorrect_colors_for(row)
     row[9..13].select { |c| !c.empty? }.map { |c| c.gsub("#", "") }
+  end
+
+  def incorrect_patterns_for(row)
+    row[14..16]
   end
 
   def rows_with_flags
@@ -67,7 +72,7 @@ class DataImporter
 
     if File.directory?(directory)
       metadata = "#{directory}/metadata.json"
-      File.open(metadata, "w") { |f| f.puts data.to_json }
+      File.open(metadata, "w") { |f| f.puts JSON.pretty_generate(data) }
     else
       puts ">>> No directory: #{directory}"
     end
