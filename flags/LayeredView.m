@@ -21,9 +21,17 @@
 @synthesize paintColor=_paintColor;
 @synthesize delegate=_delegate;
 
+- (void)viewDidLoad
+{
+    NSLog(@"view loaded");
+}
+
 - (void)setFlag:(Flag *)flag
 {
     [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    
+    self.backgroundColor = [UIColor clearColor];
+    self.layer.borderColor = [UIColor clearColor].CGColor;
     
     NSArray *layerViews = [self layerViewsFor:flag];
     
@@ -33,6 +41,17 @@
     }
     
     [self setNeedsDisplay];
+}
+
+- (void)setBlank
+{
+    [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    
+    self.backgroundColor = [UIColor whiteColor];
+    
+    self.layer.borderColor = [Utils colorWithHexString:@"777779"].CGColor;
+    self.layer.borderWidth = 2.0f;
+    [self.layer setCornerRadius:5.0f];
 }
 
 - (BOOL)isCorrect

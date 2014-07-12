@@ -20,6 +20,7 @@
 @property (nonatomic, strong) id delegate;
 
 - (void)setFlag:(Flag *)flag;
+- (void)setBlank;
 - (void)setPaintColor:(UIColor *)color;
 - (BOOL)isCorrect;
 
