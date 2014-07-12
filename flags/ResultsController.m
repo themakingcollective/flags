@@ -12,16 +12,30 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
+@property (weak, nonatomic) IBOutlet UIButton *playAgainButton;
+@property (weak, nonatomic) IBOutlet UIButton *switchButton;
+@property (weak, nonatomic) IBOutlet UIImageView *rosetteImageView;
 
 @end
 
 @implementation ResultsController
 
 @synthesize quiz=_quiz;
+@synthesize difficulty=_difficulty;
 
 - (void)viewDidLoad
 {
-    self.navigationItem.title = @"colours";
+    self.navigationItem.title = [self.difficulty isEqualToString:@"easy"] ? @"colours" : @"colours + shapes";
+    NSString *difficulty = [self.difficulty isEqualToString:@"easy"] ? @"Easy" : @"Hard";
+    
+    UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%@-Play-Again", difficulty]];
+    [self.playAgainButton setBackgroundImage:image forState:UIControlStateNormal];
+    
+    NSString *switchImageName = [self.difficulty isEqualToString:@"easy"] ? @"Easy-Switch-to-Hard" : @"Hard-Switch-to-Easy";
+    [self.switchButton setBackgroundImage:[UIImage imageNamed:switchImageName] forState:UIControlStateNormal];
+    
+    NSString *rosetteImageName = [NSString stringWithFormat:@"%@-results-rosette", difficulty];
+    [self.rosetteImageView setImage:[UIImage imageNamed:rosetteImageName]];
     
     NSInteger total = self.quiz.correctCount + self.quiz.incorrectCount;
     
@@ -30,9 +44,12 @@
     [self.totalLabel setFont:font];
 
     // blue is 20, 96, 137
+    UIColor *blue = [UIColor colorWithRed:(20 / 255.0f) green:(96 / 255.0f) blue:(137 / 255.0f) alpha:1.0f];
     UIColor *pink = [UIColor colorWithRed:(207 / 255.0f) green:(62 / 255.0f) blue:(96 / 255.0f) alpha:1.0f];
-    self.scoreLabel.textColor = pink;
-    self.totalLabel.textColor = pink;
+    UIColor *textColor = [self.difficulty isEqualToString:@"easy"] ? pink : blue;
+    
+    self.scoreLabel.textColor = textColor;
+    self.totalLabel.textColor = textColor;
     
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", self.quiz.correctCount];
     self.totalLabel.text = [NSString stringWithFormat:@"%d", total];
@@ -40,8 +57,12 @@
     [super viewDidLoad];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+- (IBAction)switch:(id)sender
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+    NSString *viewIdentifier = [self.difficulty isEqualToString:@"easy"] ? @"PuzzleHardStart" : @"PuzzleEasyStart";
+    ResultsController *results = [storyboard instantiateViewControllerWithIdentifier:viewIdentifier];
+    [self.navigationController pushViewController:results animated:YES];
 }
 
 @end

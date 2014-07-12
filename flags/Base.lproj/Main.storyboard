@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="x1h-XZ-iCb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="x1h-XZ-iCb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -51,7 +51,7 @@
         <!--Base View Controller - colours-->
         <scene sceneID="WJ7-Ya-jpr">
             <objects>
-                <viewController id="LVE-5r-Cca" customClass="BaseViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PuzzleEasyStart" id="LVE-5r-Cca" customClass="BaseViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2Ft-Vs-g1E"/>
                         <viewControllerLayoutGuide type="bottom" id="edy-vi-rVe"/>
@@ -94,7 +94,7 @@
         <!--Base View Controller - colours + shapes-->
         <scene sceneID="Frg-dF-GNM">
             <objects>
-                <viewController id="R2e-D7-tC1" customClass="BaseViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PuzzleHardStart" id="R2e-D7-tC1" customClass="BaseViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Txp-aP-wqf"/>
                         <viewControllerLayoutGuide type="bottom" id="xVE-gz-pLe"/>
@@ -134,7 +134,7 @@
             </objects>
             <point key="canvasLocation" x="934" y="-249"/>
         </scene>
-        <!--Puzzle Controller - colours-->
+        <!--Puzzle Controller-->
         <scene sceneID="hRQ-42-rgq">
             <objects>
                 <viewController id="5AU-KU-zeq" customClass="PuzzleController" sceneMemberID="viewController">
@@ -207,7 +207,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.92156862750000001" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                     </view>
-                    <navigationItem key="navigationItem" title="colours" id="Mzm-ZG-czd"/>
+                    <navigationItem key="navigationItem" id="Mzm-ZG-czd"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
@@ -236,11 +236,11 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yW-YX-JU5">
                                 <rect key="frame" x="166" y="304" width="140" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Easy-Switch-to-Hard.png">
+                                <state key="normal" backgroundImage="Easy-Switch-to-Hard.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="R2e-D7-tC1" kind="push" id="pjc-HZ-CnR"/>
+                                    <action selector="switch:" destination="sf6-OT-CDf" eventType="touchUpInside" id="Pui-rB-Cch"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcg-3B-XFS">
@@ -276,7 +276,10 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
+                        <outlet property="playAgainButton" destination="tcg-3B-XFS" id="l4W-vQ-F3Y"/>
+                        <outlet property="rosetteImageView" destination="6Bx-dp-ysk" id="Vdk-AW-oHE"/>
                         <outlet property="scoreLabel" destination="XFo-Cz-W3T" id="bAE-bY-WYv"/>
+                        <outlet property="switchButton" destination="0yW-YX-JU5" id="cSW-3o-unx"/>
                         <outlet property="totalLabel" destination="Leg-SX-4Bg" id="4OT-5j-idK"/>
                     </connections>
                 </viewController>
@@ -477,7 +480,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="pjc-HZ-CnR"/>
         <segue reference="POs-O3-vYW"/>
     </inferredMetricsTieBreakers>
 </document>

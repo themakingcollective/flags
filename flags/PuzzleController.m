@@ -31,14 +31,10 @@
 
 - (void)viewDidLoad
 {
-    self.difficulty = @"hard"; // TODO
+    NSString *previousTitle = [self previousTitle];
     
-    if ([self.difficulty isEqualToString:@"easy"]) {
-        self.navigationItem.title = @"colours";
-    }
-    else {
-        self.navigationItem.title = @"colours + shapes";
-    }
+    self.difficulty = [previousTitle isEqualToString:@"colours"] ? @"easy" : @"hard";
+    self.navigationItem.title = previousTitle;
     
     self.layeredView.backgroundColor = [UIColor clearColor];
     [self.layeredView setDelegate:self];
@@ -47,7 +43,7 @@
     self.difficultyScaler = [[DifficultyScaler alloc] initWithDifficultyKey:difficultyKey];
     
     NSArray *flags = [self.difficultyScaler scale:[Flag all]];
-    self.quiz = [[Quiz alloc] initWithArray:flags andRounds:3];
+    self.quiz = [[Quiz alloc] initWithArray:flags andRounds:1];
     
     UIFont *titleFont = [UIFont fontWithName:@"BPreplay-Bold" size:30];
     [self.nameLabel setFont:titleFont];
@@ -103,6 +99,7 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
     ResultsController *results = [storyboard instantiateViewControllerWithIdentifier:@"ResultsController"];
     results.quiz = self.quiz;
+    results.difficulty = self.difficulty;
     
     [self.navigationController pushViewController:results animated:YES];
 }
@@ -122,6 +119,11 @@
         
         [pot setDelegate:self];
         [pot setColor:color];
+        
+        // TODO - resize and move the colour pots
+//        CGRect frame = pot.frame;
+//        frame.size.height = 200;
+//        [pot setFrame:frame];
     }
 }
 
@@ -176,6 +178,13 @@
     
     [self.submitButton setUserInteractionEnabled:state];
     [self.submitButton setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+}
+
+- (NSString *)previousTitle
+{
+    NSInteger previousIndex = [self.navigationController.viewControllers count] - 2;
+    UIViewController *previousController = [self.navigationController.viewControllers objectAtIndex:previousIndex];
+    return previousController.navigationItem.title;
 }
 
 @end

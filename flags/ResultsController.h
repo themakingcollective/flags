@@ -13,5 +13,6 @@
 @interface ResultsController : BaseViewController
 
 @property (nonatomic, strong) Quiz *quiz;
+@property (nonatomic, strong) NSString *difficulty;
 
 @end
