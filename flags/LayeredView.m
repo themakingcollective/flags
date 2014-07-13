@@ -21,11 +21,6 @@
 @synthesize paintColor=_paintColor;
 @synthesize delegate=_delegate;
 
-- (void)viewDidLoad
-{
-    NSLog(@"view loaded");
-}
-
 - (void)setFlag:(Flag *)flag
 {
     [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
