@@ -19,7 +19,7 @@
     [[UINavigationBar appearance] setTitleTextAttributes:
      @{
        NSForegroundColorAttributeName: [UIColor whiteColor],
-       NSFontAttributeName: [UIFont fontWithName:@"BPreplay" size:24]
+       NSFontAttributeName: [UIFont fontWithName:@"BPreplay" size:22]
      }];
     
     [[UINavigationBar appearance] setTitleVerticalPositionAdjustment:2 forBarMetrics:UIBarMetricsDefault];

@@ -46,7 +46,7 @@
     self.difficultyScaler = [[DifficultyScaler alloc] initWithDifficultyKey:difficultyKey];
     
     NSArray *flags = [self.difficultyScaler scale:[Flag all]];
-    self.quiz = [[Quiz alloc] initWithArray:flags andRounds:1];
+    self.quiz = [[Quiz alloc] initWithArray:flags andRounds:3];
     
     UIFont *titleFont = [UIFont fontWithName:@"BPreplay-Bold" size:30];
     [self.nameLabel setFont:titleFont];
@@ -57,6 +57,32 @@
     [self nextFlag:nil];
     
     [super viewDidLoad];
+}
+
+- (void)viewDidLayoutSubviews
+{
+//    NSLog(@"laying out subviews");
+//    
+//    if (![self.difficulty isEqualToString:@"easy"]) {
+//        return;
+//    }
+//    
+//    NSInteger y = 266 + 14; // 14 points padding below layered view.
+//    
+//    for (PaintPotView *pot in self.paintPots) {
+//        CGRect f = pot.frame;
+//        pot.frame = CGRectMake(f.origin.x, y, f.size.width, 41);
+//    }
+//    
+//    y += 41 + 16; // 16 points padding below paint pots.
+//    
+//    CGRect f = self.submitButton.frame;
+//    self.submitButton.frame = CGRectMake(f.origin.x, y, f.size.width, f.size.height);
+//    
+//    y += 3; // vertically center, relative to submit button.
+//    
+//    f = self.feedbackLabel.frame;
+//    self.feedbackLabel.frame = CGRectMake(f.origin.x, y, f.size.width, f.size.height);
 }
 
 - (void)nextFlag:(NSTimer *)timer
@@ -165,7 +191,6 @@
 - (void)setupChoices:(Flag *)flag
 {
     [self setupPaintPots:flag];
-    [self positionElements];
     
     if ([self.difficulty isEqualToString:@"easy"]) {
         [self.layeredView setFlag:flag];
@@ -176,6 +201,7 @@
         [self.layeredView setBlank];
         [self setupPatterns:flag];
         [self hidePaintPots];
+        [self hideSubmitButton];
     }
 }
 
@@ -238,6 +264,16 @@
     }
 }
 
+- (void)hideSubmitButton
+{
+    self.submitButton.hidden = YES;
+}
+
+- (void)showSubmitButton
+{
+    self.submitButton.hidden = NO;
+}
+
 - (void)touchedPaintPot:(PaintPotView *)paintPot
 {
     [self.layeredView setPaintColor:paintPot.backgroundColor];
@@ -254,24 +290,8 @@
     [self.layeredView setFlag:pattern.flag];
     
     [self showPaintPots];
+    [self showSubmitButton];
     [self touchFirstPaintPot];
-}
-
-// TODO - does nothing at the moment... :-(
-- (void)positionElements
-{
-    NSInteger offset = 0;
-    if (![self.difficulty isEqualToString:@"easy"]) {
-        offset = -100;
-    }
-
-    NSMutableArray *elements = [NSMutableArray arrayWithArray:self.paintPots];
-    [elements addObject:self.submitButton];
-    [elements addObject:self.feedbackLabel];
-    
-    for (UIView *element in elements) {
-        element.frame = CGRectOffset(element.frame, 0, offset);
-    }
 }
 
 @end

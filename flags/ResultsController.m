@@ -25,7 +25,7 @@
 
 - (void)viewDidLoad
 {
-    self.navigationItem.title = [self.difficulty isEqualToString:@"easy"] ? @"colours" : @"colours + shapes";
+    self.navigationItem.title = [self.difficulty isEqualToString:@"easy"] ? @"colours" : @"patterns + colours";
     NSString *difficulty = [self.difficulty isEqualToString:@"easy"] ? @"Easy" : @"Hard";
     
     UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%@-Play-Again", difficulty]];
