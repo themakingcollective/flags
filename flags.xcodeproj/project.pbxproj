@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		830C17BC19714D8E0085ED23 /* PatternView.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C17BB19714D8E0085ED23 /* PatternView.m */; };
+		831414BF1972E5A1009D8FCC /* TableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 831414BE1972E5A1009D8FCC /* TableCell.m */; };
 		83198FC81955EA4400F3665E /* PaintPotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83198FC71955EA4400F3665E /* PaintPotView.m */; };
 		83199A931943487D00C70AAF /* LayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83199A921943487D00C70AAF /* LayerView.m */; };
 		8321C70818DDDD7300970E8F /* Quiz-Easy-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70618DDDD7300970E8F /* Quiz-Easy-Button.png */; };
@@ -63,6 +64,8 @@
 /* Begin PBXFileReference section */
 		830C17BA19714D8E0085ED23 /* PatternView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatternView.h; sourceTree = "<group>"; };
 		830C17BB19714D8E0085ED23 /* PatternView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatternView.m; sourceTree = "<group>"; };
+		831414BD1972E5A1009D8FCC /* TableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCell.h; sourceTree = "<group>"; };
+		831414BE1972E5A1009D8FCC /* TableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCell.m; sourceTree = "<group>"; };
 		83198FC61955EA4400F3665E /* PaintPotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaintPotView.h; sourceTree = "<group>"; };
 		83198FC71955EA4400F3665E /* PaintPotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaintPotView.m; sourceTree = "<group>"; };
 		83199A911943487D00C70AAF /* LayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerView.h; sourceTree = "<group>"; };
@@ -320,6 +323,8 @@
 				83199A921943487D00C70AAF /* LayerView.m */,
 				83198FC61955EA4400F3665E /* PaintPotView.h */,
 				83198FC71955EA4400F3665E /* PaintPotView.m */,
+				831414BD1972E5A1009D8FCC /* TableCell.h */,
+				831414BE1972E5A1009D8FCC /* TableCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -447,6 +452,7 @@
 				832D81751956D6E6000600DA /* ResultsController.m in Sources */,
 				83199A931943487D00C70AAF /* LayerView.m in Sources */,
 				83D4A03219683D0000C0D694 /* DifficultyScaler.m in Sources */,
+				831414BF1972E5A1009D8FCC /* TableCell.m in Sources */,
 				8378484D18DDAF8E00C5AC61 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
