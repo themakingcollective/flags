@@ -204,19 +204,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zCp-Z7-2fL" customClass="PatternView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Puzzles-Bar-Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="zCp-Z7-2fL" customClass="PatternView">
                                 <rect key="frame" x="20" y="276" width="60" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pwz-xx-Yez" customClass="PatternView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Puzzles-Bar-Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="pwz-xx-Yez" customClass="PatternView">
                                 <rect key="frame" x="93" y="276" width="60" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IeG-0g-YeS" customClass="PatternView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Puzzles-Bar-Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="IeG-0g-YeS" customClass="PatternView">
                                 <rect key="frame" x="168" y="276" width="60" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K47-en-vXj" customClass="PatternView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Puzzles-Bar-Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="K47-en-vXj" customClass="PatternView">
                                 <rect key="frame" x="242" y="276" width="60" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -480,6 +480,7 @@
         <image name="Easy-results-rosette.png" width="1318" height="1070"/>
         <image name="Play-Colours+Shapes-Puzzle-Button.png" width="1189" height="179"/>
         <image name="Play-Colours-Puzzle-Button.png" width="1188" height="180"/>
+        <image name="Puzzles-Bar-Icon.png" width="131" height="131"/>
         <image name="Puzzles-Easy-Button.png" width="1364" height="237"/>
         <image name="Puzzles-Easy-Explain.png" width="1350" height="1345"/>
         <image name="Puzzles-Hard-Button.png" width="1364" height="237"/>

@@ -61,28 +61,28 @@
 
 - (void)viewDidLayoutSubviews
 {
-//    NSLog(@"laying out subviews");
-//    
-//    if (![self.difficulty isEqualToString:@"easy"]) {
-//        return;
-//    }
-//    
-//    NSInteger y = 266 + 14; // 14 points padding below layered view.
-//    
-//    for (PaintPotView *pot in self.paintPots) {
-//        CGRect f = pot.frame;
-//        pot.frame = CGRectMake(f.origin.x, y, f.size.width, 41);
-//    }
-//    
-//    y += 41 + 16; // 16 points padding below paint pots.
-//    
-//    CGRect f = self.submitButton.frame;
-//    self.submitButton.frame = CGRectMake(f.origin.x, y, f.size.width, f.size.height);
-//    
-//    y += 3; // vertically center, relative to submit button.
-//    
-//    f = self.feedbackLabel.frame;
-//    self.feedbackLabel.frame = CGRectMake(f.origin.x, y, f.size.width, f.size.height);
+    [super viewDidLayoutSubviews];
+    
+    if (![self.difficulty isEqualToString:@"easy"]) {
+        return;
+    }
+    
+    NSInteger y = 266 + 14; // 14 points padding below layered view.
+    
+    for (PaintPotView *pot in self.paintPots) {
+        CGRect f = pot.frame;
+        pot.frame = CGRectMake(f.origin.x, y, f.size.width, 41);
+    }
+
+    y += 41 + 16; // 16 points padding below paint pots.
+    
+    CGRect f = self.submitButton.frame;
+    self.submitButton.frame = CGRectMake(f.origin.x, y, f.size.width, f.size.height);
+    
+    y += 3; // vertically center, relative to submit button.
+    
+    f = self.feedbackLabel.frame;
+    self.feedbackLabel.frame = CGRectMake(f.origin.x, y, f.size.width, f.size.height);
 }
 
 - (void)nextFlag:(NSTimer *)timer
@@ -191,15 +191,15 @@
 - (void)setupChoices:(Flag *)flag
 {
     [self setupPaintPots:flag];
+    [self setupPatterns:flag];
     
     if ([self.difficulty isEqualToString:@"easy"]) {
         [self.layeredView setFlag:flag];
         [self touchFirstPaintPot];
-        [self hidePatterns];
+        [self removePatterns];
     }
     else {
         [self.layeredView setBlank];
-        [self setupPatterns:flag];
         [self hidePaintPots];
         [self hideSubmitButton];
     }
@@ -243,10 +243,10 @@
     [self touchedPaintPot:[self.paintPots firstObject]];
 }
 
-- (void)hidePatterns
+- (void)removePatterns
 {
     for (PatternView *patternView in self.patterns) {
-        patternView.hidden = YES;
+        [patternView removeFromSuperview];
     }
 }
 
