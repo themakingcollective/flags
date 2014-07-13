@@ -8,6 +8,7 @@
 
 #import "TableController.h"
 #import "Flag.h"
+#import "Utils.h"
 
 @interface TableController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -25,10 +26,30 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     Flag *flag = [[Flag all] objectAtIndex:indexPath.row];
 
+    tableView.separatorColor = [UIColor clearColor];
+    self.view.backgroundColor = [Utils backgroundColor];
+    
     cell.textLabel.text = flag.name;
     cell.imageView.image = flag.image;
     
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 95;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 7;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIView *header = [[UIView alloc] init];
+    header.backgroundColor = [Utils backgroundColor];
+    return header;
 }
 
 @end

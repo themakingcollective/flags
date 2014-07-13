@@ -10,6 +10,7 @@
 
 @interface Utils : NSObject
 
++ (UIColor *)backgroundColor;
 + (NSArray *)unique:(NSArray *)array;
 + (NSArray *)shuffle:(NSArray *)array;
 + (UIColor *)getRGBAsFromImage:(UIImage *)image atX:(int)xx andY:(int)yy;

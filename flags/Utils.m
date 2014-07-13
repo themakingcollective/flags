@@ -10,6 +10,11 @@
 
 @implementation Utils
 
++ (UIColor *)backgroundColor
+{
+    return [UIColor colorWithRed:(235 / 255.0) green:(244 / 255.0) blue:(219 / 255.0) alpha:1.0f];
+}
+
 + (NSArray *)unique:(NSArray *)array
 {
     return [[NSSet setWithArray:array] allObjects];
