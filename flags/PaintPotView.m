@@ -9,7 +9,7 @@
 #import "PaintPotView.h"
 #import "Utils.h"
 
-@interface PaintPotView () <UIGestureRecognizerDelegate>
+@interface PaintPotView ()
 
 @end
 
@@ -36,25 +36,14 @@
 {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        [self addGestureRecognizer:[self tapGesture]];
         [self.layer setCornerRadius:3.0f];
     }
     return self;
 }
 
-- (void)onTap
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [self.delegate touchedPaintPot:self];
-}
-
-- (UITapGestureRecognizer *)tapGesture
-{
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTap)];
-    
-    [tap setDelegate:self];
-    [tap setNumberOfTapsRequired:1];
-    
-    return tap;
 }
 
 - (void)setColor:(UIColor *)color

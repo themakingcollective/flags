@@ -8,7 +8,7 @@
 
 #import "PatternView.h"
 
-@interface PatternView () <UIGestureRecognizerDelegate>
+@interface PatternView ()
 
 @end
 
@@ -20,7 +20,6 @@
 {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        [self addGestureRecognizer:[self tapGesture]];
         [self.layer setCornerRadius:3.0f];
     }
     return self;
@@ -31,19 +30,9 @@
     self.image = self.flag.patternImage;
 }
 
-- (void)onTap
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [self.delegate touchedPattern:self];
-}
-
-- (UITapGestureRecognizer *)tapGesture
-{
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTap)];
-    
-    [tap setDelegate:self];
-    [tap setNumberOfTapsRequired:1];
-    
-    return tap;
 }
 
 @end
