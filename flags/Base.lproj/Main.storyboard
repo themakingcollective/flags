@@ -38,7 +38,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.92156862745098034" green="0.95686274509803915" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                     </view>
                     <navigationItem key="navigationItem" id="Bnx-WQ-db7"/>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -204,24 +203,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Puzzles-Bar-Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="zCp-Z7-2fL" customClass="PatternView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Puzzles-Menu-Button.png" translatesAutoresizingMaskIntoConstraints="NO" id="zCp-Z7-2fL" customClass="PatternView">
                                 <rect key="frame" x="20" y="276" width="60" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Puzzles-Bar-Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="pwz-xx-Yez" customClass="PatternView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Puzzles-Menu-Button.png" translatesAutoresizingMaskIntoConstraints="NO" id="pwz-xx-Yez" customClass="PatternView">
                                 <rect key="frame" x="93" y="276" width="60" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Puzzles-Bar-Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="IeG-0g-YeS" customClass="PatternView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Puzzles-Menu-Button.png" translatesAutoresizingMaskIntoConstraints="NO" id="IeG-0g-YeS" customClass="PatternView">
                                 <rect key="frame" x="168" y="276" width="60" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Puzzles-Bar-Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="K47-en-vXj" customClass="PatternView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Puzzles-Menu-Button.png" translatesAutoresizingMaskIntoConstraints="NO" id="K47-en-vXj" customClass="PatternView">
                                 <rect key="frame" x="242" y="276" width="60" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.92156862750000001" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                     </view>
                     <navigationItem key="navigationItem" id="Mzm-ZG-czd"/>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -287,7 +285,6 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.92156862750000001" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
@@ -342,7 +339,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.92156862750000001" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                     </view>
                     <navigationItem key="navigationItem" title="puzzles" id="2vq-Iw-r3a"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
@@ -394,7 +390,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.92156862750000001" green="0.95686274510000002" blue="0.85882352939999995" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
                     </view>
                     <navigationItem key="navigationItem" title="quiz" id="0dO-SU-RE3"/>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -422,7 +417,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.92156862745098034" green="0.95686274509803915" blue="0.85882352941176465" alpha="1" colorSpace="deviceRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -472,7 +466,6 @@
         <image name="Easy-results-rosette.png" width="1318" height="1070"/>
         <image name="Play-Colours+Shapes-Puzzle-Button.png" width="1189" height="179"/>
         <image name="Play-Colours-Puzzle-Button.png" width="1188" height="180"/>
-        <image name="Puzzles-Bar-Icon.png" width="131" height="131"/>
         <image name="Puzzles-Easy-Button.png" width="1364" height="237"/>
         <image name="Puzzles-Easy-Explain.png" width="1350" height="1345"/>
         <image name="Puzzles-Hard-Button.png" width="1364" height="237"/>

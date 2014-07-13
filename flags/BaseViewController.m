@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#import "Utils.h"
 
 @interface BaseViewController ()
 
@@ -18,6 +19,11 @@
 {
     [super viewDidLoad];
     [self setupBarStyles];
+    
+    // Use a default colour unless we explicitly set it in storyboard.
+    if (self.view.backgroundColor == nil) {
+        self.view.backgroundColor = [Utils backgroundColor];
+    }
 }
 
 - (void)setupBarStyles
