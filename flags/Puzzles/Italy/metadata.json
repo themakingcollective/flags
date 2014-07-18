@@ -1,0 +1,22 @@
+{
+  "name": "Italy",
+  "continent": "Europe",
+  "directory": "Italy",
+  "category": 1,
+  "population": 59530464,
+  "area": 301230,
+  "image_url": "http://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

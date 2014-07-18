@@ -1,0 +1,22 @@
+{
+  "name": "Papua New Guinea",
+  "continent": "Oceania",
+  "directory": "Papua_New_Guinea",
+  "category": 3,
+  "population": 5172033,
+  "area": 462840,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/e/e3/Flag_of_Papua_New_Guinea.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

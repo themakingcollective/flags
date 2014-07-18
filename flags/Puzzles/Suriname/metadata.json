@@ -1,0 +1,22 @@
+{
+  "name": "Suriname",
+  "continent": "South America",
+  "directory": "Suriname",
+  "category": 3,
+  "population": 491989,
+  "area": 163820,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/6/60/Flag_of_Suriname.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Mauritius",
+  "continent": "Africa",
+  "directory": "Mauritius",
+  "category": 3,
+  "population": 1314000,
+  "area": 2040,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Mauritius.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

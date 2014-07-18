@@ -1,0 +1,22 @@
+{
+  "name": "Spain",
+  "continent": "Europe",
+  "directory": "Spain",
+  "category": 1,
+  "population": 45061274,
+  "area": 504851,
+  "image_url": "http://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Honduras",
+  "continent": "North America",
+  "directory": "Honduras",
+  "category": 3,
+  "population": 8578000,
+  "area": 112492,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/8/82/Flag_of_Honduras.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

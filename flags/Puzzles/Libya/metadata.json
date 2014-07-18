@@ -1,0 +1,22 @@
+{
+  "name": "Libya",
+  "continent": "Africa",
+  "directory": "Libya",
+  "category": 3,
+  "population": 6469000,
+  "area": 1759540,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Libya.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

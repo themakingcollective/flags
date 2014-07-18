@@ -1,0 +1,22 @@
+{
+  "name": "Bolivia",
+  "continent": "South America",
+  "directory": "Bolivia",
+  "category": 3,
+  "population": 10118683,
+  "area": 1098581,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/d/de/Flag_of_Bolivia_%28state%29.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

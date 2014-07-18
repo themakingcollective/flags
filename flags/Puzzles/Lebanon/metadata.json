@@ -1,0 +1,22 @@
+{
+  "name": "Lebanon",
+  "continent": "Asia",
+  "directory": "Lebanon",
+  "category": 2,
+  "population": 4140289,
+  "area": 10400,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/5/59/Flag_of_Lebanon.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

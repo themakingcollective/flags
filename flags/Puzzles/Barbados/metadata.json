@@ -1,0 +1,22 @@
+{
+  "name": "Barbados",
+  "continent": "North America",
+  "directory": "Barbados",
+  "category": 3,
+  "population": 276000,
+  "area": 430,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/e/ef/Flag_of_Barbados.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

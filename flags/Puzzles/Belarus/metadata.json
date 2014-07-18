@@ -1,0 +1,22 @@
+{
+  "name": "Belarus",
+  "continent": "Europe",
+  "directory": "Belarus",
+  "category": 3,
+  "population": 9458000,
+  "area": 207560,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/8/85/Flag_of_Belarus.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

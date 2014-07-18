@@ -1,0 +1,22 @@
+{
+  "name": "São Tomé & Príncipe",
+  "continent": "Africa",
+  "directory": "Sao_Tome_and_Principe",
+  "category": 3,
+  "population": 172000,
+  "area": 964,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Sao_Tome_and_Principe.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

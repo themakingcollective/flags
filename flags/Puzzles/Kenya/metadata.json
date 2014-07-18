@@ -1,0 +1,22 @@
+{
+  "name": "Kenya",
+  "continent": "Africa",
+  "directory": "Kenya",
+  "category": 2,
+  "population": 42749000,
+  "area": 580367,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Venezuela",
+  "continent": "South America",
+  "directory": "Venezuela",
+  "category": 2,
+  "population": 27635743,
+  "area": 912050,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Venezuela.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

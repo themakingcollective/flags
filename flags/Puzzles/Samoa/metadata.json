@@ -1,0 +1,22 @@
+{
+  "name": "Samoa",
+  "continent": "Oceania",
+  "directory": "Samoa",
+  "category": 3,
+  "population": 179000,
+  "area": 2944,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/3/31/Flag_of_Samoa.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

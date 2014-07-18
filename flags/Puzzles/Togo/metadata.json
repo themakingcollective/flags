@@ -1,0 +1,22 @@
+{
+  "name": "Togo",
+  "continent": "Africa",
+  "directory": "Togo",
+  "category": 2,
+  "population": 6283000,
+  "area": 56785,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/6/68/Flag_of_Togo.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

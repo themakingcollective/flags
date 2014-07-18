@@ -1,0 +1,22 @@
+{
+  "name": "Dominica",
+  "continent": "North America",
+  "directory": "Dominica",
+  "category": 3,
+  "population": 71000,
+  "area": 751,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/c/c4/Flag_of_Dominica.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

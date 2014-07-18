@@ -1,0 +1,22 @@
+{
+  "name": "Singapore",
+  "continent": "Asia",
+  "directory": "Singapore",
+  "category": 2,
+  "population": 5353494,
+  "area": 697,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

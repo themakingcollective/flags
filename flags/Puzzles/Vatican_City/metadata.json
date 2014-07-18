@@ -1,0 +1,22 @@
+{
+  "name": "Vatican City",
+  "continent": "Europe",
+  "directory": "Vatican_City",
+  "category": 2,
+  "population": 900,
+  "area": 0,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_the_Vatican_City.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

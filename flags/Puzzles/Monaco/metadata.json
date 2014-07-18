@@ -1,0 +1,22 @@
+{
+  "name": "Monaco",
+  "continent": "Europe",
+  "directory": "Monaco",
+  "category": 2,
+  "population": 31987,
+  "area": 1,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/e/ea/Flag_of_Monaco.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

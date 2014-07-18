@@ -1,0 +1,22 @@
+{
+  "name": "Ethiopia",
+  "continent": "Africa",
+  "directory": "Ethiopia",
+  "category": 2,
+  "population": 86539000,
+  "area": 1104300,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/7/71/Flag_of_Ethiopia.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

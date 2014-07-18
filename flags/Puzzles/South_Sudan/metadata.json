@@ -1,0 +1,22 @@
+{
+  "name": "South Sudan",
+  "continent": "Africa",
+  "directory": "South_Sudan",
+  "category": 3,
+  "population": 8260490,
+  "area": 644329,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/7/7a/Flag_of_South_Sudan.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

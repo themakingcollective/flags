@@ -1,0 +1,22 @@
+{
+  "name": "Sierra Leone",
+  "continent": "Africa",
+  "directory": "Sierra_Leone",
+  "category": 3,
+  "population": 6126000,
+  "area": 71740,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Sierra_Leone.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

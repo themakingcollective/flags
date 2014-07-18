@@ -1,0 +1,22 @@
+{
+  "name": "Moldova",
+  "continent": "Europe",
+  "directory": "Moldova",
+  "category": 3,
+  "population": 4434547,
+  "area": 33843,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Moldova.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

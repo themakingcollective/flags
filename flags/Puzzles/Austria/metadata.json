@@ -1,0 +1,23 @@
+{
+  "name": "Austria",
+  "continent": "Europe",
+  "directory": "Austria",
+  "category": 2,
+  "population": 8169929,
+  "area": 83858,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg",
+  "incorrect_colors": [
+    "ffa500",
+    "daa520",
+    "228b22",
+    "0000cd"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

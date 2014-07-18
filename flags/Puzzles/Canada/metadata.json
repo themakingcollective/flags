@@ -1,0 +1,22 @@
+{
+  "name": "Canada",
+  "continent": "North America",
+  "directory": "Canada",
+  "category": 1,
+  "population": 35236000,
+  "area": 9984670,
+  "image_url": "http://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

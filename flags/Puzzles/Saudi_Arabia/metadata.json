@@ -1,0 +1,22 @@
+{
+  "name": "Saudi Arabia",
+  "continent": "Asia",
+  "directory": "Saudi_Arabia",
+  "category": 1,
+  "population": 26534504,
+  "area": 2149690,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

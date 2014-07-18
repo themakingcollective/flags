@@ -1,0 +1,22 @@
+{
+  "name": "Armenia",
+  "continent": "Asia",
+  "directory": "Armenia",
+  "category": 3,
+  "population": 2970495,
+  "area": 29743,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_Armenia.svg",
+  "incorrect_colors": [
+    "00ff7f",
+    "FFFFFF",
+    "000000"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

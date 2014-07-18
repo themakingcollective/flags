@@ -1,0 +1,22 @@
+{
+  "name": "Maldives",
+  "continent": "Asia",
+  "directory": "Maldives",
+  "category": 3,
+  "population": 394451,
+  "area": 298,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Maldives.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

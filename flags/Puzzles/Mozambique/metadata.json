@@ -1,0 +1,22 @@
+{
+  "name": "Mozambique",
+  "continent": "Africa",
+  "directory": "Mozambique",
+  "category": 2,
+  "population": 24475000,
+  "area": 801590,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/d/d0/Flag_of_Mozambique.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

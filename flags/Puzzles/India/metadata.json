@@ -1,0 +1,22 @@
+{
+  "name": "India",
+  "continent": "Asia",
+  "directory": "India",
+  "category": 1,
+  "population": 1205073612,
+  "area": 3287263,
+  "image_url": "http://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

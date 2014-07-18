@@ -1,0 +1,22 @@
+{
+  "name": "Macedonia",
+  "continent": "Europe",
+  "directory": "Macedonia",
+  "category": 2,
+  "population": 2054800,
+  "area": 25713,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/f/f8/Flag_of_Macedonia.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Nauru",
+  "continent": "Oceania",
+  "directory": "Nauru",
+  "category": 3,
+  "population": 12329,
+  "area": 21,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/3/30/Flag_of_Nauru.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

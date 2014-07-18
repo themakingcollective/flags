@@ -1,0 +1,22 @@
+{
+  "name": "Taiwan",
+  "continent": "Asia",
+  "directory": "Taiwan",
+  "category": 2,
+  "population": 23261747,
+  "area": 36193,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/7/72/Flag_of_the_Republic_of_China.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

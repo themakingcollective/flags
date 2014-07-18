@@ -1,0 +1,22 @@
+{
+  "name": "Kuwait",
+  "continent": "Asia",
+  "directory": "Kuwait",
+  "category": 3,
+  "population": 2646314,
+  "area": 17818,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Kuwait.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

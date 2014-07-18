@@ -1,0 +1,22 @@
+{
+  "name": "Brunei",
+  "continent": "Asia",
+  "directory": "Brunei",
+  "category": 3,
+  "population": 408786,
+  "area": 5765,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Brunei.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

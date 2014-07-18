@@ -1,0 +1,22 @@
+{
+  "name": "Gambia",
+  "continent": "Africa",
+  "directory": "Gambia",
+  "category": 3,
+  "population": 1825000,
+  "area": 10380,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_The_Gambia.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

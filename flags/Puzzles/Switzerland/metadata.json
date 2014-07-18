@@ -1,0 +1,22 @@
+{
+  "name": "Switzerland",
+  "continent": "Europe",
+  "directory": "Switzerland",
+  "category": 1,
+  "population": 7507000,
+  "area": 41290,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/0/08/Flag_of_Switzerland_%28Pantone%29.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

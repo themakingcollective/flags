@@ -1,0 +1,22 @@
+{
+  "name": "United Kingdom",
+  "continent": "Europe",
+  "directory": "United_Kingdom",
+  "category": 1,
+  "population": 61100835,
+  "area": 244820,
+  "image_url": "http://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

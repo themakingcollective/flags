@@ -1,0 +1,22 @@
+{
+  "name": "Bosnia & Herzegov.",
+  "continent": "Europe",
+  "directory": "Bosnia_and_Herzegovina",
+  "category": 2,
+  "population": 3843126,
+  "area": 51129,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/b/bf/Flag_of_Bosnia_and_Herzegovina.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

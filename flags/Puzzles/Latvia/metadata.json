@@ -1,0 +1,22 @@
+{
+  "name": "Latvia",
+  "continent": "Europe",
+  "directory": "Latvia",
+  "category": 2,
+  "population": 2067900,
+  "area": 64589,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Latvia.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

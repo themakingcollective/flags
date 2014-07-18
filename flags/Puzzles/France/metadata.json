@@ -1,0 +1,22 @@
+{
+  "name": "France",
+  "continent": "Europe",
+  "directory": "France",
+  "category": 1,
+  "population": 63182000,
+  "area": 547030,
+  "image_url": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

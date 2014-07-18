@@ -1,0 +1,22 @@
+{
+  "name": "Yemen",
+  "continent": "Asia",
+  "directory": "Yemen",
+  "category": 2,
+  "population": 24771809,
+  "area": 527968,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Yemen.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

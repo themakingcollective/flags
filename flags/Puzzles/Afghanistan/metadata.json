@@ -1,6 +1,7 @@
 {
-  "continent": "Asia",
   "name": "Afghanistan",
+  "continent": "Asia",
+  "directory": "Afghanistan",
   "category": 3,
   "population": 30419928,
   "area": 647500,

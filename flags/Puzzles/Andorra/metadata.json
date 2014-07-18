@@ -1,0 +1,22 @@
+{
+  "name": "Andorra",
+  "continent": "Europe",
+  "directory": "Andorra",
+  "category": 3,
+  "population": 68403,
+  "area": 468,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Andorra.svg",
+  "incorrect_colors": [
+    "ffa500",
+    "000000",
+    "228b22"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

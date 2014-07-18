@@ -1,0 +1,22 @@
+{
+  "name": "Utd Arab Emirates",
+  "continent": "Asia",
+  "directory": "United_Arab_Emirates",
+  "category": 2,
+  "population": 5314317,
+  "area": 83600,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_United_Arab_Emirates.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

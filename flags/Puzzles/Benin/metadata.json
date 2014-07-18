@@ -1,0 +1,22 @@
+{
+  "name": "Benin",
+  "continent": "Africa",
+  "directory": "Benin",
+  "category": 3,
+  "population": 9352000,
+  "area": 112622,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Benin.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

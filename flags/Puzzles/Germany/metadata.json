@@ -1,0 +1,22 @@
+{
+  "name": "Germany",
+  "continent": "Europe",
+  "directory": "Germany",
+  "category": 1,
+  "population": 83251851,
+  "area": 357021,
+  "image_url": "http://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

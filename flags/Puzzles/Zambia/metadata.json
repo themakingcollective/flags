@@ -1,0 +1,22 @@
+{
+  "name": "Zambia",
+  "continent": "Africa",
+  "directory": "Zambia",
+  "category": 2,
+  "population": 13884000,
+  "area": 752614,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Zambia.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

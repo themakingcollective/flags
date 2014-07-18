@@ -1,0 +1,22 @@
+{
+  "name": "Guinea-Bissau",
+  "continent": "Africa",
+  "directory": "Guinea_Bissau",
+  "category": 3,
+  "population": 1580000,
+  "area": 36125,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Guinea-Bissau.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

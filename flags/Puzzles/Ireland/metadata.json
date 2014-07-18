@@ -1,0 +1,22 @@
+{
+  "name": "Ireland",
+  "continent": "Europe",
+  "directory": "Ireland",
+  "category": 2,
+  "population": 4234925,
+  "area": 70280,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

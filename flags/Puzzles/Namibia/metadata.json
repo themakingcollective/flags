@@ -1,0 +1,22 @@
+{
+  "name": "Namibia",
+  "continent": "Africa",
+  "directory": "Namibia",
+  "category": 2,
+  "population": 2364000,
+  "area": 825418,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Namibia.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "East Timor",
+  "continent": "Asia",
+  "directory": "East_Timor",
+  "category": 3,
+  "population": 1143667,
+  "area": 14874,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_East_Timor.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

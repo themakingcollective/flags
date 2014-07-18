@@ -1,0 +1,22 @@
+{
+  "name": "Israel",
+  "continent": "Asia",
+  "directory": "Israel",
+  "category": 1,
+  "population": 7590758,
+  "area": 20770,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

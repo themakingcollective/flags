@@ -1,0 +1,22 @@
+{
+  "name": "Seychelles",
+  "continent": "Africa",
+  "directory": "Seychelles",
+  "category": 3,
+  "population": 87000,
+  "area": 451,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Seychelles.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

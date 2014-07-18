@@ -1,0 +1,22 @@
+{
+  "name": "Denmark",
+  "continent": "Europe",
+  "directory": "Denmark",
+  "category": 1,
+  "population": 5564219,
+  "area": 43094,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

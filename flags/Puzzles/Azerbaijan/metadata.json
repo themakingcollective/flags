@@ -1,0 +1,22 @@
+{
+  "name": "Azerbaijan",
+  "continent": "Asia",
+  "directory": "Azerbaijan",
+  "category": 3,
+  "population": 9493600,
+  "area": 86600,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/d/dd/Flag_of_Azerbaijan.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

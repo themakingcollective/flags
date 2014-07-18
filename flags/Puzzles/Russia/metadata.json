@@ -1,0 +1,22 @@
+{
+  "name": "Russia",
+  "continent": "Asia",
+  "directory": "Russia",
+  "category": 1,
+  "population": 142517670,
+  "area": 17098242,
+  "image_url": "http://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

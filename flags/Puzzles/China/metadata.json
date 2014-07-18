@@ -1,0 +1,22 @@
+{
+  "name": "China",
+  "continent": "Asia",
+  "directory": "China",
+  "category": 1,
+  "population": 1343239923,
+  "area": 9596961,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

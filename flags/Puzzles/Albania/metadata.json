@@ -1,0 +1,24 @@
+{
+  "name": "Albania",
+  "continent": "Europe",
+  "directory": "Albania",
+  "category": 2,
+  "population": 2831741,
+  "area": 28748,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Albania.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "74ACDF",
+    "000088",
+    "ffff00",
+    "ffffee"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

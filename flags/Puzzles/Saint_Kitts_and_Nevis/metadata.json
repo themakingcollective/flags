@@ -1,0 +1,22 @@
+{
+  "name": "St Kitts & Nevis",
+  "continent": "North America",
+  "directory": "Saint_Kitts_and_Nevis",
+  "category": 3,
+  "population": 55000,
+  "area": 261,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Saint_Kitts_and_Nevis.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

@@ -30,8 +30,9 @@ class DataImporter
   def import
     rows_with_flags.each do |row|
       data = {
+        name:               row[20],
         continent:          row[0],
-        name:               row[1],
+        directory:          row[1],
         category:           row[2].to_i,
         population:         row[3].to_i,
         area:               row[4].to_i,
@@ -68,7 +69,7 @@ class DataImporter
   end
 
   def write(data)
-    directory = "flags/Puzzles/#{data.fetch(:name)}"
+    directory = "flags/Puzzles/#{data.fetch(:directory)}"
 
     if File.directory?(directory)
       metadata = "#{directory}/metadata.json"

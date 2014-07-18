@@ -1,0 +1,22 @@
+{
+  "name": "Tanzania",
+  "continent": "Africa",
+  "directory": "Tanzania",
+  "category": 3,
+  "population": 47656000,
+  "area": 945203,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tanzania.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

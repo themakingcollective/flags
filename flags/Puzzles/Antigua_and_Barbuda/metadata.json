@@ -1,0 +1,23 @@
+{
+  "name": "Antigua & Barbuda",
+  "continent": "North America",
+  "directory": "Antigua_and_Barbuda",
+  "category": 3,
+  "population": 88000,
+  "area": 442,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Antigua_and_Barbuda.svg",
+  "incorrect_colors": [
+    "228b22",
+    "7fffd4",
+    "ff8c00",
+    "a0522d"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

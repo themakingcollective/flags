@@ -1,0 +1,22 @@
+{
+  "name": "Ecuador",
+  "continent": "South America",
+  "directory": "Ecuador",
+  "category": 2,
+  "population": 15007343,
+  "area": 283561,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/e/e8/Flag_of_Ecuador.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}

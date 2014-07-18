@@ -1,0 +1,22 @@
+{
+  "name": "Liechtenstein",
+  "continent": "Europe",
+  "directory": "Liechtenstein",
+  "category": 3,
+  "population": 32842,
+  "area": 160,
+  "image_url": "http://upload.wikimedia.org/wikipedia/commons/4/47/Flag_of_Liechtenstein.svg",
+  "incorrect_colors": [
+    "FFFFFF",
+    "000000",
+    "ffff00"
+  ],
+  "incorrect_patterns": [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Argentina",
+    "Angola",
+    "Andorra"
+  ]
+}
