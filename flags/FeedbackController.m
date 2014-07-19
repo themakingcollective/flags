@@ -42,7 +42,9 @@
     [self.titleLabel setFont:titleFont];
     [self.socialLabel setTextColor:color];
     
-    self.titleLabel.text = self.playerWasCorrect ? @"Good job!" : @"Bad luck!";
+    NSArray *phrases = self.playerWasCorrect ? [self goodPhrases] : [self badPhrases];
+    phrases = [Utils shuffle:phrases];
+    self.titleLabel.text = [phrases firstObject];
     
     [self.view addSubview:self.layeredView];
     
@@ -92,6 +94,28 @@
     results.difficulty = self.difficulty;
     
     [self.navigationController pushViewController:results animated:YES];
+}
+
+- (NSArray *)goodPhrases
+{
+    return @[
+        @"Good job!",
+        @"Awesome!",
+        @"Nice one!",
+        @"You're a pro!",
+        @"Way to go!"
+    ];
+}
+
+- (NSArray *)badPhrases
+{
+    return @[
+        @"Bad luck!",
+        @"Not quite",
+        @"Nice try",
+        @"That's not right",
+        @"Nuh-uh"
+    ];
 }
 
 @end
