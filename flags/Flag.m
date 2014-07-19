@@ -36,6 +36,9 @@ static NSArray *allCache;
     if (!self.metadataCache) {
         NSString *filename = [NSString stringWithFormat:@"%@/%@/metadata.json", [self.class directoryName], self.directory];
         NSData *json = [NSData dataWithContentsOfFile:filename options:NSDataReadingMappedIfSafe error:nil];
+        if (!json) {
+            NSLog(@"No metadata for %@", self.directory);
+        }
         self.metadataCache = [NSJSONSerialization JSONObjectWithData:json options:NSJSONReadingMutableContainers error:nil];
     }
     
