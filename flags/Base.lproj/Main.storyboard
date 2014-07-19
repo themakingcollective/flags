@@ -228,6 +228,35 @@
             </objects>
             <point key="canvasLocation" x="1469" y="-623"/>
         </scene>
+        <!--Feedback Controller-->
+        <scene sceneID="cYt-77-O6k">
+            <objects>
+                <viewController storyboardIdentifier="FeedbackController" id="ONH-41-49H" customClass="FeedbackController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ssq-8R-g8j"/>
+                        <viewControllerLayoutGuide type="bottom" id="j8T-rr-zHL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dVe-PT-OBs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xi0-X8-3sg">
+                                <rect key="frame" x="125" y="362" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismiss:" destination="ONH-41-49H" eventType="touchUpInside" id="KwH-Ee-a8F"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OqP-2h-gme" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1939" y="-623"/>
+        </scene>
         <!--Results Controller-->
         <scene sceneID="MNb-nU-Gwh">
             <objects>
@@ -451,6 +480,23 @@
             </objects>
             <point key="canvasLocation" x="-548" y="138"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="kyh-3W-oGf">
+            <objects>
+                <viewController id="HJt-T6-hdV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gca-gi-khr"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ne1-gl-hkC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9lU-93-lIi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mqa-Gi-qHl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
         <image name="Done-Button-Easy-Disabled.png" width="318" height="163"/>
@@ -475,6 +521,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="DRB-3Y-QWP"/>
+        <segue reference="POs-O3-vYW"/>
     </inferredMetricsTieBreakers>
 </document>

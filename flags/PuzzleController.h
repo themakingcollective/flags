@@ -13,4 +13,6 @@
 
 @property (nonatomic, strong) NSString *difficulty;
 
+- (void)nextFlag;
+
 @end

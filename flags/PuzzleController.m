@@ -12,6 +12,7 @@
 #import "PatternView.h"
 #import "Quiz.h"
 #import "ResultsController.h"
+#import "FeedbackController.h"
 #import "Flag.h"
 
 @interface PuzzleController () <PaintPotViewDelegate, PatternViewDelegate, LayeredViewDelegate>
@@ -50,7 +51,7 @@
     UIFont *titleFont = [UIFont fontWithName:@"BPreplay-Bold" size:30];
     [self.nameLabel setFont:titleFont];
     
-    [self nextFlag:nil];
+    [self nextFlag];
     
     [super viewDidLoad];
 }
@@ -76,9 +77,8 @@
     self.submitButton.frame = CGRectMake(f.origin.x, y, f.size.width, f.size.height);
 }
 
-- (void)nextFlag:(NSTimer *)timer
+- (void)nextFlag
 {
-    [self setUserInteraction:YES];
     [self.layeredView setPaintColor:nil];
     
     Flag *flag = [self.quiz currentElement];
@@ -96,15 +96,20 @@
 
 - (IBAction)submit
 {
-    if ([self isCorrect]) {
+    BOOL correct = [self isCorrect];
+    
+    if (correct) {
         [self.quiz correct];
     }
     else {
         [self.quiz incorrect];
     }
     
-    [self setUserInteraction:NO];
-    [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(nextFlag:) userInfo:nil repeats:NO];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+    FeedbackController *feedback = [storyboard instantiateViewControllerWithIdentifier:@"FeedbackController"];
+    feedback.correct = correct;
+    
+    [self.navigationController pushViewController:feedback animated:NO];
 }
 
 - (void)showResults
@@ -133,16 +138,6 @@
 - (void)touchedLayeredView:(LayeredView *)layeredView
 {
     [self setSubmitButtonState:YES];
-}
-
-- (void)setUserInteraction:(BOOL)state
-{
-    self.view.userInteractionEnabled = state;
-    self.navigationController.view.userInteractionEnabled = state;
-    
-    for (UIView *view in self.view.subviews) {
-        [view setUserInteractionEnabled:state];
-    }
 }
 
 - (void)setSubmitButtonState:(BOOL)state
