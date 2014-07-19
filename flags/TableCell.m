@@ -23,7 +23,7 @@
     [self.imageView.layer setCornerRadius:3.0f];
     
     CGRect f = self.textLabel.frame;
-    [self.textLabel setFrame:CGRectMake(140, f.origin.y, f.size.width, f.size.height)];
+    [self.textLabel setFrame:CGRectMake(140, f.origin.y, 180, f.size.height)];
 }
 
 - (void)resizeFrameToFitImage:(UIImageView *)imageView
