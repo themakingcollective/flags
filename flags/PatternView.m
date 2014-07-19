@@ -21,6 +21,7 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         [self.layer setCornerRadius:3.0f];
+        [self setUserInteractionEnabled:YES];
     }
     return self;
 }
