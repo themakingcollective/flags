@@ -19,7 +19,6 @@
 @property (nonatomic, weak) IBOutlet LayeredView *layeredView;
 @property (nonatomic, strong) Quiz *quiz;
 @property (nonatomic, weak) IBOutlet UILabel *nameLabel;
-@property (nonatomic, weak) IBOutlet UILabel *feedbackLabel;
 @property (nonatomic, strong) NSArray *paintPots;
 @property (nonatomic, strong) NSArray *patterns;
 @property (nonatomic, weak) IBOutlet UIButton *submitButton;
@@ -51,9 +50,6 @@
     UIFont *titleFont = [UIFont fontWithName:@"BPreplay-Bold" size:30];
     [self.nameLabel setFont:titleFont];
     
-    UIFont *feedbackFont = [UIFont fontWithName:@"BPreplay" size:24];
-    [self.feedbackLabel setFont:feedbackFont];
-    
     [self nextFlag:nil];
     
     [super viewDidLoad];
@@ -78,11 +74,6 @@
     
     CGRect f = self.submitButton.frame;
     self.submitButton.frame = CGRectMake(f.origin.x, y, f.size.width, f.size.height);
-    
-    y += 3; // vertically center, relative to submit button.
-    
-    f = self.feedbackLabel.frame;
-    self.feedbackLabel.frame = CGRectMake(f.origin.x, y, f.size.width, f.size.height);
 }
 
 - (void)nextFlag:(NSTimer *)timer
@@ -96,7 +87,6 @@
         [self.difficultyScaler increaseDifficulty];
         [self setSubmitButtonState:NO];
         [self.nameLabel setText:[flag name]];
-        [self.feedbackLabel setText:@""];
         [self setupChoices:flag];
     }
     else {
@@ -108,13 +98,9 @@
 {
     if ([self isCorrect]) {
         [self.quiz correct];
-        [self.feedbackLabel setTextColor:[UIColor colorWithRed:(73 / 255.0f) green:(142 / 255.0f) blue:(93 / 255.0f) alpha:1.0f]];
-        [self.feedbackLabel setText:@"correct!"];
     }
     else {
         [self.quiz incorrect];
-        [self.feedbackLabel setTextColor:[UIColor colorWithRed:(194 / 255.0f) green:(32 / 255.0f) blue:(38 / 255.0f) alpha:1.0f]];
-        [self.feedbackLabel setText:@"try again!"];
     }
     
     [self setUserInteraction:NO];

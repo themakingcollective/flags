@@ -197,12 +197,6 @@
                                 <color key="textColor" red="0.81176470588235294" green="0.24313725490196078" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="feedbackLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVs-tn-7zO">
-                                <rect key="frame" x="20" y="382" width="113" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Puzzles-Menu-Button.png" translatesAutoresizingMaskIntoConstraints="NO" id="zCp-Z7-2fL" customClass="PatternView">
                                 <rect key="frame" x="20" y="276" width="60" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -225,7 +219,6 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
-                        <outlet property="feedbackLabel" destination="JVs-tn-7zO" id="lTA-O4-XhL"/>
                         <outlet property="layeredView" destination="gMj-bp-hFz" id="WgS-7W-2bM"/>
                         <outlet property="nameLabel" destination="JoW-bV-coG" id="2xy-Qc-hqN"/>
                         <outlet property="submitButton" destination="wIF-RH-ZVO" id="ObS-41-ja7"/>
