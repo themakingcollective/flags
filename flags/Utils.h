@@ -19,5 +19,6 @@
 + (BOOL) equalColors:(UIColor *)a and:(UIColor *)b;
 + (CGRect)getFrameSizeForImage:(UIImage *)image inImageView:(UIImageView *)imageView;
 + (NSArray *)pickSample:(NSArray *)array size:(NSInteger)size;
++ (id)copyView:(UIView *)view;
 
 @end

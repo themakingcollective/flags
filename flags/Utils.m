@@ -188,4 +188,9 @@
     return [array subarrayWithRange:NSMakeRange(0, size)];
 }
 
++ (id)copyView:(UIView *)view
+{
+    return [NSKeyedUnarchiver unarchiveObjectWithData:[NSKeyedArchiver archivedDataWithRootObject:view]];
+}
+
 @end

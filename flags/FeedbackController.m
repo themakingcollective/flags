@@ -11,21 +11,29 @@
 
 @interface FeedbackController ()
 
-@property (nonatomic, strong) NSString *difficulty;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *flagLabel;
+@property (weak, nonatomic) IBOutlet UILabel *socialLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *correctFlagView;
 
 @end
 
 @implementation FeedbackController
 
 @synthesize difficulty=_difficulty;
-@synthesize correct=_correct;
+@synthesize playerWasCorrect=_playerWasCorrect;
+@synthesize layeredView=_layeredView;
+@synthesize correctFlag=_correctFlag;
 
 - (void)viewDidLoad
 {
-    NSString *previousTitle = [self puzzleController].navigationItem.title;
+    self.navigationItem.title = [self puzzleController].navigationItem.title;
+    [self.view addSubview:self.layeredView];
     
-    self.difficulty = [previousTitle isEqualToString:@"colours"] ? @"easy" : @"hard";
-    self.navigationItem.title = previousTitle;
+    self.titleLabel.text = self.playerWasCorrect ? @"CORRECT" : @"WRONG";
+    
+    [self.correctFlagView setImage:[self.correctFlag image]];
+    self.flagLabel.text = [NSString stringWithFormat:@"%@:", [self.correctFlag name]];
     
     [super viewDidLoad];
 }

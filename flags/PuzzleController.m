@@ -14,6 +14,7 @@
 #import "ResultsController.h"
 #import "FeedbackController.h"
 #import "Flag.h"
+#import "Utils.h"
 
 @interface PuzzleController () <PaintPotViewDelegate, PatternViewDelegate, LayeredViewDelegate>
 
@@ -96,18 +97,28 @@
 
 - (IBAction)submit
 {
-    BOOL correct = [self isCorrect];
+    BOOL playerWasCorrect = [self isCorrect];
+    Flag *correctFlag = [self.quiz currentElement];
     
-    if (correct) {
+    if (playerWasCorrect) {
         [self.quiz correct];
     }
     else {
         [self.quiz incorrect];
     }
-    
+
+    [self showFeedback:playerWasCorrect withFlag:correctFlag];
+}
+
+- (void)showFeedback:(BOOL)playerWasCorrect withFlag:(Flag *)correctFlag
+{
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
     FeedbackController *feedback = [storyboard instantiateViewControllerWithIdentifier:@"FeedbackController"];
-    feedback.correct = correct;
+    
+    feedback.difficulty = self.difficulty;
+    feedback.layeredView = [Utils copyView:self.layeredView];
+    feedback.playerWasCorrect = playerWasCorrect;
+    feedback.correctFlag = correctFlag;
     
     [self.navigationController pushViewController:feedback animated:NO];
 }
