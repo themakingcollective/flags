@@ -11,7 +11,7 @@
 
 @interface Flag ()
 
-@property (nonatomic, strong, readwrite) NSString *name;
+@property (nonatomic, strong, readwrite) NSString *directory;
 @property (nonatomic, strong) NSDictionary *metadataCache;
 @property (nonatomic, strong) NSArray *imagePathsCache;
 
@@ -19,14 +19,14 @@
 
 @implementation Flag
 
-@synthesize name=_name;
+@synthesize directory=_directory;
 static NSArray *allCache;
 
-- (id)initWithName:(NSString *)name
+- (id)initWithDirectory:(NSString *)directory
 {
     self = [super init];
     if (self) {
-        self.name = name;
+        self.directory = directory;
     }
     return self;
 }
@@ -34,7 +34,7 @@ static NSArray *allCache;
 - (NSDictionary *)metadata
 {
     if (!self.metadataCache) {
-        NSString *filename = [NSString stringWithFormat:@"%@/%@/metadata.json", [self.class directoryName], self.name];
+        NSString *filename = [NSString stringWithFormat:@"%@/%@/metadata.json", [self.class directoryName], self.directory];
         NSData *json = [NSData dataWithContentsOfFile:filename options:NSDataReadingMappedIfSafe error:nil];
         self.metadataCache = [NSJSONSerialization JSONObjectWithData:json options:NSJSONReadingMutableContainers error:nil];
     }
@@ -47,10 +47,15 @@ static NSArray *allCache;
     return [[[self metadata] valueForKey:@"category"] intValue];
 }
 
+- (NSString *)name
+{
+    return [[self metadata] valueForKey:@"name"];
+}
+
 - (NSArray *)layeredImagePaths
 {
     if (!self.imagePathsCache) {
-        NSString *directoryName = [NSString stringWithFormat:@"Puzzles/%@", self.name];
+        NSString *directoryName = [NSString stringWithFormat:@"Puzzles/%@", self.directory];
         NSArray *paths = [[NSBundle mainBundle] pathsForResourcesOfType:@"png" inDirectory:directoryName];
         NSMutableArray *layerPaths = [NSMutableArray arrayWithArray:paths];
 
@@ -134,8 +139,8 @@ static NSArray *allCache;
     if (!allCache) {
         NSMutableArray *flags = [[NSMutableArray alloc] init];
         
-        for (NSString *name in [self flagNames]) {
-            [flags addObject:[[Flag alloc] initWithName:name]];
+        for (NSString *directory in [self flagDirectories]) {
+            [flags addObject:[[Flag alloc] initWithDirectory:directory]];
         }
         
         allCache = [NSArray arrayWithArray:flags];
@@ -148,7 +153,7 @@ static NSArray *allCache;
 {
     for (Flag *flag in [[self class] all]) {
         
-        if ([flag.name isEqualToString:name]) {
+        if ([[flag name] isEqualToString:name]) {
             return flag;
         }
     }
@@ -158,17 +163,17 @@ static NSArray *allCache;
 
 - (UIImage *)image
 {
-    NSString *filename = [NSString stringWithFormat:@"%@/%@/original.png", [self.class directoryName], self.name];
+    NSString *filename = [NSString stringWithFormat:@"%@/%@/original.png", [self.class directoryName], self.directory];
     return [UIImage imageWithContentsOfFile:filename];
 }
 
 - (UIImage *)patternImage
 {
-    NSString *filename = [NSString stringWithFormat:@"%@/%@/pattern.png", [self.class directoryName], self.name];
+    NSString *filename = [NSString stringWithFormat:@"%@/%@/pattern.png", [self.class directoryName], self.directory];
     return [UIImage imageWithContentsOfFile:filename];
 }
 
-+ (NSArray *)flagNames
++ (NSArray *)flagDirectories
 {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     return [fileManager contentsOfDirectoryAtPath:[self directoryName] error:nil];
@@ -192,7 +197,7 @@ static NSArray *allCache;
 
 - (BOOL)isEqualTo:(Flag *)other
 {
-    return [self.name isEqualToString:other.name];
+    return [[self name] isEqualToString:other.name];
 }
 
 @end

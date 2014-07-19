@@ -29,7 +29,7 @@
     tableView.separatorColor = [UIColor clearColor];
     self.view.backgroundColor = [Utils backgroundColor];
     
-    cell.textLabel.text = flag.name;
+    cell.textLabel.text = [flag name];
     cell.imageView.image = flag.image;
     
     return cell;

@@ -11,14 +11,13 @@
 
 @interface Flag : NSObject <ScalableDifficulty>
 
-@property (nonatomic, strong, readonly) NSString *name;
-
 + (NSArray *)all;
 - (NSDictionary *)metadata;
 - (NSArray *)layeredImagePaths;
 - (NSArray *)shuffledColors;
 - (UIImage *)image;
 - (NSInteger)difficulty;
+- (NSString *)name;
 - (NSArray *)patternFlags;
 - (UIImage *)patternImage;
 - (BOOL)isEqualTo:(Flag *)other;
