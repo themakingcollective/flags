@@ -10,6 +10,7 @@
 #import "BaseViewController.h"
 #import "LayeredView.h"
 #import "Flag.h"
+#import "Quiz.h"
 
 @interface FeedbackController : BaseViewController
 
@@ -17,5 +18,6 @@
 @property (nonatomic, assign) BOOL playerWasCorrect;
 @property (nonatomic, strong) LayeredView *layeredView;
 @property (nonatomic, strong) Flag *correctFlag;
+@property (nonatomic, strong) Quiz *quiz;
 
 @end

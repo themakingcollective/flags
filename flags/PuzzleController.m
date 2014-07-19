@@ -11,7 +11,6 @@
 #import "PaintPotView.h"
 #import "PatternView.h"
 #import "Quiz.h"
-#import "ResultsController.h"
 #import "FeedbackController.h"
 #import "Flag.h"
 #import "Utils.h"
@@ -78,7 +77,7 @@
     self.submitButton.frame = CGRectMake(f.origin.x, y, f.size.width, f.size.height);
 }
 
-- (void)nextFlag
+- (BOOL)nextFlag
 {
     [self.layeredView setPaintColor:nil];
     
@@ -89,9 +88,10 @@
         [self setSubmitButtonState:NO];
         [self.nameLabel setText:[flag name]];
         [self setupChoices:flag];
+        return YES;
     }
     else {
-        [self showResults];
+        return NO;
     }
 }
 
@@ -119,18 +119,9 @@
     feedback.layeredView = [Utils copyView:self.layeredView];
     feedback.playerWasCorrect = playerWasCorrect;
     feedback.correctFlag = correctFlag;
+    feedback.quiz = self.quiz;
     
     [self.navigationController pushViewController:feedback animated:NO];
-}
-
-- (void)showResults
-{
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
-    ResultsController *results = [storyboard instantiateViewControllerWithIdentifier:@"ResultsController"];
-    results.quiz = self.quiz;
-    results.difficulty = self.difficulty;
-    
-    [self.navigationController pushViewController:results animated:YES];
 }
 
 - (NSArray *)viewsForClass:(id)class

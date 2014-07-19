@@ -11,7 +11,7 @@
 @interface LayerView : UIImageView
 
 - (id)initWithPath:(NSString *)path;
-- (void)setupBorders;
+- (void)setupBorders:(BOOL)thick;
 - (void)setColor:(UIColor *)color;
 - (BOOL)isCorrect;
 

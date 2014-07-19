@@ -25,11 +25,18 @@
     return [super initWithImage:[UIImage imageWithContentsOfFile:path]];
 }
 
-- (void)setupBorders
+- (void)setupBorders:(BOOL)thick
 {
     self.layer.borderColor = [Utils colorWithHexString:@"777779"].CGColor;
-    self.layer.borderWidth = 2.0f;
-    [self.layer setCornerRadius:5.0f];
+    
+    if (thick) {
+        self.layer.borderWidth = 2.0f;
+        [self.layer setCornerRadius:5.0f];
+    }
+    else {
+        self.layer.borderWidth = 1.0f;
+        [self.layer setCornerRadius:3.0f];
+    }
 }
 
 - (void)setColor:(UIColor *)color

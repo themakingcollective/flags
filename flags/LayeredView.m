@@ -32,7 +32,7 @@
     
     for (LayerView *view in layerViews) {
         [self addSubview:view];
-        [view setupBorders];
+        [view setupBorders:YES];
     }
     
     [self setNeedsDisplay];
@@ -71,7 +71,7 @@
         [layerView sizeToFit];
         [layerView setFrame:self.bounds];
         [layerView setContentMode:UIViewContentModeScaleAspectFit];
-        [self resizeFrameToFitImage:layerView];
+        [Utils resizeFrameToFitImage:layerView];
         
         [layerViews addObject:layerView];
     }
@@ -196,19 +196,15 @@
     return [[self subviews] firstObject];
 }
 
-- (void)resizeFrameToFitImage:(LayerView *)layerView
+- (void)setFrame:(CGRect)frame
 {
-    CGRect frame = [Utils getFrameSizeForImage:layerView.image inImageView:layerView];
+    [super setFrame:frame];
     
-    CGRect imageViewFrame = CGRectMake(
-        layerView.frame.origin.x + frame.origin.x,
-        layerView.frame.origin.y + frame.origin.y,
-        frame.size.width,
-        frame.size.height
-    );
-    
-    layerView.frame = imageViewFrame;
-    layerView.layer.masksToBounds = YES;
+    for (LayerView *view in self.subviews) {
+        [view setFrame:self.bounds];
+        [view setupBorders:NO];
+        [Utils resizeFrameToFitImage:view];
+    }
 }
 
 

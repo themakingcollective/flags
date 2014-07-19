@@ -20,5 +20,6 @@
 + (CGRect)getFrameSizeForImage:(UIImage *)image inImageView:(UIImageView *)imageView;
 + (NSArray *)pickSample:(NSArray *)array size:(NSInteger)size;
 + (id)copyView:(UIView *)view;
++ (void)resizeFrameToFitImage:(UIImageView *)imageView;
 
 @end

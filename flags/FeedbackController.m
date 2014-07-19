@@ -8,13 +8,15 @@
 
 #import "FeedbackController.h"
 #import "PuzzleController.h"
+#import "Utils.h"
+#import "ResultsController.h"
 
 @interface FeedbackController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *flagLabel;
-@property (weak, nonatomic) IBOutlet UILabel *socialLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *correctFlagView;
+@property (weak, nonatomic) IBOutlet UILabel *socialLabel;
 
 @end
 
@@ -28,19 +30,47 @@
 - (void)viewDidLoad
 {
     self.navigationItem.title = [self puzzleController].navigationItem.title;
+    
+    UIColor *green = [UIColor colorWithRed:(73 / 255.0f) green:(142 / 255.0f) blue:(93 / 255.0f) alpha:1.0f];
+    UIColor *red = [UIColor colorWithRed:(194 / 255.0f) green:(32 / 255.0f) blue:(38 / 255.0f) alpha:1.0f];
+    
+    UIColor *color = self.playerWasCorrect ? green : red;
+    UIFont *titleFont = [UIFont fontWithName:@"BPreplay-Bold" size:30];
+    
+    [self.titleLabel setTextColor:color];
+    [self.titleLabel setFont:titleFont];
+    [self.socialLabel setTextColor:color];
+    
+    self.titleLabel.text = self.playerWasCorrect ? @"Good job!" : @"Bad luck!";
+    
     [self.view addSubview:self.layeredView];
     
-    self.titleLabel.text = self.playerWasCorrect ? @"CORRECT" : @"WRONG";
-    
     [self.correctFlagView setImage:[self.correctFlag image]];
+    [self.correctFlagView setContentMode:UIViewContentModeScaleAspectFit];
+    self.correctFlagView.layer.borderColor = [Utils colorWithHexString:@"777779"].CGColor;
+    self.correctFlagView.layer.borderWidth = 1.0f;
+    [self.correctFlagView.layer setCornerRadius:3.0f];
+
     self.flagLabel.text = [NSString stringWithFormat:@"%@:", [self.correctFlag name]];
     
     [super viewDidLoad];
 }
 
+- (void)viewDidLayoutSubviews
+{
+    [self.layeredView setFrame:CGRectMake(20, 106, 130, 90)];
+    [Utils resizeFrameToFitImage:self.correctFlagView];
+    
+    [super viewDidLayoutSubviews];
+}
+
 - (IBAction)dismiss:(id)sender {
-    [[self puzzleController] nextFlag];
-    [self.navigationController popViewControllerAnimated:NO];
+    if ([[self puzzleController] nextFlag]) {
+        [self.navigationController popViewControllerAnimated:NO];
+    }
+    else {
+        [self showResults];
+    }
 }
 
 - (PuzzleController *)puzzleController
@@ -48,6 +78,16 @@
     NSInteger previousIndex = [self.navigationController.viewControllers count] - 2;
     UIViewController *previousController = [self.navigationController.viewControllers objectAtIndex:previousIndex];
     return (PuzzleController *)previousController;
+}
+
+- (void)showResults
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+    ResultsController *results = [storyboard instantiateViewControllerWithIdentifier:@"ResultsController"];
+    results.quiz = self.quiz;
+    results.difficulty = self.difficulty;
+    
+    [self.navigationController pushViewController:results animated:YES];
 }
 
 @end

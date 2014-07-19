@@ -193,4 +193,19 @@
     return [NSKeyedUnarchiver unarchiveObjectWithData:[NSKeyedArchiver archivedDataWithRootObject:view]];
 }
 
++ (void)resizeFrameToFitImage:(UIImageView *)imageView
+{
+    CGRect frame = [Utils getFrameSizeForImage:imageView.image inImageView:imageView];
+    
+    CGRect imageViewFrame = CGRectMake(
+                                       imageView.frame.origin.x + frame.origin.x,
+                                       imageView.frame.origin.y + frame.origin.y,
+                                       frame.size.width,
+                                       frame.size.height
+                                       );
+    
+    imageView.frame = imageViewFrame;
+    imageView.layer.masksToBounds = YES;
+}
+
 @end
