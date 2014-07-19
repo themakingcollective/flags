@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *flagLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *correctFlagView;
 @property (weak, nonatomic) IBOutlet UILabel *socialLabel;
+@property (weak, nonatomic) IBOutlet UIButton *nextButton;
 
 @end
 
@@ -52,6 +53,9 @@
     [self.correctFlagView.layer setCornerRadius:3.0f];
 
     self.flagLabel.text = [NSString stringWithFormat:@"%@:", [self.correctFlag name]];
+    
+    NSString *imageName = [self.difficulty isEqualToString:@"easy"] ? @"Next-Button-Easy-Enabled" : @"Next-Button-Hard-Enabled";
+    [self.nextButton setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     
     [super viewDidLoad];
 }

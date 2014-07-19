@@ -288,6 +288,7 @@
                     <connections>
                         <outlet property="correctFlagView" destination="FLG-8b-2Da" id="0d2-YZ-7yI"/>
                         <outlet property="flagLabel" destination="4EF-BW-d2T" id="weV-Ji-ehp"/>
+                        <outlet property="nextButton" destination="xi0-X8-3sg" id="dMx-a6-fAe"/>
                         <outlet property="socialLabel" destination="0LA-yh-uO2" id="u34-2S-J2Q"/>
                         <outlet property="titleLabel" destination="olp-0z-Hos" id="zsn-Nl-yei"/>
                     </connections>
