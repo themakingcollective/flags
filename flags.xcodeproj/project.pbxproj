@@ -60,6 +60,62 @@
 		83D4A03219683D0000C0D694 /* DifficultyScaler.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D4A03119683D0000C0D694 /* DifficultyScaler.m */; };
 		83D971381960379600350AF0 /* Puzzles in Resources */ = {isa = PBXBuildFile; fileRef = 83D971371960379600350AF0 /* Puzzles */; };
 		83D9713B1960598200350AF0 /* Flag.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D9713A1960598200350AF0 /* Flag.m */; };
+		83FCBB881985639500415369 /* PatternView.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C17BB19714D8E0085ED23 /* PatternView.m */; };
+		83FCBB891985639500415369 /* Flag.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D9713A1960598200350AF0 /* Flag.m */; };
+		83FCBB8A1985639500415369 /* PaintPotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83198FC71955EA4400F3665E /* PaintPotView.m */; };
+		83FCBB8B1985639500415369 /* TableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837ADE7A18E2E32B00455FF7 /* TableController.m */; };
+		83FCBB8C1985639500415369 /* MenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8378485618DDAF8E00C5AC61 /* MenuController.m */; };
+		83FCBB8D1985639500415369 /* PuzzleController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94D93471930A4FC008CDB1A /* PuzzleController.m */; };
+		83FCBB8E1985639500415369 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83523D191968C1E500D8B9E9 /* BaseViewController.m */; };
+		83FCBB8F1985639500415369 /* LayeredView.m in Sources */ = {isa = PBXBuildFile; fileRef = F94D934A1930AEC2008CDB1A /* LayeredView.m */; };
+		83FCBB901985639500415369 /* Quiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 832D81711956CD30000600DA /* Quiz.m */; };
+		83FCBB911985639500415369 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8378485018DDAF8E00C5AC61 /* AppDelegate.m */; };
+		83FCBB921985639500415369 /* EventRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AEBCE919851B6A00EE8211 /* EventRecorder.m */; };
+		83FCBB931985639500415369 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = F94D93631930EA33008CDB1A /* Utils.m */; };
+		83FCBB941985639500415369 /* ResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 832D81741956D6E6000600DA /* ResultsController.m */; };
+		83FCBB951985639500415369 /* LayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83199A921943487D00C70AAF /* LayerView.m */; };
+		83FCBB961985639500415369 /* FeedbackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83856127197AAD7D009869DA /* FeedbackController.m */; };
+		83FCBB971985639500415369 /* DifficultyScaler.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D4A03119683D0000C0D694 /* DifficultyScaler.m */; };
+		83FCBB981985639500415369 /* TableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 831414BE1972E5A1009D8FCC /* TableCell.m */; };
+		83FCBB991985639500415369 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8378484C18DDAF8E00C5AC61 /* main.m */; };
+		83FCBB9B1985639500415369 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378484218DDAF8E00C5AC61 /* CoreGraphics.framework */; };
+		83FCBB9C1985639500415369 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378484418DDAF8E00C5AC61 /* UIKit.framework */; };
+		83FCBB9D1985639500415369 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378484018DDAF8E00C5AC61 /* Foundation.framework */; };
+		83FCBB9F1985639500415369 /* Easy-Play-Again.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A0201968187B00C0D694 /* Easy-Play-Again.png */; };
+		83FCBBA01985639500415369 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8378485818DDAF8E00C5AC61 /* Images.xcassets */; };
+		83FCBBA11985639500415369 /* BPreplay-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8378488318DDBCD500C5AC61 /* BPreplay-Italic.ttf */; };
+		83FCBBA21985639500415369 /* Done-Button-Easy-Enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A01719680E8F00C0D694 /* Done-Button-Easy-Enabled.png */; };
+		83FCBBA31985639500415369 /* Play-Colours-Puzzle-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C71018DDDEF100970E8F /* Play-Colours-Puzzle-Button.png */; };
+		83FCBBA41985639500415369 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8378484918DDAF8E00C5AC61 /* InfoPlist.strings */; };
+		83FCBBA51985639500415369 /* Easy-Switch-to-Hard.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A0211968187B00C0D694 /* Easy-Switch-to-Hard.png */; };
+		83FCBBA61985639500415369 /* Hard-Play-Again.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A0221968187B00C0D694 /* Hard-Play-Again.png */; };
+		83FCBBA71985639500415369 /* Play-Colours+Shapes-Puzzle-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C71118DDDEF100970E8F /* Play-Colours+Shapes-Puzzle-Button.png */; };
+		83FCBBA81985639500415369 /* Menu-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A02D196838A100C0D694 /* Menu-Button.png */; };
+		83FCBBA91985639500415369 /* Puzzles-Menu-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8378487C18DDB8DC00C5AC61 /* Puzzles-Menu-Button.png */; };
+		83FCBBAA1985639500415369 /* Puzzles-Easy-Explain.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70C18DDDEE400970E8F /* Puzzles-Easy-Explain.png */; };
+		83FCBBAB1985639500415369 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8378485218DDAF8E00C5AC61 /* Main.storyboard */; };
+		83FCBBAC1985639500415369 /* Puzzles in Resources */ = {isa = PBXBuildFile; fileRef = 83D971371960379600350AF0 /* Puzzles */; };
+		83FCBBAD1985639500415369 /* BPreplay.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8378488418DDBCD500C5AC61 /* BPreplay.ttf */; };
+		83FCBBAE1985639500415369 /* Hard-results-rosette.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A01D1968163600C0D694 /* Hard-results-rosette.png */; };
+		83FCBBAF1985639500415369 /* Next-Button-Hard-Enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 838CDEC5197AED3000CF9726 /* Next-Button-Hard-Enabled.png */; };
+		83FCBBB01985639500415369 /* Done-Button-Hard-Disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09E061971212D0088965E /* Done-Button-Hard-Disabled.png */; };
+		83FCBBB11985639500415369 /* Quiz-Bar-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A029196819EE00C0D694 /* Quiz-Bar-Icon.png */; };
+		83FCBBB21985639500415369 /* Next-Button-Easy-Enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 838CDEC4197AED3000CF9726 /* Next-Button-Easy-Enabled.png */; };
+		83FCBBB31985639500415369 /* BPreplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8378488118DDBCD500C5AC61 /* BPreplay-Bold.ttf */; };
+		83FCBBB41985639500415369 /* Quiz-View-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70A18DDDD7A00970E8F /* Quiz-View-Button.png */; };
+		83FCBBB51985639500415369 /* Puzzles-Hard-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8378488D18DDCF5900C5AC61 /* Puzzles-Hard-Button.png */; };
+		83FCBBB61985639500415369 /* BPreplay-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8378488218DDBCD500C5AC61 /* BPreplay-BoldItalic.ttf */; };
+		83FCBBB71985639500415369 /* Easy-results-rosette.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A01C1968163600C0D694 /* Easy-results-rosette.png */; };
+		83FCBBB81985639500415369 /* Quiz-Easy-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70618DDDD7300970E8F /* Quiz-Easy-Button.png */; };
+		83FCBBB91985639500415369 /* Quiz-Hard-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70718DDDD7300970E8F /* Quiz-Hard-Button.png */; };
+		83FCBBBA1985639500415369 /* Puzzles-Hard-Explain.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70D18DDDEE400970E8F /* Puzzles-Hard-Explain.png */; };
+		83FCBBBB1985639500415369 /* Quiz-Menu-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8378487A18DDB69B00C5AC61 /* Quiz-Menu-Button.png */; };
+		83FCBBBC1985639500415369 /* Puzzles-Bar-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A028196819EE00C0D694 /* Puzzles-Bar-Icon.png */; };
+		83FCBBBD1985639500415369 /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A01B1968143C00C0D694 /* Pacifico.ttf */; };
+		83FCBBBE1985639500415369 /* Puzzles-Easy-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8378488B18DDCEB600C5AC61 /* Puzzles-Easy-Button.png */; };
+		83FCBBBF1985639500415369 /* Done-Button-Easy-Disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A01619680E8F00C0D694 /* Done-Button-Easy-Disabled.png */; };
+		83FCBBC01985639500415369 /* Hard-Switch-to-Easy.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A0231968187B00C0D694 /* Hard-Switch-to-Easy.png */; };
+		83FCBBC11985639500415369 /* Done-Button-Hard-Enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09E071971212D0088965E /* Done-Button-Hard-Enabled.png */; };
 		F94D93481930A4FC008CDB1A /* PuzzleController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94D93471930A4FC008CDB1A /* PuzzleController.m */; };
 		F94D934B1930AEC2008CDB1A /* LayeredView.m in Sources */ = {isa = PBXBuildFile; fileRef = F94D934A1930AEC2008CDB1A /* LayeredView.m */; };
 		F94D93641930EA33008CDB1A /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = F94D93631930EA33008CDB1A /* Utils.m */; };
@@ -137,6 +193,7 @@
 		83D971371960379600350AF0 /* Puzzles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Puzzles; sourceTree = "<group>"; };
 		83D971391960598200350AF0 /* Flag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flag.h; sourceTree = "<group>"; };
 		83D9713A1960598200350AF0 /* Flag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flag.m; sourceTree = "<group>"; };
+		83FCBBC51985639500415369 /* flags copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "flags copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94D93461930A4FC008CDB1A /* PuzzleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzleController.h; sourceTree = "<group>"; };
 		F94D93471930A4FC008CDB1A /* PuzzleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzleController.m; sourceTree = "<group>"; };
 		F94D93491930AEC2008CDB1A /* LayeredView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayeredView.h; sourceTree = "<group>"; };
@@ -153,6 +210,16 @@
 				8378484318DDAF8E00C5AC61 /* CoreGraphics.framework in Frameworks */,
 				8378484518DDAF8E00C5AC61 /* UIKit.framework in Frameworks */,
 				8378484118DDAF8E00C5AC61 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83FCBB9A1985639500415369 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83FCBB9B1985639500415369 /* CoreGraphics.framework in Frameworks */,
+				83FCBB9C1985639500415369 /* UIKit.framework in Frameworks */,
+				83FCBB9D1985639500415369 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				8378483D18DDAF8E00C5AC61 /* flags.app */,
+				83FCBBC51985639500415369 /* flags copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -357,9 +425,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8378483C18DDAF8E00C5AC61 /* flags */ = {
+		8378483C18DDAF8E00C5AC61 /* flags_production */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8378486F18DDAF8E00C5AC61 /* Build configuration list for PBXNativeTarget "flags" */;
+			buildConfigurationList = 8378486F18DDAF8E00C5AC61 /* Build configuration list for PBXNativeTarget "flags_production" */;
 			buildPhases = (
 				8378483918DDAF8E00C5AC61 /* Sources */,
 				8378483A18DDAF8E00C5AC61 /* Frameworks */,
@@ -369,9 +437,26 @@
 			);
 			dependencies = (
 			);
-			name = flags;
+			name = flags_production;
 			productName = flags;
 			productReference = 8378483D18DDAF8E00C5AC61 /* flags.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83FCBB861985639500415369 /* flags_development */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83FCBBC21985639500415369 /* Build configuration list for PBXNativeTarget "flags_development" */;
+			buildPhases = (
+				83FCBB871985639500415369 /* Sources */,
+				83FCBB9A1985639500415369 /* Frameworks */,
+				83FCBB9E1985639500415369 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = flags_development;
+			productName = flags;
+			productReference = 83FCBBC51985639500415369 /* flags copy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -380,7 +465,7 @@
 		8378483518DDAF8E00C5AC61 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = chris;
 				TargetAttributes = {
 					8378483C18DDAF8E00C5AC61 = {
@@ -401,7 +486,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8378483C18DDAF8E00C5AC61 /* flags */,
+				8378483C18DDAF8E00C5AC61 /* flags_production */,
+				83FCBB861985639500415369 /* flags_development */,
 			);
 		};
 /* End PBXProject section */
@@ -449,6 +535,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83FCBB9E1985639500415369 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83FCBB9F1985639500415369 /* Easy-Play-Again.png in Resources */,
+				83FCBBA01985639500415369 /* Images.xcassets in Resources */,
+				83FCBBA11985639500415369 /* BPreplay-Italic.ttf in Resources */,
+				83FCBBA21985639500415369 /* Done-Button-Easy-Enabled.png in Resources */,
+				83FCBBA31985639500415369 /* Play-Colours-Puzzle-Button.png in Resources */,
+				83FCBBA41985639500415369 /* InfoPlist.strings in Resources */,
+				83FCBBA51985639500415369 /* Easy-Switch-to-Hard.png in Resources */,
+				83FCBBA61985639500415369 /* Hard-Play-Again.png in Resources */,
+				83FCBBA71985639500415369 /* Play-Colours+Shapes-Puzzle-Button.png in Resources */,
+				83FCBBA81985639500415369 /* Menu-Button.png in Resources */,
+				83FCBBA91985639500415369 /* Puzzles-Menu-Button.png in Resources */,
+				83FCBBAA1985639500415369 /* Puzzles-Easy-Explain.png in Resources */,
+				83FCBBAB1985639500415369 /* Main.storyboard in Resources */,
+				83FCBBAC1985639500415369 /* Puzzles in Resources */,
+				83FCBBAD1985639500415369 /* BPreplay.ttf in Resources */,
+				83FCBBAE1985639500415369 /* Hard-results-rosette.png in Resources */,
+				83FCBBAF1985639500415369 /* Next-Button-Hard-Enabled.png in Resources */,
+				83FCBBB01985639500415369 /* Done-Button-Hard-Disabled.png in Resources */,
+				83FCBBB11985639500415369 /* Quiz-Bar-Icon.png in Resources */,
+				83FCBBB21985639500415369 /* Next-Button-Easy-Enabled.png in Resources */,
+				83FCBBB31985639500415369 /* BPreplay-Bold.ttf in Resources */,
+				83FCBBB41985639500415369 /* Quiz-View-Button.png in Resources */,
+				83FCBBB51985639500415369 /* Puzzles-Hard-Button.png in Resources */,
+				83FCBBB61985639500415369 /* BPreplay-BoldItalic.ttf in Resources */,
+				83FCBBB71985639500415369 /* Easy-results-rosette.png in Resources */,
+				83FCBBB81985639500415369 /* Quiz-Easy-Button.png in Resources */,
+				83FCBBB91985639500415369 /* Quiz-Hard-Button.png in Resources */,
+				83FCBBBA1985639500415369 /* Puzzles-Hard-Explain.png in Resources */,
+				83FCBBBB1985639500415369 /* Quiz-Menu-Button.png in Resources */,
+				83FCBBBC1985639500415369 /* Puzzles-Bar-Icon.png in Resources */,
+				83FCBBBD1985639500415369 /* Pacifico.ttf in Resources */,
+				83FCBBBE1985639500415369 /* Puzzles-Easy-Button.png in Resources */,
+				83FCBBBF1985639500415369 /* Done-Button-Easy-Disabled.png in Resources */,
+				83FCBBC01985639500415369 /* Hard-Switch-to-Easy.png in Resources */,
+				83FCBBC11985639500415369 /* Done-Button-Hard-Enabled.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -474,6 +602,31 @@
 				83D4A03219683D0000C0D694 /* DifficultyScaler.m in Sources */,
 				831414BF1972E5A1009D8FCC /* TableCell.m in Sources */,
 				8378484D18DDAF8E00C5AC61 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83FCBB871985639500415369 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83FCBB881985639500415369 /* PatternView.m in Sources */,
+				83FCBB891985639500415369 /* Flag.m in Sources */,
+				83FCBB8A1985639500415369 /* PaintPotView.m in Sources */,
+				83FCBB8B1985639500415369 /* TableController.m in Sources */,
+				83FCBB8C1985639500415369 /* MenuController.m in Sources */,
+				83FCBB8D1985639500415369 /* PuzzleController.m in Sources */,
+				83FCBB8E1985639500415369 /* BaseViewController.m in Sources */,
+				83FCBB8F1985639500415369 /* LayeredView.m in Sources */,
+				83FCBB901985639500415369 /* Quiz.m in Sources */,
+				83FCBB911985639500415369 /* AppDelegate.m in Sources */,
+				83FCBB921985639500415369 /* EventRecorder.m in Sources */,
+				83FCBB931985639500415369 /* Utils.m in Sources */,
+				83FCBB941985639500415369 /* ResultsController.m in Sources */,
+				83FCBB951985639500415369 /* LayerView.m in Sources */,
+				83FCBB961985639500415369 /* FeedbackController.m in Sources */,
+				83FCBB971985639500415369 /* DifficultyScaler.m in Sources */,
+				83FCBB981985639500415369 /* TableCell.m in Sources */,
+				83FCBB991985639500415369 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,7 +656,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -542,7 +694,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -603,6 +754,38 @@
 			};
 			name = Release;
 		};
+		83FCBBC31985639500415369 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "flags/flags-Prefix.pch";
+				INFOPLIST_FILE = "flags copy-Info.plist";
+				PRODUCT_NAME = "flags copy";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		83FCBBC41985639500415369 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "flags/flags-Prefix.pch";
+				INFOPLIST_FILE = "flags copy-Info.plist";
+				PRODUCT_NAME = "flags copy";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -615,11 +798,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8378486F18DDAF8E00C5AC61 /* Build configuration list for PBXNativeTarget "flags" */ = {
+		8378486F18DDAF8E00C5AC61 /* Build configuration list for PBXNativeTarget "flags_production" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8378487018DDAF8E00C5AC61 /* Debug */,
 				8378487118DDAF8E00C5AC61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83FCBBC21985639500415369 /* Build configuration list for PBXNativeTarget "flags_development" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83FCBBC31985639500415369 /* Debug */,
+				83FCBBC41985639500415369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
