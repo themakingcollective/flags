@@ -208,4 +208,24 @@
     imageView.layer.masksToBounds = YES;
 }
 
++ (NSFileHandle *)fileAtDocumentsPath:(NSString *)path
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *filePath = [NSString stringWithFormat:@"%@/%@", documentsDirectory, path];
+    
+    NSLog(@"file path: %@", filePath);
+    if (![[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
+        [[NSFileManager defaultManager] createFileAtPath:filePath contents:nil attributes:nil];
+    }
+    
+    NSFileHandle *fileHandle = [NSFileHandle fileHandleForUpdatingAtPath:filePath];
+    
+    if (!fileHandle) {
+        NSLog(@"No file handle: %d - message: %s", errno, strerror(errno));
+    }
+    
+    return fileHandle;
+}
+
 @end

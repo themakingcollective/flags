@@ -14,6 +14,7 @@
 #import "FeedbackController.h"
 #import "Flag.h"
 #import "Utils.h"
+#import "EventRecorder.h"
 
 @interface PuzzleController () <PaintPotViewDelegate, PatternViewDelegate, LayeredViewDelegate>
 
@@ -107,6 +108,7 @@
         [self.quiz incorrect];
     }
 
+    [[EventRecorder sharedInstance] record:@{@"foo": @"bar"}];
     [self showFeedback:playerWasCorrect withFlag:correctFlag];
 }
 

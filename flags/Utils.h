@@ -21,5 +21,6 @@
 + (NSArray *)pickSample:(NSArray *)array size:(NSInteger)size;
 + (id)copyView:(UIView *)view;
 + (void)resizeFrameToFitImage:(UIImageView *)imageView;
++ (NSFileHandle *)fileAtDocumentsPath:(NSString *)path;
 
 @end
