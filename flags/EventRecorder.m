@@ -34,7 +34,10 @@
 
 - (NSURL *)url
 {
-    return [NSURL URLWithString:@"http://localhost:3000/event_batches"];
+    NSString *host = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"Flags Server"];
+    NSString *path = [NSString stringWithFormat:@"%@/event_batches", host];
+    
+    return [NSURL URLWithString:path];
 }
 
 - (void)record:(NSDictionary *)eventData

@@ -50,5 +50,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>Flags Server</key>
+	<string>http://localhost:3000/</string>
+	<key>Transmission Frequency</key>
+	<string>10</string>
 </dict>
 </plist>

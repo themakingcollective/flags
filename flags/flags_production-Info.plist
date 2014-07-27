@@ -50,5 +50,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>Flags Server</key>
+	<string>http://flags-server.herokuapp.com/</string>
+	<key>Transmission Frequency</key>
+	<string>300</string>
 </dict>
 </plist>

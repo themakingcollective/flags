@@ -25,8 +25,9 @@
     
     [[UINavigationBar appearance] setTitleVerticalPositionAdjustment:2 forBarMetrics:UIBarMetricsDefault];
     
-    [self transmitEvents:nil];
-    [NSTimer scheduledTimerWithTimeInterval:(5 * 60) target:self selector:@selector(transmitEvents:) userInfo:nil repeats:YES];
+    [self transmitEvents:nil]; //TODO put inside a background thread
+    NSString *freq = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"Transmission Frequency"];
+    [NSTimer scheduledTimerWithTimeInterval:[freq intValue] target:self selector:@selector(transmitEvents:) userInfo:nil repeats:YES];
 
     return YES;
 }
