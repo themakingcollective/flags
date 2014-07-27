@@ -109,6 +109,7 @@
     }
 
     [[EventRecorder sharedInstance] record:@{@"foo": @"bar"}];
+    [[EventRecorder sharedInstance] transmit];
     [self showFeedback:playerWasCorrect withFlag:correctFlag];
 }
 

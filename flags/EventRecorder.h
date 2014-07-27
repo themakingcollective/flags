@@ -12,5 +12,6 @@
 
 + (EventRecorder *)sharedInstance;
 - (void)record:(NSDictionary *)eventData;
+- (void)transmit;
 
 @end

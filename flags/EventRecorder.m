@@ -32,6 +32,11 @@
     return @"events.txt";
 }
 
+- (NSURL *)url
+{
+    return [NSURL URLWithString:@"http://localhost:3000/foo.html"];
+}
+
 - (void)record:(NSDictionary *)eventData
 {
     NSData* data = [NSJSONSerialization dataWithJSONObject:eventData options:0 error:nil];
@@ -42,6 +47,29 @@
     [file writeData:[json dataUsingEncoding:NSUTF8StringEncoding]];
     [file writeData:[@"\n" dataUsingEncoding:NSUTF8StringEncoding]];
     [file closeFile];
+}
+
+- (void)transmit
+{
+    NSFileHandle *file = [Utils fileAtDocumentsPath:[self path]];
+    NSData *postData = [file readDataToEndOfFile];
+    [file closeFile];
+
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[self url]];
+    [request setHTTPBody:postData];
+    [request setHTTPMethod:@"POST"];
+    [request setValue:@"text/plain" forHTTPHeaderField:@"Content-Type"];
+    
+    NSHTTPURLResponse *response;
+    NSError *error;
+    [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    
+    if ([response statusCode] == 200) {
+        [Utils deleteDocument:[self path]];
+    }
+    else {
+        NSLog(@"Failed to transmit to %@. code: %d, error: %@", [self url], [response statusCode], error);
+    }
 }
 
 @end

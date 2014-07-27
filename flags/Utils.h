@@ -22,5 +22,6 @@
 + (id)copyView:(UIView *)view;
 + (void)resizeFrameToFitImage:(UIImageView *)imageView;
 + (NSFileHandle *)fileAtDocumentsPath:(NSString *)path;
++ (void)deleteDocument:(NSString *)path;
 
 @end

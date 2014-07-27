@@ -210,9 +210,7 @@
 
 + (NSFileHandle *)fileAtDocumentsPath:(NSString *)path
 {
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString *filePath = [NSString stringWithFormat:@"%@/%@", documentsDirectory, path];
+    NSString *filePath = [self documentsPath:path];
     
     NSLog(@"file path: %@", filePath);
     if (![[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
@@ -226,6 +224,19 @@
     }
     
     return fileHandle;
+}
+
++ (void)deleteDocument:(NSString *)path
+{
+    NSString *filePath = [self documentsPath:path];
+    [[NSFileManager defaultManager] removeItemAtPath:filePath error:nil];
+}
+
++ (NSString *)documentsPath:(NSString *)path
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    return [NSString stringWithFormat:@"%@/%@", documentsDirectory, path];
 }
 
 @end
