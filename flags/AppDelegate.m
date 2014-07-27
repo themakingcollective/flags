@@ -25,7 +25,7 @@
     
     [[UINavigationBar appearance] setTitleVerticalPositionAdjustment:2 forBarMetrics:UIBarMetricsDefault];
     
-    [self transmitEvents:nil]; //TODO put inside a background thread
+    [self transmitEvents:nil];
     NSString *freq = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"Transmission Frequency"];
     [NSTimer scheduledTimerWithTimeInterval:[freq intValue] target:self selector:@selector(transmitEvents:) userInfo:nil repeats:YES];
 
@@ -34,7 +34,14 @@
 							
 - (void)transmitEvents:(NSTimer *)timer
 {
-    [[EventRecorder sharedInstance] transmit];
+    if (!timer) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            [[EventRecorder sharedInstance] transmit];
+        });
+    }
+    else {
+        [[EventRecorder sharedInstance] transmit];
+    }
 }
 
 @end
