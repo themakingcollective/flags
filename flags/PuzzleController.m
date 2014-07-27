@@ -109,8 +109,6 @@
         [self.quiz incorrect];
     }
 
-    
-    [[EventRecorder sharedInstance] transmit];
     [self showFeedback:playerWasCorrect withFlag:correctFlag];
 }
 

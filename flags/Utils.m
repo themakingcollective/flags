@@ -212,7 +212,6 @@
 {
     NSString *filePath = [self documentsPath:path];
     
-    NSLog(@"file path: %@", filePath);
     if (![[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
         [[NSFileManager defaultManager] createFileAtPath:filePath contents:nil attributes:nil];
     }
