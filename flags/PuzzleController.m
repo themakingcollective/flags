@@ -288,9 +288,10 @@
 - (void)recordEvent:(BOOL)playerWasCorrect flag:(Flag *)flag
 {
     [[EventRecorder sharedInstance] record:@{
-        @"flag": [flag name],
-        @"correct": playerWasCorrect ? @"true" : @"false",
-        @"difficulty": self.difficulty
+        @"flag_name": [flag name],
+        @"mode": @"puzzle",
+        @"difficulty": self.difficulty,
+        @"correct": playerWasCorrect ? @"true" : @"false"
     }];
 }
 

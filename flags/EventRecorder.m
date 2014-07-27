@@ -34,7 +34,7 @@
 
 - (NSURL *)url
 {
-    return [NSURL URLWithString:@"http://localhost:3000/foo.html"];
+    return [NSURL URLWithString:@"http://localhost:3000/event_batches"];
 }
 
 - (void)record:(NSDictionary *)eventData
@@ -52,13 +52,14 @@
 - (void)transmit
 {
     NSFileHandle *file = [Utils fileAtDocumentsPath:[self path]];
-    NSData *postData = [file readDataToEndOfFile];
+    NSData *data = [file readDataToEndOfFile];
+    NSData *postData = [self convertToValidJson:data];
     [file closeFile];
 
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[self url]];
     [request setHTTPBody:postData];
     [request setHTTPMethod:@"POST"];
-    [request setValue:@"text/plain" forHTTPHeaderField:@"Content-Type"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     
     NSHTTPURLResponse *response;
     NSError *error;
@@ -70,6 +71,15 @@
     else {
         NSLog(@"Failed to transmit to %@. code: %d, error: %@", [self url], [response statusCode], error);
     }
+}
+
+- (NSData *)convertToValidJson:(NSData *)data
+{
+    NSString *events = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    events = [events stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]];
+    events = [events stringByReplacingOccurrencesOfString:@"\n" withString:@","];
+    NSString *json = [NSString stringWithFormat:@"{\"events\": [%@] }", events];
+    return [json dataUsingEncoding:NSUTF8StringEncoding];
 }
 
 @end
