@@ -100,6 +100,7 @@
 {
     BOOL playerWasCorrect = [self isCorrect];
     Flag *correctFlag = [self.quiz currentElement];
+    [self recordEvent:playerWasCorrect flag:correctFlag];
     
     if (playerWasCorrect) {
         [self.quiz correct];
@@ -108,7 +109,7 @@
         [self.quiz incorrect];
     }
 
-    [[EventRecorder sharedInstance] record:@{@"foo": @"bar"}];
+    
     [[EventRecorder sharedInstance] transmit];
     [self showFeedback:playerWasCorrect withFlag:correctFlag];
 }
@@ -284,6 +285,15 @@
     [self showPaintPots];
     [self showSubmitButton];
     [self touchFirstPaintPot];
+}
+
+- (void)recordEvent:(BOOL)playerWasCorrect flag:(Flag *)flag
+{
+    [[EventRecorder sharedInstance] record:@{
+        @"flag": [flag name],
+        @"correct": playerWasCorrect ? @"true" : @"false",
+        @"difficulty": self.difficulty
+    }];
 }
 
 @end
