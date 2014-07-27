@@ -72,7 +72,8 @@
         [Utils deleteDocument:[self path]];
     }
     else {
-        NSLog(@"Failed to transmit to %@. code: %d, error: %@", [self url], [response statusCode], error);
+        // NSLog(@"Failed to transmit to %@. code: %d, error: %@", [self url], [response statusCode], error);
+        NSLog(@"Could not transmit events.");
     }
 }
 
