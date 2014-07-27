@@ -43,6 +43,8 @@
 		838CDEC6197AED3000CF9726 /* Next-Button-Easy-Enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 838CDEC4197AED3000CF9726 /* Next-Button-Easy-Enabled.png */; };
 		838CDEC7197AED3000CF9726 /* Next-Button-Hard-Enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 838CDEC5197AED3000CF9726 /* Next-Button-Hard-Enabled.png */; };
 		83A6D931198565D600A97596 /* flags_production-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8378484818DDAF8E00C5AC61 /* flags_production-Info.plist */; };
+		83A6D934198569E800A97596 /* AggregatesService.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A6D933198569E800A97596 /* AggregatesService.m */; };
+		83A6D935198569E800A97596 /* AggregatesService.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A6D933198569E800A97596 /* AggregatesService.m */; };
 		83AEBCEA19851B6A00EE8211 /* EventRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AEBCE919851B6A00EE8211 /* EventRecorder.m */; };
 		83D09E081971212D0088965E /* Done-Button-Hard-Disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09E061971212D0088965E /* Done-Button-Hard-Disabled.png */; };
 		83D09E091971212D0088965E /* Done-Button-Hard-Enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09E071971212D0088965E /* Done-Button-Hard-Enabled.png */; };
@@ -174,6 +176,8 @@
 		83856127197AAD7D009869DA /* FeedbackController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackController.m; sourceTree = "<group>"; };
 		838CDEC4197AED3000CF9726 /* Next-Button-Easy-Enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Next-Button-Easy-Enabled.png"; sourceTree = "<group>"; };
 		838CDEC5197AED3000CF9726 /* Next-Button-Hard-Enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Next-Button-Hard-Enabled.png"; sourceTree = "<group>"; };
+		83A6D932198569E800A97596 /* AggregatesService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AggregatesService.h; sourceTree = "<group>"; };
+		83A6D933198569E800A97596 /* AggregatesService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AggregatesService.m; sourceTree = "<group>"; };
 		83AEBCE819851B6A00EE8211 /* EventRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventRecorder.h; sourceTree = "<group>"; };
 		83AEBCE919851B6A00EE8211 /* EventRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventRecorder.m; sourceTree = "<group>"; };
 		83D09E061971212D0088965E /* Done-Button-Hard-Disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Done-Button-Hard-Disabled.png"; sourceTree = "<group>"; };
@@ -377,6 +381,8 @@
 				83D4A03119683D0000C0D694 /* DifficultyScaler.m */,
 				83AEBCE819851B6A00EE8211 /* EventRecorder.h */,
 				83AEBCE919851B6A00EE8211 /* EventRecorder.m */,
+				83A6D932198569E800A97596 /* AggregatesService.h */,
+				83A6D933198569E800A97596 /* AggregatesService.m */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -595,6 +601,7 @@
 				F94D934B1930AEC2008CDB1A /* LayeredView.m in Sources */,
 				832D81721956CD30000600DA /* Quiz.m in Sources */,
 				8378485118DDAF8E00C5AC61 /* AppDelegate.m in Sources */,
+				83A6D934198569E800A97596 /* AggregatesService.m in Sources */,
 				83AEBCEA19851B6A00EE8211 /* EventRecorder.m in Sources */,
 				F94D93641930EA33008CDB1A /* Utils.m in Sources */,
 				832D81751956D6E6000600DA /* ResultsController.m in Sources */,
@@ -620,6 +627,7 @@
 				83FCBB8F1985639500415369 /* LayeredView.m in Sources */,
 				83FCBB901985639500415369 /* Quiz.m in Sources */,
 				83FCBB911985639500415369 /* AppDelegate.m in Sources */,
+				83A6D935198569E800A97596 /* AggregatesService.m in Sources */,
 				83FCBB921985639500415369 /* EventRecorder.m in Sources */,
 				83FCBB931985639500415369 /* Utils.m in Sources */,
 				83FCBB941985639500415369 /* ResultsController.m in Sources */,
