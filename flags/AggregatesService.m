@@ -49,6 +49,8 @@
 
 - (NSArray *)where:(NSDictionary *)filters
 {
+    NSArray *filteredArray = @[];
+    
     if (self.aggregates) {
         NSPredicate *filter = [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
             NSDictionary *aggregate = (NSDictionary *)evaluatedObject;
@@ -64,11 +66,14 @@
             return true;
         }];
         
-        return [self.aggregates filteredArrayUsingPredicate:filter];
+        filteredArray = [self.aggregates filteredArrayUsingPredicate:filter];
     }
-    else {
-        return @[];
+    
+    if ([filteredArray count] == 0) {
+        filteredArray = @[@{@"correct_count": @0, @"total_count": @0}];
     }
+    
+    return filteredArray;
 }
 
 @end

@@ -15,6 +15,7 @@
 #import "Flag.h"
 #import "Utils.h"
 #import "EventRecorder.h"
+#import "AggregatesService.h"
 
 @interface PuzzleController () <PaintPotViewDelegate, PatternViewDelegate, LayeredViewDelegate>
 
