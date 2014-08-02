@@ -10,6 +10,7 @@
 #import "PuzzleController.h"
 #import "Utils.h"
 #import "ResultsController.h"
+#import "AggregatesService.h"
 
 @interface FeedbackController ()
 
@@ -58,6 +59,8 @@
     
     NSString *imageName = [self.difficulty isEqualToString:@"easy"] ? @"Next-Button-Easy-Enabled" : @"Next-Button-Hard-Enabled";
     [self.nextButton setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    
+    [self setSocialLabel];
     
     [super viewDidLoad];
 }
@@ -116,6 +119,29 @@
         @"That's not right",
         @"Nuh-uh"
     ];
+}
+
+- (void)setSocialLabel
+{
+    NSDictionary *aggregate = [[[AggregatesService sharedInstance] where:@{
+        @"flag_name": self.correctFlag.name,
+        @"difficulty": self.difficulty,
+        @"mode": @"puzzle"
+    }] firstObject];
+    
+    int correctCount = [aggregate[@"correct_count"] intValue];
+    int totalCount = [aggregate[@"total_count"] intValue];
+    
+    if (totalCount == 0) {
+        self.socialLabel.text = @"";
+    }
+    else {
+        float percent = (float)correctCount / totalCount;
+        percent *= 100;
+        percent = floor(percent + 0.5);
+        
+        self.socialLabel.text = [NSString stringWithFormat:@"%0.0f%% of %d people got this right", percent, totalCount];
+    }
 }
 
 @end
