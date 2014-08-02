@@ -43,7 +43,12 @@
         
         if (dict) {
             self.aggregates = dict[@"aggregates"];
+            [self saveAggregatesToUserDefaults];
         }
+    }
+    
+    if (!self.aggregates) {
+        [self loadAggregatesFromUserDefaults];
     }
 }
 
@@ -74,6 +79,17 @@
     }
     
     return filteredArray;
+}
+
+- (void)loadAggregatesFromUserDefaults {
+    NSData *archivedData = [[NSUserDefaults standardUserDefaults] objectForKey:@"aggregates"];
+    self.aggregates = [NSKeyedUnarchiver unarchiveObjectWithData:archivedData];
+}
+
+- (void)saveAggregatesToUserDefaults {
+    NSData *archivedData = [NSKeyedArchiver archivedDataWithRootObject:self.aggregates];
+    [[NSUserDefaults standardUserDefaults] setObject:archivedData forKey:@"aggregates"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 @end
