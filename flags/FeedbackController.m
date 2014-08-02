@@ -139,8 +139,14 @@
         float percent = (float)correctCount / totalCount;
         percent *= 100;
         percent = floor(percent + 0.5);
+        NSString *term = @"right";
         
-        self.socialLabel.text = [NSString stringWithFormat:@"%0.0f%% of %d people got this right", percent, totalCount];
+        if (!self.playerWasCorrect) {
+            term = @"wrong";
+            percent = 100 - percent;
+        }
+        
+        self.socialLabel.text = [NSString stringWithFormat:@"%0.0f%% of %d people got this %@", percent, totalCount, term];
     }
 }
 
