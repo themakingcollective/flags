@@ -8,6 +8,12 @@
 
 #import "AggregatesService.h"
 
+@interface AggregatesService ()
+
+@property (nonatomic, strong) NSArray *aggregates;
+
+@end
+
 @implementation AggregatesService
 
 + (AggregatesService *)sharedInstance
@@ -30,7 +36,39 @@
 
 - (void)fetch
 {
+    NSData *data = [NSData dataWithContentsOfURL:[self url]];
     
+    if (data) {
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+        
+        if (dict) {
+            self.aggregates = dict[@"aggregates"];
+        }
+    }
+}
+
+- (NSArray *)where:(NSDictionary *)filters
+{
+    if (self.aggregates) {
+        NSPredicate *filter = [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
+            NSDictionary *aggregate = (NSDictionary *)evaluatedObject;
+            
+            for (NSString *key in filters) {
+                NSString *aValue = [aggregate objectForKey:key];
+                NSString *fValue = [filters objectForKey:key];
+                
+                if (![aValue isEqualToString:fValue]) {
+                    return false;
+                }
+            }
+            return true;
+        }];
+        
+        return [self.aggregates filteredArrayUsingPredicate:filter];
+    }
+    else {
+        return @[];
+    }
 }
 
 @end

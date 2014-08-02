@@ -12,5 +12,6 @@
 
 + (AggregatesService *)sharedInstance;
 - (void)fetch;
+- (NSArray *)where:(NSDictionary *)filters;
 
 @end

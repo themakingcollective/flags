@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "Flag.h"
 #import "EventRecorder.h"
+#import "AggregatesService.h"
 
 @implementation AppDelegate
 
@@ -25,22 +26,24 @@
     
     [[UINavigationBar appearance] setTitleVerticalPositionAdjustment:2 forBarMetrics:UIBarMetricsDefault];
     
-    [self transmitEvents:nil];
+    [self syncWithFlagsServer:nil];
     NSString *freq = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"Transmission Frequency"];
-    [NSTimer scheduledTimerWithTimeInterval:[freq intValue] target:self selector:@selector(transmitEvents:) userInfo:nil repeats:YES];
-
+    [NSTimer scheduledTimerWithTimeInterval:[freq intValue] target:self selector:@selector(syncWithFlagsServer:) userInfo:nil repeats:YES];
+                                                               
     return YES;
 }
 							
-- (void)transmitEvents:(NSTimer *)timer
+- (void)syncWithFlagsServer:(NSTimer *)timer
 {
     if (!timer) {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             [[EventRecorder sharedInstance] transmit];
+            [[AggregatesService sharedInstance] fetch];
         });
     }
     else {
         [[EventRecorder sharedInstance] transmit];
+        [[AggregatesService sharedInstance] fetch];
     }
 }
 
