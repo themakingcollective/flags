@@ -45,6 +45,11 @@
     NSData* data = [NSJSONSerialization dataWithJSONObject:eventData options:0 error:nil];
     NSString* json = [[NSString alloc] initWithBytes:[data bytes] length:[data length] encoding:NSUTF8StringEncoding];
 
+    if ([self exceededMaximumFileSize]) {
+        NSLog(@"Not recording event. Maximum file size reached.");
+        return;
+    }
+    
     NSFileHandle *file = [Utils fileAtDocumentsPath:[self path]];
     [file seekToEndOfFile];
     [file writeData:[json dataUsingEncoding:NSUTF8StringEncoding]];
@@ -84,6 +89,17 @@
     events = [events stringByReplacingOccurrencesOfString:@"\n" withString:@","];
     NSString *json = [NSString stringWithFormat:@"{\"events\": [%@] }", events];
     return [json dataUsingEncoding:NSUTF8StringEncoding];
+}
+
+- (BOOL)exceededMaximumFileSize
+{
+    NSString *path = [Utils documentsPath:[self path]];
+    NSDictionary *attr = [[NSFileManager defaultManager] attributesOfItemAtPath:path error:nil];
+    NSInteger fileSize = (NSInteger)[attr fileSize];
+    
+    // 100KB maximum file size.
+    // Should be enough for > 1000 events.
+    return fileSize > 100000;
 }
 
 @end
