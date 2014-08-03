@@ -31,10 +31,10 @@
     NSMutableDictionary *dictionary = [NSMutableDictionary dictionaryWithDictionary:aggregate];
     NSNumber *correctPercentNumber;
     NSNumber *incorrectPercentNumber;
-    
+
     NSInteger correctCount = [aggregate[@"correct_count"] intValue];
     NSInteger totalCount = [aggregate[@"total_count"] intValue];
-    
+
     if (totalCount == 0) {
         return aggregate;
     }
@@ -43,13 +43,13 @@
         correctPercent *= 100;
         correctPercent = floor(correctPercent + 0.5);
         float incorrectPercent = 100 - correctPercent;
-        
+
         correctPercentNumber = [NSNumber numberWithInt:(NSInteger)correctPercent];
         incorrectPercentNumber = [NSNumber numberWithInt:(NSInteger)incorrectPercent];
-        
+
         [dictionary setObject:correctPercentNumber forKey:@"correct_percent"];
         [dictionary setObject:incorrectPercentNumber forKey:@"incorrect_percent"];
-        
+
         return [NSDictionary dictionaryWithDictionary:dictionary];
     }
 }
@@ -58,23 +58,23 @@
 {
     NSString *host = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"Flags Server"];
     NSString *path = [NSString stringWithFormat:@"%@/aggregates", host];
-    
+
     return [NSURL URLWithString:path];
 }
 
 - (void)fetch
 {
     NSData *data = [NSData dataWithContentsOfURL:[self url]];
-    
+
     if (data) {
         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-        
+
         if (dict) {
             self.aggregates = dict[@"aggregates"];
             [self saveAggregatesToUserDefaults];
         }
     }
-    
+
     if (!self.aggregates) {
         [self loadAggregatesFromUserDefaults];
     }
@@ -89,11 +89,11 @@
     }] firstObject];
 
     aggregate = [[self class] withStats:aggregate];
-    
+
     NSInteger totalCount = [aggregate[@"total_count"] intValue];
     NSNumber *percent;
     NSString *term;
-    
+
     if (totalCount == 0) {
         return @"";
     }
@@ -107,36 +107,36 @@
             term = @"wrong";
         }
     }
-    
+
     return [NSString stringWithFormat:@"%@%% of %d people got this %@", percent, totalCount, term];
 }
 
 - (NSArray *)where:(NSDictionary *)filters
 {
     NSArray *filteredArray = @[];
-    
+
     if (self.aggregates) {
         NSPredicate *filter = [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
             NSDictionary *aggregate = (NSDictionary *)evaluatedObject;
-            
+
             for (NSString *key in filters) {
                 NSString *aValue = [aggregate objectForKey:key];
                 NSString *fValue = [filters objectForKey:key];
-                
+
                 if (![aValue isEqualToString:fValue]) {
                     return false;
                 }
             }
             return true;
         }];
-        
+
         filteredArray = [self.aggregates filteredArrayUsingPredicate:filter];
     }
-    
+
     if ([filteredArray count] == 0) {
         filteredArray = @[@{@"correct_count": @0, @"total_count": @0}];
     }
-    
+
     return filteredArray;
 }
 

@@ -45,7 +45,7 @@
 {
     self.correctCount++;
     self.roundsCount++;
-    
+
     NSDictionary *aggregate = [self aggregate:flag mode:mode variant:variant];
     [self updateBestWorst:YES aggregate:aggregate];
 }
@@ -54,7 +54,7 @@
 {
     self.incorrectCount++;
     self.roundsCount++;
-    
+
     NSDictionary *aggregate = [self aggregate:flag mode:mode variant:variant];
     [self updateBestWorst:NO aggregate:aggregate];
 }
@@ -88,7 +88,7 @@
        @"mode": mode,
        @"variant": variant
     }] firstObject];
-    
+
     return [AggregatesService withStats:aggregate];
 }
 
@@ -109,7 +109,7 @@
     NSInteger incorrectCount = [aggregate[@"total_count"] intValue];
     NSInteger lowestIncorrectPercent = [self.bestAggregate[@"correct_percent"] intValue];
     NSInteger lowestIncorrectCount = [self.bestAggregate[@"total_count"] intValue];
-    
+
     // First time since reset.
     if (!lowestIncorrectPercent) {
         self.bestAggregate = aggregate;
@@ -130,7 +130,7 @@
     NSInteger correctCount = [aggregate[@"total_count"] intValue];
     NSInteger highestCorrectPercent = [self.worstAggregate[@"correct_percent"] intValue];
     NSInteger highestCorrectCount = [self.worstAggregate[@"total_count"] intValue];
-    
+
     // First time since reset.
     if (!highestCorrectPercent) {
         self.worstAggregate = aggregate;
