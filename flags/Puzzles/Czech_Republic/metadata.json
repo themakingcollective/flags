@@ -2,21 +2,23 @@
   "name": "Czech Republic",
   "continent": "Europe",
   "directory": "Czech_Republic",
-  "category": 1,
+  "category": 2,
   "population": 10256760,
   "area": 78866,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "006600",
     "000000",
-    "ffff00"
+    "FFCC00",
+    "FF6600",
+    "CC0099"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Comoros",
+    "Republic_of_Congo",
+    "Guyana",
+    "Jordan",
+    "Trinidad_and_Tobago",
+    "Croatia"
   ]
 }

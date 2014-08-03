@@ -7,16 +7,18 @@
   "area": 751,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/c/c4/Flag_of_Dominica.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "FF6600",
     "000000",
-    "ffff00"
+    "CC0000",
+    "99CCFF",
+    "FF6699"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Cambodia",
+    "Mexico",
+    "Haiti",
+    "Cyprus",
+    "Papua_New_Guinea",
+    "Uganda"
   ]
 }

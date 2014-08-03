@@ -7,16 +7,18 @@
   "area": 3287263,
   "image_url": "http://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "CC0000",
     "000000",
-    "ffff00"
+    "99CCFF",
+    "A30052",
+    "C6C6AA"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "South_Korea",
+    "Mongolia",
+    "Brunei",
+    "New_Zealand",
+    "Liberia",
+    "Nepal"
   ]
 }

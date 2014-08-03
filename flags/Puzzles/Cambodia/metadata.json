@@ -8,15 +8,17 @@
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_Cambodia.svg",
   "incorrect_colors": [
     "FFFFFF",
-    "000000",
-    "ffff00"
+    "990099",
+    "006600",
+    "FFFF00",
+    "FF6600"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Mongolia",
+    "Macedonia",
+    "South_Korea",
+    "Morocco",
+    "Suriname",
+    "Bhutan"
   ]
 }

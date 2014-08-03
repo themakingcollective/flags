@@ -7,16 +7,18 @@
   "area": 29743,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_Armenia.svg",
   "incorrect_colors": [
-    "00ff7f",
+    "999966",
     "FFFFFF",
-    "000000"
+    "000000",
+    "006600",
+    "00CC00"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Guatemala",
+    "Grenada",
+    "Georgia",
+    "Guyana",
+    "Guinea_Bissau",
+    "Indonesia"
   ]
 }

@@ -7,16 +7,18 @@
   "area": 110910,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Bulgaria.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "FFCC00",
     "000000",
-    "ffff00"
+    "FF6600",
+    "0000CC",
+    "66FF99"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
+    "Chad",
+    "Malta",
+    "Indonesia",
+    "Mauritius",
     "Angola",
-    "Andorra"
+    "Denmark"
   ]
 }

@@ -7,16 +7,18 @@
   "area": 20770,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "006600",
     "000000",
-    "ffff00"
+    "00CC00",
+    "FF0000",
+    "CC0000"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
+    "Jamaica",
+    "Somalia",
+    "Guinea_Bissau",
+    "Central_African_Republic",
+    "Trinidad_and_Tobago",
     "Andorra"
   ]
 }

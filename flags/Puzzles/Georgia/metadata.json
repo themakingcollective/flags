@@ -7,16 +7,18 @@
   "area": 69700,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/0/0f/Flag_of_Georgia.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "006600",
     "000000",
-    "ffff00"
+    "ffff00",
+    "FF6600",
+    "0000CC"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Denmark",
+    "Azerbaijan",
+    "Djibouti",
+    "Trinidad_and_Tobago",
+    "Grenada",
+    "Tonga"
   ]
 }

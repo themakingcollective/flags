@@ -7,16 +7,18 @@
   "area": 468,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Andorra.svg",
   "incorrect_colors": [
-    "ffa500",
+    "FFFFFF",
     "000000",
-    "228b22"
+    "00CC00",
+    "FF6600",
+    "99CCFF"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Vatican_City",
+    "Montenegro",
+    "San_Marino",
+    "Croatia",
+    "Equatorial_Guinea",
+    "Dominica"
   ]
 }

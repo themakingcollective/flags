@@ -8,15 +8,17 @@
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Afghanistan.svg",
   "incorrect_colors": [
     "FFFFFF",
-    "ffff00",
-    "000088"
+    "FFCC00",
+    "3399FF",
+    "000099",
+    "800000"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
     "Angola",
-    "Andorra"
+    "Saudi_Arabia",
+    "Grenada",
+    "Azerbaijan",
+    "Comoros",
+    "Guinea_Bissau"
   ]
 }

@@ -11,14 +11,14 @@
     "74ACDF",
     "000088",
     "ffff00",
-    "ffffee"
+    "009900"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Vatican_City",
+    "Mexico",
+    "Oman",
+    "Brunei",
+    "San_Marino",
+    "Eritrea"
   ]
 }

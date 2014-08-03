@@ -7,17 +7,18 @@
   "area": 442,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Antigua_and_Barbuda.svg",
   "incorrect_colors": [
-    "228b22",
-    "7fffd4",
-    "ff8c00",
-    "a0522d"
+    "006600",
+    "00CC00",
+    "FF6600",
+    "333300",
+    "CC0099"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Haiti",
+    "Bolivia",
+    "Kiribati",
+    "Sao_Tome_and_Principe",
+    "Jamaica",
+    "Panama"
   ]
 }

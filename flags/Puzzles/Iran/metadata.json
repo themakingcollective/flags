@@ -7,16 +7,18 @@
   "area": 1648195,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "FF6600",
     "000000",
-    "ffff00"
+    "ffff00",
+    "99CCFF",
+    "999966"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Jordan",
+    "Pakistan",
+    "Saudi_Arabia",
+    "Malaysia",
+    "Maldives",
+    "Iceland"
   ]
 }

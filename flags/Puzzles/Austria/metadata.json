@@ -7,17 +7,18 @@
   "area": 83858,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg",
   "incorrect_colors": [
-    "ffa500",
-    "daa520",
-    "228b22",
-    "0000cd"
+    "FFFFFF",
+    "99CCFF",
+    "0000CC",
+    "006600",
+    "00CC00"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Switzerland",
+    "Belgium",
+    "Poland",
+    "Benin",
+    "Panama",
+    "Portugal"
   ]
 }

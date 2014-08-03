@@ -7,17 +7,18 @@
   "area": 1246700,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Angola.svg",
   "incorrect_colors": [
-    "32cd32",
-    "00ffff",
-    "0000cd",
-    "FFFFFF"
+    "FFFFFF",
+    "006600",
+    "FFCC00",
+    "0000CC",
+    "99CCFF"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Antigua_and_Barbuda",
+    "Brunei",
+    "Bosnia_and_Herzegovina",
+    "Mozambique",
+    "Samoa",
+    "Libya"
   ]
 }

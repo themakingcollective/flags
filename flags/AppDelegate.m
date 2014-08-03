@@ -15,24 +15,38 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // DATA VALIDATION
+//    for (Flag *flag in [Flag all]) {
+//        [flag name];
+//        [flag metadata];
+//        [flag layeredImagePaths];
+//        [flag shuffledColors];
+//        [flag image];
+//        [flag difficulty];
+//        [flag patternFlags];
+//        [flag patternImage];
+//    }
+    // -----
+
+
     UIFont *font = [UIFont fontWithName:@"BPreplay" size:17];
     [[UILabel appearance] setFont:font];
-    
+
     [[UINavigationBar appearance] setTitleTextAttributes:
      @{
        NSForegroundColorAttributeName: [UIColor whiteColor],
        NSFontAttributeName: [UIFont fontWithName:@"BPreplay" size:22]
      }];
-    
+
     [[UINavigationBar appearance] setTitleVerticalPositionAdjustment:2 forBarMetrics:UIBarMetricsDefault];
-    
+
     [self syncWithFlagsServer:nil];
     NSString *freq = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"Transmission Frequency"];
     [NSTimer scheduledTimerWithTimeInterval:[freq intValue] target:self selector:@selector(syncWithFlagsServer:) userInfo:nil repeats:YES];
-                                                               
+
     return YES;
 }
-							
+
 - (void)syncWithFlagsServer:(NSTimer *)timer
 {
     if (!timer) {

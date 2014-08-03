@@ -2,21 +2,23 @@
   "name": "Finland",
   "continent": "Europe",
   "directory": "Finland",
-  "category": 1,
+  "category": 2,
   "population": 5157537,
   "area": 336593,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "006600",
     "000000",
-    "ffff00"
+    "ffff00",
+    "FF0000",
+    "FF6600"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Ukraine",
+    "Mauritius",
+    "Gambia",
+    "Benin",
+    "Czech_Republic",
+    "Somalia"
   ]
 }

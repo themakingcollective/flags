@@ -7,16 +7,18 @@
   "area": 21041,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_El_Salvador.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "CC0099",
     "000000",
-    "ffff00"
+    "ffff00",
+    "00CC00",
+    "CC0000"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Mexico",
+    "Haiti",
+    "Grenada",
+    "Greece",
+    "Marshall_Islands",
+    "Somalia"
   ]
 }

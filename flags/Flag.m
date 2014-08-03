@@ -119,10 +119,17 @@ static NSArray *allCache;
 - (NSArray *)incorrectFlags
 {
     NSMutableArray *array = [[NSMutableArray alloc] init];
-    NSArray *flagNames = [[self metadata] objectForKey:@"incorrect_patterns"];
+    NSArray *flagDirectories = [[self metadata] objectForKey:@"incorrect_patterns"];
     
-    for (NSString *name in flagNames) {
-        [array addObject:[[self class] find_by_name:name]];
+    for (NSString *directory in flagDirectories) {
+        Flag *flag = [[self class] find_by_directory:directory];
+        
+        if (flag) {
+            [array addObject:flag];
+        }
+        else {
+            NSLog(@"The incorrectFlag '%@' is spelt incorrectly for '%@'", directory, self.name);
+        }
     }
     
     return array;
@@ -157,6 +164,18 @@ static NSArray *allCache;
     for (Flag *flag in [[self class] all]) {
         
         if ([[flag name] isEqualToString:name]) {
+            return flag;
+        }
+    }
+    
+    return nil;
+}
+
++ (Flag *)find_by_directory:(NSString *)directory
+{
+    for (Flag *flag in [[self class] all]) {
+        
+        if ([[flag directory] isEqualToString:directory]) {
             return flag;
         }
     }

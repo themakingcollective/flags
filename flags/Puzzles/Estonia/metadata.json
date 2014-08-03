@@ -7,16 +7,18 @@
   "area": 45226,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_Estonia.svg",
   "incorrect_colors": [
-    "FFFFFF",
-    "000000",
-    "ffff00"
+    "006600",
+    "00CC00",
+    "ffff00",
+    "FF0000",
+    "CC0000"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Ukraine",
+    "Mauritius",
+    "Chad",
+    "Benin",
+    "Czech_Republic",
+    "Angola"
   ]
 }

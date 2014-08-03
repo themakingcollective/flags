@@ -7,16 +7,18 @@
   "area": 301230,
   "image_url": "http://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg",
   "incorrect_colors": [
-    "FFFFFF",
-    "000000",
-    "ffff00"
+    "66FF66",
+    "FFCC00",
+    "FF4D4D",
+    "99CCFF",
+    "0000CC"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Ukraine",
+    "Mauritius",
+    "Bulgaria",
+    "Benin",
+    "Czech_Republic",
+    "Vatican_City"
   ]
 }

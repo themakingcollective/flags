@@ -7,17 +7,18 @@
   "area": 2780400,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg",
   "incorrect_colors": [
-    "BF0000",
-    "009900",
     "000000",
-    "ffff00"
+    "0000CC",
+    "FFFFFF",
+    "FF6600",
+    "CC0000"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
+    "Uruguay",
     "Angola",
-    "Andorra"
+    "Kazakhstan",
+    "Romania",
+    "Uganda",
+    "Vanuatu"
   ]
 }

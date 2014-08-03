@@ -7,18 +7,18 @@
   "area": 7686850,
   "image_url": "http://upload.wikimedia.org/wikipedia/en/b/b9/Flag_of_Australia.svg",
   "incorrect_colors": [
-    "00ffff",
-    "000000",
-    "7cfc00",
-    "ffff00",
-    "9400d3"
+    "FFFFFF",
+    "99CCFF",
+    "FFCC00",
+    "006600",
+    "00CC00"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "United_Kingdom",
+    "United_States",
+    "Netherlands",
+    "Norway",
+    "Samoa",
+    "Vanuatu"
   ]
 }

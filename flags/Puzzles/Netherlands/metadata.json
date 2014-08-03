@@ -2,7 +2,7 @@
   "name": "Netherlands",
   "continent": "Europe",
   "directory": "Netherlands",
-  "category": 1,
+  "category": 2,
   "population": 16318199,
   "area": 41526,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg",
@@ -12,11 +12,11 @@
     "ffff00"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Ukraine",
+    "Mauritius",
+    "Chad",
+    "Benin",
+    "Czech_Republic",
+    "Vatican_City"
   ]
 }

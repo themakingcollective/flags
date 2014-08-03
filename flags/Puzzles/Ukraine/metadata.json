@@ -2,7 +2,7 @@
   "name": "Ukraine",
   "continent": "Europe",
   "directory": "Ukraine",
-  "category": 1,
+  "category": 2,
   "population": 48396470,
   "area": 603700,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg",
@@ -12,11 +12,11 @@
     "ffff00"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Ireland",
+    "Mauritius",
+    "Bulgaria",
+    "Benin",
+    "Czech_Republic",
+    "Pakistan"
   ]
 }
