@@ -36,8 +36,7 @@
     NSInteger totalCount = [aggregate[@"total_count"] intValue];
     
     if (totalCount == 0) {
-        correctPercentNumber = nil;
-        incorrectPercentNumber = nil;
+        return aggregate;
     }
     else {
         float correctPercent = (float)correctCount / totalCount;
@@ -47,12 +46,12 @@
         
         correctPercentNumber = [NSNumber numberWithInt:(NSInteger)correctPercent];
         incorrectPercentNumber = [NSNumber numberWithInt:(NSInteger)incorrectPercent];
+        
+        [dictionary setObject:correctPercentNumber forKey:@"correct_percent"];
+        [dictionary setObject:incorrectPercentNumber forKey:@"incorrect_percent"];
+        
+        return [NSDictionary dictionaryWithDictionary:dictionary];
     }
-    
-    [dictionary setObject:correctPercentNumber forKey:@"correct_percent"];
-    [dictionary setObject:incorrectPercentNumber forKey:@"incorrect_percent"];
-    
-    return [NSDictionary dictionaryWithDictionary:dictionary];
 }
 
 - (NSURL *)url
@@ -81,11 +80,11 @@
     }
 }
 
-- (NSString *)textForFlag:(Flag *)flag andMode:(NSString *)mode andDifficulty:(NSString *)difficulty andCorrectness:(BOOL)correct
+- (NSString *)textForFlag:(Flag *)flag andMode:(NSString *)mode andVariant:(NSString *)variant andCorrectness:(BOOL)correct
 {
     NSDictionary *aggregate = [[[AggregatesService sharedInstance] where:@{
        @"flag_name": [flag name],
-       @"difficulty": difficulty,
+       @"variant": variant,
        @"mode": mode
     }] firstObject];
 

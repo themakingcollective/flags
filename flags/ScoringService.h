@@ -18,8 +18,8 @@
 + (ScoringService *)sharedInstance;
 
 - (void)reset;
-- (void)correctForFlag:(Flag *)flag andMode:(NSString *)mode andDifficulty:(NSString *)difficulty;
-- (void)incorrectForFlag:(Flag *)flag andMode:(NSString *)mode andDifficulty:(NSString *)difficulty;
+- (void)correctForFlag:(Flag *)flag andMode:(NSString *)mode andVariant:(NSString *)difficulty;
+- (void)incorrectForFlag:(Flag *)flag andMode:(NSString *)mode andVariant:(NSString *)difficulty;
 
 - (Flag *)bestFlag;
 - (Flag *)worstFlag;

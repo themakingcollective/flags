@@ -15,7 +15,7 @@
 + (NSDictionary *)withStats:(NSDictionary *)aggregate;
 
 - (void)fetch;
-- (NSString *)textForFlag:(Flag *)flag andMode:(NSString *)mode andDifficulty:(NSString *)difficulty andCorrectness:(BOOL)correct;
+- (NSString *)textForFlag:(Flag *)flag andMode:(NSString *)mode andVariant:(NSString *)variant andCorrectness:(BOOL)correct;
 - (NSArray *)where:(NSDictionary *)filters;
 
 @end

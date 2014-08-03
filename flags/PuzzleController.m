@@ -106,10 +106,10 @@
     [self recordEvent:playerWasCorrect flag:correctFlag];
     
     if (playerWasCorrect) {
-        [[ScoringService sharedInstance] correctForFlag:correctFlag andMode:@"puzzle" andDifficulty:self.difficulty];
+        [[ScoringService sharedInstance] correctForFlag:correctFlag andMode:@"puzzle" andVariant:self.difficulty];
     }
     else {
-        [[ScoringService sharedInstance] incorrectForFlag:correctFlag andMode:@"puzzle" andDifficulty:self.difficulty];
+        [[ScoringService sharedInstance] incorrectForFlag:correctFlag andMode:@"puzzle" andVariant:self.difficulty];
     }
 
     [self.quiz nextRound];
@@ -293,7 +293,7 @@
     [[EventRecorder sharedInstance] record:@{
         @"flag_name": [flag name],
         @"mode": @"puzzle",
-        @"difficulty": self.difficulty,
+        @"variant": self.difficulty,
         @"correct": playerWasCorrect ? @"true" : @"false"
     }];
 }

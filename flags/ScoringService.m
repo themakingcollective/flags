@@ -41,21 +41,21 @@
     self.worstAggregate = nil;
 }
 
-- (void)correctForFlag:(Flag *)flag andMode:(NSString *)mode andDifficulty:(NSString *)difficulty
+- (void)correctForFlag:(Flag *)flag andMode:(NSString *)mode andVariant:(NSString *)variant
 {
     self.correctCount++;
     self.roundsCount++;
     
-    NSDictionary *aggregate = [self aggregate:flag mode:mode difficulty:difficulty];
+    NSDictionary *aggregate = [self aggregate:flag mode:mode variant:variant];
     [self updateBestWorst:YES aggregate:aggregate];
 }
 
-- (void)incorrectForFlag:(Flag *)flag andMode:(NSString *)mode andDifficulty:(NSString *)difficulty
+- (void)incorrectForFlag:(Flag *)flag andMode:(NSString *)mode andVariant:(NSString *)variant
 {
     self.incorrectCount++;
     self.roundsCount++;
     
-    NSDictionary *aggregate = [self aggregate:flag mode:mode difficulty:difficulty];
+    NSDictionary *aggregate = [self aggregate:flag mode:mode variant:variant];
     [self updateBestWorst:NO aggregate:aggregate];
 }
 
@@ -81,12 +81,12 @@
     }
 }
 
-- (NSDictionary *)aggregate:(Flag *)flag mode:(NSString *)mode difficulty:(NSString *)difficulty
+- (NSDictionary *)aggregate:(Flag *)flag mode:(NSString *)mode variant:(NSString *)variant
 {
     NSDictionary *aggregate = [[[AggregatesService sharedInstance] where:@{
        @"flag_name": [flag name],
        @"mode": mode,
-       @"difficulty": difficulty
+       @"variant": variant
     }] firstObject];
     
     return [AggregatesService withStats:aggregate];
