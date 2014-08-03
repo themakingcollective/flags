@@ -621,41 +621,6 @@
             </objects>
             <point key="canvasLocation" x="-548" y="138"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="kyh-3W-oGf">
-            <objects>
-                <viewController id="HJt-T6-hdV" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Gca-gi-khr"/>
-                        <viewControllerLayoutGuide type="bottom" id="Ne1-gl-hkC"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="9lU-93-lIi">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mqa-Gi-qHl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="9XV-29-qxc">
-            <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="QaR-7t-k4Q" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="IAC-r1-woV"/>
-                        <viewControllerLayoutGuide type="bottom" id="MoJ-sx-HfQ"/>
-                    </layoutGuides>
-                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Ouq-gx-3KH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <toolbarItems/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e0i-8u-aA6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
     </scenes>
     <resources>
         <image name="Done-Button-Easy-Disabled.png" width="318" height="163"/>
