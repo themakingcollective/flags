@@ -79,14 +79,23 @@ static NSArray *allCache;
 
 - (NSArray *)shuffledColors
 {
-    NSArray *colors = [[NSMutableArray alloc] init];
+    NSArray *incorrect = [self incorrectColors];
+    incorrect = [Utils shuffle:incorrect];
     
-    colors = [colors arrayByAddingObjectsFromArray:[self correctColors]];
-    colors = [colors arrayByAddingObjectsFromArray:[self incorrectColors]];
-    colors = [Utils unique:colors];
-    colors = [Utils shuffle:colors];
+    NSMutableArray *correct = [NSMutableArray arrayWithArray:[self correctColors]];
+    [correct addObjectsFromArray:incorrect];
     
-    return colors;
+    NSArray *colors = [Utils unique:correct];
+    
+    while ([colors count] < 6) {
+        NSLog(@"Not enough colours for %@", [self name]);
+        NSMutableArray *mutableColors = [NSMutableArray arrayWithArray:colors];
+        [mutableColors addObject:[UIColor whiteColor]];
+        colors = [NSArray arrayWithArray:mutableColors];
+    }
+    
+    colors = [Utils pickSample:colors size:6];
+    return [Utils shuffle:colors];
 }
 
 - (NSArray *)correctColors
