@@ -356,6 +356,7 @@
                         <outlet property="scoreLabel" destination="XFo-Cz-W3T" id="bAE-bY-WYv"/>
                         <outlet property="switchButton" destination="0yW-YX-JU5" id="cSW-3o-unx"/>
                         <outlet property="totalLabel" destination="Leg-SX-4Bg" id="4OT-5j-idK"/>
+                        <segue destination="zOS-4b-pff" kind="push" id="HaQ-qy-zSt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GT3-TV-fS8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -371,7 +372,7 @@
                         <viewControllerLayoutGuide type="bottom" id="G9k-7I-hqC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JFf-Tj-brY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ovh-1G-lDk">
@@ -447,6 +448,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="bUi-a0-njH"/>
                     <connections>
                         <outlet property="bestImage" destination="Awl-RC-pRH" id="vZF-FF-p2E"/>
                         <outlet property="bestLabel" destination="kwQ-6y-OPQ" id="Kiu-51-X6I"/>
