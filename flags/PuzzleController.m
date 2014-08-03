@@ -16,6 +16,7 @@
 #import "Utils.h"
 #import "EventRecorder.h"
 #import "AggregatesService.h"
+#import "ScoringService.h"
 
 @interface PuzzleController () <PaintPotViewDelegate, PatternViewDelegate, LayeredViewDelegate>
 
@@ -48,11 +49,12 @@
     self.difficultyScaler = [[DifficultyScaler alloc] initWithDifficultyKey:difficultyKey];
     
     NSArray *flags = [self.difficultyScaler scale:[Flag all]];
-    self.quiz = [[Quiz alloc] initWithArray:flags andRounds:10];
+    self.quiz = [[Quiz alloc] initWithArray:flags andRounds:2];
     
     UIFont *titleFont = [UIFont fontWithName:@"BPreplay-Bold" size:30];
     [self.nameLabel setFont:titleFont];
     
+    [[ScoringService sharedInstance] reset];
     [self nextFlag];
     
     [super viewDidLoad];
@@ -104,12 +106,13 @@
     [self recordEvent:playerWasCorrect flag:correctFlag];
     
     if (playerWasCorrect) {
-        [self.quiz correct];
+        [[ScoringService sharedInstance] correct];
     }
     else {
-        [self.quiz incorrect];
+        [[ScoringService sharedInstance] incorrect];
     }
 
+    [self.quiz nextRound];
     [self showFeedback:playerWasCorrect withFlag:correctFlag];
 }
 
@@ -122,7 +125,6 @@
     feedback.layeredView = [Utils copyView:self.layeredView];
     feedback.playerWasCorrect = playerWasCorrect;
     feedback.correctFlag = correctFlag;
-    feedback.quiz = self.quiz;
     
     [self.navigationController pushViewController:feedback animated:NO];
 }

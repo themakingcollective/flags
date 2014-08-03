@@ -8,6 +8,7 @@
 
 #import "ResultsController.h"
 #import "HighlightsController.h"
+#import "ScoringService.h"
 
 @interface ResultsController ()
 
@@ -21,7 +22,6 @@
 
 @implementation ResultsController
 
-@synthesize quiz=_quiz;
 @synthesize difficulty=_difficulty;
 
 - (void)viewDidLoad
@@ -38,7 +38,7 @@
     NSString *rosetteImageName = [NSString stringWithFormat:@"%@-results-rosette", difficulty];
     [self.rosetteImageView setImage:[UIImage imageNamed:rosetteImageName]];
     
-    NSInteger total = self.quiz.correctCount + self.quiz.incorrectCount;
+    NSInteger total = [[ScoringService sharedInstance] roundsCount];
     
     UIFont *font = [UIFont fontWithName:@"Pacifico" size:60];
     [self.scoreLabel setFont:font];
@@ -52,7 +52,7 @@
     self.scoreLabel.textColor = textColor;
     self.totalLabel.textColor = textColor;
     
-    self.scoreLabel.text = [NSString stringWithFormat:@"%d", self.quiz.correctCount];
+    self.scoreLabel.text = [NSString stringWithFormat:@"%d", [ScoringService sharedInstance].correctCount];
     self.totalLabel.text = [NSString stringWithFormat:@"%d", total];
     
     [super viewDidLoad];

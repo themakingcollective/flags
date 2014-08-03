@@ -93,7 +93,6 @@
 {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
     ResultsController *results = [storyboard instantiateViewControllerWithIdentifier:@"ResultsController"];
-    results.quiz = self.quiz;
     results.difficulty = self.difficulty;
     
     [self.navigationController pushViewController:results animated:YES];

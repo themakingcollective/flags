@@ -18,6 +18,5 @@
 @property (nonatomic, assign) BOOL playerWasCorrect;
 @property (nonatomic, strong) LayeredView *layeredView;
 @property (nonatomic, strong) Flag *correctFlag;
-@property (nonatomic, strong) Quiz *quiz;
 
 @end

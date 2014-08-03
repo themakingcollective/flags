@@ -10,4 +10,36 @@
 
 @implementation ScoringService
 
+@synthesize roundsCount=_roundsCount;
+@synthesize correctCount=_correctCount;
+@synthesize incorrectCount=_incorrectCount;
+
++ (ScoringService *)sharedInstance
+{
+    static dispatch_once_t once;
+    static ScoringService *sharedInstance;
+    dispatch_once(&once, ^{
+        sharedInstance = [[self alloc] init];
+    });
+    return sharedInstance;
+}
+
+- (void)reset
+{
+    self.correctCount = 0;
+    self.incorrectCount = 0;
+}
+
+- (void)correct
+{
+    self.correctCount++;
+    self.roundsCount++;
+}
+
+- (void)incorrect
+{
+    self.incorrectCount++;
+    self.roundsCount++;
+}
+
 @end

@@ -10,4 +10,14 @@
 
 @interface ScoringService : NSObject
 
++ (ScoringService *)sharedInstance;
+
+- (void)reset;
+- (void)correct;
+- (void)incorrect;
+
+@property (nonatomic, assign) NSInteger roundsCount;
+@property (nonatomic, assign) NSInteger correctCount;
+@property (nonatomic, assign) NSInteger incorrectCount;
+
 @end

@@ -15,7 +15,6 @@
 
 - (id)initWithArray:(NSArray *)array andRounds:(NSInteger)rounds;
 - (id)currentElement;
-- (void)correct;
-- (void)incorrect;
+- (void)nextRound;
 
 @end

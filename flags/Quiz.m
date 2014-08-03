@@ -56,15 +56,8 @@
     }
 }
 
-- (void)correct
+- (void)nextRound
 {
-    self.correctCount++;
-    self.currentRound++;
-}
-
-- (void)incorrect
-{
-    self.incorrectCount++;
     self.currentRound++;
 }
 

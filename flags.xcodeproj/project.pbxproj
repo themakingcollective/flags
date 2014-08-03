@@ -41,6 +41,8 @@
 		837ADE7B18E2E32B00455FF7 /* TableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837ADE7A18E2E32B00455FF7 /* TableController.m */; };
 		837B370F198E3C1100E8C152 /* HighlightsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837B370E198E3C1100E8C152 /* HighlightsController.m */; };
 		837B3710198E3C1100E8C152 /* HighlightsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837B370E198E3C1100E8C152 /* HighlightsController.m */; };
+		837B3713198E4BD100E8C152 /* ScoringService.m in Sources */ = {isa = PBXBuildFile; fileRef = 837B3712198E4BD100E8C152 /* ScoringService.m */; };
+		837B3714198E4BD100E8C152 /* ScoringService.m in Sources */ = {isa = PBXBuildFile; fileRef = 837B3712198E4BD100E8C152 /* ScoringService.m */; };
 		83856128197AAD7D009869DA /* FeedbackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83856127197AAD7D009869DA /* FeedbackController.m */; };
 		838CDEC6197AED3000CF9726 /* Next-Button-Easy-Enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 838CDEC4197AED3000CF9726 /* Next-Button-Easy-Enabled.png */; };
 		838CDEC7197AED3000CF9726 /* Next-Button-Hard-Enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 838CDEC5197AED3000CF9726 /* Next-Button-Hard-Enabled.png */; };
@@ -176,6 +178,8 @@
 		837ADE7A18E2E32B00455FF7 /* TableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableController.m; sourceTree = "<group>"; };
 		837B370D198E3C1100E8C152 /* HighlightsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighlightsController.h; sourceTree = "<group>"; };
 		837B370E198E3C1100E8C152 /* HighlightsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighlightsController.m; sourceTree = "<group>"; };
+		837B3711198E4BD100E8C152 /* ScoringService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoringService.h; sourceTree = "<group>"; };
+		837B3712198E4BD100E8C152 /* ScoringService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoringService.m; sourceTree = "<group>"; };
 		83856126197AAD7D009869DA /* FeedbackController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackController.h; sourceTree = "<group>"; };
 		83856127197AAD7D009869DA /* FeedbackController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackController.m; sourceTree = "<group>"; };
 		838CDEC4197AED3000CF9726 /* Next-Button-Easy-Enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Next-Button-Easy-Enabled.png"; sourceTree = "<group>"; };
@@ -387,6 +391,8 @@
 				83AEBCE919851B6A00EE8211 /* EventRecorder.m */,
 				83A6D932198569E800A97596 /* AggregatesService.h */,
 				83A6D933198569E800A97596 /* AggregatesService.m */,
+				837B3711198E4BD100E8C152 /* ScoringService.h */,
+				837B3712198E4BD100E8C152 /* ScoringService.m */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -609,6 +615,7 @@
 				832D81721956CD30000600DA /* Quiz.m in Sources */,
 				8378485118DDAF8E00C5AC61 /* AppDelegate.m in Sources */,
 				83A6D934198569E800A97596 /* AggregatesService.m in Sources */,
+				837B3713198E4BD100E8C152 /* ScoringService.m in Sources */,
 				83AEBCEA19851B6A00EE8211 /* EventRecorder.m in Sources */,
 				F94D93641930EA33008CDB1A /* Utils.m in Sources */,
 				832D81751956D6E6000600DA /* ResultsController.m in Sources */,
@@ -636,6 +643,7 @@
 				83FCBB901985639500415369 /* Quiz.m in Sources */,
 				83FCBB911985639500415369 /* AppDelegate.m in Sources */,
 				83A6D935198569E800A97596 /* AggregatesService.m in Sources */,
+				837B3714198E4BD100E8C152 /* ScoringService.m in Sources */,
 				83FCBB921985639500415369 /* EventRecorder.m in Sources */,
 				83FCBB931985639500415369 /* Utils.m in Sources */,
 				83FCBB941985639500415369 /* ResultsController.m in Sources */,
