@@ -12,8 +12,10 @@
 @interface AggregatesService : NSObject
 
 + (AggregatesService *)sharedInstance;
++ (NSDictionary *)withStats:(NSDictionary *)aggregate;
+
 - (void)fetch;
 - (NSString *)textForFlag:(Flag *)flag andMode:(NSString *)mode andDifficulty:(NSString *)difficulty andCorrectness:(BOOL)correct;
-- (NSDictionary *)withStats:(NSDictionary *)aggregate;
+- (NSArray *)where:(NSDictionary *)filters;
 
 @end

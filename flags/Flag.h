@@ -12,6 +12,7 @@
 @interface Flag : NSObject <ScalableDifficulty>
 
 + (NSArray *)all;
++ (Flag *)find_by_name:(NSString *)name;
 - (NSDictionary *)metadata;
 - (NSArray *)layeredImagePaths;
 - (NSArray *)shuffledColors;

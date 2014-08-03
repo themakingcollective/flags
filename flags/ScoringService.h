@@ -11,14 +11,17 @@
 
 @interface ScoringService : NSObject
 
-+ (ScoringService *)sharedInstance;
-
-- (void)reset;
-- (void)correct:(Flag *)flag;
-- (void)incorrect:(Flag *)flag;
-
 @property (nonatomic, assign) NSInteger roundsCount;
 @property (nonatomic, assign) NSInteger correctCount;
 @property (nonatomic, assign) NSInteger incorrectCount;
+
++ (ScoringService *)sharedInstance;
+
+- (void)reset;
+- (void)correctForFlag:(Flag *)flag andMode:(NSString *)mode andDifficulty:(NSString *)difficulty;
+- (void)incorrectForFlag:(Flag *)flag andMode:(NSString *)mode andDifficulty:(NSString *)difficulty;
+
+- (Flag *)bestFlag;
+- (Flag *)worstFlag;
 
 @end

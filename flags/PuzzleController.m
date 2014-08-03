@@ -106,10 +106,10 @@
     [self recordEvent:playerWasCorrect flag:correctFlag];
     
     if (playerWasCorrect) {
-        [[ScoringService sharedInstance] correct:correctFlag];
+        [[ScoringService sharedInstance] correctForFlag:correctFlag andMode:@"puzzle" andDifficulty:self.difficulty];
     }
     else {
-        [[ScoringService sharedInstance] incorrect:correctFlag];
+        [[ScoringService sharedInstance] incorrectForFlag:correctFlag andMode:@"puzzle" andDifficulty:self.difficulty];
     }
 
     [self.quiz nextRound];

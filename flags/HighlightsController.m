@@ -9,6 +9,7 @@
 #import "HighlightsController.h"
 #import "Flag.h"
 #import "AggregatesService.h"
+#import "ScoringService.h"
 
 @interface HighlightsController ()
 
@@ -34,24 +35,38 @@
     NSString *imageName = [self.difficulty isEqualToString:@"easy"] ? @"Easy-Play-Again" : @"Hard-Play-Again";
     [self.playAgainButton setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     
-    [self setBestFlag:[[Flag all] firstObject]];
-    [self setWorstFlag:[[Flag all] firstObject]];
+    [self setBestFlag];
+    [self setWorstFlag];
     
     [super viewDidLoad];
 }
 
-- (void)setBestFlag:(Flag *)flag
+- (void)setBestFlag
 {
-    self.bestImage.image = [flag image];
-    self.bestLabel.text = [flag name];
-    self.bestSocialLabel.text = [self socialTextForFlag:flag andCorrectness:NO];
+    Flag *bestFlag = [[ScoringService sharedInstance] bestFlag];
+    
+    if (bestFlag) {
+        self.bestImage.image = [bestFlag image];
+        self.bestLabel.text = [bestFlag name];
+        self.bestSocialLabel.text = [self socialTextForFlag:bestFlag andCorrectness:NO];
+    }
+    else {
+        // hide some things
+    }
 }
 
-- (void)setWorstFlag:(Flag *)flag
+- (void)setWorstFlag
 {
-    self.worstImage.image = [flag image];
-    self.worstLabel.text = [flag name];
-    self.worstSocialLabel.text = [self socialTextForFlag:flag andCorrectness:YES];
+    Flag *worstFlag = [[ScoringService sharedInstance] worstFlag];
+    
+    if (worstFlag) {
+        self.worstImage.image = [worstFlag image];
+        self.worstLabel.text = [worstFlag name];
+        self.worstSocialLabel.text = [self socialTextForFlag:worstFlag andCorrectness:YES];
+    }
+    else {
+        // hide some things
+    }
 }
 
 - (NSString *)socialTextForFlag:(Flag *)flag andCorrectness:(BOOL)correct

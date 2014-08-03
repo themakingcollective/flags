@@ -26,6 +26,35 @@
     return sharedInstance;
 }
 
++ (NSDictionary *)withStats:(NSDictionary *)aggregate
+{
+    NSMutableDictionary *dictionary = [NSMutableDictionary dictionaryWithDictionary:aggregate];
+    NSNumber *correctPercentNumber;
+    NSNumber *incorrectPercentNumber;
+    
+    NSInteger correctCount = [aggregate[@"correct_count"] intValue];
+    NSInteger totalCount = [aggregate[@"total_count"] intValue];
+    
+    if (totalCount == 0) {
+        correctPercentNumber = nil;
+        incorrectPercentNumber = nil;
+    }
+    else {
+        float correctPercent = (float)correctCount / totalCount;
+        correctPercent *= 100;
+        correctPercent = floor(correctPercent + 0.5);
+        float incorrectPercent = 100 - correctPercent;
+        
+        correctPercentNumber = [NSNumber numberWithInt:(NSInteger)correctPercent];
+        incorrectPercentNumber = [NSNumber numberWithInt:(NSInteger)incorrectPercent];
+    }
+    
+    [dictionary setObject:correctPercentNumber forKey:@"correct_percent"];
+    [dictionary setObject:incorrectPercentNumber forKey:@"incorrect_percent"];
+    
+    return [NSDictionary dictionaryWithDictionary:dictionary];
+}
+
 - (NSURL *)url
 {
     NSString *host = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"Flags Server"];
@@ -60,7 +89,7 @@
        @"mode": mode
     }] firstObject];
 
-    aggregate = [self withStats:aggregate];
+    aggregate = [[self class] withStats:aggregate];
     
     NSInteger totalCount = [aggregate[@"total_count"] intValue];
     NSNumber *percent;
@@ -81,35 +110,6 @@
     }
     
     return [NSString stringWithFormat:@"%@%% of %d people got this %@", percent, totalCount, term];
-}
-
-- (NSDictionary *)withStats:(NSDictionary *)aggregate
-{
-    NSMutableDictionary *dictionary = [NSMutableDictionary dictionaryWithDictionary:aggregate];
-    NSNumber *correctPercentNumber;
-    NSNumber *incorrectPercentNumber;
-    
-    NSInteger correctCount = [aggregate[@"correct_count"] intValue];
-    NSInteger totalCount = [aggregate[@"total_count"] intValue];
-    
-    if (totalCount == 0) {
-        correctPercentNumber = nil;
-        incorrectPercentNumber = nil;
-    }
-    else {
-        float correctPercent = (float)correctCount / totalCount;
-        correctPercent *= 100;
-        correctPercent = floor(correctPercent + 0.5);
-        float incorrectPercent = 100 - correctPercent;
-        
-        correctPercentNumber = [NSNumber numberWithInt:(NSInteger)correctPercent];
-        incorrectPercentNumber = [NSNumber numberWithInt:(NSInteger)incorrectPercent];
-    }
-    
-    [dictionary setObject:correctPercentNumber forKey:@"correct_percent"];
-    [dictionary setObject:incorrectPercentNumber forKey:@"incorrect_percent"];
-    
-    return [NSDictionary dictionaryWithDictionary:dictionary];
 }
 
 - (NSArray *)where:(NSDictionary *)filters
