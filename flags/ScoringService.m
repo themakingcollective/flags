@@ -30,13 +30,13 @@
     self.incorrectCount = 0;
 }
 
-- (void)correct
+- (void)correct:(Flag *)flag
 {
     self.correctCount++;
     self.roundsCount++;
 }
 
-- (void)incorrect
+- (void)incorrect:(Flag *)flag
 {
     self.incorrectCount++;
     self.roundsCount++;

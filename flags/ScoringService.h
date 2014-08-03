@@ -7,14 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Flag.h"
 
 @interface ScoringService : NSObject
 
 + (ScoringService *)sharedInstance;
 
 - (void)reset;
-- (void)correct;
-- (void)incorrect;
+- (void)correct:(Flag *)flag;
+- (void)incorrect:(Flag *)flag;
 
 @property (nonatomic, assign) NSInteger roundsCount;
 @property (nonatomic, assign) NSInteger correctCount;

@@ -14,5 +14,6 @@
 + (AggregatesService *)sharedInstance;
 - (void)fetch;
 - (NSString *)textForFlag:(Flag *)flag andMode:(NSString *)mode andDifficulty:(NSString *)difficulty andCorrectness:(BOOL)correct;
+- (NSDictionary *)withStats:(NSDictionary *)aggregate;
 
 @end
