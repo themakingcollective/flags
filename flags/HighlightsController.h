@@ -12,6 +12,6 @@
 @interface HighlightsController : BaseViewController
 
 @property (nonatomic, strong) NSString *mode;
-@property (nonatomic, strong) NSString *difficulty;
+@property (nonatomic, strong) NSString *variant;
 
 @end

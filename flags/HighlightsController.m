@@ -30,11 +30,11 @@
 @implementation HighlightsController
 
 @synthesize mode=_mode;
-@synthesize difficulty=_difficulty;
+@synthesize variant=_variant;
 
 - (void)viewDidLoad
 {
-    NSString *imageName = [self.difficulty isEqualToString:@"easy"] ? @"Easy-Play-Again" : @"Hard-Play-Again";
+    NSString *imageName = [self.variant isEqualToString:@"easy"] ? @"Easy-Play-Again" : @"Hard-Play-Again";
     [self.playAgainButton setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     
     [self setBestFlag];
@@ -77,7 +77,7 @@
 {
     return [[AggregatesService sharedInstance] textForFlag:flag
                                                    andMode:self.mode
-                                             andDifficulty:self.difficulty
+                                             andVariant:self.variant
                                             andCorrectness:correct];
 }
 

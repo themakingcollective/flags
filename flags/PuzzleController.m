@@ -293,7 +293,7 @@
     [[EventRecorder sharedInstance] record:@{
         @"flag_name": [flag name],
         @"mode": @"puzzle",
-        @"difficulty": self.difficulty,
+        @"variant": self.difficulty,
         @"correct": playerWasCorrect ? @"true" : @"false"
     }];
 }

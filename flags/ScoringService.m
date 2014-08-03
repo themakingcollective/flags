@@ -86,7 +86,7 @@
     NSDictionary *aggregate = [[[AggregatesService sharedInstance] where:@{
        @"flag_name": [flag name],
        @"mode": mode,
-       @"difficulty": difficulty
+       @"variant": difficulty
     }] firstObject];
     
     return [AggregatesService withStats:aggregate];

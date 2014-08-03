@@ -64,7 +64,7 @@
     HighlightsController *highlights = [storyboard instantiateViewControllerWithIdentifier:@"HighlightsController"];
     
     highlights.mode = @"puzzle";
-    highlights.difficulty = self.difficulty;
+    highlights.variant = self.difficulty;
     
     [self.navigationController pushViewController:highlights animated:YES];
 }
