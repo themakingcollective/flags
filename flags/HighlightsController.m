@@ -15,10 +15,12 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *playAgainButton;
 
+@property (weak, nonatomic) IBOutlet UIView *bestView;
 @property (weak, nonatomic) IBOutlet UIImageView *bestImage;
 @property (weak, nonatomic) IBOutlet UILabel *bestLabel;
 @property (weak, nonatomic) IBOutlet UILabel *bestSocialLabel;
 
+@property (weak, nonatomic) IBOutlet UIView *worstView;
 @property (weak, nonatomic) IBOutlet UIImageView *worstImage;
 @property (weak, nonatomic) IBOutlet UILabel *worstLabel;
 @property (weak, nonatomic) IBOutlet UILabel *worstSocialLabel;
@@ -51,7 +53,8 @@
         self.bestSocialLabel.text = [self socialTextForFlag:bestFlag andCorrectness:NO];
     }
     else {
-        // hide some things
+        self.bestView.hidden = YES;
+        // move elements
     }
 }
 
@@ -65,7 +68,8 @@
         self.worstSocialLabel.text = [self socialTextForFlag:worstFlag andCorrectness:YES];
     }
     else {
-        // hide some things
+        self.worstView.hidden = YES;
+        // move elements
     }
 }
 

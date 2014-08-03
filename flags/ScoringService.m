@@ -61,7 +61,6 @@
 
 - (Flag *)bestFlag
 {
-    NSLog(@"here");
     if (self.bestAggregate) {
         NSString *flagName = self.bestAggregate[@"flag_name"];
         return [Flag find_by_name:flagName];
@@ -73,7 +72,6 @@
 
 - (Flag *)worstFlag
 {
-    NSLog(@"here");
     if (self.worstAggregate) {
         NSString *flagName = self.worstAggregate[@"flag_name"];
         return [Flag find_by_name:flagName];

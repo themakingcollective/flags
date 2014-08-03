@@ -451,10 +451,12 @@
                         <outlet property="bestImage" destination="Awl-RC-pRH" id="vZF-FF-p2E"/>
                         <outlet property="bestLabel" destination="kwQ-6y-OPQ" id="Kiu-51-X6I"/>
                         <outlet property="bestSocialLabel" destination="bhx-LK-hLw" id="GJu-gf-hsb"/>
+                        <outlet property="bestView" destination="ovh-1G-lDk" id="12d-Yv-XqI"/>
                         <outlet property="playAgainButton" destination="AYY-oH-tOJ" id="K1b-V2-n0e"/>
                         <outlet property="worstImage" destination="rUh-jY-reK" id="vIj-iR-wKj"/>
                         <outlet property="worstLabel" destination="hgu-If-ME3" id="wt2-IX-UML"/>
                         <outlet property="worstSocialLabel" destination="6aN-B4-0Ya" id="hsW-fc-s8o"/>
+                        <outlet property="worstView" destination="fKL-Pb-Vqb" id="8S2-nI-F5c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nnG-9B-Knm" userLabel="First Responder" sceneMemberID="firstResponder"/>

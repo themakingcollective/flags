@@ -60,7 +60,6 @@
 
 - (IBAction)highlights:(id)sender
 {
-    NSLog(@"highlights");
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
     HighlightsController *highlights = [storyboard instantiateViewControllerWithIdentifier:@"HighlightsController"];
     
