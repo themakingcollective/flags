@@ -77,7 +77,7 @@
 
 - (NSArray *)thresholds
 {
-    return @[@1, @100];
+    return @[@25, @100];
 }
 
 @end
