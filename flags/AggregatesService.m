@@ -52,6 +52,38 @@
     }
 }
 
+- (NSString *)textForFlag:(Flag *)flag andMode:(NSString *)mode andDifficulty:(NSString *)difficulty andCorrectness:(BOOL)correct
+{
+    NSDictionary *aggregate = [[[AggregatesService sharedInstance] where:@{
+                                                                           @"flag_name": [flag name],
+                                                                           @"difficulty": difficulty,
+                                                                           @"mode": mode
+                                                                           }] firstObject];
+    
+    int correctCount = [aggregate[@"correct_count"] intValue];
+    int totalCount = [aggregate[@"total_count"] intValue];
+    
+    if (totalCount == 0) {
+        return @"";
+    }
+    else {
+        float percent = (float)correctCount / totalCount;
+        percent *= 100;
+        percent = floor(percent + 0.5);
+        NSString *term;
+        
+        if (correct) {
+            term = @"right";
+        }
+        else {
+            term = @"wrong";
+            percent = 100 - percent;
+        }
+        
+        return [NSString stringWithFormat:@"%0.0f%% of %d people got this %@", percent, totalCount, term];
+    }
+}
+
 - (NSArray *)where:(NSDictionary *)filters
 {
     NSArray *filteredArray = @[];
@@ -81,12 +113,14 @@
     return filteredArray;
 }
 
-- (void)loadAggregatesFromUserDefaults {
+- (void)loadAggregatesFromUserDefaults
+{
     NSData *archivedData = [[NSUserDefaults standardUserDefaults] objectForKey:@"aggregates"];
     self.aggregates = [NSKeyedUnarchiver unarchiveObjectWithData:archivedData];
 }
 
-- (void)saveAggregatesToUserDefaults {
+- (void)saveAggregatesToUserDefaults
+{
     NSData *archivedData = [NSKeyedArchiver archivedDataWithRootObject:self.aggregates];
     [[NSUserDefaults standardUserDefaults] setObject:archivedData forKey:@"aggregates"];
     [[NSUserDefaults standardUserDefaults] synchronize];

@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Flag.h"
 
 @interface AggregatesService : NSObject
 
 + (AggregatesService *)sharedInstance;
 - (void)fetch;
-- (NSArray *)where:(NSDictionary *)filters;
+- (NSString *)textForFlag:(Flag *)flag andMode:(NSString *)mode andDifficulty:(NSString *)difficulty andCorrectness:(BOOL)correct;
 
 @end

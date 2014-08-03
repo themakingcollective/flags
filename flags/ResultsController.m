@@ -7,6 +7,7 @@
 //
 
 #import "ResultsController.h"
+#import "HighlightsController.h"
 
 @interface ResultsController ()
 
@@ -57,12 +58,16 @@
     [super viewDidLoad];
 }
 
-- (IBAction)switch:(id)sender
+- (IBAction)highlights:(id)sender
 {
+    NSLog(@"highlights");
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
-    NSString *viewIdentifier = [self.difficulty isEqualToString:@"easy"] ? @"PuzzleHardStart" : @"PuzzleEasyStart";
-    ResultsController *results = [storyboard instantiateViewControllerWithIdentifier:viewIdentifier];
-    [self.navigationController pushViewController:results animated:YES];
+    HighlightsController *highlights = [storyboard instantiateViewControllerWithIdentifier:@"HighlightsController"];
+    
+    highlights.mode = @"puzzle";
+    highlights.difficulty = self.difficulty;
+    
+    [self.navigationController pushViewController:highlights animated:YES];
 }
 
 @end
