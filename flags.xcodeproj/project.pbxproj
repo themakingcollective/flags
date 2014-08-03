@@ -45,6 +45,10 @@
 		837B3714198E4BD100E8C152 /* ScoringService.m in Sources */ = {isa = PBXBuildFile; fileRef = 837B3712198E4BD100E8C152 /* ScoringService.m */; };
 		837B371C198E727200E8C152 /* ImageToNameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837B371B198E727200E8C152 /* ImageToNameController.m */; };
 		837B371D198E727200E8C152 /* ImageToNameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837B371B198E727200E8C152 /* ImageToNameController.m */; };
+		837B3720198E8BE600E8C152 /* FlagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 837B371F198E8BE500E8C152 /* FlagView.m */; };
+		837B3721198E8BE600E8C152 /* FlagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 837B371F198E8BE500E8C152 /* FlagView.m */; };
+		837B3724198E8CB500E8C152 /* NameToImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837B3723198E8CB500E8C152 /* NameToImageController.m */; };
+		837B3725198E8CB500E8C152 /* NameToImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837B3723198E8CB500E8C152 /* NameToImageController.m */; };
 		83856128197AAD7D009869DA /* FeedbackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83856127197AAD7D009869DA /* FeedbackController.m */; };
 		838CDEC6197AED3000CF9726 /* Next-Button-Easy-Enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 838CDEC4197AED3000CF9726 /* Next-Button-Easy-Enabled.png */; };
 		838CDEC7197AED3000CF9726 /* Next-Button-Hard-Enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 838CDEC5197AED3000CF9726 /* Next-Button-Hard-Enabled.png */; };
@@ -184,6 +188,10 @@
 		837B3712198E4BD100E8C152 /* ScoringService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoringService.m; sourceTree = "<group>"; };
 		837B371A198E727200E8C152 /* ImageToNameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageToNameController.h; sourceTree = "<group>"; };
 		837B371B198E727200E8C152 /* ImageToNameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageToNameController.m; sourceTree = "<group>"; };
+		837B371E198E8BE500E8C152 /* FlagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlagView.h; sourceTree = "<group>"; };
+		837B371F198E8BE500E8C152 /* FlagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlagView.m; sourceTree = "<group>"; };
+		837B3722198E8CB500E8C152 /* NameToImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameToImageController.h; sourceTree = "<group>"; };
+		837B3723198E8CB500E8C152 /* NameToImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameToImageController.m; sourceTree = "<group>"; };
 		83856126197AAD7D009869DA /* FeedbackController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackController.h; sourceTree = "<group>"; };
 		83856127197AAD7D009869DA /* FeedbackController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackController.m; sourceTree = "<group>"; };
 		838CDEC4197AED3000CF9726 /* Next-Button-Easy-Enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Next-Button-Easy-Enabled.png"; sourceTree = "<group>"; };
@@ -420,6 +428,8 @@
 				837B370E198E3C1100E8C152 /* HighlightsController.m */,
 				837B371A198E727200E8C152 /* ImageToNameController.h */,
 				837B371B198E727200E8C152 /* ImageToNameController.m */,
+				837B3722198E8CB500E8C152 /* NameToImageController.h */,
+				837B3723198E8CB500E8C152 /* NameToImageController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -437,6 +447,8 @@
 				83198FC71955EA4400F3665E /* PaintPotView.m */,
 				831414BD1972E5A1009D8FCC /* TableCell.h */,
 				831414BE1972E5A1009D8FCC /* TableCell.m */,
+				837B371E198E8BE500E8C152 /* FlagView.h */,
+				837B371F198E8BE500E8C152 /* FlagView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -622,8 +634,10 @@
 				8378485118DDAF8E00C5AC61 /* AppDelegate.m in Sources */,
 				83A6D934198569E800A97596 /* AggregatesService.m in Sources */,
 				837B3713198E4BD100E8C152 /* ScoringService.m in Sources */,
+				837B3724198E8CB500E8C152 /* NameToImageController.m in Sources */,
 				83AEBCEA19851B6A00EE8211 /* EventRecorder.m in Sources */,
 				F94D93641930EA33008CDB1A /* Utils.m in Sources */,
+				837B3720198E8BE600E8C152 /* FlagView.m in Sources */,
 				832D81751956D6E6000600DA /* ResultsController.m in Sources */,
 				83199A931943487D00C70AAF /* LayerView.m in Sources */,
 				83856128197AAD7D009869DA /* FeedbackController.m in Sources */,
@@ -651,8 +665,10 @@
 				83FCBB911985639500415369 /* AppDelegate.m in Sources */,
 				83A6D935198569E800A97596 /* AggregatesService.m in Sources */,
 				837B3714198E4BD100E8C152 /* ScoringService.m in Sources */,
+				837B3725198E8CB500E8C152 /* NameToImageController.m in Sources */,
 				83FCBB921985639500415369 /* EventRecorder.m in Sources */,
 				83FCBB931985639500415369 /* Utils.m in Sources */,
+				837B3721198E8BE600E8C152 /* FlagView.m in Sources */,
 				83FCBB941985639500415369 /* ResultsController.m in Sources */,
 				83FCBB951985639500415369 /* LayerView.m in Sources */,
 				83FCBB961985639500415369 /* FeedbackController.m in Sources */,
