@@ -44,6 +44,7 @@
       @"puzzles":            @[@209, @62,  @97,  @"Puzzles-Bar-Icon", @28, @28],
       @"colours":            @[@67,  @188, @137, @"Puzzles-Bar-Icon", @28, @28],
       @"patterns + colours": @[@238, @103, @65,  @"Puzzles-Bar-Icon", @28, @28],
+      @"your highlights":    @[@67,  @188, @137, @"Puzzles-Bar-Icon", @28, @28], // todo - make this better
       @"quiz":               @[@83,  @152, @180, @"Quiz-Bar-Icon",    @25, @27],
       @"all flags":          @[@83,  @152, @180, @"Quiz-Bar-Icon",    @25, @27],
       @"easy quiz":          @[@67,  @188, @137, @"Quiz-Bar-Icon",    @25, @27],

@@ -12,6 +12,8 @@
 
 @interface HighlightsController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *playAgainButton;
+
 @property (weak, nonatomic) IBOutlet UIImageView *bestImage;
 @property (weak, nonatomic) IBOutlet UILabel *bestLabel;
 @property (weak, nonatomic) IBOutlet UILabel *bestSocialLabel;
@@ -29,10 +31,11 @@
 
 - (void)viewDidLoad
 {
+    NSString *imageName = [self.difficulty isEqualToString:@"easy"] ? @"Easy-Play-Again" : @"Hard-Play-Again";
+    [self.playAgainButton setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    
     [self setBestFlag:[[Flag all] firstObject]];
     [self setWorstFlag:[[Flag all] firstObject]];
-    
-    NSLog(@"mode: %@, difficulty: %@", self.mode, self.difficulty);
     
     [super viewDidLoad];
 }

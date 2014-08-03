@@ -434,6 +434,16 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYY-oH-tOJ">
+                                <rect key="frame" x="160" y="500" width="140" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Easy-Play-Again.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5AU-KU-zeq" kind="push" id="CVA-ak-0ia"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -441,6 +451,7 @@
                         <outlet property="bestImage" destination="Awl-RC-pRH" id="vZF-FF-p2E"/>
                         <outlet property="bestLabel" destination="kwQ-6y-OPQ" id="Kiu-51-X6I"/>
                         <outlet property="bestSocialLabel" destination="bhx-LK-hLw" id="GJu-gf-hsb"/>
+                        <outlet property="playAgainButton" destination="AYY-oH-tOJ" id="K1b-V2-n0e"/>
                         <outlet property="worstImage" destination="rUh-jY-reK" id="vIj-iR-wKj"/>
                         <outlet property="worstLabel" destination="hgu-If-ME3" id="wt2-IX-UML"/>
                         <outlet property="worstSocialLabel" destination="6aN-B4-0Ya" id="hsW-fc-s8o"/>
@@ -668,6 +679,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="POs-O3-vYW"/>
+        <segue reference="CVA-ak-0ia"/>
     </inferredMetricsTieBreakers>
 </document>
