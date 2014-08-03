@@ -61,4 +61,19 @@
     self.currentRound++;
 }
 
+- (NSArray *)choices:(NSInteger)numberOfChoices
+{
+    NSMutableArray *mutableArray = [NSMutableArray arrayWithArray:self.array];
+    NSArray *array;
+    
+    [mutableArray removeObject:self.currentElement];
+    array = [NSArray arrayWithArray:mutableArray];
+    array = [Utils shuffle:array];
+    array = [array subarrayWithRange:NSMakeRange(0, numberOfChoices - 1)];
+    mutableArray = [NSMutableArray arrayWithArray:array];
+    [mutableArray insertObject:self.currentElement atIndex:0];
+    array = [NSArray arrayWithArray:mutableArray];
+    return [Utils shuffle:array];
+}
+
 @end

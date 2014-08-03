@@ -510,6 +510,78 @@
             </objects>
             <point key="canvasLocation" x="383" y="-249"/>
         </scene>
+        <!--Image To Name Controller - quiz-->
+        <scene sceneID="uxZ-dH-9K8">
+            <objects>
+                <viewController id="0oG-BK-24b" customClass="ImageToNameController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Aw-yz-3lo"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pga-Gp-Bhr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zrF-OG-BZi">
+                        <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yuk-4E-RHS">
+                                <rect key="frame" x="20" y="41" width="275" height="160"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAR-m6-TBo">
+                                <rect key="frame" x="20" y="247" width="275" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="aButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="0oG-BK-24b" eventType="touchUpInside" id="KwK-3b-d22"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LpW-pg-8Am">
+                                <rect key="frame" x="25" y="353" width="270" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="cButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="0oG-BK-24b" eventType="touchUpInside" id="ADG-T0-5Kt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RP6-xh-QYe">
+                                <rect key="frame" x="25" y="296" width="270" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="bButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="0oG-BK-24b" eventType="touchUpInside" id="23X-Ud-tVu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjA-df-6qR">
+                                <rect key="frame" x="25" y="413" width="270" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="dButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="0oG-BK-24b" eventType="touchUpInside" id="j9P-aA-7dx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="quiz" id="HcL-QM-3gm"/>
+                    <connections>
+                        <outlet property="aButton" destination="UAR-m6-TBo" id="Gk3-jW-MYt"/>
+                        <outlet property="bButton" destination="RP6-xh-QYe" id="Y1A-As-lbL"/>
+                        <outlet property="cButton" destination="LpW-pg-8Am" id="Gar-No-5nN"/>
+                        <outlet property="dButton" destination="kjA-df-6qR" id="Jaa-oE-KqP"/>
+                        <outlet property="imageView" destination="Yuk-4E-RHS" id="mKJ-1S-srd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R5E-zd-lrl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-127" y="992"/>
+        </scene>
         <!--Base View Controller - quiz-->
         <scene sceneID="g7p-mb-kk0">
             <objects>
@@ -534,6 +606,9 @@
                                 <state key="normal" backgroundImage="Quiz-Easy-Button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="0oG-BK-24b" kind="push" id="PZr-tp-vKf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoI-YJ-aGM">
                                 <rect key="frame" x="20" y="211" width="280" height="46"/>

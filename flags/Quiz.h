@@ -16,5 +16,6 @@
 - (id)initWithArray:(NSArray *)array andRounds:(NSInteger)rounds;
 - (id)currentElement;
 - (void)nextRound;
+- (NSArray *)choices:(NSInteger)numberOfChoices;
 
 @end
