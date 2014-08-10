@@ -363,7 +363,7 @@
             </objects>
             <point key="canvasLocation" x="1640" y="138"/>
         </scene>
-        <!--Highlights Controller-->
+        <!--Highlights Controller - your highlights-->
         <scene sceneID="Q5y-Ji-W5p">
             <objects>
                 <viewController storyboardIdentifier="HighlightsController" id="zOS-4b-pff" customClass="HighlightsController" sceneMemberID="viewController">
@@ -448,7 +448,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="bUi-a0-njH"/>
+                    <navigationItem key="navigationItem" title="your highlights" id="bUi-a0-njH"/>
                     <connections>
                         <outlet property="bestImage" destination="Awl-RC-pRH" id="vZF-FF-p2E"/>
                         <outlet property="bestLabel" destination="kwQ-6y-OPQ" id="Kiu-51-X6I"/>
@@ -591,7 +591,7 @@
             </objects>
             <point key="canvasLocation" x="-81" y="950"/>
         </scene>
-        <!--Name To Image Controller-->
+        <!--Name To Image Controller - quiz-->
         <scene sceneID="QI1-2j-UEw">
             <objects>
                 <viewController id="Uh4-XN-ftO" customClass="NameToImageController" sceneMemberID="viewController">
@@ -627,7 +627,7 @@
                             </imageView>
                         </subviews>
                     </view>
-                    <navigationItem key="navigationItem" id="xk8-n6-ck1"/>
+                    <navigationItem key="navigationItem" title="quiz" id="xk8-n6-ck1"/>
                     <connections>
                         <outlet property="aFlagView" destination="buV-Ux-OgE" id="9DJ-FL-Fpm"/>
                         <outlet property="bFlagView" destination="lxx-lr-vPI" id="2ZC-1U-2h0"/>

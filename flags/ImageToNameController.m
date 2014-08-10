@@ -31,8 +31,19 @@
 
 @implementation ImageToNameController
 
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        self.variant = @"image_to_name";
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
+    
     self.difficultyScaler = [[DifficultyScaler alloc] initWithDifficultyKey:@"image-to-name-quiz"];
     
     NSArray *flags = [self.difficultyScaler scale:[Flag all]];
@@ -40,8 +51,6 @@
     
     [[ScoringService sharedInstance] reset];
     [self nextFlag:nil];
-    
-    [super viewDidLoad];
 }
 
 - (void)nextFlag:(NSTimer *)timer
@@ -87,18 +96,18 @@
     
     if ([flag isEqualTo:[self.quiz currentElement]]) {
         [self recordEvent:YES flag:flag];
-        [[ScoringService sharedInstance] correctForFlag:flag andMode:@"quiz" andVariant:@"image_to_name"];
+        [[ScoringService sharedInstance] correctForFlag:flag andMode:@"quiz" andVariant:self.variant];
         [button setBackgroundColor:[UIColor greenColor]];
     }
     else {
         [self recordEvent:NO flag:flag];
-        [[ScoringService sharedInstance] incorrectForFlag:flag andMode:@"quiz" andVariant:@"image_to_name"];
+        [[ScoringService sharedInstance] incorrectForFlag:flag andMode:@"quiz" andVariant:self.variant];
         [button setBackgroundColor:[UIColor redColor]];
     }
     
     [self.quiz nextRound];
     [self.view setUserInteractionEnabled:NO];
-    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(nextFlag:) userInfo:nil repeats:NO];
+    [NSTimer scheduledTimerWithTimeInterval:0.3 target:self selector:@selector(nextFlag:) userInfo:nil repeats:NO];
 }
 
 - (void)highlights
@@ -106,8 +115,8 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
     HighlightsController *highlights = [storyboard instantiateViewControllerWithIdentifier:@"HighlightsController"];
     
-    highlights.mode = @"quiz";
-    highlights.variant = @"image_to_name";
+    highlights.mode = self.mode;
+    highlights.variant = self.variant;
     
     [self.navigationController pushViewController:highlights animated:YES];
 }
@@ -116,8 +125,8 @@
 {
     [[EventRecorder sharedInstance] record:@{
          @"flag_name": [flag name],
-         @"mode": @"quiz",
-         @"variant": @"image_to_name",
+         @"mode": self.mode,
+         @"variant": self.variant,
          @"correct": playerWasCorrect ? @"true" : @"false"
     }];
 }

@@ -22,17 +22,17 @@
 
 @implementation ResultsController
 
-@synthesize difficulty=_difficulty;
-
 - (void)viewDidLoad
 {
-    self.navigationItem.title = [self.difficulty isEqualToString:@"easy"] ? @"colours" : @"patterns + colours";
-    NSString *difficulty = [self.difficulty isEqualToString:@"easy"] ? @"Easy" : @"Hard";
+    [super viewDidLoad];
+    
+    self.navigationItem.title = [self.variant isEqualToString:@"easy"] ? @"colours" : @"patterns + colours";
+    NSString *difficulty = [self.variant isEqualToString:@"easy"] ? @"Easy" : @"Hard";
     
     UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%@-Play-Again", difficulty]];
     [self.playAgainButton setBackgroundImage:image forState:UIControlStateNormal];
     
-    NSString *switchImageName = [self.difficulty isEqualToString:@"easy"] ? @"Easy-Switch-to-Hard" : @"Hard-Switch-to-Easy";
+    NSString *switchImageName = [self.variant isEqualToString:@"easy"] ? @"Easy-Switch-to-Hard" : @"Hard-Switch-to-Easy";
     [self.switchButton setBackgroundImage:[UIImage imageNamed:switchImageName] forState:UIControlStateNormal];
     
     NSString *rosetteImageName = [NSString stringWithFormat:@"%@-results-rosette", difficulty];
@@ -47,15 +47,13 @@
     // blue is 20, 96, 137
     UIColor *blue = [UIColor colorWithRed:(20 / 255.0f) green:(96 / 255.0f) blue:(137 / 255.0f) alpha:1.0f];
     UIColor *pink = [UIColor colorWithRed:(207 / 255.0f) green:(62 / 255.0f) blue:(96 / 255.0f) alpha:1.0f];
-    UIColor *textColor = [self.difficulty isEqualToString:@"easy"] ? pink : blue;
+    UIColor *textColor = [self.variant isEqualToString:@"easy"] ? pink : blue;
     
     self.scoreLabel.textColor = textColor;
     self.totalLabel.textColor = textColor;
     
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", [ScoringService sharedInstance].correctCount];
     self.totalLabel.text = [NSString stringWithFormat:@"%d", total];
-    
-    [super viewDidLoad];
 }
 
 - (IBAction)highlights:(id)sender
@@ -63,8 +61,8 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
     HighlightsController *highlights = [storyboard instantiateViewControllerWithIdentifier:@"HighlightsController"];
     
-    highlights.mode = @"puzzle";
-    highlights.variant = self.difficulty;
+    highlights.mode = self.mode;
+    highlights.variant = self.variant;
     
     [self.navigationController pushViewController:highlights animated:YES];
 }

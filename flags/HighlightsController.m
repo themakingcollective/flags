@@ -29,18 +29,15 @@
 
 @implementation HighlightsController
 
-@synthesize mode=_mode;
-@synthesize variant=_variant;
-
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
+    
     NSString *imageName = [self.variant isEqualToString:@"easy"] ? @"Easy-Play-Again" : @"Hard-Play-Again";
     [self.playAgainButton setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     
     [self setBestFlag];
     [self setWorstFlag];
-    
-    [super viewDidLoad];
 }
 
 - (void)setBestFlag

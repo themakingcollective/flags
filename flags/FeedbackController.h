@@ -14,7 +14,6 @@
 
 @interface FeedbackController : BaseViewController
 
-@property (nonatomic, strong) NSString *difficulty;
 @property (nonatomic, assign) BOOL playerWasCorrect;
 @property (nonatomic, strong) LayeredView *layeredView;
 @property (nonatomic, strong) Flag *correctFlag;

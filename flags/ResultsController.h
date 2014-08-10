@@ -12,6 +12,4 @@
 
 @interface ResultsController : BaseViewController
 
-@property (nonatomic, strong) NSString *difficulty;
-
 @end

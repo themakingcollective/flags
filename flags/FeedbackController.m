@@ -24,13 +24,14 @@
 
 @implementation FeedbackController
 
-@synthesize difficulty=_difficulty;
 @synthesize playerWasCorrect=_playerWasCorrect;
 @synthesize layeredView=_layeredView;
 @synthesize correctFlag=_correctFlag;
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
+    
     self.navigationItem.title = [self puzzleController].navigationItem.title;
     
     UIColor *green = [UIColor colorWithRed:(73 / 255.0f) green:(142 / 255.0f) blue:(93 / 255.0f) alpha:1.0f];
@@ -57,12 +58,10 @@
 
     self.flagLabel.text = [NSString stringWithFormat:@"%@:", [self.correctFlag name]];
     
-    NSString *imageName = [self.difficulty isEqualToString:@"easy"] ? @"Next-Button-Easy-Enabled" : @"Next-Button-Hard-Enabled";
+    NSString *imageName = [self.variant isEqualToString:@"easy"] ? @"Next-Button-Easy-Enabled" : @"Next-Button-Hard-Enabled";
     [self.nextButton setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     
-    self.socialLabel.text = [[AggregatesService sharedInstance] textForFlag:self.correctFlag andMode:@"puzzle" andVariant:self.difficulty andCorrectness:!self.playerWasCorrect];
-    
-    [super viewDidLoad];
+    self.socialLabel.text = [[AggregatesService sharedInstance] textForFlag:self.correctFlag andMode:@"puzzle" andVariant:self.variant andCorrectness:!self.playerWasCorrect];
 }
 
 - (void)viewDidLayoutSubviews
@@ -93,7 +92,9 @@
 {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
     ResultsController *results = [storyboard instantiateViewControllerWithIdentifier:@"ResultsController"];
-    results.difficulty = self.difficulty;
+    results.variant = self.variant;
+    results.mode = self.mode;
+    results.variant = self.variant;
     
     [self.navigationController pushViewController:results animated:YES];
 }

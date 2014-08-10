@@ -11,8 +11,6 @@
 
 @interface PuzzleController : BaseViewController
 
-@property (nonatomic, strong) NSString *difficulty;
-
 - (BOOL)nextFlag;
 
 @end

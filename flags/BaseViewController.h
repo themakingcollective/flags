@@ -10,4 +10,7 @@
 
 @interface BaseViewController : UIViewController
 
+@property (nonatomic, strong) NSString *mode;
+@property (nonatomic, strong) NSString *variant;
+
 @end

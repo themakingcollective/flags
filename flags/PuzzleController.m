@@ -33,19 +33,17 @@
 
 @implementation PuzzleController
 
-@synthesize difficulty=_difficulty;
-
 - (void)viewDidLoad
 {
-    NSString *previousTitle = [self previousTitle];
+    [self setModeAndVariant];
+    [super viewDidLoad];
     
-    self.difficulty = [previousTitle isEqualToString:@"colours"] ? @"easy" : @"hard";
-    self.navigationItem.title = previousTitle;
+    self.navigationItem.title = [self.variant isEqualToString:@"easy"] ? @"colours" : @"patterns + colours";
     
     self.layeredView.backgroundColor = [UIColor clearColor];
     [self.layeredView setDelegate:self];
     
-    NSString *difficultyKey = [NSString stringWithFormat:@"puzzle-%@", self.difficulty];
+    NSString *difficultyKey = [NSString stringWithFormat:@"puzzle-%@", self.variant];
     self.difficultyScaler = [[DifficultyScaler alloc] initWithDifficultyKey:difficultyKey];
     
     NSArray *flags = [self.difficultyScaler scale:[Flag all]];
@@ -56,15 +54,13 @@
     
     [[ScoringService sharedInstance] reset];
     [self nextFlag];
-    
-    [super viewDidLoad];
 }
 
 - (void)viewDidLayoutSubviews
 {
     [super viewDidLayoutSubviews];
     
-    if (![self.difficulty isEqualToString:@"easy"]) {
+    if (![self.variant isEqualToString:@"easy"]) {
         return;
     }
     
@@ -106,10 +102,10 @@
     [self recordEvent:playerWasCorrect flag:correctFlag];
     
     if (playerWasCorrect) {
-        [[ScoringService sharedInstance] correctForFlag:correctFlag andMode:@"puzzle" andVariant:self.difficulty];
+        [[ScoringService sharedInstance] correctForFlag:correctFlag andMode:@"puzzle" andVariant:self.self.variant];
     }
     else {
-        [[ScoringService sharedInstance] incorrectForFlag:correctFlag andMode:@"puzzle" andVariant:self.difficulty];
+        [[ScoringService sharedInstance] incorrectForFlag:correctFlag andMode:@"puzzle" andVariant:self.variant];
     }
 
     [self.quiz nextRound];
@@ -121,10 +117,11 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
     FeedbackController *feedback = [storyboard instantiateViewControllerWithIdentifier:@"FeedbackController"];
     
-    feedback.difficulty = self.difficulty;
     feedback.layeredView = [Utils copyView:self.layeredView];
     feedback.playerWasCorrect = playerWasCorrect;
     feedback.correctFlag = correctFlag;
+    feedback.mode = self.mode;
+    feedback.variant = self.variant;
     
     [self.navigationController pushViewController:feedback animated:NO];
 }
@@ -149,7 +146,7 @@
 
 - (void)setSubmitButtonState:(BOOL)state
 {
-    NSString *difficulty = [self.difficulty isEqualToString:@"easy"] ? @"Easy" : @"Hard";
+    NSString *difficulty = [self.variant isEqualToString:@"easy"] ? @"Easy" : @"Hard";
     NSString *active = state ? @"Enabled" : @"Disabled";
     NSString *imageName = [NSString stringWithFormat:@"Done-Button-%@-%@", difficulty, active];
     
@@ -166,7 +163,7 @@
 
 - (BOOL)isCorrect
 {
-    if ([self.difficulty isEqualToString:@"easy"]) {
+    if ([self.variant isEqualToString:@"easy"]) {
         return [self.layeredView isCorrect];
     }
     else {
@@ -181,7 +178,7 @@
     [self setupPaintPots:flag];
     [self setupPatterns:flag];
     
-    if ([self.difficulty isEqualToString:@"easy"]) {
+    if ([self.variant isEqualToString:@"easy"]) {
         [self.layeredView setFlag:flag];
         [self touchFirstPaintPot];
         [self removePatterns];
@@ -292,10 +289,26 @@
 {
     [[EventRecorder sharedInstance] record:@{
         @"flag_name": [flag name],
-        @"mode": @"puzzle",
-        @"variant": self.difficulty,
+        @"mode": self.mode,
+        @"variant": self.variant,
         @"correct": playerWasCorrect ? @"true" : @"false"
     }];
+}
+
+- (void)setModeAndVariant
+{
+    self.mode = @"puzzle";
+    
+    NSInteger previousIndex = [self.navigationController.viewControllers count] - 2;
+    BaseViewController *previousController = [self.navigationController.viewControllers objectAtIndex:previousIndex];
+    
+    if (previousController.variant) {
+        self.variant = previousController.variant;
+    }
+    else {
+        NSString *previousTitle = previousController.navigationItem.title;
+        self.variant = [previousTitle isEqualToString:@"colours"] ? @"easy" : @"hard";
+    }
 }
 
 @end
