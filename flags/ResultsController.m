@@ -15,7 +15,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
 @property (weak, nonatomic) IBOutlet UIButton *playAgainButton;
-@property (weak, nonatomic) IBOutlet UIButton *switchButton;
 @property (weak, nonatomic) IBOutlet UIImageView *rosetteImageView;
 
 @end
@@ -32,9 +31,6 @@
     UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%@-Play-Again", difficulty]];
     [self.playAgainButton setBackgroundImage:image forState:UIControlStateNormal];
     
-    NSString *switchImageName = [self.variant isEqualToString:@"easy"] ? @"Easy-Switch-to-Hard" : @"Hard-Switch-to-Easy";
-    [self.switchButton setBackgroundImage:[UIImage imageNamed:switchImageName] forState:UIControlStateNormal];
-    
     NSString *rosetteImageName = [NSString stringWithFormat:@"%@-results-rosette", difficulty];
     [self.rosetteImageView setImage:[UIImage imageNamed:rosetteImageName]];
     
@@ -44,7 +40,6 @@
     [self.scoreLabel setFont:font];
     [self.totalLabel setFont:font];
 
-    // blue is 20, 96, 137
     UIColor *blue = [UIColor colorWithRed:(20 / 255.0f) green:(96 / 255.0f) blue:(137 / 255.0f) alpha:1.0f];
     UIColor *pink = [UIColor colorWithRed:(207 / 255.0f) green:(62 / 255.0f) blue:(96 / 255.0f) alpha:1.0f];
     UIColor *textColor = [self.variant isEqualToString:@"easy"] ? pink : blue;
@@ -54,6 +49,8 @@
     
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", [ScoringService sharedInstance].correctCount];
     self.totalLabel.text = [NSString stringWithFormat:@"%d", total];
+    
+    [self showHighlightsIfApplicable];
 }
 
 - (IBAction)highlights:(id)sender
@@ -65,6 +62,14 @@
     highlights.variant = self.variant;
     
     [self.navigationController pushViewController:highlights animated:YES];
+}
+
+- (void)showHighlightsIfApplicable
+{
+    if ([[ScoringService sharedInstance] bestFlag] || [[ScoringService sharedInstance] worstFlag]) {
+        [self.playAgainButton setHidden:YES];
+        [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(highlights:) userInfo:nil repeats:NO];
+    }
 }
 
 @end
