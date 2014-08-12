@@ -7,16 +7,18 @@
   "area": 30355,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/4/4a/Flag_of_Lesotho.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "FF0000",
     "000000",
-    "ffff00"
+    "ffff00",
+    "FF6600",
+    "FF3399"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Kazakhstan",
+    "Haiti",
+    "Grenada",
+    "Eritrea",
+    "Uganda",
+    "Barbados"
   ]
 }

@@ -7,16 +7,18 @@
   "area": 300000,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_the_Philippines.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "006600",
     "000000",
-    "ffff00"
+    "ffff00",
+    "99CCFF",
+    "FF6600"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Namibia",
+    "Trinidad_and_Tobago",
+    "Brunei",
+    "Tonga",
+    "Seychelles",
+    "Rwanda"
   ]
 }

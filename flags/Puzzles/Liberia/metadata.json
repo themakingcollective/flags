@@ -7,9 +7,11 @@
   "area": 111369,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/b/b8/Flag_of_Liberia.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "006600",
     "000000",
-    "ffff00"
+    "ffff00",
+    "99CCFF",
+    "FF6600"
   ],
   "incorrect_patterns": [
     "Guinea_Bissau",

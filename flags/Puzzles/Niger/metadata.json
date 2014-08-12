@@ -7,16 +7,18 @@
   "area": 1267000,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/3/37/Flag_of_Niger_5%213.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "CC0099",
     "000000",
-    "ffff00"
+    "ffff00",
+    "99CCFF",
+    "0000CC"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Bangladesh",
+    "Brazil",
+    "Dominica",
+    "Uganda",
+    "Nigeria",
+    "Monaco"
   ]
 }

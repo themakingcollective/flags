@@ -7,16 +7,18 @@
   "area": 10400,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/5/59/Flag_of_Lebanon.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "00FF00",
     "000000",
-    "ffff00"
+    "ffff00",
+    "99CCFF",
+    "0000CC"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Uruguay",
+    "South_Sudan",
+    "Solomon_Islands",
+    "Qatar",
+    "Philippines",
+    "Peru"
   ]
 }

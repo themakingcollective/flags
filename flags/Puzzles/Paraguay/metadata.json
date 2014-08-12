@@ -7,16 +7,18 @@
   "area": 406752,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Paraguay.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "006600",
     "000000",
-    "ffff00"
+    "ffff00",
+    "FF6600",
+    "CC0099"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Mexico",
+    "Philippines",
+    "Uruguay",
+    "Togo",
+    "Switzerland",
+    "Ukraine"
   ]
 }

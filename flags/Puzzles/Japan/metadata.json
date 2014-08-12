@@ -7,16 +7,18 @@
   "area": 377915,
   "image_url": "http://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "006600",
     "000000",
-    "ffff00"
+    "FFCC00",
+    "0000CC",
+    "99CCFF"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
+    "Brazil",
+    "Mongolia",
+    "Singapore",
     "Argentina",
-    "Angola",
-    "Andorra"
+    "Nepal",
+    "Brunei"
   ]
 }

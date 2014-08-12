@@ -7,9 +7,11 @@
   "area": 2586,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/d/da/Flag_of_Luxembourg.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "00CC00",
     "000000",
-    "ffff00"
+    "FFFF66",
+    "FFA347",
+    "FF66FF"
   ],
   "incorrect_patterns": [
     "Ukraine",

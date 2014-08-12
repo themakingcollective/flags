@@ -7,16 +7,18 @@
   "area": 811,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kiribati.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "99CCFF",
     "000000",
-    "ffff00"
+    "ffff00",
+    "00CC00",
+    "0000CC"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Cyprus",
+    "Namibia",
+    "Nigeria",
+    "New_Zealand",
+    "Togo",
+    "Seychelles"
   ]
 }

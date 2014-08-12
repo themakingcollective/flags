@@ -8,8 +8,10 @@
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Jamaica.svg",
   "incorrect_colors": [
     "FFFFFF",
-    "000000",
-    "ffff00"
+    "FF0000",
+    "FF6600",
+    "0000CC",
+    "993300"
   ],
   "incorrect_patterns": [
     "Haiti",
@@ -17,6 +19,6 @@
     "Trinidad_and_Tobago",
     "Switzerland",
     "Seychelles",
-    "Andorra"
+    "Sri_Lanka"
   ]
 }

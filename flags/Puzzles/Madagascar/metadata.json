@@ -7,16 +7,18 @@
   "area": 587041,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Madagascar.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "FF6600",
     "000000",
-    "ffff00"
+    "ffff00",
+    "993300",
+    "0000CC"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Maldives",
+    "Ukraine",
+    "Mauritius",
+    "Chad",
+    "Netherlands",
+    "Czech_Republic"
   ]
 }

@@ -7,9 +7,11 @@
   "area": 75417,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "009933",
     "000000",
-    "ffff00"
+    "ffff00",
+    "99CCFF",
+    "FF9966"
   ],
   "incorrect_patterns": [
     "Guinea_Bissau",
