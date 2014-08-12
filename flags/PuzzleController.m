@@ -47,7 +47,7 @@
     self.difficultyScaler = [[DifficultyScaler alloc] initWithDifficultyKey:difficultyKey];
     
     NSArray *flags = [self.difficultyScaler scale:[Flag all]];
-    self.quiz = [[Quiz alloc] initWithArray:flags andRounds:2];
+    self.quiz = [[Quiz alloc] initWithArray:flags andRounds:10];
     
     UIFont *titleFont = [UIFont fontWithName:@"BPreplay-Bold" size:30];
     [self.nameLabel setFont:titleFont];
