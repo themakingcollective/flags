@@ -17,9 +17,9 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xD-mb-Ihx">
-                                <rect key="frame" x="20" y="96" width="280" height="174"/>
+                                <rect key="frame" x="17" y="94" width="287" height="178"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Puzzles-Menu-Button.png">
+                                <state key="normal" backgroundImage="Build-Menu-Button.png">
                                     <color key="titleColor" red="0.58823531866073608" green="0.30588236451148987" blue="0.49803924560546875" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -28,9 +28,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVy-PJ-fOd">
-                                <rect key="frame" x="20" y="297" width="280" height="174"/>
+                                <rect key="frame" x="17" y="295" width="287" height="178"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Quiz-Menu-Button.png">
+                                <state key="normal" backgroundImage="Guess-Menu-Button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -60,9 +60,9 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRO-k7-Iuv">
-                                <rect key="frame" x="20" y="400" width="280" height="42"/>
+                                <rect key="frame" x="29" y="400" width="263" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Play-Colours-Puzzle-Button.png">
+                                <state key="normal" backgroundImage="Play-Colours-Button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -113,9 +113,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGV-MW-vNk">
-                                <rect key="frame" x="20" y="400" width="280" height="42"/>
+                                <rect key="frame" x="29" y="400" width="263" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Play-Colours+Shapes-Puzzle-Button.png">
+                                <state key="normal" backgroundImage="Play-Patterns-Colours-Button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -748,12 +748,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Build-Menu-Button.png" width="287" height="178"/>
         <image name="Done-Button-Easy-Disabled.png" width="318" height="163"/>
         <image name="Easy-Play-Again.png" width="638" height="179"/>
         <image name="Easy-results-rosette.png" width="1318" height="1070"/>
+        <image name="Guess-Menu-Button.png" width="287" height="178"/>
         <image name="Next-Button-Easy-Enabled.png" width="336" height="179"/>
-        <image name="Play-Colours+Shapes-Puzzle-Button.png" width="1189" height="179"/>
-        <image name="Play-Colours-Puzzle-Button.png" width="1188" height="180"/>
+        <image name="Play-Colours-Button.png" width="263" height="40"/>
+        <image name="Play-Patterns-Colours-Button.png" width="263" height="40"/>
         <image name="Puzzles-Easy-Button.png" width="1364" height="237"/>
         <image name="Puzzles-Easy-Explain.png" width="1350" height="1345"/>
         <image name="Puzzles-Hard-Button.png" width="1364" height="237"/>
@@ -761,7 +763,6 @@
         <image name="Puzzles-Menu-Button.png" width="560" height="347"/>
         <image name="Quiz-Easy-Button.png" width="1364" height="238"/>
         <image name="Quiz-Hard-Button.png" width="1364" height="238"/>
-        <image name="Quiz-Menu-Button.png" width="560" height="347"/>
         <image name="Quiz-View-Button.png" width="1364" height="238"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -770,6 +771,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="POs-O3-vYW"/>
+        <segue reference="8Sg-cL-wfr"/>
     </inferredMetricsTieBreakers>
 </document>
