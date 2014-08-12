@@ -53,6 +53,18 @@
     [self nextFlag:nil];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [UIView setAnimationsEnabled:NO];
+}
+
+- (void)returnToMenu:(UIButton *)menuButton
+{
+    [UIView setAnimationsEnabled:YES];
+    [super returnToMenu:menuButton];
+}
+
 - (void)nextFlag:(NSTimer *)timer
 {
     [self.view setUserInteractionEnabled:YES];
@@ -64,6 +76,7 @@
         [self updateButtons];
     }
     else {
+        [UIView setAnimationsEnabled:YES];
         [self highlights];
     }
 }
@@ -93,21 +106,24 @@
 {
     NSString *flagName = button.titleLabel.text;
     Flag *flag = [Flag find_by_name:flagName];
+    float delay;
     
     if ([flag isEqualTo:[self.quiz currentElement]]) {
         [self recordEvent:YES flag:flag];
         [[ScoringService sharedInstance] correctForFlag:flag andMode:@"quiz" andVariant:self.variant];
         [button setBackgroundColor:[UIColor greenColor]];
+        delay = 0.3f;
     }
     else {
         [self recordEvent:NO flag:flag];
         [[ScoringService sharedInstance] incorrectForFlag:flag andMode:@"quiz" andVariant:self.variant];
         [button setBackgroundColor:[UIColor redColor]];
+        delay = 1;
     }
     
     [self.quiz nextRound];
     [self.view setUserInteractionEnabled:NO];
-    [NSTimer scheduledTimerWithTimeInterval:0.3 target:self selector:@selector(nextFlag:) userInfo:nil repeats:NO];
+    [NSTimer scheduledTimerWithTimeInterval:delay target:self selector:@selector(nextFlag:) userInfo:nil repeats:NO];
 }
 
 - (void)highlights

@@ -13,4 +13,6 @@
 @property (nonatomic, strong) NSString *mode;
 @property (nonatomic, strong) NSString *variant;
 
+- (void)returnToMenu:(UIButton *)menuButton;
+
 @end
