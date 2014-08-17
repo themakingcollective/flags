@@ -79,20 +79,12 @@ static NSArray *allCache;
 
 - (NSArray *)shuffledColors
 {
-    NSArray *incorrect = [self incorrectColors];
-    incorrect = [Utils shuffle:incorrect];
-    
-    NSMutableArray *correct = [NSMutableArray arrayWithArray:[self correctColors]];
-    [correct addObjectsFromArray:incorrect];
-    
-    NSArray *colors = [Utils unique:correct];
-    
-    if ([colors count] < 6) {
-        NSLog(@"%@ only has %d colours", [self name], [colors count]);
-    }
-    
-    colors = [Utils pickSample:colors size:6];
-    return [Utils shuffle:colors];
+    return [self pick:6 from:[self correctColors] and:[self incorrectColors]];
+}
+
+- (NSArray *)patternFlags
+{
+    return [self pick:4 from:@[self] and:[self incorrectFlags]];
 }
 
 - (NSArray *)correctColors
@@ -207,16 +199,6 @@ static NSArray *allCache;
     return [fileManager contentsOfDirectoryAtPath:[self directoryName] error:nil];
 }
 
-- (NSArray *)patternFlags
-{
-    NSArray *array = [self incorrectFlags];
-    array = [Utils pickSample:array size:3];
-    NSMutableArray *mutableArray = [NSMutableArray arrayWithArray:array];
-    [mutableArray addObject:self];
-    array = [NSArray arrayWithArray:mutableArray];
-    return [Utils shuffle:array];
-}
-
 + (NSString *)directoryName
 {
     NSString *bundlePathName = [[NSBundle mainBundle] bundlePath];
@@ -226,6 +208,21 @@ static NSArray *allCache;
 - (BOOL)isEqualTo:(Flag *)other
 {
     return [[self name] isEqualToString:other.name];
+}
+
+- (NSArray *)pick:(NSInteger)n from:(NSArray *)correct and:(NSArray *)incorrect
+{
+    NSMutableArray *mutableArray = [NSMutableArray arrayWithArray:correct];
+    [mutableArray addObjectsFromArray:[Utils shuffle:incorrect]];
+    NSArray *array = [NSArray arrayWithArray:mutableArray];
+    array = [Utils unique:array];
+    
+    if ([array count] < n) {
+        NSLog(@"Too few");
+    }
+    
+    array = [Utils pickSample:array size:n];
+    return [Utils shuffle:array];
 }
 
 @end

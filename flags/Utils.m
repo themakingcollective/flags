@@ -17,7 +17,7 @@
 
 + (NSArray *)unique:(NSArray *)array
 {
-    return [[NSSet setWithArray:array] allObjects];
+    return [[NSOrderedSet orderedSetWithArray:array] array];
 }
 
 + (NSArray *)shuffle:(NSArray *)array
