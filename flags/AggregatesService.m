@@ -108,7 +108,7 @@
         }
     }
 
-    return [NSString stringWithFormat:@"%@%% of %d people got this %@", percent, totalCount, term];
+    return [NSString stringWithFormat:@"%@%% of people got this %@", percent, term];
 }
 
 - (NSArray *)where:(NSDictionary *)filters
