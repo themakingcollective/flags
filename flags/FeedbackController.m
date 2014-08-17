@@ -61,7 +61,7 @@
     NSString *imageName = [self.variant isEqualToString:@"easy"] ? @"Next-Button-Easy-Enabled" : @"Next-Button-Hard-Enabled";
     [self.nextButton setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     
-    self.socialLabel.text = [[AggregatesService sharedInstance] textForFlag:self.correctFlag andMode:@"puzzle" andVariant:self.variant andCorrectness:!self.playerWasCorrect];
+    self.socialLabel.text = [[AggregatesService sharedInstance] textForFlag:self.correctFlag andMode:@"puzzle" andVariant:self.variant andCorrectness:YES];
 }
 
 - (void)viewDidLayoutSubviews
