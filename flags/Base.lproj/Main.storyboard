@@ -197,19 +197,19 @@
                                 <color key="textColor" red="0.81176470588235294" green="0.24313725490196078" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Puzzles-Menu-Button.png" translatesAutoresizingMaskIntoConstraints="NO" id="zCp-Z7-2fL" customClass="PatternView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Build-Menu-Button.png" translatesAutoresizingMaskIntoConstraints="NO" id="zCp-Z7-2fL" customClass="PatternView">
                                 <rect key="frame" x="20" y="276" width="60" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Puzzles-Menu-Button.png" translatesAutoresizingMaskIntoConstraints="NO" id="pwz-xx-Yez" customClass="PatternView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Build-Menu-Button.png" translatesAutoresizingMaskIntoConstraints="NO" id="pwz-xx-Yez" customClass="PatternView">
                                 <rect key="frame" x="93" y="276" width="60" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Puzzles-Menu-Button.png" translatesAutoresizingMaskIntoConstraints="NO" id="IeG-0g-YeS" customClass="PatternView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Build-Menu-Button.png" translatesAutoresizingMaskIntoConstraints="NO" id="IeG-0g-YeS" customClass="PatternView">
                                 <rect key="frame" x="168" y="276" width="60" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Puzzles-Menu-Button.png" translatesAutoresizingMaskIntoConstraints="NO" id="K47-en-vXj" customClass="PatternView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Build-Menu-Button.png" translatesAutoresizingMaskIntoConstraints="NO" id="K47-en-vXj" customClass="PatternView">
                                 <rect key="frame" x="242" y="276" width="60" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -763,7 +763,6 @@
         <image name="Puzzles-Easy-Explain.png" width="1350" height="1345"/>
         <image name="Puzzles-Hard-Button.png" width="1364" height="237"/>
         <image name="Puzzles-Hard-Explain.png" width="1372" height="1392"/>
-        <image name="Puzzles-Menu-Button.png" width="560" height="347"/>
         <image name="Quiz-Easy-Button.png" width="1364" height="238"/>
         <image name="Quiz-Hard-Button.png" width="1364" height="238"/>
         <image name="Quiz-View-Button.png" width="1364" height="238"/>
