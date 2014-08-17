@@ -51,7 +51,7 @@
         self.variant = variantByTitle[title];
     }
     
-    NSLog(@"Mode: %@, Variant: %@", self.mode, self.variant);
+//    NSLog(@"Mode: %@, Variant: %@", self.mode, self.variant);
 }
 
 - (void)setupBarStyles
