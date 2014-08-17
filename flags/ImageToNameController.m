@@ -13,6 +13,7 @@
 #import "ScoringService.h"
 #import "HighlightsController.h"
 #import "EventRecorder.h"
+#import "Utils.h"
 
 @interface ImageToNameController ()
 
@@ -44,6 +45,11 @@
 {
     [super viewDidLoad];
     
+    [self.imageView setContentMode:UIViewContentModeScaleAspectFit];
+    self.imageView.layer.borderColor = [UIColor clearColor].CGColor;
+    self.imageView.layer.borderWidth = 2.0f;
+    [self.imageView.layer setCornerRadius:5.0f];
+    
     self.difficultyScaler = [[DifficultyScaler alloc] initWithDifficultyKey:@"image-to-name-quiz"];
     
     NSArray *flags = [self.difficultyScaler scale:[Flag all]];
@@ -51,6 +57,11 @@
     
     [[ScoringService sharedInstance] reset];
     [self nextFlag:nil];
+}
+
+- (void)viewDidLayoutSubviews
+{
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -72,6 +83,7 @@
     
     if (flag) {
         self.imageView.image = [flag image];
+        [self updateBorders];
         self.choices = [self.quiz choices:4];
         [self updateButtons];
     }
@@ -83,7 +95,7 @@
 
 - (void)updateButtons
 {
-    UIColor *blue = [UIColor colorWithRed:(110 / 255.0) green:(149 / 255.0) blue:(233 / 255.0) alpha:1.0f];
+    UIColor *blue = [UIColor colorWithRed:(26 / 255.0) green:(97 / 255.0) blue:(139 / 255.0) alpha:1.0f];
     
     Flag *aFlag = [self.choices objectAtIndex:0];
     [self.aButton setTitle:[aFlag name] forState:UIControlStateNormal];
@@ -145,6 +157,12 @@
          @"variant": self.variant,
          @"correct": playerWasCorrect ? @"true" : @"false"
     }];
+}
+
+- (void)updateBorders
+{
+    [self.imageView setFrame:CGRectMake(35, 20, 250, 173)];
+    [Utils resizeFrameToFitImage:self.imageView];
 }
 
 @end
