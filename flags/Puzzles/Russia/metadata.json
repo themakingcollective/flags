@@ -7,10 +7,10 @@
   "area": 17098242,
   "image_url": "http://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg",
   "incorrect_colors": [
-    "00CC00",
+    "12AD2B",
     "000000",
-    "ffff00",
-    "CC0099",
+    "FEDF00",
+    "660066",
     "FF6600"
   ],
   "incorrect_patterns": [

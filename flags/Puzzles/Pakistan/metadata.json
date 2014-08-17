@@ -7,11 +7,11 @@
   "area": 796095,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/3/32/Flag_of_Pakistan.svg",
   "incorrect_colors": [
-    "FF0000",
+    "DE2910",
     "000000",
-    "ffff00",
-    "FF6600",
-    "0000CC"
+    "FEDF00",
+    "FF9933",
+    "002A8F"
   ],
   "incorrect_patterns": [
     "Jordan",

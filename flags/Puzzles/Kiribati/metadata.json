@@ -7,11 +7,11 @@
   "area": 811,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Kiribati.svg",
   "incorrect_colors": [
-    "99CCFF",
+    "75B2DD",
     "000000",
-    "ffff00",
-    "00CC00",
-    "999966"
+    "FCD116",
+    "14B53A",
+    "ADAD85"
   ],
   "incorrect_patterns": [
     "Cyprus",

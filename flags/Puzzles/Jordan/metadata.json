@@ -7,11 +7,11 @@
   "area": 89342,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Jordan.svg",
   "incorrect_colors": [
-    "99CCFF",
-    "FFCC00",
-    "FF6600",
+    "75B2DD",
+    "FCD116",
+    "F77F00",
     "CC0099",
-    "0000CC"
+    "21468B"
   ],
   "incorrect_patterns": [
     "Jamaica",

@@ -7,11 +7,11 @@
   "area": 10380,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_The_Gambia.svg",
   "incorrect_colors": [
-    "FF6600",
+    "F77F00",
     "000000",
-    "ffff00",
-    "CC0099",
-    "999966"
+    "FCD116",
+    "660066",
+    "ADAD85"
   ],
   "incorrect_patterns": [
     "Ukraine",

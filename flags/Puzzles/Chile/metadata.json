@@ -7,11 +7,11 @@
   "area": 756102,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg",
   "incorrect_colors": [
-    "006600",
+    "007A5E",
     "000000",
-    "FFCC00",
-    "FF6600",
-    "CC0099"
+    "FAE042",
+    "FF7900",
+    "660066"
   ],
   "incorrect_patterns": [
     "Benin",

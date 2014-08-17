@@ -7,11 +7,11 @@
   "area": 43094,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg",
   "incorrect_colors": [
-    "CC0099",
+    "660066",
     "000000",
-    "ffff00",
-    "0000CC",
-    "006600"
+    "FAE042",
+    "0C4076",
+    "007A5E"
   ],
   "incorrect_patterns": [
     "Switzerland",

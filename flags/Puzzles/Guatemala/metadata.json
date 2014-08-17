@@ -7,11 +7,11 @@
   "area": 108889,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/e/ec/Flag_of_Guatemala.svg",
   "incorrect_colors": [
-    "00CC00",
+    "14B53A",
     "000000",
-    "ffff00",
+    "FCD116",
     "CC0000",
-    "FF6600"
+    "F77F00"
   ],
   "incorrect_patterns": [
     "Haiti",

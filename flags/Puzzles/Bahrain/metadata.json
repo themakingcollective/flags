@@ -7,11 +7,11 @@
   "area": 760,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Bahrain.svg",
   "incorrect_colors": [
-    "FFCC00",
+    "FFCE00",
     "000000",
     "009933",
-    "99CCFF",
-    "0000CC"
+    "74ACDF",
+    "241D4F"
   ],
   "incorrect_patterns": [
     "Djibouti",

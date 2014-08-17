@@ -7,11 +7,11 @@
   "area": 316,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Malta.svg",
   "incorrect_colors": [
-    "CC0099",
+    "660066",
     "000000",
-    "ffff00",
-    "006600",
-    "0000CC"
+    "FFDD00",
+    "007A5E",
+    "002A8F"
   ],
   "incorrect_patterns": [
     "Ukraine",

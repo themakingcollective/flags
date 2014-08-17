@@ -7,11 +7,11 @@
   "area": 547030,
   "image_url": "http://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
   "incorrect_colors": [
-    "006600",
+    "3A7728",
     "000000",
-    "ffff00",
-    "FF6600",
-    "CC0099"
+    "FAE042",
+    "F77F00",
+    "660066"
   ],
   "incorrect_patterns": [
     "Ukraine",

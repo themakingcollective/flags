@@ -8,10 +8,10 @@
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/e/e3/Flag_of_Papua_New_Guinea.svg",
   "incorrect_colors": [
     "FFFFFF",
-    "006600",
-    "FF6600",
-    "99CCFF",
-    "0000CC"
+    "006C35",
+    "FF9933",
+    "66CCFF",
+    "002A8F"
   ],
   "incorrect_patterns": [
     "Philippines",

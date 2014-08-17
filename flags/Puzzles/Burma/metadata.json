@@ -7,11 +7,11 @@
   "area": 676578,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/8/8c/Flag_of_Myanmar.svg",
   "incorrect_colors": [
-    "FF6600",
+    "FF7900",
     "000000",
-    "99CCFF",
-    "0000CC",
-    "CC0099"
+    "74ACDF",
+    "241D4F",
+    "660066"
   ],
   "incorrect_patterns": [
     "Burkina_Faso",

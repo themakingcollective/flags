@@ -7,11 +7,11 @@
   "area": 78866,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg",
   "incorrect_colors": [
-    "006600",
+    "007A5E",
     "000000",
-    "FFCC00",
-    "FF6600",
-    "CC0099"
+    "FAE042",
+    "E05206",
+    "660066"
   ],
   "incorrect_patterns": [
     "Comoros",

@@ -7,8 +7,8 @@
   "area": 1861484,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Sudan.svg",
   "incorrect_colors": [
-    "99CCFF",
-    "FFCC00",
+    "5EB6E4",
+    "FDEF42",
     "FF6600",
     "CC0099",
     "993300"
@@ -16,7 +16,7 @@
   "incorrect_patterns": [
     "Djibouti",
     "Comoros",
-    "South_Africa",
+    "Tanzania",
     "Cuba",
     "Guyana",
     "Swaziland"

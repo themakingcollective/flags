@@ -7,11 +7,11 @@
   "area": 14874,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_East_Timor.svg",
   "incorrect_colors": [
-    "006600",
-    "00CC00",
-    "99CCFF",
-    "0000CC",
-    "CC0099"
+    "007A5E",
+    "0DB02B",
+    "75B2DD",
+    "0C4076",
+    "660066"
   ],
   "incorrect_patterns": [
     "Eritrea",
