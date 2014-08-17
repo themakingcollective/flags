@@ -8,17 +8,17 @@
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Tanzania.svg",
   "incorrect_colors": [
     "FFFFFF",
-    "000000",
+    "FF0000",
     "ffff00",
-    "99CCFF",
-    "0000CC"
+    "CC0099",
+    "993300"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Trinidad_and_Tobago",
+    "Fiji",
+    "United_Kingdom",
+    "Thailand",
+    "Seychelles",
+    "Swaziland"
   ]
 }

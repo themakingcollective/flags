@@ -7,10 +7,10 @@
   "area": 527968,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/8/89/Flag_of_Yemen.svg",
   "incorrect_colors": [
-    "FFFFFF",
-    "000000",
+    "006600",
+    "FF6600",
     "ffff00",
-    "99CCFF",
+    "CC0099",
     "0000CC"
   ],
   "incorrect_patterns": [

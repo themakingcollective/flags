@@ -7,17 +7,17 @@
   "area": 100210,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "00CC00",
     "000000",
     "ffff00",
     "99CCFF",
-    "0000CC"
+    "FF6600"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
+    "Mongolia",
+    "Kazakhstan",
+    "Jamaica",
+    "Georgia",
     "Angola",
     "Andorra"
   ]

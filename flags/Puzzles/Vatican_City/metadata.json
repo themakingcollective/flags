@@ -7,18 +7,18 @@
   "area": 0,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_the_Vatican_City.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "00CC00",
     "000000",
-    "ffff00",
+    "CC0000",
     "99CCFF",
-    "0000CC"
+    "FF6600"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
+    "Yemen",
+    "Brunei",
+    "Switzerland",
+    "Tonga",
+    "Georgia",
     "Andorra"
   ]
 }

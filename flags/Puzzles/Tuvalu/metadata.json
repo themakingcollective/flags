@@ -10,15 +10,15 @@
     "FFFFFF",
     "000000",
     "ffff00",
-    "99CCFF",
-    "0000CC"
+    "00CC00",
+    "CC0000"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Venezuela",
+    "Solomon_Islands",
+    "Singapore",
+    "Cape_Verde",
+    "Comoros",
+    "Papua_New_Guinea"
   ]
 }

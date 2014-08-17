@@ -8,17 +8,17 @@
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg",
   "incorrect_colors": [
     "FFFFFF",
-    "000000",
-    "ffff00",
-    "99CCFF",
-    "0000CC"
+    "FFCC00",
+    "FF6600",
+    "CC0099",
+    "993300"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Djibouti",
+    "Comoros",
+    "South_Sudan",
+    "Cuba",
+    "Guyana",
+    "Swaziland"
   ]
 }

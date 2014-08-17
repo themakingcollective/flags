@@ -8,17 +8,17 @@
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Vanuatu.svg",
   "incorrect_colors": [
     "FFFFFF",
-    "000000",
+    "FF6600",
     "ffff00",
-    "99CCFF",
+    "CC0099",
     "0000CC"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Fiji",
+    "Zimbabwe",
+    "Micronesia",
+    "Seychelles",
+    "Solomon_Islands",
+    "France"
   ]
 }

@@ -7,18 +7,18 @@
   "area": 163610,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "006600",
     "000000",
     "ffff00",
     "99CCFF",
-    "0000CC"
+    "FF6600"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Trinidad_and_Tobago",
+    "Tonga",
+    "Togo",
+    "Thailand",
+    "Tanzania",
+    "Comoros"
   ]
 }

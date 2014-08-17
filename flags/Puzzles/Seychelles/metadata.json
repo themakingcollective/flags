@@ -7,18 +7,18 @@
   "area": 451,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Seychelles.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "FF6600",
     "000000",
-    "ffff00",
-    "99CCFF",
-    "0000CC"
+    "CC0099",
+    "993300",
+    "999966"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Central_African_Republic",
+    "Uganda",
+    "Samoa",
+    "Solomon_Islands",
+    "Suriname",
+    "Trinidad_and_Tobago"
   ]
 }

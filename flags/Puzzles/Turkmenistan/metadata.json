@@ -7,18 +7,18 @@
   "area": 488100,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Turkmenistan.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "CC0000",
     "000000",
-    "ffff00",
+    "FFCC00",
     "99CCFF",
-    "0000CC"
+    "FFCC66"
   ],
   "incorrect_patterns": [
     "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Belarus",
+    "Saudi_Arabia",
+    "Brunei",
+    "Qatar",
+    "Nauru"
   ]
 }

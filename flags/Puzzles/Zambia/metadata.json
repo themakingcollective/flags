@@ -8,17 +8,17 @@
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Zambia.svg",
   "incorrect_colors": [
     "FFFFFF",
-    "000000",
+    "0000CC",
     "ffff00",
-    "99CCFF",
-    "0000CC"
+    "CC0099",
+    "999966"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
+    "Zimbabwe",
+    "Uganda",
+    "Burundi",
+    "South_Africa",
     "Angola",
-    "Andorra"
+    "Central_African_Republic"
   ]
 }

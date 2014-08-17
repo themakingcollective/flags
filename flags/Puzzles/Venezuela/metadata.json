@@ -9,16 +9,16 @@
   "incorrect_colors": [
     "FFFFFF",
     "000000",
-    "ffff00",
     "99CCFF",
-    "0000CC"
+    "00CC00",
+    "CC0099"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Guatemala",
+    "Haiti",
+    "Kiribati",
+    "Kyrgyzstan",
+    "Vatican_City",
+    "Trinidad_and_Tobago"
   ]
 }

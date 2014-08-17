@@ -7,11 +7,11 @@
   "area": 697,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "006600",
     "000000",
     "ffff00",
     "99CCFF",
-    "0000CC"
+    "FF6600"
   ],
   "incorrect_patterns": [
     "Ireland",

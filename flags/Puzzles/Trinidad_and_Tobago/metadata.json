@@ -7,18 +7,18 @@
   "area": 5130,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Trinidad_and_Tobago.svg",
   "incorrect_colors": [
-    "FFFFFF",
-    "000000",
+    "006600",
+    "999966",
     "ffff00",
     "99CCFF",
-    "0000CC"
+    "FF6600"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Tanzania",
+    "Fiji",
+    "United_Kingdom",
+    "Thailand",
+    "Seychelles",
+    "Swaziland"
   ]
 }

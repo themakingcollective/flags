@@ -7,18 +7,18 @@
   "area": 83600,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_United_Arab_Emirates.svg",
   "incorrect_colors": [
-    "FFFFFF",
-    "000000",
-    "ffff00",
     "99CCFF",
-    "0000CC"
+    "FFCC00",
+    "FF6600",
+    "CC0099",
+    "993300"
   ],
   "incorrect_patterns": [
-    "Afghanistan",
-    "Albania",
-    "Algeria",
-    "Argentina",
-    "Angola",
-    "Andorra"
+    "Egypt",
+    "Qatar",
+    "Saudi_Arabia",
+    "Mauritius",
+    "South_Sudan",
+    "Eritrea"
   ]
 }
