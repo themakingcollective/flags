@@ -87,11 +87,8 @@ static NSArray *allCache;
     
     NSArray *colors = [Utils unique:correct];
     
-    while ([colors count] < 6) {
-        NSLog(@"Not enough colours for %@", [self name]);
-        NSMutableArray *mutableColors = [NSMutableArray arrayWithArray:colors];
-        [mutableColors addObject:[UIColor whiteColor]];
-        colors = [NSArray arrayWithArray:mutableColors];
+    if ([colors count] < 6) {
+        NSLog(@"%@ only has %d colours", [self name], [colors count]);
     }
     
     colors = [Utils pickSample:colors size:6];
