@@ -18,6 +18,14 @@
 		8321C70F18DDDEE400970E8F /* Puzzles-Hard-Explain.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70D18DDDEE400970E8F /* Puzzles-Hard-Explain.png */; };
 		832D81721956CD30000600DA /* Quiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 832D81711956CD30000600DA /* Quiz.m */; };
 		832D81751956D6E6000600DA /* ResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 832D81741956D6E6000600DA /* ResultsController.m */; };
+		83454D0419A282C2005A5DDB /* Quiz-Answer.png in Resources */ = {isa = PBXBuildFile; fileRef = 83454D0319A282C2005A5DDB /* Quiz-Answer.png */; };
+		83454D0519A282C2005A5DDB /* Quiz-Answer.png in Resources */ = {isa = PBXBuildFile; fileRef = 83454D0319A282C2005A5DDB /* Quiz-Answer.png */; };
+		83454D0719A28307005A5DDB /* Quiz-Answer-Correct.png in Resources */ = {isa = PBXBuildFile; fileRef = 83454D0619A28307005A5DDB /* Quiz-Answer-Correct.png */; };
+		83454D0819A28307005A5DDB /* Quiz-Answer-Correct.png in Resources */ = {isa = PBXBuildFile; fileRef = 83454D0619A28307005A5DDB /* Quiz-Answer-Correct.png */; };
+		83454D0D19A2833D005A5DDB /* Quiz-Answer-Outlined.png in Resources */ = {isa = PBXBuildFile; fileRef = 83454D0C19A2833D005A5DDB /* Quiz-Answer-Outlined.png */; };
+		83454D0E19A2833D005A5DDB /* Quiz-Answer-Outlined.png in Resources */ = {isa = PBXBuildFile; fileRef = 83454D0C19A2833D005A5DDB /* Quiz-Answer-Outlined.png */; };
+		83454D1019A28364005A5DDB /* Quiz-Answer-Incorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = 83454D0F19A28364005A5DDB /* Quiz-Answer-Incorrect.png */; };
+		83454D1119A28364005A5DDB /* Quiz-Answer-Incorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = 83454D0F19A28364005A5DDB /* Quiz-Answer-Incorrect.png */; };
 		83523D1A1968C1E500D8B9E9 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83523D191968C1E500D8B9E9 /* BaseViewController.m */; };
 		8378484118DDAF8E00C5AC61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378484018DDAF8E00C5AC61 /* Foundation.framework */; };
 		8378484318DDAF8E00C5AC61 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378484218DDAF8E00C5AC61 /* CoreGraphics.framework */; };
@@ -153,6 +161,10 @@
 		832D81711956CD30000600DA /* Quiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quiz.m; sourceTree = "<group>"; };
 		832D81731956D6E6000600DA /* ResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsController.h; sourceTree = "<group>"; };
 		832D81741956D6E6000600DA /* ResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsController.m; sourceTree = "<group>"; };
+		83454D0319A282C2005A5DDB /* Quiz-Answer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Answer.png"; sourceTree = "<group>"; };
+		83454D0619A28307005A5DDB /* Quiz-Answer-Correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Answer-Correct.png"; sourceTree = "<group>"; };
+		83454D0C19A2833D005A5DDB /* Quiz-Answer-Outlined.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Answer-Outlined.png"; sourceTree = "<group>"; };
+		83454D0F19A28364005A5DDB /* Quiz-Answer-Incorrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Answer-Incorrect.png"; sourceTree = "<group>"; };
 		83523D181968C1E500D8B9E9 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		83523D191968C1E500D8B9E9 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		8378483D18DDAF8E00C5AC61 /* flags_production.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flags_production.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -336,6 +348,10 @@
 		8378487E18DDBCC500C5AC61 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				83454D0319A282C2005A5DDB /* Quiz-Answer.png */,
+				83454D0C19A2833D005A5DDB /* Quiz-Answer-Outlined.png */,
+				83454D0619A28307005A5DDB /* Quiz-Answer-Correct.png */,
+				83454D0F19A28364005A5DDB /* Quiz-Answer-Incorrect.png */,
 				83C906C4199AB30D006FCD42 /* Build-Menu-Button.png */,
 				83C906C5199AB30D006FCD42 /* Guess-Menu-Button.png */,
 				83C906BE199AB301006FCD42 /* Play-Colours-Button.png */,
@@ -532,6 +548,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83454D1019A28364005A5DDB /* Quiz-Answer-Incorrect.png in Resources */,
 				83D4A0241968187B00C0D694 /* Easy-Play-Again.png in Resources */,
 				83A6D931198565D600A97596 /* flags_production-Info.plist in Resources */,
 				8378485918DDAF8E00C5AC61 /* Images.xcassets in Resources */,
@@ -549,6 +566,7 @@
 				83C906C8199AB30D006FCD42 /* Guess-Menu-Button.png in Resources */,
 				838CDEC7197AED3000CF9726 /* Next-Button-Hard-Enabled.png in Resources */,
 				83D09E081971212D0088965E /* Done-Button-Hard-Disabled.png in Resources */,
+				83454D0719A28307005A5DDB /* Quiz-Answer-Correct.png in Resources */,
 				83D4A02B196819EE00C0D694 /* Quiz-Bar-Icon.png in Resources */,
 				838CDEC6197AED3000CF9726 /* Next-Button-Easy-Enabled.png in Resources */,
 				83C906C6199AB30D006FCD42 /* Build-Menu-Button.png in Resources */,
@@ -556,6 +574,8 @@
 				8378488618DDBCD500C5AC61 /* BPreplay-Bold.ttf in Resources */,
 				8321C70B18DDDD7A00970E8F /* Quiz-View-Button.png in Resources */,
 				8378488E18DDCF5900C5AC61 /* Puzzles-Hard-Button.png in Resources */,
+				83454D0D19A2833D005A5DDB /* Quiz-Answer-Outlined.png in Resources */,
+				83454D0419A282C2005A5DDB /* Quiz-Answer.png in Resources */,
 				8378488718DDBCD500C5AC61 /* BPreplay-BoldItalic.ttf in Resources */,
 				83D4A01E1968163600C0D694 /* Easy-results-rosette.png in Resources */,
 				8321C70818DDDD7300970E8F /* Quiz-Easy-Button.png in Resources */,
@@ -575,6 +595,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83454D1119A28364005A5DDB /* Quiz-Answer-Incorrect.png in Resources */,
 				83FCBB9F1985639500415369 /* Easy-Play-Again.png in Resources */,
 				83FCBBA01985639500415369 /* Images.xcassets in Resources */,
 				83FCBBA11985639500415369 /* BPreplay-Italic.ttf in Resources */,
@@ -592,6 +613,7 @@
 				83C906C9199AB30D006FCD42 /* Guess-Menu-Button.png in Resources */,
 				83FCBBB01985639500415369 /* Done-Button-Hard-Disabled.png in Resources */,
 				83FCBBB11985639500415369 /* Quiz-Bar-Icon.png in Resources */,
+				83454D0819A28307005A5DDB /* Quiz-Answer-Correct.png in Resources */,
 				83FCBBB21985639500415369 /* Next-Button-Easy-Enabled.png in Resources */,
 				83FCBBB31985639500415369 /* BPreplay-Bold.ttf in Resources */,
 				83C906C7199AB30D006FCD42 /* Build-Menu-Button.png in Resources */,
@@ -599,6 +621,8 @@
 				83FCBBB41985639500415369 /* Quiz-View-Button.png in Resources */,
 				83FCBBC8198564D300415369 /* flags_development-Info.plist in Resources */,
 				83FCBBB51985639500415369 /* Puzzles-Hard-Button.png in Resources */,
+				83454D0E19A2833D005A5DDB /* Quiz-Answer-Outlined.png in Resources */,
+				83454D0519A282C2005A5DDB /* Quiz-Answer.png in Resources */,
 				83FCBBB61985639500415369 /* BPreplay-BoldItalic.ttf in Resources */,
 				83FCBBB71985639500415369 /* Easy-results-rosette.png in Resources */,
 				83FCBBB81985639500415369 /* Quiz-Easy-Button.png in Resources */,

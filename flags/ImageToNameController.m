@@ -95,23 +95,23 @@
 
 - (void)updateButtons
 {
-    UIColor *blue = [UIColor colorWithRed:(26 / 255.0) green:(97 / 255.0) blue:(139 / 255.0) alpha:1.0f];
+    UIImage *image = [UIImage imageNamed:@"Quiz-Answer"];
     
     Flag *aFlag = [self.choices objectAtIndex:0];
     [self.aButton setTitle:[aFlag name] forState:UIControlStateNormal];
-    [self.aButton setBackgroundColor:blue];
+    [self.aButton setBackgroundImage:image forState:UIControlStateNormal];
     
     Flag *bFlag = [self.choices objectAtIndex:1];
     [self.bButton setTitle:[bFlag name] forState:UIControlStateNormal];
-    [self.bButton setBackgroundColor:blue];
+    [self.bButton setBackgroundImage:image forState:UIControlStateNormal];
     
     Flag *cFlag = [self.choices objectAtIndex:2];
     [self.cButton setTitle:[cFlag name] forState:UIControlStateNormal];
-    [self.cButton setBackgroundColor:blue];
+    [self.cButton setBackgroundImage:image forState:UIControlStateNormal];
     
     Flag *dFlag = [self.choices objectAtIndex:3];
     [self.dButton setTitle:[dFlag name] forState:UIControlStateNormal];
-    [self.dButton setBackgroundColor:blue];
+    [self.dButton setBackgroundImage:image forState:UIControlStateNormal];
 }
 
 - (IBAction)submit:(UIButton *)button
@@ -123,19 +123,39 @@
     if ([flag isEqualTo:[self.quiz currentElement]]) {
         [self recordEvent:YES flag:flag];
         [[ScoringService sharedInstance] correctForFlag:flag andMode:@"quiz" andVariant:self.variant];
-        [button setBackgroundColor:[UIColor greenColor]];
-        delay = 0.3f;
+        [button setBackgroundImage:[UIImage imageNamed:@"Quiz-Answer-Correct"] forState:UIControlStateNormal];
+        delay = 0.5f;
     }
     else {
         [self recordEvent:NO flag:flag];
         [[ScoringService sharedInstance] incorrectForFlag:flag andMode:@"quiz" andVariant:self.variant];
-        [button setBackgroundColor:[UIColor redColor]];
+        [button setBackgroundImage:[UIImage imageNamed:@"Quiz-Answer-Incorrect"] forState:UIControlStateNormal];
+        [[self correctButton] setBackgroundImage:[UIImage imageNamed:@"Quiz-Answer-Outlined"] forState:UIControlStateNormal];
         delay = 1;
     }
     
     [self.quiz nextRound];
     [self.view setUserInteractionEnabled:NO];
     [NSTimer scheduledTimerWithTimeInterval:delay target:self selector:@selector(nextFlag:) userInfo:nil repeats:NO];
+}
+
+- (UIButton *)correctButton
+{
+    NSString *answer = [[self.quiz currentElement] name];
+    
+    if ([answer isEqualToString:self.aButton.titleLabel.text]) {
+        return self.aButton;
+    }
+    if ([answer isEqualToString:self.bButton.titleLabel.text]) {
+        return self.bButton;
+    }
+    if ([answer isEqualToString:self.cButton.titleLabel.text]) {
+        return self.cButton;
+    }
+    if ([answer isEqualToString:self.dButton.titleLabel.text]) {
+        return self.dButton;
+    }
+    return nil;
 }
 
 - (void)highlights
