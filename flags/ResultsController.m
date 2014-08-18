@@ -24,9 +24,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.navigationItem.title = [self.variant isEqualToString:@"easy"] ? @"colours" : @"patterns + colours";
 
+    [self setTitle];
     [self setRosetteImage];
     [self setRosetteFont];
     [self setPlayAgainImage];
@@ -60,6 +59,18 @@
         [self.playAgainButton setHidden:YES];
         [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(highlights:) userInfo:nil repeats:NO];
     }
+}
+
+- (void)setTitle
+{
+    NSString *title = @{
+      @"easy":          @"colours",
+      @"hard":          @"patterns + colours",
+      @"image_to_name": @"which country?",
+      @"name_to_image": @"which flag?"
+    }[self.variant];
+    
+    self.navigationItem.title = title;
 }
 
 - (void)setRosetteImage

@@ -28,13 +28,13 @@
     
     if (!self.mode) {
         NSDictionary *modeByTitle = @{
-            @"puzzles":            @"puzzle",
+            @"build":              @"puzzle",
             @"colours":            @"puzzle",
             @"patterns + colours": @"puzzle",
-            @"quiz":               @"quiz",
+            @"guess":              @"quiz",
             @"all flags":          @"quiz",
-            @"easy quiz":          @"quiz",
-            @"hard quiz":          @"quiz",
+            @"which country?":     @"quiz",
+            @"which flag?":        @"quiz",
         };
         
         self.mode = modeByTitle[title];
@@ -44,8 +44,8 @@
         NSDictionary *variantByTitle = @{
             @"colours":            @"easy",
             @"patterns + colours": @"hard",
-            @"easy quiz":          @"easy",
-            @"hard quiz":          @"hard",
+            @"which country?":     @"image_to_name",
+            @"which flag?":        @"name_to_image",
         };
         
         self.variant = variantByTitle[title];
@@ -113,9 +113,9 @@
              @"hard":    @[@238, @103, @65]
          },
          @"quiz": @{
-             @"default": @[@83,  @152, @180],
-             @"easy":    @[@67,  @188, @137],
-             @"hard":    @[@238, @103, @65],
+             @"default":       @[@83,  @152, @180],
+             @"image_to_name": @[@251, @191, @28],
+             @"name_to_image": @[@117, @98,  @139],
          }
     };
     

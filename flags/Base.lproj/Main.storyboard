@@ -445,7 +445,7 @@
             </objects>
             <point key="canvasLocation" x="2105" y="133"/>
         </scene>
-        <!--Base View Controller - puzzles-->
+        <!--Base View Controller - build-->
         <scene sceneID="uQL-1p-G8R">
             <objects>
                 <viewController id="hWC-i2-gza" customClass="BaseViewController" sceneMemberID="viewController">
@@ -481,14 +481,14 @@
                             </button>
                         </subviews>
                     </view>
-                    <navigationItem key="navigationItem" title="puzzles" id="2vq-Iw-r3a"/>
+                    <navigationItem key="navigationItem" title="build" id="2vq-Iw-r3a"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lOf-DH-OkC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="383" y="-249"/>
         </scene>
-        <!--Image To Name Controller - quiz-->
+        <!--Image To Name Controller - which country?-->
         <scene sceneID="uxZ-dH-9K8">
             <objects>
                 <viewController id="0oG-BK-24b" customClass="ImageToNameController" sceneMemberID="viewController">
@@ -546,7 +546,7 @@
                             </button>
                         </subviews>
                     </view>
-                    <navigationItem key="navigationItem" title="quiz" id="HcL-QM-3gm"/>
+                    <navigationItem key="navigationItem" title="which country?" id="HcL-QM-3gm"/>
                     <connections>
                         <outlet property="aButton" destination="UAR-m6-TBo" id="Gk3-jW-MYt"/>
                         <outlet property="bButton" destination="RP6-xh-QYe" id="Y1A-As-lbL"/>
@@ -559,7 +559,7 @@
             </objects>
             <point key="canvasLocation" x="-81" y="950"/>
         </scene>
-        <!--Name To Image Controller - quiz-->
+        <!--Name To Image Controller - which flag?-->
         <scene sceneID="QI1-2j-UEw">
             <objects>
                 <viewController id="Uh4-XN-ftO" customClass="NameToImageController" sceneMemberID="viewController">
@@ -591,7 +591,7 @@
                             </imageView>
                         </subviews>
                     </view>
-                    <navigationItem key="navigationItem" title="quiz" id="xk8-n6-ck1"/>
+                    <navigationItem key="navigationItem" title="which flag?" id="xk8-n6-ck1"/>
                     <connections>
                         <outlet property="aFlagView" destination="buV-Ux-OgE" id="9DJ-FL-Fpm"/>
                         <outlet property="bFlagView" destination="lxx-lr-vPI" id="2ZC-1U-2h0"/>
@@ -604,7 +604,7 @@
             </objects>
             <point key="canvasLocation" x="383" y="1216"/>
         </scene>
-        <!--Base View Controller - quiz-->
+        <!--Base View Controller - guess-->
         <scene sceneID="g7p-mb-kk0">
             <objects>
                 <viewController id="oBj-Ec-OQp" customClass="BaseViewController" sceneMemberID="viewController">
@@ -650,7 +650,7 @@
                             </button>
                         </subviews>
                     </view>
-                    <navigationItem key="navigationItem" title="quiz" id="0dO-SU-RE3"/>
+                    <navigationItem key="navigationItem" title="guess" id="0dO-SU-RE3"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </viewController>
