@@ -112,4 +112,8 @@
     [self.playAgainButton setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
 }
 
+- (IBAction)playAgainTouched:(id)sender {
+    [self playAgain];
+}
+
 @end

@@ -153,4 +153,8 @@
                                             andCorrectness:correct];
 }
 
+- (IBAction)playAgainTouched:(id)sender {
+    [self playAgain];
+}
+
 @end

@@ -14,5 +14,6 @@
 @property (nonatomic, strong) NSString *variant;
 
 - (void)returnToMenu:(UIButton *)menuButton;
+- (void)playAgain;
 
 @end

@@ -130,7 +130,7 @@
         <!--Puzzle Controller-->
         <scene sceneID="hRQ-42-rgq">
             <objects>
-                <viewController id="5AU-KU-zeq" customClass="PuzzleController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PuzzleController" id="5AU-KU-zeq" customClass="PuzzleController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NGG-TX-YM2">
                         <rect key="frame" x="0.0" y="44" width="320" height="436"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -301,18 +301,18 @@
                         <rect key="frame" x="0.0" y="44" width="320" height="436"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Easy-results-rosette.png" id="6Bx-dp-ysk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Green-Results-Rosette.png" id="6Bx-dp-ysk">
                                 <rect key="frame" x="15" y="40" width="291" height="236"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tcg-3B-XFS">
                                 <rect key="frame" x="166" y="304" width="140" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Easy-Play-Again.png">
+                                <state key="normal" backgroundImage="Green-Play-Again.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="5AU-KU-zeq" kind="push" id="POs-O3-vYW"/>
+                                    <action selector="playAgainTouched:" destination="sf6-OT-CDf" eventType="touchUpInside" id="3Ph-dK-AMf"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XFo-Cz-W3T">
@@ -386,11 +386,11 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AYY-oH-tOJ">
                                 <rect key="frame" x="160" y="376" width="140" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Easy-Play-Again.png">
+                                <state key="normal" backgroundImage="Green-Play-Again.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="5AU-KU-zeq" kind="push" id="CVA-ak-0ia"/>
+                                    <action selector="playAgainTouched:" destination="zOS-4b-pff" eventType="touchUpInside" id="c6s-ic-TCS"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" id="zLY-pc-r0o">
@@ -491,7 +491,7 @@
         <!--Image To Name Controller - which country?-->
         <scene sceneID="uxZ-dH-9K8">
             <objects>
-                <viewController id="0oG-BK-24b" customClass="ImageToNameController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImageToNameController" id="0oG-BK-24b" customClass="ImageToNameController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zrF-OG-BZi">
                         <rect key="frame" x="0.0" y="44" width="320" height="436"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -562,7 +562,7 @@
         <!--Name To Image Controller - which flag?-->
         <scene sceneID="QI1-2j-UEw">
             <objects>
-                <viewController id="Uh4-XN-ftO" customClass="NameToImageController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NameToImageController" id="Uh4-XN-ftO" customClass="NameToImageController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TW4-4a-naI">
                         <rect key="frame" x="0.0" y="44" width="320" height="436"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -721,8 +721,8 @@
     <resources>
         <image name="Build-Menu-Button.png" width="287" height="178"/>
         <image name="Done-Button-Easy-Disabled.png" width="318" height="163"/>
-        <image name="Easy-Play-Again.png" width="638" height="179"/>
-        <image name="Easy-results-rosette.png" width="1318" height="1070"/>
+        <image name="Green-Play-Again.png" width="638" height="179"/>
+        <image name="Green-Results-Rosette.png" width="1318" height="1070"/>
         <image name="Guess-Menu-Button.png" width="287" height="178"/>
         <image name="Next-Button-Easy-Enabled.png" width="336" height="179"/>
         <image name="Play-Colours-Button.png" width="263" height="40"/>
@@ -742,6 +742,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="POs-O3-vYW"/>
+        <segue reference="DRB-3Y-QWP"/>
     </inferredMetricsTieBreakers>
 </document>

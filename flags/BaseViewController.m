@@ -133,4 +133,26 @@
     return menuIcons[self.mode];
 }
 
+- (void)playAgain {
+    NSString *identifier;
+    
+    if ([self.mode isEqualToString:@"puzzle"]) {
+        identifier = @"PuzzleController";
+    }
+    else if ([self.variant isEqualToString:@"image_to_name"]) {
+        identifier = @"ImageToNameController";
+    }
+    else {
+        identifier = @"NameToImageController";
+    }
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+    BaseViewController *controller = [storyboard instantiateViewControllerWithIdentifier:identifier];
+    
+    controller.mode = self.mode;
+    controller.variant = self.variant;
+    
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
 @end
