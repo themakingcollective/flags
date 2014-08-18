@@ -43,7 +43,7 @@
     self.worstFlag = [[ScoringService sharedInstance] worstFlag];
 
     [self setViews];
-    [self setPlayAgain];
+    [self setPlayAgainImage];
     [self setBest];
     [self setWorst];
     [self setFonts];
@@ -76,9 +76,15 @@
     self.worstView.layer.borderWidth = 3.0f;
 }
 
-- (void)setPlayAgain
+- (void)setPlayAgainImage
 {
-    NSString *imageName = [self.variant isEqualToString:@"easy"] ? @"Easy-Play-Again" : @"Hard-Play-Again";
+    NSString *imageName = @{
+      @"easy":          @"Green-Play-Again",
+      @"hard":          @"Orange-Play-Again",
+      @"image_to_name": @"Yellow-Play-Again",
+      @"name_to_image": @"Purple-Play-Again"
+    }[self.variant];
+    
     [self.playAgainButton setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
 }
 

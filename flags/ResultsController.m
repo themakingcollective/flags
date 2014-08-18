@@ -26,26 +26,16 @@
     [super viewDidLoad];
     
     self.navigationItem.title = [self.variant isEqualToString:@"easy"] ? @"colours" : @"patterns + colours";
-    NSString *difficulty = [self.variant isEqualToString:@"easy"] ? @"Easy" : @"Hard";
-    
-    UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%@-Play-Again", difficulty]];
-    [self.playAgainButton setBackgroundImage:image forState:UIControlStateNormal];
-    
-    NSString *rosetteImageName = [NSString stringWithFormat:@"%@-results-rosette", difficulty];
-    [self.rosetteImageView setImage:[UIImage imageNamed:rosetteImageName]];
+
+    [self setRosetteImage];
+    [self setRosetteFont];
+    [self setPlayAgainImage];
     
     NSInteger total = [[ScoringService sharedInstance] roundsCount];
     
     UIFont *font = [UIFont fontWithName:@"Pacifico" size:60];
     [self.scoreLabel setFont:font];
     [self.totalLabel setFont:font];
-
-    UIColor *blue = [UIColor colorWithRed:(20 / 255.0f) green:(96 / 255.0f) blue:(137 / 255.0f) alpha:1.0f];
-    UIColor *pink = [UIColor colorWithRed:(207 / 255.0f) green:(62 / 255.0f) blue:(96 / 255.0f) alpha:1.0f];
-    UIColor *textColor = [self.variant isEqualToString:@"easy"] ? pink : blue;
-    
-    self.scoreLabel.textColor = textColor;
-    self.totalLabel.textColor = textColor;
     
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", [ScoringService sharedInstance].correctCount];
     self.totalLabel.text = [NSString stringWithFormat:@"%d", total];
@@ -70,6 +60,45 @@
         [self.playAgainButton setHidden:YES];
         [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(highlights:) userInfo:nil repeats:NO];
     }
+}
+
+- (void)setRosetteImage
+{
+    NSString *imageName = @{
+      @"easy":          @"Green-Results-Rosette",
+      @"hard":          @"Orange-Results-Rosette",
+      @"image_to_name": @"Yellow-Results-Rosette",
+      @"name_to_image": @"Purple-Results-Rosette"
+    }[self.variant];
+    
+    [self.rosetteImageView setImage:[UIImage imageNamed:imageName]];
+}
+
+- (void)setRosetteFont
+{
+    NSArray *rgb = @{
+      @"easy":          @[@207, @62,  @96],
+      @"hard":          @[@20,  @96,  @137],
+      @"image_to_name": @[@208, @61,  @97],
+      @"name_to_image": @[@237, @102, @65]
+    }[self.variant];
+    
+    UIColor *color = [UIColor colorWithRed:([rgb[0] floatValue] / 255) green:([rgb[1] floatValue] / 255) blue:([rgb[2] floatValue] / 255) alpha:1.0f];
+    
+    self.scoreLabel.textColor = color;
+    self.totalLabel.textColor = color;
+}
+
+- (void)setPlayAgainImage
+{
+    NSString *imageName = @{
+      @"easy":          @"Green-Play-Again",
+      @"hard":          @"Orange-Play-Again",
+      @"image_to_name": @"Yellow-Play-Again",
+      @"name_to_image": @"Purple-Play-Again"
+    }[self.variant];
+    
+    [self.playAgainButton setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
 }
 
 @end

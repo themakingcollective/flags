@@ -11,7 +11,7 @@
 #import "DifficultyScaler.h"
 #import "Flag.h"
 #import "ScoringService.h"
-#import "HighlightsController.h"
+#import "ResultsController.h"
 #import "EventRecorder.h"
 #import "Utils.h"
 
@@ -59,11 +59,6 @@
     [self nextFlag:nil];
 }
 
-- (void)viewDidLayoutSubviews
-{
-    
-}
-
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
@@ -89,7 +84,7 @@
     }
     else {
         [UIView setAnimationsEnabled:YES];
-        [self highlights];
+        [self results];
     }
 }
 
@@ -158,15 +153,15 @@
     return nil;
 }
 
-- (void)highlights
+- (void)results
 {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
-    HighlightsController *highlights = [storyboard instantiateViewControllerWithIdentifier:@"HighlightsController"];
+    ResultsController *results = [storyboard instantiateViewControllerWithIdentifier:@"ResultsController"];
     
-    highlights.mode = self.mode;
-    highlights.variant = self.variant;
+    results.mode = self.mode;
+    results.variant = self.variant;
     
-    [self.navigationController pushViewController:highlights animated:YES];
+    [self.navigationController pushViewController:results animated:YES];
 }
 
 - (void)recordEvent:(BOOL)playerWasCorrect flag:(Flag *)flag

@@ -12,7 +12,7 @@
 #import "DifficultyScaler.h"
 #import "Flag.h"
 #import "ScoringService.h"
-#import "HighlightsController.h"
+#import "ResultsController.h"
 #import "EventRecorder.h"
 
 @interface NameToImageController () <FlagViewDelegate>
@@ -88,7 +88,7 @@
     }
     else {
         [UIView setAnimationsEnabled:YES];
-        [self highlights];
+        [self results];
     }
 }
 
@@ -122,7 +122,7 @@
         [self recordEvent:YES flag:flag];
         [[ScoringService sharedInstance] correctForFlag:flag andMode:@"quiz" andVariant:self.variant];
         flagView.layer.borderColor = [UIColor greenColor].CGColor;
-        delay = 0.3f;
+        delay = 0.5f;
     }
     else {
         [self recordEvent:NO flag:flag];
@@ -136,15 +136,15 @@
     [NSTimer scheduledTimerWithTimeInterval:delay target:self selector:@selector(nextFlag:) userInfo:nil repeats:NO];
 }
 
-- (void)highlights
+- (void)results
 {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
-    HighlightsController *highlights = [storyboard instantiateViewControllerWithIdentifier:@"HighlightsController"];
+    ResultsController *results = [storyboard instantiateViewControllerWithIdentifier:@"ResultsController"];
     
-    highlights.mode = self.mode;
-    highlights.variant = self.variant;
+    results.mode = self.mode;
+    results.variant = self.variant;
     
-    [self.navigationController pushViewController:highlights animated:YES];
+    [self.navigationController pushViewController:results animated:YES];
 }
 
 - (void)recordEvent:(BOOL)playerWasCorrect flag:(Flag *)flag
