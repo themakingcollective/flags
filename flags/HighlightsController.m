@@ -35,13 +35,24 @@
 
 @implementation HighlightsController
 
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        self.bestFlag = [[ScoringService sharedInstance] bestFlag];
+        self.worstFlag = [[ScoringService sharedInstance] worstFlag];
+    }
+    return self;
+}
+
+- (BOOL)shouldShow {
+    return self.bestFlag || self.worstFlag;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    self.bestFlag = [[ScoringService sharedInstance] bestFlag];
-    self.worstFlag = [[ScoringService sharedInstance] worstFlag];
-
     [self setViews];
     [self setPlayAgainImage];
     [self setBest];

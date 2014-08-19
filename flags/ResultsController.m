@@ -17,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *playAgainButton;
 @property (weak, nonatomic) IBOutlet UIImageView *rosetteImageView;
 
+@property (strong, nonatomic) HighlightsController *highlightsController;
+
 @end
 
 @implementation ResultsController
@@ -42,22 +44,18 @@
     [self showHighlightsIfApplicable];
 }
 
-- (IBAction)highlights:(id)sender
+- (void)showHighlights:(id)sender
 {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
-    HighlightsController *highlights = [storyboard instantiateViewControllerWithIdentifier:@"HighlightsController"];
-    
-    highlights.mode = self.mode;
-    highlights.variant = self.variant;
-    
-    [self.navigationController pushViewController:highlights animated:YES];
+    [self.navigationController pushViewController:self.highlightsController animated:YES];
 }
 
 - (void)showHighlightsIfApplicable
 {
-    if ([[ScoringService sharedInstance] bestFlag] || [[ScoringService sharedInstance] worstFlag]) {
+    self.highlightsController = [self highlightsController];
+    
+    if ([self.highlightsController shouldShow]) {
         [self.playAgainButton setHidden:YES];
-        [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(highlights:) userInfo:nil repeats:NO];
+        [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(showHighlights:) userInfo:nil repeats:NO];
     }
 }
 
@@ -114,6 +112,17 @@
 
 - (IBAction)playAgainTouched:(id)sender {
     [self playAgain];
+}
+
+- (HighlightsController *)highlightsController
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+    HighlightsController *highlights = [storyboard instantiateViewControllerWithIdentifier:@"HighlightsController"];
+    
+    highlights.mode = self.mode;
+    highlights.variant = self.variant;
+    
+    return highlights;
 }
 
 @end

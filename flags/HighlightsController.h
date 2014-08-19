@@ -11,4 +11,6 @@
 
 @interface HighlightsController : BaseViewController
 
+- (BOOL)shouldShow;
+
 @end
