@@ -59,6 +59,9 @@
     [self setWorst];
     [self setFonts];
     [self setImageBorders];
+    
+    [self.bestTitleLabel sizeToFit];
+    [self.worstTitleLabel sizeToFit];
 }
 
 - (void)viewDidLayoutSubviews
@@ -107,8 +110,21 @@
         self.bestSocialLabel.text = [self socialTextForFlag:self.bestFlag andCorrectness:NO];
     }
     else {
-        self.bestView.hidden = YES;
-        // move elements
+        self.bestImage.hidden = YES;
+        self.bestLabel.hidden = YES;
+        
+        UIColor *red = [UIColor colorWithRed:(196 / 255.0) green:(33 / 255.0) blue:(39 / 255.0) alpha:1.0f];
+        
+        self.bestView.layer.borderColor = red.CGColor;
+        [self.bestTitleLabel setTextColor:red];
+        
+        self.bestTitleLabel.text = @"You didn't do so great that round";
+        self.bestSocialLabel.text = @"Why not take a look at the flags and have another go?";
+        
+        [self.bestSocialLabel setFrame:CGRectMake(20, 90, 240, 52)];
+        [self.bestSocialLabel setNumberOfLines:2];
+        [self.bestSocialLabel setFont:[UIFont fontWithName:@"BPreplay-Bold" size:17]];
+        [self.bestSocialLabel sizeToFit];
     }
 }
 
@@ -120,8 +136,21 @@
         self.worstSocialLabel.text = [self socialTextForFlag:self.worstFlag andCorrectness:YES];
     }
     else {
-        self.worstView.hidden = YES;
-        // move elements
+        self.worstImage.hidden = YES;
+        self.worstLabel.hidden = YES;
+        
+        UIColor *green = [UIColor colorWithRed:(73 / 255.0) green:(143 / 255.0) blue:(94 / 255.0) alpha:1.0f];
+        
+        self.worstView.layer.borderColor = green.CGColor;
+        [self.worstTitleLabel setTextColor:green];
+        
+        self.worstTitleLabel.text = @"You couldn't have done it better!";
+        self.worstSocialLabel.text = @"Pat yourself on the back for doing an awesome job!";
+        
+        [self.worstSocialLabel setFrame:CGRectMake(20, 90, 240, 52)];
+        [self.worstSocialLabel setNumberOfLines:2];
+        [self.worstSocialLabel setFont:[UIFont fontWithName:@"BPreplay-Bold" size:17]];
+        [self.worstSocialLabel sizeToFit];
     }
 }
 
