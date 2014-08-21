@@ -82,6 +82,7 @@
     Flag *flag = [self.quiz currentElement];
     
     if (flag) {
+        [self.difficultyScaler increaseDifficulty];
         self.label.text = [flag name];
         self.choices = [self.quiz choices:4];
         [self updateFlagViews];

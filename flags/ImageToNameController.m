@@ -77,6 +77,7 @@
     Flag *flag = [self.quiz currentElement];
     
     if (flag) {
+        [self.difficultyScaler increaseDifficulty];
         self.imageView.image = [flag image];
         [self updateBorders];
         self.choices = [self.quiz choices:4];
