@@ -25,7 +25,7 @@
 @implementation FeedbackController
 
 @synthesize playerWasCorrect=_playerWasCorrect;
-@synthesize yourFlag=_yourFlag;
+@synthesize yourFlagView=_yourFlagView;
 @synthesize correctFlag=_correctFlag;
 
 - (void)viewDidLoad
@@ -48,7 +48,15 @@
     phrases = [Utils shuffle:phrases];
     self.titleLabel.text = [phrases firstObject];
     
-    [self.view addSubview:self.yourFlag];
+    if (self.playerWasCorrect) {
+        self.yourFlagView = [[UIImageView alloc] initWithImage:[self.correctFlag image]];
+        [self.yourFlagView setContentMode:UIViewContentModeScaleAspectFit];
+        self.yourFlagView.layer.borderColor = [Utils colorWithHexString:@"777779"].CGColor;
+        self.yourFlagView.layer.borderWidth = 1.0f;
+        [self.yourFlagView.layer setCornerRadius:3.0f];
+    }
+    
+    [self.view addSubview:self.yourFlagView];
     
     [self.correctFlagView setImage:[self.correctFlag image]];
     [self.correctFlagView setContentMode:UIViewContentModeScaleAspectFit];
@@ -66,8 +74,12 @@
 
 - (void)viewDidLayoutSubviews
 {
-    [self.yourFlag setFrame:CGRectMake(20, 106, 130, 90)];
+    [self.yourFlagView setFrame:CGRectMake(20, 106, 130, 90)];
     [Utils resizeFrameToFitImage:self.correctFlagView];
+    
+    if ([self.yourFlagView isKindOfClass:[UIImageView class]]) {
+        [Utils resizeFrameToFitImage:(UIImageView *)self.yourFlagView];
+    }
     
     [super viewDidLayoutSubviews];
 }
