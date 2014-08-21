@@ -190,6 +190,7 @@
     }
     else {
         [self.layeredView setBlank];
+        [self touchFirstPaintPot];
         [self hidePaintPots];
         [self hideSubmitButton];
     }
@@ -199,10 +200,6 @@
 {
     self.paintPots = [self viewsForClass:[PaintPotView class]];
     NSArray *colors = [flag shuffledColors];
-    
-//    if ([self.paintPots count] != [colors count]) {
-//        [NSException raise:@"Counts do not match" format:@"For flag %@", [flag name]];
-//    }
     
     for (NSInteger i = 0; i < [self.paintPots count]; i++) {
         PaintPotView *pot = [self.paintPots objectAtIndex:i];
@@ -287,7 +284,6 @@
     
     [self showPaintPots];
     [self showSubmitButton];
-    [self touchFirstPaintPot];
 }
 
 - (void)recordEvent:(BOOL)playerWasCorrect flag:(Flag *)flag
