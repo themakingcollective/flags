@@ -25,7 +25,7 @@
 @implementation FeedbackController
 
 @synthesize playerWasCorrect=_playerWasCorrect;
-@synthesize layeredView=_layeredView;
+@synthesize yourFlag=_yourFlag;
 @synthesize correctFlag=_correctFlag;
 
 - (void)viewDidLoad
@@ -48,7 +48,7 @@
     phrases = [Utils shuffle:phrases];
     self.titleLabel.text = [phrases firstObject];
     
-    [self.view addSubview:self.layeredView];
+    [self.view addSubview:self.yourFlag];
     
     [self.correctFlagView setImage:[self.correctFlag image]];
     [self.correctFlagView setContentMode:UIViewContentModeScaleAspectFit];
@@ -66,7 +66,7 @@
 
 - (void)viewDidLayoutSubviews
 {
-    [self.layeredView setFrame:CGRectMake(20, 106, 130, 90)];
+    [self.yourFlag setFrame:CGRectMake(20, 106, 130, 90)];
     [Utils resizeFrameToFitImage:self.correctFlagView];
     
     [super viewDidLayoutSubviews];

@@ -15,7 +15,7 @@
 @interface FeedbackController : BaseViewController
 
 @property (nonatomic, assign) BOOL playerWasCorrect;
-@property (nonatomic, strong) LayeredView *layeredView;
+@property (nonatomic, strong) UIImageView *yourFlag;
 @property (nonatomic, strong) Flag *correctFlag;
 
 @end

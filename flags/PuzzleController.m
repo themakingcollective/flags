@@ -122,7 +122,7 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
     FeedbackController *feedback = [storyboard instantiateViewControllerWithIdentifier:@"FeedbackController"];
     
-    feedback.layeredView = [Utils copyView:self.layeredView];
+    feedback.yourFlag = [Utils copyView:self.layeredView];
     feedback.playerWasCorrect = playerWasCorrect;
     feedback.correctFlag = correctFlag;
     feedback.mode = self.mode;
