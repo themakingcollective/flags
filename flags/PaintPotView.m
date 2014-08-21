@@ -11,6 +11,8 @@
 
 @interface PaintPotView ()
 
+@property (nonatomic, strong) UIImageView *highlightView;
+
 @end
 
 @implementation PaintPotView
@@ -19,17 +21,7 @@
 
 - (void)setHighlighted:(BOOL)state
 {
-    self.layer.shadowColor = [UIColor colorWithRed:(16 / 255.0) green:(234 / 255.0) blue:(238 / 255.0) alpha:1.0f].CGColor;
-    self.layer.shadowOffset = CGSizeMake(0,0);
-    self.layer.shadowRadius = 5.0f;
-    self.layer.shadowOpacity = 1;
-    
-    if (state) {
-        self.clipsToBounds = NO;
-    }
-    else {
-        self.clipsToBounds = YES;
-    }
+    self.highlightView.hidden = !state;
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder
@@ -57,6 +49,32 @@
     else {
         self.layer.borderColor = [UIColor clearColor].CGColor;
     }
+}
+
+- (void)setupHighlights
+{
+    self.clipsToBounds = NO;
+    
+    [self setupHighlightView];
+    [self addSubview:self.highlightView];
+
+    self.highlightView.hidden = YES;
+}
+
+- (void)setupHighlightView
+{
+    NSString *imageName;
+    if (self.frame.size.height == 41) {
+        imageName = @"Highlight-45x45";
+    }
+    else if (self.frame.size.height == 33) {
+        imageName = @"Highlight-45x37";
+    }
+    
+    UIImage *highlightImage = [UIImage imageNamed:imageName];
+    UIImageView *highlightView = [[UIImageView alloc] initWithImage:highlightImage];
+    [highlightView setFrame:CGRectOffset(highlightView.frame, -2, -2)];
+    self.highlightView = highlightView;
 }
 
 @end

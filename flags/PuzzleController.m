@@ -65,21 +65,27 @@
 {
     [super viewDidLayoutSubviews];
     
-    if (![self.variant isEqualToString:@"easy"]) {
-        return;
+    if ([self.variant isEqualToString:@"easy"]) {
+        NSInteger y = 266 + 14; // 14 points padding below layered view.
+        
+        for (PaintPotView *pot in self.paintPots) {
+            CGRect f = pot.frame;
+            pot.frame = CGRectMake(f.origin.x, y, f.size.width, 41);
+            [pot setupHighlights];
+        }
+        
+        y += 41 + 16; // 16 points padding below paint pots.
+        
+        CGRect f = self.submitButton.frame;
+        self.submitButton.frame = CGRectMake(f.origin.x, y, f.size.width, f.size.height);
+    }
+    else {
+        for (PaintPotView *pot in self.paintPots) {
+            [pot setupHighlights];
+        }
     }
     
-    NSInteger y = 266 + 14; // 14 points padding below layered view.
-    
-    for (PaintPotView *pot in self.paintPots) {
-        CGRect f = pot.frame;
-        pot.frame = CGRectMake(f.origin.x, y, f.size.width, 41);
-    }
-
-    y += 41 + 16; // 16 points padding below paint pots.
-    
-    CGRect f = self.submitButton.frame;
-    self.submitButton.frame = CGRectMake(f.origin.x, y, f.size.width, f.size.height);
+    [self touchFirstPaintPot];
 }
 
 - (BOOL)nextFlag
@@ -185,15 +191,14 @@
     
     if ([self.variant isEqualToString:@"easy"]) {
         [self.layeredView setFlag:flag];
-        [self touchFirstPaintPot];
         [self removePatterns];
     }
     else {
         [self.layeredView setBlank];
-        [self touchFirstPaintPot];
         [self hidePaintPots];
         [self hideSubmitButton];
     }
+    [self touchFirstPaintPot];
 }
 
 - (void)setupPaintPots:(Flag *)flag

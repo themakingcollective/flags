@@ -20,5 +20,6 @@
 
 - (void)setHighlighted:(BOOL)state;
 - (void)setColor:(UIColor *)color;
+- (void)setupHighlights;
 
 @end
