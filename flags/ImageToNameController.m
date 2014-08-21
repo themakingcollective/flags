@@ -113,18 +113,20 @@
 - (IBAction)submit:(UIButton *)button
 {
     NSString *flagName = button.titleLabel.text;
-    Flag *flag = [Flag find_by_name:flagName];
+    Flag *guessedFlag = [Flag find_by_name:flagName];
+    Flag *correctFlag = [self.quiz currentElement];
+    
     float delay;
     
-    if ([flag isEqualTo:[self.quiz currentElement]]) {
-        [self recordEvent:YES flag:flag];
-        [[ScoringService sharedInstance] correctForFlag:flag andMode:@"quiz" andVariant:self.variant];
+    if ([guessedFlag isEqualTo:correctFlag]) {
+        [self recordEvent:YES flag:correctFlag];
+        [[ScoringService sharedInstance] correctForFlag:correctFlag andMode:@"quiz" andVariant:self.variant];
         [button setBackgroundImage:[UIImage imageNamed:@"Quiz-Answer-Correct"] forState:UIControlStateNormal];
         delay = 0.5f;
     }
     else {
-        [self recordEvent:NO flag:flag];
-        [[ScoringService sharedInstance] incorrectForFlag:flag andMode:@"quiz" andVariant:self.variant];
+        [self recordEvent:NO flag:correctFlag];
+        [[ScoringService sharedInstance] incorrectForFlag:correctFlag andMode:@"quiz" andVariant:self.variant];
         [button setBackgroundImage:[UIImage imageNamed:@"Quiz-Answer-Incorrect"] forState:UIControlStateNormal];
         [[self correctButton] setBackgroundImage:[UIImage imageNamed:@"Quiz-Answer-Outlined"] forState:UIControlStateNormal];
         delay = 1;

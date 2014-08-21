@@ -116,18 +116,20 @@
 
 - (void)touchedFlagView:(FlagView *)flagView;
 {
-    Flag *flag = [flagView flag];
+    Flag *guessedFlag = [flagView flag];
+    Flag *correctFlag = [self.quiz currentElement];
+    
     float delay;
     
-    if ([flag isEqualTo:[self.quiz currentElement]]) {
-        [self recordEvent:YES flag:flag];
-        [[ScoringService sharedInstance] correctForFlag:flag andMode:@"quiz" andVariant:self.variant];
+    if ([guessedFlag isEqualTo:correctFlag]) {
+        [self recordEvent:YES flag:correctFlag];
+        [[ScoringService sharedInstance] correctForFlag:correctFlag andMode:@"quiz" andVariant:self.variant];
         flagView.layer.borderColor = [UIColor greenColor].CGColor;
         delay = 0.5f;
     }
     else {
-        [self recordEvent:NO flag:flag];
-        [[ScoringService sharedInstance] incorrectForFlag:flag andMode:@"quiz" andVariant:self.variant];
+        [self recordEvent:NO flag:correctFlag];
+        [[ScoringService sharedInstance] incorrectForFlag:correctFlag andMode:@"quiz" andVariant:self.variant];
         flagView.layer.borderColor = [UIColor redColor].CGColor;
         delay = 1;
     }
