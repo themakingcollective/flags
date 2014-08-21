@@ -21,5 +21,7 @@
 @property (weak, nonatomic) id delegate;
 
 - (void)setFlagImage;
+- (void)setupHighlights;
+- (void)setHighlighted:(BOOL)state;
 
 @end

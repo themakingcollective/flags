@@ -71,7 +71,6 @@
         for (PaintPotView *pot in self.paintPots) {
             CGRect f = pot.frame;
             pot.frame = CGRectMake(f.origin.x, y, f.size.width, 41);
-            [pot setupHighlights];
         }
         
         y += 41 + 16; // 16 points padding below paint pots.
@@ -79,10 +78,13 @@
         CGRect f = self.submitButton.frame;
         self.submitButton.frame = CGRectMake(f.origin.x, y, f.size.width, f.size.height);
     }
-    else {
-        for (PaintPotView *pot in self.paintPots) {
-            [pot setupHighlights];
-        }
+    
+    for (PaintPotView *pot in self.paintPots) {
+        [pot setupHighlights];
+    }
+    
+    for (PatternView *pattern in self.patterns) {
+        [pattern setupHighlights];
     }
     
     [self touchFirstPaintPot];
@@ -286,6 +288,11 @@
 {
     self.currentPatternFlag = pattern.flag;
     [self.layeredView setFlag:pattern.flag];
+    
+    for (PatternView *v in self.patterns) {
+        [v setHighlighted:NO];
+    }
+    [pattern setHighlighted:YES];
     
     [self showPaintPots];
     [self showSubmitButton];
