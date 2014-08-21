@@ -112,10 +112,10 @@
     else {
         self.bestImage.hidden = YES;
         self.bestLabel.hidden = YES;
+        self.bestView.layer.borderColor = [UIColor clearColor].CGColor;
+        self.bestView.backgroundColor = [UIColor clearColor];
         
         UIColor *red = [UIColor colorWithRed:(196 / 255.0) green:(33 / 255.0) blue:(39 / 255.0) alpha:1.0f];
-        
-        self.bestView.layer.borderColor = red.CGColor;
         [self.bestTitleLabel setTextColor:red];
         
         self.bestTitleLabel.text = @"You didn't do so great that round";
@@ -138,10 +138,10 @@
     else {
         self.worstImage.hidden = YES;
         self.worstLabel.hidden = YES;
+        self.worstView.layer.borderColor = [UIColor clearColor].CGColor;
+        self.worstView.backgroundColor = [UIColor clearColor];
         
         UIColor *green = [UIColor colorWithRed:(73 / 255.0) green:(143 / 255.0) blue:(94 / 255.0) alpha:1.0f];
-        
-        self.worstView.layer.borderColor = green.CGColor;
         [self.worstTitleLabel setTextColor:green];
         
         self.worstTitleLabel.text = @"You couldn't have done it better!";
