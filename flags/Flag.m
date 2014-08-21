@@ -79,7 +79,22 @@ static NSArray *allCache;
 
 - (NSArray *)shuffledColors
 {
-    return [self pick:6 from:[self correctColors] and:[self incorrectColors]];
+    NSArray *colors = [self pick:6 from:[self correctColors] and:[self incorrectColors]];
+    
+    if ([Utils equalColors:[colors firstObject] and:[UIColor whiteColor]]) {
+        NSInteger swapIndex = rand() % 5 + 1;
+        
+        UIColor *white = [colors objectAtIndex:0];
+        UIColor *swapColor = [colors objectAtIndex:swapIndex];
+        
+        NSMutableArray *mutableColors = [NSMutableArray arrayWithArray:colors];
+        [mutableColors setObject:swapColor atIndexedSubscript:0];
+        [mutableColors setObject:white atIndexedSubscript:swapIndex];
+        
+        colors = [NSArray arrayWithArray:mutableColors];
+    }
+    
+    return colors;
 }
 
 - (NSArray *)patternFlags
