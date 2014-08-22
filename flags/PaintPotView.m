@@ -72,6 +72,7 @@
     }
     
     UIImage *highlightImage = [UIImage imageNamed:imageName];
+    highlightImage = [UIImage imageWithCGImage:highlightImage.CGImage scale:2 orientation:highlightImage.imageOrientation];
     UIImageView *highlightView = [[UIImageView alloc] initWithImage:highlightImage];
     [highlightView setFrame:CGRectOffset(highlightView.frame, -2, -2)];
     self.highlightView = highlightView;
