@@ -11,8 +11,6 @@
 		831414BF1972E5A1009D8FCC /* TableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 831414BE1972E5A1009D8FCC /* TableCell.m */; };
 		83198FC81955EA4400F3665E /* PaintPotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83198FC71955EA4400F3665E /* PaintPotView.m */; };
 		83199A931943487D00C70AAF /* LayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83199A921943487D00C70AAF /* LayerView.m */; };
-		8321C70818DDDD7300970E8F /* Quiz-Easy-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70618DDDD7300970E8F /* Quiz-Easy-Button.png */; };
-		8321C70918DDDD7300970E8F /* Quiz-Hard-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70718DDDD7300970E8F /* Quiz-Hard-Button.png */; };
 		8321C70B18DDDD7A00970E8F /* Quiz-View-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70A18DDDD7A00970E8F /* Quiz-View-Button.png */; };
 		8321C70E18DDDEE400970E8F /* Puzzles-Easy-Explain.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70C18DDDEE400970E8F /* Puzzles-Easy-Explain.png */; };
 		8321C70F18DDDEE400970E8F /* Puzzles-Hard-Explain.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70D18DDDEE400970E8F /* Puzzles-Hard-Explain.png */; };
@@ -59,6 +57,12 @@
 		83793CD319A788CF009F3956 /* Build-Bar-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 83793CD119A788CF009F3956 /* Build-Bar-Icon.png */; };
 		83793CD519A7CF2B009F3956 /* Patterns-Colours-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 83793CD419A7CF2B009F3956 /* Patterns-Colours-Button.png */; };
 		83793CD619A7CF2B009F3956 /* Patterns-Colours-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 83793CD419A7CF2B009F3956 /* Patterns-Colours-Button.png */; };
+		83793CD919A7D379009F3956 /* Which-Country-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 83793CD719A7D379009F3956 /* Which-Country-Button.png */; };
+		83793CDA19A7D379009F3956 /* Which-Country-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 83793CD719A7D379009F3956 /* Which-Country-Button.png */; };
+		83793CDB19A7D379009F3956 /* Which-Flag-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 83793CD819A7D379009F3956 /* Which-Flag-Button.png */; };
+		83793CDC19A7D379009F3956 /* Which-Flag-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 83793CD819A7D379009F3956 /* Which-Flag-Button.png */; };
+		83793CDF19A7D769009F3956 /* GuessMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83793CDE19A7D769009F3956 /* GuessMenuController.m */; };
+		83793CE019A7D769009F3956 /* GuessMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83793CDE19A7D769009F3956 /* GuessMenuController.m */; };
 		837ADE7B18E2E32B00455FF7 /* TableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837ADE7A18E2E32B00455FF7 /* TableController.m */; };
 		837B370F198E3C1100E8C152 /* HighlightsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837B370E198E3C1100E8C152 /* HighlightsController.m */; };
 		837B3710198E3C1100E8C152 /* HighlightsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837B370E198E3C1100E8C152 /* HighlightsController.m */; };
@@ -142,8 +146,6 @@
 		83FCBBB41985639500415369 /* Quiz-View-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70A18DDDD7A00970E8F /* Quiz-View-Button.png */; };
 		83FCBBB61985639500415369 /* BPreplay-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8378488218DDBCD500C5AC61 /* BPreplay-BoldItalic.ttf */; };
 		83FCBBB71985639500415369 /* Green-Results-Rosette.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A01C1968163600C0D694 /* Green-Results-Rosette.png */; };
-		83FCBBB81985639500415369 /* Quiz-Easy-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70618DDDD7300970E8F /* Quiz-Easy-Button.png */; };
-		83FCBBB91985639500415369 /* Quiz-Hard-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70718DDDD7300970E8F /* Quiz-Hard-Button.png */; };
 		83FCBBBA1985639500415369 /* Puzzles-Hard-Explain.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70D18DDDEE400970E8F /* Puzzles-Hard-Explain.png */; };
 		83FCBBBD1985639500415369 /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A01B1968143C00C0D694 /* Pacifico.ttf */; };
 		83FCBBBE1985639500415369 /* Puzzles-Easy-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8378488B18DDCEB600C5AC61 /* Puzzles-Easy-Button.png */; };
@@ -164,8 +166,6 @@
 		83198FC71955EA4400F3665E /* PaintPotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaintPotView.m; sourceTree = "<group>"; };
 		83199A911943487D00C70AAF /* LayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerView.h; sourceTree = "<group>"; };
 		83199A921943487D00C70AAF /* LayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerView.m; sourceTree = "<group>"; };
-		8321C70618DDDD7300970E8F /* Quiz-Easy-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Easy-Button.png"; sourceTree = "<group>"; };
-		8321C70718DDDD7300970E8F /* Quiz-Hard-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Hard-Button.png"; sourceTree = "<group>"; };
 		8321C70A18DDDD7A00970E8F /* Quiz-View-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-View-Button.png"; sourceTree = "<group>"; };
 		8321C70C18DDDEE400970E8F /* Puzzles-Easy-Explain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Puzzles-Easy-Explain.png"; sourceTree = "<group>"; };
 		8321C70D18DDDEE400970E8F /* Puzzles-Hard-Explain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Puzzles-Hard-Explain.png"; sourceTree = "<group>"; };
@@ -208,6 +208,10 @@
 		83793CCA19A7868D009F3956 /* Highlight-64x44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Highlight-64x44.png"; sourceTree = "<group>"; };
 		83793CD119A788CF009F3956 /* Build-Bar-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Build-Bar-Icon.png"; sourceTree = "<group>"; };
 		83793CD419A7CF2B009F3956 /* Patterns-Colours-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Patterns-Colours-Button.png"; sourceTree = "<group>"; };
+		83793CD719A7D379009F3956 /* Which-Country-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Which-Country-Button.png"; sourceTree = "<group>"; };
+		83793CD819A7D379009F3956 /* Which-Flag-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Which-Flag-Button.png"; sourceTree = "<group>"; };
+		83793CDD19A7D769009F3956 /* GuessMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuessMenuController.h; sourceTree = "<group>"; };
+		83793CDE19A7D769009F3956 /* GuessMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuessMenuController.m; sourceTree = "<group>"; };
 		837ADE7918E2E32B00455FF7 /* TableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableController.h; sourceTree = "<group>"; };
 		837ADE7A18E2E32B00455FF7 /* TableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableController.m; sourceTree = "<group>"; };
 		837B370D198E3C1100E8C152 /* HighlightsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighlightsController.h; sourceTree = "<group>"; };
@@ -398,10 +402,10 @@
 				8321C70C18DDDEE400970E8F /* Puzzles-Easy-Explain.png */,
 				8321C70D18DDDEE400970E8F /* Puzzles-Hard-Explain.png */,
 				8321C70A18DDDD7A00970E8F /* Quiz-View-Button.png */,
-				8321C70618DDDD7300970E8F /* Quiz-Easy-Button.png */,
-				8321C70718DDDD7300970E8F /* Quiz-Hard-Button.png */,
 				83793CD419A7CF2B009F3956 /* Patterns-Colours-Button.png */,
 				8378488B18DDCEB600C5AC61 /* Puzzles-Easy-Button.png */,
+				83793CD719A7D379009F3956 /* Which-Country-Button.png */,
+				83793CD819A7D379009F3956 /* Which-Flag-Button.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -470,6 +474,8 @@
 				837B371B198E727200E8C152 /* ImageToNameController.m */,
 				837B3722198E8CB500E8C152 /* NameToImageController.h */,
 				837B3723198E8CB500E8C152 /* NameToImageController.m */,
+				83793CDD19A7D769009F3956 /* GuessMenuController.h */,
+				83793CDE19A7D769009F3956 /* GuessMenuController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -602,12 +608,12 @@
 				8321C70B18DDDD7A00970E8F /* Quiz-View-Button.png in Resources */,
 				83454D0D19A2833D005A5DDB /* Quiz-Answer-Outlined.png in Resources */,
 				83454D0419A282C2005A5DDB /* Quiz-Answer.png in Resources */,
+				83793CD919A7D379009F3956 /* Which-Country-Button.png in Resources */,
 				8378488718DDBCD500C5AC61 /* BPreplay-BoldItalic.ttf in Resources */,
 				83D4A01E1968163600C0D694 /* Green-Results-Rosette.png in Resources */,
+				83793CDB19A7D379009F3956 /* Which-Flag-Button.png in Resources */,
 				83793CCD19A7868D009F3956 /* Highlight-45x45.png in Resources */,
 				83454D1C19A2897E005A5DDB /* Yellow-Results-Rosette.png in Resources */,
-				8321C70818DDDD7300970E8F /* Quiz-Easy-Button.png in Resources */,
-				8321C70918DDDD7300970E8F /* Quiz-Hard-Button.png in Resources */,
 				83C906C2199AB301006FCD42 /* Play-Patterns-Colours-Button.png in Resources */,
 				8321C70F18DDDEE400970E8F /* Puzzles-Hard-Explain.png in Resources */,
 				83454D1319A287E9005A5DDB /* Purple-Play-Again.png in Resources */,
@@ -655,12 +661,12 @@
 				83FCBBC8198564D300415369 /* flags_development-Info.plist in Resources */,
 				83454D0E19A2833D005A5DDB /* Quiz-Answer-Outlined.png in Resources */,
 				83454D0519A282C2005A5DDB /* Quiz-Answer.png in Resources */,
+				83793CDA19A7D379009F3956 /* Which-Country-Button.png in Resources */,
 				83FCBBB61985639500415369 /* BPreplay-BoldItalic.ttf in Resources */,
 				83FCBBB71985639500415369 /* Green-Results-Rosette.png in Resources */,
+				83793CDC19A7D379009F3956 /* Which-Flag-Button.png in Resources */,
 				83793CCE19A7868D009F3956 /* Highlight-45x45.png in Resources */,
 				83454D1D19A2897E005A5DDB /* Yellow-Results-Rosette.png in Resources */,
-				83FCBBB81985639500415369 /* Quiz-Easy-Button.png in Resources */,
-				83FCBBB91985639500415369 /* Quiz-Hard-Button.png in Resources */,
 				83C906C3199AB301006FCD42 /* Play-Patterns-Colours-Button.png in Resources */,
 				83FCBBBA1985639500415369 /* Puzzles-Hard-Explain.png in Resources */,
 				83454D1419A287E9005A5DDB /* Purple-Play-Again.png in Resources */,
@@ -695,6 +701,7 @@
 				83A6D934198569E800A97596 /* AggregatesService.m in Sources */,
 				837B3713198E4BD100E8C152 /* ScoringService.m in Sources */,
 				837B3724198E8CB500E8C152 /* NameToImageController.m in Sources */,
+				83793CDF19A7D769009F3956 /* GuessMenuController.m in Sources */,
 				83AEBCEA19851B6A00EE8211 /* EventRecorder.m in Sources */,
 				F94D93641930EA33008CDB1A /* Utils.m in Sources */,
 				837B3720198E8BE600E8C152 /* FlagView.m in Sources */,
@@ -726,6 +733,7 @@
 				83A6D935198569E800A97596 /* AggregatesService.m in Sources */,
 				837B3714198E4BD100E8C152 /* ScoringService.m in Sources */,
 				837B3725198E8CB500E8C152 /* NameToImageController.m in Sources */,
+				83793CE019A7D769009F3956 /* GuessMenuController.m in Sources */,
 				83FCBB921985639500415369 /* EventRecorder.m in Sources */,
 				83FCBB931985639500415369 /* Utils.m in Sources */,
 				837B3721198E8BE600E8C152 /* FlagView.m in Sources */,
