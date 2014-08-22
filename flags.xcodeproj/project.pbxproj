@@ -49,7 +49,6 @@
 		8378488818DDBCD500C5AC61 /* BPreplay-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8378488318DDBCD500C5AC61 /* BPreplay-Italic.ttf */; };
 		8378488918DDBCD500C5AC61 /* BPreplay.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8378488418DDBCD500C5AC61 /* BPreplay.ttf */; };
 		8378488C18DDCEB600C5AC61 /* Puzzles-Easy-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8378488B18DDCEB600C5AC61 /* Puzzles-Easy-Button.png */; };
-		8378488E18DDCF5900C5AC61 /* Puzzles-Hard-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8378488D18DDCF5900C5AC61 /* Puzzles-Hard-Button.png */; };
 		83793CCB19A7868D009F3956 /* Highlight-45x37.png in Resources */ = {isa = PBXBuildFile; fileRef = 83793CC819A7868D009F3956 /* Highlight-45x37.png */; };
 		83793CCC19A7868D009F3956 /* Highlight-45x37.png in Resources */ = {isa = PBXBuildFile; fileRef = 83793CC819A7868D009F3956 /* Highlight-45x37.png */; };
 		83793CCD19A7868D009F3956 /* Highlight-45x45.png in Resources */ = {isa = PBXBuildFile; fileRef = 83793CC919A7868D009F3956 /* Highlight-45x45.png */; };
@@ -58,6 +57,8 @@
 		83793CD019A7868D009F3956 /* Highlight-64x44.png in Resources */ = {isa = PBXBuildFile; fileRef = 83793CCA19A7868D009F3956 /* Highlight-64x44.png */; };
 		83793CD219A788CF009F3956 /* Build-Bar-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 83793CD119A788CF009F3956 /* Build-Bar-Icon.png */; };
 		83793CD319A788CF009F3956 /* Build-Bar-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 83793CD119A788CF009F3956 /* Build-Bar-Icon.png */; };
+		83793CD519A7CF2B009F3956 /* Patterns-Colours-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 83793CD419A7CF2B009F3956 /* Patterns-Colours-Button.png */; };
+		83793CD619A7CF2B009F3956 /* Patterns-Colours-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 83793CD419A7CF2B009F3956 /* Patterns-Colours-Button.png */; };
 		837ADE7B18E2E32B00455FF7 /* TableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837ADE7A18E2E32B00455FF7 /* TableController.m */; };
 		837B370F198E3C1100E8C152 /* HighlightsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837B370E198E3C1100E8C152 /* HighlightsController.m */; };
 		837B3710198E3C1100E8C152 /* HighlightsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837B370E198E3C1100E8C152 /* HighlightsController.m */; };
@@ -93,9 +94,7 @@
 		83D4A01E1968163600C0D694 /* Green-Results-Rosette.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A01C1968163600C0D694 /* Green-Results-Rosette.png */; };
 		83D4A01F1968163600C0D694 /* Orange-Results-Rosette.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A01D1968163600C0D694 /* Orange-Results-Rosette.png */; };
 		83D4A0241968187B00C0D694 /* Green-Play-Again.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A0201968187B00C0D694 /* Green-Play-Again.png */; };
-		83D4A0251968187B00C0D694 /* Easy-Switch-to-Hard.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A0211968187B00C0D694 /* Easy-Switch-to-Hard.png */; };
 		83D4A0261968187B00C0D694 /* Orange-Play-Again.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A0221968187B00C0D694 /* Orange-Play-Again.png */; };
-		83D4A0271968187B00C0D694 /* Hard-Switch-to-Easy.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A0231968187B00C0D694 /* Hard-Switch-to-Easy.png */; };
 		83D4A02B196819EE00C0D694 /* Quiz-Bar-Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A029196819EE00C0D694 /* Quiz-Bar-Icon.png */; };
 		83D4A02C1968304500C0D694 /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A01B1968143C00C0D694 /* Pacifico.ttf */; };
 		83D4A02E196838A100C0D694 /* Menu-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A02D196838A100C0D694 /* Menu-Button.png */; };
@@ -128,7 +127,6 @@
 		83FCBBA11985639500415369 /* BPreplay-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8378488318DDBCD500C5AC61 /* BPreplay-Italic.ttf */; };
 		83FCBBA21985639500415369 /* Done-Button-Easy-Enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A01719680E8F00C0D694 /* Done-Button-Easy-Enabled.png */; };
 		83FCBBA41985639500415369 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8378484918DDAF8E00C5AC61 /* InfoPlist.strings */; };
-		83FCBBA51985639500415369 /* Easy-Switch-to-Hard.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A0211968187B00C0D694 /* Easy-Switch-to-Hard.png */; };
 		83FCBBA61985639500415369 /* Orange-Play-Again.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A0221968187B00C0D694 /* Orange-Play-Again.png */; };
 		83FCBBA81985639500415369 /* Menu-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A02D196838A100C0D694 /* Menu-Button.png */; };
 		83FCBBAA1985639500415369 /* Puzzles-Easy-Explain.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70C18DDDEE400970E8F /* Puzzles-Easy-Explain.png */; };
@@ -142,7 +140,6 @@
 		83FCBBB21985639500415369 /* Next-Button-Easy-Enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 838CDEC4197AED3000CF9726 /* Next-Button-Easy-Enabled.png */; };
 		83FCBBB31985639500415369 /* BPreplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8378488118DDBCD500C5AC61 /* BPreplay-Bold.ttf */; };
 		83FCBBB41985639500415369 /* Quiz-View-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70A18DDDD7A00970E8F /* Quiz-View-Button.png */; };
-		83FCBBB51985639500415369 /* Puzzles-Hard-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8378488D18DDCF5900C5AC61 /* Puzzles-Hard-Button.png */; };
 		83FCBBB61985639500415369 /* BPreplay-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8378488218DDBCD500C5AC61 /* BPreplay-BoldItalic.ttf */; };
 		83FCBBB71985639500415369 /* Green-Results-Rosette.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A01C1968163600C0D694 /* Green-Results-Rosette.png */; };
 		83FCBBB81985639500415369 /* Quiz-Easy-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8321C70618DDDD7300970E8F /* Quiz-Easy-Button.png */; };
@@ -151,7 +148,6 @@
 		83FCBBBD1985639500415369 /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A01B1968143C00C0D694 /* Pacifico.ttf */; };
 		83FCBBBE1985639500415369 /* Puzzles-Easy-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8378488B18DDCEB600C5AC61 /* Puzzles-Easy-Button.png */; };
 		83FCBBBF1985639500415369 /* Done-Button-Easy-Disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A01619680E8F00C0D694 /* Done-Button-Easy-Disabled.png */; };
-		83FCBBC01985639500415369 /* Hard-Switch-to-Easy.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D4A0231968187B00C0D694 /* Hard-Switch-to-Easy.png */; };
 		83FCBBC11985639500415369 /* Done-Button-Hard-Enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D09E071971212D0088965E /* Done-Button-Hard-Enabled.png */; };
 		83FCBBC8198564D300415369 /* flags_development-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83FCBBC7198564D300415369 /* flags_development-Info.plist */; };
 		F94D93481930A4FC008CDB1A /* PuzzleController.m in Sources */ = {isa = PBXBuildFile; fileRef = F94D93471930A4FC008CDB1A /* PuzzleController.m */; };
@@ -207,11 +203,11 @@
 		8378488318DDBCD500C5AC61 /* BPreplay-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BPreplay-Italic.ttf"; sourceTree = "<group>"; };
 		8378488418DDBCD500C5AC61 /* BPreplay.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BPreplay.ttf; sourceTree = "<group>"; };
 		8378488B18DDCEB600C5AC61 /* Puzzles-Easy-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Puzzles-Easy-Button.png"; sourceTree = "<group>"; };
-		8378488D18DDCF5900C5AC61 /* Puzzles-Hard-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Puzzles-Hard-Button.png"; sourceTree = "<group>"; };
 		83793CC819A7868D009F3956 /* Highlight-45x37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Highlight-45x37.png"; sourceTree = "<group>"; };
 		83793CC919A7868D009F3956 /* Highlight-45x45.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Highlight-45x45.png"; sourceTree = "<group>"; };
 		83793CCA19A7868D009F3956 /* Highlight-64x44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Highlight-64x44.png"; sourceTree = "<group>"; };
 		83793CD119A788CF009F3956 /* Build-Bar-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Build-Bar-Icon.png"; sourceTree = "<group>"; };
+		83793CD419A7CF2B009F3956 /* Patterns-Colours-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Patterns-Colours-Button.png"; sourceTree = "<group>"; };
 		837ADE7918E2E32B00455FF7 /* TableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableController.h; sourceTree = "<group>"; };
 		837ADE7A18E2E32B00455FF7 /* TableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableController.m; sourceTree = "<group>"; };
 		837B370D198E3C1100E8C152 /* HighlightsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighlightsController.h; sourceTree = "<group>"; };
@@ -245,9 +241,7 @@
 		83D4A01C1968163600C0D694 /* Green-Results-Rosette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green-Results-Rosette.png"; sourceTree = "<group>"; };
 		83D4A01D1968163600C0D694 /* Orange-Results-Rosette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange-Results-Rosette.png"; sourceTree = "<group>"; };
 		83D4A0201968187B00C0D694 /* Green-Play-Again.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Green-Play-Again.png"; sourceTree = "<group>"; };
-		83D4A0211968187B00C0D694 /* Easy-Switch-to-Hard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Easy-Switch-to-Hard.png"; sourceTree = "<group>"; };
 		83D4A0221968187B00C0D694 /* Orange-Play-Again.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Orange-Play-Again.png"; sourceTree = "<group>"; };
-		83D4A0231968187B00C0D694 /* Hard-Switch-to-Easy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hard-Switch-to-Easy.png"; sourceTree = "<group>"; };
 		83D4A029196819EE00C0D694 /* Quiz-Bar-Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Bar-Icon.png"; sourceTree = "<group>"; };
 		83D4A02D196838A100C0D694 /* Menu-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu-Button.png"; sourceTree = "<group>"; };
 		83D4A03019683D0000C0D694 /* DifficultyScaler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DifficultyScaler.h; sourceTree = "<group>"; };
@@ -389,12 +383,10 @@
 				83D4A02D196838A100C0D694 /* Menu-Button.png */,
 				83D4A029196819EE00C0D694 /* Quiz-Bar-Icon.png */,
 				83793CD119A788CF009F3956 /* Build-Bar-Icon.png */,
-				83D4A0211968187B00C0D694 /* Easy-Switch-to-Hard.png */,
 				83D4A0201968187B00C0D694 /* Green-Play-Again.png */,
 				83D4A0221968187B00C0D694 /* Orange-Play-Again.png */,
 				83454D1519A287F2005A5DDB /* Yellow-Play-Again.png */,
 				83454D1219A287E9005A5DDB /* Purple-Play-Again.png */,
-				83D4A0231968187B00C0D694 /* Hard-Switch-to-Easy.png */,
 				83D4A01C1968163600C0D694 /* Green-Results-Rosette.png */,
 				83D4A01D1968163600C0D694 /* Orange-Results-Rosette.png */,
 				83454D1819A2897E005A5DDB /* Purple-Results-Rosette.png */,
@@ -408,7 +400,7 @@
 				8321C70A18DDDD7A00970E8F /* Quiz-View-Button.png */,
 				8321C70618DDDD7300970E8F /* Quiz-Easy-Button.png */,
 				8321C70718DDDD7300970E8F /* Quiz-Hard-Button.png */,
-				8378488D18DDCF5900C5AC61 /* Puzzles-Hard-Button.png */,
+				83793CD419A7CF2B009F3956 /* Patterns-Colours-Button.png */,
 				8378488B18DDCEB600C5AC61 /* Puzzles-Easy-Button.png */,
 			);
 			name = Images;
@@ -588,11 +580,11 @@
 				8378488818DDBCD500C5AC61 /* BPreplay-Italic.ttf in Resources */,
 				83D4A01919680E8F00C0D694 /* Done-Button-Easy-Enabled.png in Resources */,
 				8378484B18DDAF8E00C5AC61 /* InfoPlist.strings in Resources */,
-				83D4A0251968187B00C0D694 /* Easy-Switch-to-Hard.png in Resources */,
 				83D4A0261968187B00C0D694 /* Orange-Play-Again.png in Resources */,
 				83D4A02E196838A100C0D694 /* Menu-Button.png in Resources */,
 				8321C70E18DDDEE400970E8F /* Puzzles-Easy-Explain.png in Resources */,
 				8378485418DDAF8E00C5AC61 /* Main.storyboard in Resources */,
+				83793CD519A7CF2B009F3956 /* Patterns-Colours-Button.png in Resources */,
 				83D971381960379600350AF0 /* Puzzles in Resources */,
 				8378488918DDBCD500C5AC61 /* BPreplay.ttf in Resources */,
 				83D4A01F1968163600C0D694 /* Orange-Results-Rosette.png in Resources */,
@@ -608,7 +600,6 @@
 				83C906C0199AB301006FCD42 /* Play-Colours-Button.png in Resources */,
 				8378488618DDBCD500C5AC61 /* BPreplay-Bold.ttf in Resources */,
 				8321C70B18DDDD7A00970E8F /* Quiz-View-Button.png in Resources */,
-				8378488E18DDCF5900C5AC61 /* Puzzles-Hard-Button.png in Resources */,
 				83454D0D19A2833D005A5DDB /* Quiz-Answer-Outlined.png in Resources */,
 				83454D0419A282C2005A5DDB /* Quiz-Answer.png in Resources */,
 				8378488718DDBCD500C5AC61 /* BPreplay-BoldItalic.ttf in Resources */,
@@ -625,7 +616,6 @@
 				8378488C18DDCEB600C5AC61 /* Puzzles-Easy-Button.png in Resources */,
 				83D4A01819680E8F00C0D694 /* Done-Button-Easy-Disabled.png in Resources */,
 				83793CCB19A7868D009F3956 /* Highlight-45x37.png in Resources */,
-				83D4A0271968187B00C0D694 /* Hard-Switch-to-Easy.png in Resources */,
 				83D09E091971212D0088965E /* Done-Button-Hard-Enabled.png in Resources */,
 				83A4BBF519A3FF670015A746 /* Share.png in Resources */,
 			);
@@ -642,12 +632,12 @@
 				83FCBBA11985639500415369 /* BPreplay-Italic.ttf in Resources */,
 				83FCBBA21985639500415369 /* Done-Button-Easy-Enabled.png in Resources */,
 				83FCBBA41985639500415369 /* InfoPlist.strings in Resources */,
-				83FCBBA51985639500415369 /* Easy-Switch-to-Hard.png in Resources */,
 				83FCBBA61985639500415369 /* Orange-Play-Again.png in Resources */,
 				83FCBBA81985639500415369 /* Menu-Button.png in Resources */,
 				83FCBBAA1985639500415369 /* Puzzles-Easy-Explain.png in Resources */,
 				83FCBBAB1985639500415369 /* Main.storyboard in Resources */,
 				83FCBBAC1985639500415369 /* Puzzles in Resources */,
+				83793CD619A7CF2B009F3956 /* Patterns-Colours-Button.png in Resources */,
 				83FCBBAD1985639500415369 /* BPreplay.ttf in Resources */,
 				83FCBBAE1985639500415369 /* Orange-Results-Rosette.png in Resources */,
 				83FCBBAF1985639500415369 /* Next-Button-Hard-Enabled.png in Resources */,
@@ -663,7 +653,6 @@
 				83C906C1199AB301006FCD42 /* Play-Colours-Button.png in Resources */,
 				83FCBBB41985639500415369 /* Quiz-View-Button.png in Resources */,
 				83FCBBC8198564D300415369 /* flags_development-Info.plist in Resources */,
-				83FCBBB51985639500415369 /* Puzzles-Hard-Button.png in Resources */,
 				83454D0E19A2833D005A5DDB /* Quiz-Answer-Outlined.png in Resources */,
 				83454D0519A282C2005A5DDB /* Quiz-Answer.png in Resources */,
 				83FCBBB61985639500415369 /* BPreplay-BoldItalic.ttf in Resources */,
@@ -680,7 +669,6 @@
 				83FCBBBE1985639500415369 /* Puzzles-Easy-Button.png in Resources */,
 				83FCBBBF1985639500415369 /* Done-Button-Easy-Disabled.png in Resources */,
 				83793CCC19A7868D009F3956 /* Highlight-45x37.png in Resources */,
-				83FCBBC01985639500415369 /* Hard-Switch-to-Easy.png in Resources */,
 				83FCBBC11985639500415369 /* Done-Button-Hard-Enabled.png in Resources */,
 				83A4BBF619A3FF670015A746 /* Share.png in Resources */,
 			);
