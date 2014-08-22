@@ -708,8 +708,8 @@
                         </prototypes>
                         <sections/>
                         <connections>
-                            <outlet property="dataSource" destination="dc5-RQ-q7j" id="usZ-w2-OGA"/>
-                            <outlet property="delegate" destination="dc5-RQ-q7j" id="spt-AG-xw2"/>
+                            <outlet property="dataSource" destination="dc5-RQ-q7j" id="uPd-Vv-2xg"/>
+                            <outlet property="delegate" destination="dc5-RQ-q7j" id="qTk-ug-dky"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="all flags" id="4D0-63-cxB"/>

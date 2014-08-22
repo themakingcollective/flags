@@ -12,19 +12,45 @@
 
 @interface TableController () <UITableViewDataSource, UITableViewDelegate>
 
+@property (nonatomic, strong) NSMutableArray *groupedFlags;
+
 @end
 
 @implementation TableController
 
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        self.groupedFlags = [[NSMutableArray alloc] init];
+        
+        for (NSInteger i = 0; i < 26; i++) {
+            [self.groupedFlags addObject:[[NSMutableArray alloc] init]];
+        }
+        
+        for (Flag *flag in [Flag all]) {
+            NSInteger c = [[flag name] characterAtIndex:0];
+            [self.groupedFlags[c - 65] addObject:flag];
+        }
+    }
+    return self;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return [self.groupedFlags count];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [[Flag all] count];
+    return [self.groupedFlags[section] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    Flag *flag = [[Flag all] objectAtIndex:indexPath.row];
+    
+    Flag *flag = self.groupedFlags[indexPath.section][indexPath.row];
 
     tableView.separatorColor = [UIColor clearColor];
     self.view.backgroundColor = [Utils backgroundColor];
@@ -33,6 +59,14 @@
     cell.imageView.image = flag.image;
     
     return cell;
+}
+
+- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
+    return @[@"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H", @"I", @"J", @"K", @"L", @"M", @"N", @"O", @"P", @"Q", @"R", @"S", @"T", @"U", @"V", @"W", @"X", @"Y", @"Z"];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index {
+    return index;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
