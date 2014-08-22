@@ -107,7 +107,7 @@
     if (self.bestFlag) {
         self.bestImage.image = [self.bestFlag image];
         self.bestLabel.text = [self.bestFlag name];
-        self.bestSocialLabel.text = [self socialTextForFlag:self.bestFlag andCorrectness:NO];
+        self.bestSocialLabel.text = [self socialTextForFlag:self.bestFlag];
     }
     else {
         self.bestImage.hidden = YES;
@@ -133,7 +133,7 @@
     if (self.worstFlag) {
         self.worstImage.image = [self.worstFlag image];
         self.worstLabel.text = [self.worstFlag name];
-        self.worstSocialLabel.text = [self socialTextForFlag:self.worstFlag andCorrectness:YES];
+        self.worstSocialLabel.text = [self socialTextForFlag:self.worstFlag];
     }
     else {
         self.worstImage.hidden = YES;
@@ -185,12 +185,12 @@
     [self.worstImage.layer setCornerRadius:3.0f];
 }
 
-- (NSString *)socialTextForFlag:(Flag *)flag andCorrectness:(BOOL)correct
+- (NSString *)socialTextForFlag:(Flag *)flag
 {
     return [[AggregatesService sharedInstance] textForFlag:flag
                                                    andMode:self.mode
                                              andVariant:self.variant
-                                            andCorrectness:correct];
+                                            andCorrectness:YES];
 }
 
 - (IBAction)playAgainTouched:(id)sender {
