@@ -183,7 +183,7 @@
 		83454D1919A2897E005A5DDB /* Yellow-Results-Rosette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Yellow-Results-Rosette.png"; sourceTree = "<group>"; };
 		83523D181968C1E500D8B9E9 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		83523D191968C1E500D8B9E9 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		8378483D18DDAF8E00C5AC61 /* flags_production.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flags_production.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8378483D18DDAF8E00C5AC61 /* Flags!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flags!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8378484018DDAF8E00C5AC61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8378484218DDAF8E00C5AC61 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		8378484418DDAF8E00C5AC61 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -253,7 +253,7 @@
 		83D971371960379600350AF0 /* Puzzles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Puzzles; sourceTree = "<group>"; };
 		83D971391960598200350AF0 /* Flag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flag.h; sourceTree = "<group>"; };
 		83D9713A1960598200350AF0 /* Flag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flag.m; sourceTree = "<group>"; };
-		83FCBBC51985639500415369 /* flags_development.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flags_development.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83FCBBC51985639500415369 /* Flags!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flags!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FCBBC7198564D300415369 /* flags_development-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "flags_development-Info.plist"; sourceTree = "<group>"; };
 		F94D93461930A4FC008CDB1A /* PuzzleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzleController.h; sourceTree = "<group>"; };
 		F94D93471930A4FC008CDB1A /* PuzzleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzleController.m; sourceTree = "<group>"; };
@@ -310,8 +310,8 @@
 		8378483E18DDAF8E00C5AC61 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8378483D18DDAF8E00C5AC61 /* flags_production.app */,
-				83FCBBC51985639500415369 /* flags_development.app */,
+				8378483D18DDAF8E00C5AC61 /* Flags!.app */,
+				83FCBBC51985639500415369 /* Flags!.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -525,7 +525,7 @@
 			);
 			name = flags_production;
 			productName = flags;
-			productReference = 8378483D18DDAF8E00C5AC61 /* flags_production.app */;
+			productReference = 8378483D18DDAF8E00C5AC61 /* Flags!.app */;
 			productType = "com.apple.product-type.application";
 		};
 		83FCBB861985639500415369 /* flags_development */ = {
@@ -542,7 +542,7 @@
 			);
 			name = flags_development;
 			productName = flags;
-			productReference = 83FCBBC51985639500415369 /* flags_development.app */;
+			productReference = 83FCBBC51985639500415369 /* Flags!.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -849,7 +849,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "flags/flags-Prefix.pch";
 				INFOPLIST_FILE = "flags/flags_production-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Flags!";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -865,7 +865,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "flags/flags-Prefix.pch";
 				INFOPLIST_FILE = "flags/flags_production-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Flags!";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -881,7 +881,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "flags/flags-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/flags/flags_development-Info.plist";
-				PRODUCT_NAME = flags_development;
+				PRODUCT_NAME = "Flags!";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -897,7 +897,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "flags/flags-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/flags/flags_development-Info.plist";
-				PRODUCT_NAME = flags_development;
+				PRODUCT_NAME = "Flags!";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
