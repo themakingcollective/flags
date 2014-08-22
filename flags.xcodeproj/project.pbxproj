@@ -196,7 +196,7 @@
 		8378485318DDAF8E00C5AC61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8378485518DDAF8E00C5AC61 /* MenuController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuController.h; sourceTree = "<group>"; };
 		8378485618DDAF8E00C5AC61 /* MenuController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuController.m; sourceTree = "<group>"; };
-		8378485818DDAF8E00C5AC61 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = flags/Images.xcassets; sourceTree = "<group>"; };
+		8378485818DDAF8E00C5AC61 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8378485F18DDAF8E00C5AC61 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8378488118DDBCD500C5AC61 /* BPreplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BPreplay-Bold.ttf"; sourceTree = "<group>"; };
 		8378488218DDBCD500C5AC61 /* BPreplay-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BPreplay-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -302,7 +302,6 @@
 			isa = PBXGroup;
 			children = (
 				8378484618DDAF8E00C5AC61 /* flags */,
-				8378485818DDAF8E00C5AC61 /* Images.xcassets */,
 				8378483F18DDAF8E00C5AC61 /* Frameworks */,
 				8378483E18DDAF8E00C5AC61 /* Products */,
 			);
@@ -363,6 +362,7 @@
 				83D971371960379600350AF0 /* Puzzles */,
 				8378487F18DDBCCE00C5AC61 /* Fonts */,
 				8378487E18DDBCC500C5AC61 /* Images */,
+				8378485818DDAF8E00C5AC61 /* Images.xcassets */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
