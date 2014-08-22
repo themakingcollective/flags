@@ -126,8 +126,8 @@
 - (NSArray *)menuIcon
 {
     NSDictionary *menuIcons = @{
-        @"puzzle": @[@"Puzzles-Bar-Icon", @28, @28],
-        @"quiz":   @[@"Quiz-Bar-Icon",    @25, @27]
+        @"puzzle": @[@"Build-Bar-Icon",  @38, @27],
+        @"quiz":   @[@"Quiz-Bar-Icon",   @25, @27]
     };
     
     return menuIcons[self.mode];
