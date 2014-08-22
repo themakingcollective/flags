@@ -30,6 +30,11 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *rosette;
 
+@property (weak, nonatomic) IBOutlet UILabel *maxScoreTitle;
+@property (weak, nonatomic) IBOutlet UILabel *maxScoreLabel;
+@property (weak, nonatomic) IBOutlet UILabel *minScoreTitle;
+@property (weak, nonatomic) IBOutlet UILabel *minScoreLabel;
+
 @property (strong, nonatomic) Flag *bestFlag;
 @property (strong, nonatomic) Flag *worstFlag;
 
@@ -61,6 +66,7 @@
     [self setWorst];
     [self setFonts];
     [self setImageBorders];
+    [self setMinMaxPhrases];
     
     [self.bestTitleLabel sizeToFit];
     [self.worstTitleLabel sizeToFit];
@@ -112,21 +118,9 @@
         self.bestSocialLabel.text = [self socialTextForFlag:self.bestFlag];
     }
     else {
-        self.bestImage.hidden = YES;
-        self.bestLabel.hidden = YES;
-        self.bestView.layer.borderColor = [UIColor clearColor].CGColor;
-        self.bestView.backgroundColor = [UIColor clearColor];
-        
-        UIColor *red = [UIColor colorWithRed:(196 / 255.0) green:(33 / 255.0) blue:(39 / 255.0) alpha:1.0f];
-        [self.bestTitleLabel setTextColor:red];
-        
-        self.bestTitleLabel.text = @"You didn't do so great that round";
-        self.bestSocialLabel.text = @"Why not take a look at the flags and have another go?";
-        
-        [self.bestSocialLabel setFrame:CGRectMake(20, 90, 240, 52)];
-        [self.bestSocialLabel setNumberOfLines:2];
-        [self.bestSocialLabel setFont:[UIFont fontWithName:@"BPreplay-Bold" size:17]];
-        [self.bestSocialLabel sizeToFit];
+        self.bestView.hidden = YES;
+        self.minScoreTitle.hidden = NO;
+        self.minScoreLabel.hidden = NO;
         
         self.rosette.hidden = YES;
     }
@@ -140,21 +134,9 @@
         self.worstSocialLabel.text = [self socialTextForFlag:self.worstFlag];
     }
     else {
-        self.worstImage.hidden = YES;
-        self.worstLabel.hidden = YES;
-        self.worstView.layer.borderColor = [UIColor clearColor].CGColor;
-        self.worstView.backgroundColor = [UIColor clearColor];
-        
-        UIColor *green = [UIColor colorWithRed:(73 / 255.0) green:(143 / 255.0) blue:(94 / 255.0) alpha:1.0f];
-        [self.worstTitleLabel setTextColor:green];
-        
-        self.worstTitleLabel.text = @"You couldn't have done it better!";
-        self.worstSocialLabel.text = @"Pat yourself on the back for doing an awesome job!";
-        
-        [self.worstSocialLabel setFrame:CGRectMake(20, 90, 240, 52)];
-        [self.worstSocialLabel setNumberOfLines:2];
-        [self.worstSocialLabel setFont:[UIFont fontWithName:@"BPreplay-Bold" size:17]];
-        [self.worstSocialLabel sizeToFit];
+        self.worstView.hidden = YES;
+        self.maxScoreTitle.hidden = NO;
+        self.maxScoreLabel.hidden = NO;
     }
 }
 
@@ -163,10 +145,16 @@
     UIFont *titleFont = [UIFont fontWithName:@"BPreplay-Bold" size:25];
     [self.bestTitleLabel setFont:titleFont];
     [self.worstTitleLabel setFont:titleFont];
+    [self.maxScoreTitle setFont:titleFont];
+    [self.minScoreTitle setFont:titleFont];
     
     UIFont *labelFont = [UIFont fontWithName:@"BPreplay-Bold" size:20];
     [self.bestLabel setFont:labelFont];
     [self.worstLabel setFont:labelFont];
+    
+    UIFont *maxminFont = [UIFont fontWithName:@"BPreplay-Bold" size:16];
+    [self.maxScoreLabel setFont:maxminFont];
+    [self.minScoreLabel setFont:maxminFont];
 
     UIColor *socialColor = [UIColor colorWithRed:(26 / 255.0) green:(97 / 255.0) blue:(139 / 255.0) alpha:1.0f];
     self.bestSocialLabel.textColor = socialColor;
@@ -199,6 +187,41 @@
 
 - (IBAction)playAgainTouched:(id)sender {
     [self playAgain];
+}
+
+- (void)setMinMaxPhrases
+{
+    NSArray *maxTitles = @[
+        @"You couldn't have done it better!",
+        @"A perfect score. That's really impressive!",
+        @"You got every single answer right!",
+        @"Wow, that was definitely your round!",
+        @"You got everything right, yet again!",
+    ];
+    self.maxScoreTitle.text = [[Utils shuffle:maxTitles] firstObject];
+    
+    NSArray *maxLabels = @[
+        @"Pat yourself on the back for doing an awesome job! You're a superstar.",
+        @"There's no fooling you. Well done for getting everything right.",
+        @"How on earth did you manage that? You must have been practicing."
+    ];
+    self.maxScoreLabel.text = [[Utils shuffle:maxLabels] firstObject];
+    
+    NSArray *minTitles = @[
+        @"You didn't do so great that round",
+        @"Hmm, that round didn't go so well",
+        @"That was a bit of a tricky round",
+        @"Don't worry, you'll get the hang of it soon",
+        @"Oh well. There's always next time!"
+    ];
+    self.minScoreTitle.text = [[Utils shuffle:minTitles] firstObject];
+    
+    NSArray *minLabels = @[
+        @"Why not take a look at the flags and have another go?",
+        @"It might help to take a look through the different flags.",
+        @"How about trying something else, or looking through some flags?"
+    ];
+    self.minScoreLabel.text = [[Utils shuffle:minLabels] firstObject];
 }
 
 @end

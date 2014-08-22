@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8378483C18DDAF8E00C5AC61"
-               BuildableName = "flags_production.app"
+               BuildableName = "Flags!.app"
                BlueprintName = "flags_production"
                ReferencedContainer = "container:flags.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8378483C18DDAF8E00C5AC61"
-            BuildableName = "flags_production.app"
+            BuildableName = "Flags!.app"
             BlueprintName = "flags_production"
             ReferencedContainer = "container:flags.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8378483C18DDAF8E00C5AC61"
-            BuildableName = "flags_production.app"
+            BuildableName = "Flags!.app"
             BlueprintName = "flags_production"
             ReferencedContainer = "container:flags.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8378483C18DDAF8E00C5AC61"
-            BuildableName = "flags_production.app"
+            BuildableName = "Flags!.app"
             BlueprintName = "flags_production"
             ReferencedContainer = "container:flags.xcodeproj">
          </BuildableReference>

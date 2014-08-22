@@ -373,8 +373,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your best" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LzA-NJ-TxS">
-                                        <rect key="frame" x="18" y="16" width="242" height="54"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your best" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LzA-NJ-TxS">
+                                        <rect key="frame" x="18" y="15" width="242" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" red="0.28627450980392155" green="0.5607843137254902" blue="0.36862745098039218" alpha="1" colorSpace="deviceRGB"/>
@@ -391,16 +391,6 @@
                                 </state>
                                 <connections>
                                     <action selector="playAgainTouched:" destination="zOS-4b-pff" eventType="touchUpInside" id="c6s-ic-TCS"/>
-                                </connections>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dgy-LW-zWN">
-                                <rect key="frame" x="20" y="376" width="140" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Share.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="playAgainTouched:" destination="zOS-4b-pff" eventType="touchUpInside" id="FmZ-GW-K2M"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" id="zLY-pc-r0o">
@@ -424,8 +414,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your worst" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qhQ-1E-6g9">
-                                        <rect key="frame" x="18" y="16" width="242" height="54"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your worst" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qhQ-1E-6g9">
+                                        <rect key="frame" x="18" y="15" width="242" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" red="0.76862745099999996" green="0.12941176469999999" blue="0.1529411765" alpha="1" colorSpace="deviceRGB"/>
@@ -438,6 +428,34 @@
                                 <rect key="frame" x="250" y="7" width="61" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You couldn't have done it better!" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NWg-fj-5Df">
+                                <rect key="frame" x="20" y="220" width="280" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.28627450980000002" green="0.56078431370000004" blue="0.36862745099999999" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pat yourself on the back for doing an awesome job! You're a superstar." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nea-tx-fid">
+                                <rect key="frame" x="20" y="298" width="280" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.10196078431372549" green="0.38039215686274508" blue="0.54509803921568623" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You didn't do so great that round" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aeW-ow-dTP">
+                                <rect key="frame" x="20" y="40" width="280" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.76862745099999996" green="0.12941176469999999" blue="0.1529411765" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why not take a look at the flags and have another go?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vty-gG-BI6">
+                                <rect key="frame" x="20" y="118" width="280" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.1019607843" green="0.3803921569" blue="0.5450980392" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                     </view>
                     <navigationItem key="navigationItem" title="your highlights" id="bUi-a0-njH"/>
@@ -447,6 +465,10 @@
                         <outlet property="bestSocialLabel" destination="bhx-LK-hLw" id="GJu-gf-hsb"/>
                         <outlet property="bestTitleLabel" destination="LzA-NJ-TxS" id="X4r-C0-elr"/>
                         <outlet property="bestView" destination="ovh-1G-lDk" id="12d-Yv-XqI"/>
+                        <outlet property="maxScoreLabel" destination="Nea-tx-fid" id="4Kb-Cy-Pbw"/>
+                        <outlet property="maxScoreTitle" destination="NWg-fj-5Df" id="a0z-IL-14c"/>
+                        <outlet property="minScoreLabel" destination="Vty-gG-BI6" id="Ojj-RD-p47"/>
+                        <outlet property="minScoreTitle" destination="aeW-ow-dTP" id="PGg-K1-VY0"/>
                         <outlet property="playAgainButton" destination="AYY-oH-tOJ" id="K1b-V2-n0e"/>
                         <outlet property="rosette" destination="qed-91-Puk" id="PLM-vH-kxO"/>
                         <outlet property="worstImage" destination="IqW-x1-dHw" id="glJ-Yp-US5"/>
@@ -766,7 +788,6 @@
         <image name="Puzzles-Hard-Explain.png" width="1372" height="1392"/>
         <image name="Quiz-Answer.png" width="252" height="40"/>
         <image name="Quiz-View-Button.png" width="1364" height="238"/>
-        <image name="Share.png" width="141" height="40"/>
         <image name="Small-Green-Rosette.png" width="272" height="315"/>
         <image name="Which-Country-Button.png" width="1364" height="238"/>
         <image name="Which-Flag-Button.png" width="1364" height="238"/>
