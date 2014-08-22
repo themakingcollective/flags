@@ -63,6 +63,8 @@
 		83793CDC19A7D379009F3956 /* Which-Flag-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 83793CD819A7D379009F3956 /* Which-Flag-Button.png */; };
 		83793CDF19A7D769009F3956 /* GuessMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83793CDE19A7D769009F3956 /* GuessMenuController.m */; };
 		83793CE019A7D769009F3956 /* GuessMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83793CDE19A7D769009F3956 /* GuessMenuController.m */; };
+		83793CE519A7F267009F3956 /* Small-Green-Rosette.png in Resources */ = {isa = PBXBuildFile; fileRef = 83793CE419A7F267009F3956 /* Small-Green-Rosette.png */; };
+		83793CE619A7F267009F3956 /* Small-Green-Rosette.png in Resources */ = {isa = PBXBuildFile; fileRef = 83793CE419A7F267009F3956 /* Small-Green-Rosette.png */; };
 		837ADE7B18E2E32B00455FF7 /* TableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837ADE7A18E2E32B00455FF7 /* TableController.m */; };
 		837B370F198E3C1100E8C152 /* HighlightsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837B370E198E3C1100E8C152 /* HighlightsController.m */; };
 		837B3710198E3C1100E8C152 /* HighlightsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837B370E198E3C1100E8C152 /* HighlightsController.m */; };
@@ -212,6 +214,7 @@
 		83793CD819A7D379009F3956 /* Which-Flag-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Which-Flag-Button.png"; sourceTree = "<group>"; };
 		83793CDD19A7D769009F3956 /* GuessMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuessMenuController.h; sourceTree = "<group>"; };
 		83793CDE19A7D769009F3956 /* GuessMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuessMenuController.m; sourceTree = "<group>"; };
+		83793CE419A7F267009F3956 /* Small-Green-Rosette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Small-Green-Rosette.png"; sourceTree = "<group>"; };
 		837ADE7918E2E32B00455FF7 /* TableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableController.h; sourceTree = "<group>"; };
 		837ADE7A18E2E32B00455FF7 /* TableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableController.m; sourceTree = "<group>"; };
 		837B370D198E3C1100E8C152 /* HighlightsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighlightsController.h; sourceTree = "<group>"; };
@@ -370,6 +373,7 @@
 		8378487E18DDBCC500C5AC61 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				83793CE419A7F267009F3956 /* Small-Green-Rosette.png */,
 				83793CC819A7868D009F3956 /* Highlight-45x37.png */,
 				83793CC919A7868D009F3956 /* Highlight-45x45.png */,
 				83793CCA19A7868D009F3956 /* Highlight-64x44.png */,
@@ -618,6 +622,7 @@
 				8321C70F18DDDEE400970E8F /* Puzzles-Hard-Explain.png in Resources */,
 				83454D1319A287E9005A5DDB /* Purple-Play-Again.png in Resources */,
 				83454D1A19A2897E005A5DDB /* Purple-Results-Rosette.png in Resources */,
+				83793CE519A7F267009F3956 /* Small-Green-Rosette.png in Resources */,
 				83D4A02C1968304500C0D694 /* Pacifico.ttf in Resources */,
 				8378488C18DDCEB600C5AC61 /* Puzzles-Easy-Button.png in Resources */,
 				83D4A01819680E8F00C0D694 /* Done-Button-Easy-Disabled.png in Resources */,
@@ -671,6 +676,7 @@
 				83FCBBBA1985639500415369 /* Puzzles-Hard-Explain.png in Resources */,
 				83454D1419A287E9005A5DDB /* Purple-Play-Again.png in Resources */,
 				83454D1B19A2897E005A5DDB /* Purple-Results-Rosette.png in Resources */,
+				83793CE619A7F267009F3956 /* Small-Green-Rosette.png in Resources */,
 				83FCBBBD1985639500415369 /* Pacifico.ttf in Resources */,
 				83FCBBBE1985639500415369 /* Puzzles-Easy-Button.png in Resources */,
 				83FCBBBF1985639500415369 /* Done-Button-Easy-Disabled.png in Resources */,

@@ -28,6 +28,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *worstLabel;
 @property (weak, nonatomic) IBOutlet UILabel *worstSocialLabel;
 
+@property (weak, nonatomic) IBOutlet UIImageView *rosette;
+
 @property (strong, nonatomic) Flag *bestFlag;
 @property (strong, nonatomic) Flag *worstFlag;
 
@@ -125,6 +127,8 @@
         [self.bestSocialLabel setNumberOfLines:2];
         [self.bestSocialLabel setFont:[UIFont fontWithName:@"BPreplay-Bold" size:17]];
         [self.bestSocialLabel sizeToFit];
+        
+        self.rosette.hidden = YES;
     }
 }
 

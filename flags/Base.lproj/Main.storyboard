@@ -434,6 +434,10 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Small-Green-Rosette.png" id="qed-91-Puk">
+                                <rect key="frame" x="250" y="7" width="61" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                     </view>
                     <navigationItem key="navigationItem" title="your highlights" id="bUi-a0-njH"/>
@@ -444,6 +448,7 @@
                         <outlet property="bestTitleLabel" destination="LzA-NJ-TxS" id="X4r-C0-elr"/>
                         <outlet property="bestView" destination="ovh-1G-lDk" id="12d-Yv-XqI"/>
                         <outlet property="playAgainButton" destination="AYY-oH-tOJ" id="K1b-V2-n0e"/>
+                        <outlet property="rosette" destination="qed-91-Puk" id="PLM-vH-kxO"/>
                         <outlet property="worstImage" destination="IqW-x1-dHw" id="glJ-Yp-US5"/>
                         <outlet property="worstLabel" destination="LzA-Iq-Yvs" id="WqR-fQ-KKU"/>
                         <outlet property="worstSocialLabel" destination="vvZ-AH-A3C" id="znv-hf-3Oo"/>
@@ -762,6 +767,7 @@
         <image name="Quiz-Answer.png" width="252" height="40"/>
         <image name="Quiz-View-Button.png" width="1364" height="238"/>
         <image name="Share.png" width="141" height="40"/>
+        <image name="Small-Green-Rosette.png" width="272" height="315"/>
         <image name="Which-Country-Button.png" width="1364" height="238"/>
         <image name="Which-Flag-Button.png" width="1364" height="238"/>
     </resources>
