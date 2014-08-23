@@ -393,6 +393,16 @@
                                     <action selector="playAgainTouched:" destination="zOS-4b-pff" eventType="touchUpInside" id="c6s-ic-TCS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tFS-fl-111">
+                                <rect key="frame" x="20" y="376" width="130" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="All-Flags-Blue.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dc5-RQ-q7j" kind="push" id="OCp-Nk-mj2"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" id="zLY-pc-r0o">
                                 <rect key="frame" x="20" y="200" width="280" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -460,6 +470,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="your highlights" id="bUi-a0-njH"/>
                     <connections>
+                        <outlet property="allFlagsButton" destination="tFS-fl-111" id="UKI-mj-HuV"/>
                         <outlet property="bestImage" destination="Awl-RC-pRH" id="vZF-FF-p2E"/>
                         <outlet property="bestLabel" destination="kwQ-6y-OPQ" id="Kiu-51-X6I"/>
                         <outlet property="bestSocialLabel" destination="bhx-LK-hLw" id="GJu-gf-hsb"/>
@@ -774,10 +785,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Build-Menu-Button.png" width="287" height="178"/>
+        <image name="All-Flags-Blue.png" width="588" height="179"/>
+        <image name="Build-Menu-Button.png" width="1300" height="807"/>
         <image name="Done-Button-Easy-Disabled.png" width="318" height="163"/>
         <image name="Green-Results-Rosette.png" width="1318" height="1070"/>
-        <image name="Guess-Menu-Button.png" width="287" height="178"/>
+        <image name="Guess-Menu-Button.png" width="1300" height="807"/>
         <image name="Next-Button-Easy-Enabled.png" width="336" height="179"/>
         <image name="Patterns-Colours-Button.png" width="1364" height="238"/>
         <image name="Play-Again-Green.png" width="588" height="179"/>
@@ -798,6 +810,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="OCp-Nk-mj2"/>
         <segue reference="8Sg-cL-wfr"/>
     </inferredMetricsTieBreakers>
 </document>

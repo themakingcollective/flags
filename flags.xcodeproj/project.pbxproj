@@ -34,6 +34,8 @@
 		8343D99619A91A6B00BE951F /* Guess-Menu-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8343D99319A91A6B00BE951F /* Guess-Menu-Button.png */; };
 		8343D99719A91A6B00BE951F /* Build-Menu-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8343D99419A91A6B00BE951F /* Build-Menu-Button.png */; };
 		8343D99819A91A6B00BE951F /* Build-Menu-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8343D99419A91A6B00BE951F /* Build-Menu-Button.png */; };
+		8343D99A19A91ADA00BE951F /* All-Flags-Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 8343D99919A91ADA00BE951F /* All-Flags-Blue.png */; };
+		8343D99B19A91ADA00BE951F /* All-Flags-Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 8343D99919A91ADA00BE951F /* All-Flags-Blue.png */; };
 		83454D0419A282C2005A5DDB /* Quiz-Answer.png in Resources */ = {isa = PBXBuildFile; fileRef = 83454D0319A282C2005A5DDB /* Quiz-Answer.png */; };
 		83454D0519A282C2005A5DDB /* Quiz-Answer.png in Resources */ = {isa = PBXBuildFile; fileRef = 83454D0319A282C2005A5DDB /* Quiz-Answer.png */; };
 		83454D0719A28307005A5DDB /* Quiz-Answer-Correct.png in Resources */ = {isa = PBXBuildFile; fileRef = 83454D0619A28307005A5DDB /* Quiz-Answer-Correct.png */; };
@@ -185,6 +187,7 @@
 		8343D98E19A91A0000BE951F /* Purple-Results-Rosette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Purple-Results-Rosette.png"; path = "../../../Flags/Purple-Results-Rosette.png"; sourceTree = "<group>"; };
 		8343D99319A91A6B00BE951F /* Guess-Menu-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Guess-Menu-Button.png"; path = "../../../Flags/Guess-Menu-Button.png"; sourceTree = "<group>"; };
 		8343D99419A91A6B00BE951F /* Build-Menu-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Build-Menu-Button.png"; path = "../../../Flags/Build-Menu-Button.png"; sourceTree = "<group>"; };
+		8343D99919A91ADA00BE951F /* All-Flags-Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "All-Flags-Blue.png"; path = "../../../Flags/All-Flags-Blue.png"; sourceTree = "<group>"; };
 		83454D0319A282C2005A5DDB /* Quiz-Answer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Answer.png"; sourceTree = "<group>"; };
 		83454D0619A28307005A5DDB /* Quiz-Answer-Correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Answer-Correct.png"; sourceTree = "<group>"; };
 		83454D0C19A2833D005A5DDB /* Quiz-Answer-Outlined.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Answer-Outlined.png"; sourceTree = "<group>"; };
@@ -374,6 +377,7 @@
 		8378487E18DDBCC500C5AC61 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8343D99919A91ADA00BE951F /* All-Flags-Blue.png */,
 				8343D98119A9194A00BE951F /* Play-Again-Green.png */,
 				8343D98219A9194A00BE951F /* Play-Again-Yellow.png */,
 				8343D98319A9194A00BE951F /* Play-Again-Orange.png */,
@@ -614,6 +618,7 @@
 				8378488618DDBCD500C5AC61 /* BPreplay-Bold.ttf in Resources */,
 				8321C70B18DDDD7A00970E8F /* Quiz-View-Button.png in Resources */,
 				83454D0D19A2833D005A5DDB /* Quiz-Answer-Outlined.png in Resources */,
+				8343D99A19A91ADA00BE951F /* All-Flags-Blue.png in Resources */,
 				83454D0419A282C2005A5DDB /* Quiz-Answer.png in Resources */,
 				8343D98719A9194A00BE951F /* Play-Again-Yellow.png in Resources */,
 				8343D98B19A9194A00BE951F /* Play-Again-Purple.png in Resources */,
@@ -667,6 +672,7 @@
 				83FCBBB41985639500415369 /* Quiz-View-Button.png in Resources */,
 				83FCBBC8198564D300415369 /* flags_development-Info.plist in Resources */,
 				83454D0E19A2833D005A5DDB /* Quiz-Answer-Outlined.png in Resources */,
+				8343D99B19A91ADA00BE951F /* All-Flags-Blue.png in Resources */,
 				83454D0519A282C2005A5DDB /* Quiz-Answer.png in Resources */,
 				8343D98819A9194A00BE951F /* Play-Again-Yellow.png in Resources */,
 				8343D98C19A9194A00BE951F /* Play-Again-Purple.png in Resources */,

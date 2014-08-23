@@ -35,6 +35,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *minScoreTitle;
 @property (weak, nonatomic) IBOutlet UILabel *minScoreLabel;
 
+@property (weak, nonatomic) IBOutlet UIButton *allFlagsButton;
+
 @property (strong, nonatomic) Flag *bestFlag;
 @property (strong, nonatomic) Flag *worstFlag;
 
@@ -66,6 +68,7 @@
     [self setWorst];
     [self setFonts];
     [self setImageBorders];
+    [self setAllFlags];
     [self setMinMaxPhrases];
     
     [self.bestTitleLabel sizeToFit];
@@ -187,6 +190,16 @@
 
 - (IBAction)playAgainTouched:(id)sender {
     [self playAgain];
+}
+
+- (void)setAllFlags
+{
+    if (self.bestFlag) {
+        self.allFlagsButton.hidden = YES;
+    }
+    else {
+        self.allFlagsButton.hidden = NO;
+    }
 }
 
 - (void)setMinMaxPhrases
