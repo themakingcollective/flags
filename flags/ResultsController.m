@@ -105,10 +105,10 @@
 - (void)setPlayAgainImage
 {
     NSString *imageName = @{
-      @"easy":          @"Green-Play-Again",
-      @"hard":          @"Orange-Play-Again",
-      @"image_to_name": @"Yellow-Play-Again",
-      @"name_to_image": @"Purple-Play-Again"
+      @"easy":          @"Play-Again-Green",
+      @"hard":          @"Play-Again-Orange",
+      @"image_to_name": @"Play-Again-Yellow",
+      @"name_to_image": @"Play-Again-Purple"
     }[self.variant];
     
     [self.playAgainButton setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];

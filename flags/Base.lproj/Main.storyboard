@@ -306,9 +306,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tcg-3B-XFS">
-                                <rect key="frame" x="166" y="304" width="140" height="40"/>
+                                <rect key="frame" x="170" y="304" width="130" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Green-Play-Again.png">
+                                <state key="normal" backgroundImage="Play-Again-Green.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -384,9 +384,9 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AYY-oH-tOJ">
-                                <rect key="frame" x="160" y="376" width="140" height="40"/>
+                                <rect key="frame" x="170" y="376" width="130" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Green-Play-Again.png">
+                                <state key="normal" backgroundImage="Play-Again-Green.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -776,11 +776,11 @@
     <resources>
         <image name="Build-Menu-Button.png" width="287" height="178"/>
         <image name="Done-Button-Easy-Disabled.png" width="318" height="163"/>
-        <image name="Green-Play-Again.png" width="638" height="179"/>
         <image name="Green-Results-Rosette.png" width="1318" height="1070"/>
         <image name="Guess-Menu-Button.png" width="287" height="178"/>
         <image name="Next-Button-Easy-Enabled.png" width="336" height="179"/>
         <image name="Patterns-Colours-Button.png" width="1364" height="238"/>
+        <image name="Play-Again-Green.png" width="588" height="179"/>
         <image name="Play-Colours-Button.png" width="263" height="40"/>
         <image name="Play-Patterns-Colours-Button.png" width="263" height="40"/>
         <image name="Puzzles-Easy-Button.png" width="1364" height="237"/>
