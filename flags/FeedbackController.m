@@ -15,6 +15,7 @@
 @interface FeedbackController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *yoursLabel;
 @property (weak, nonatomic) IBOutlet UILabel *flagLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *correctFlagView;
 @property (weak, nonatomic) IBOutlet UILabel *socialLabel;
@@ -40,10 +41,13 @@
     
     UIColor *color = self.playerWasCorrect ? green : red;
     UIFont *titleFont = [UIFont fontWithName:@"BPreplay-Bold" size:30];
+    UIFont *nameFont = [UIFont fontWithName:@"BPreplay" size:16];
     
     [self.titleLabel setTextColor:color];
     [self.titleLabel setFont:titleFont];
     [self.socialLabel setTextColor:color];
+    [self.flagLabel setFont:nameFont];
+    [self.yoursLabel setFont:nameFont];
     
     NSArray *phrases = self.playerWasCorrect ? [self goodPhrases] : [self badPhrases];
     phrases = [Utils shuffle:phrases];
@@ -65,7 +69,9 @@
     self.correctFlagView.layer.borderWidth = 1.0f;
     [self.correctFlagView.layer setCornerRadius:3.0f];
 
-    self.flagLabel.text = [NSString stringWithFormat:@"%@:", [self.correctFlag name]];
+    NSString *flagName = [self.correctFlag name];
+    flagName = [flagName stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"."]];
+    self.flagLabel.text = [NSString stringWithFormat:@"%@:", flagName];
     
     NSString *imageName = [self.variant isEqualToString:@"easy"] ? @"Next-Button-Easy-Enabled" : @"Next-Button-Hard-Enabled";
     [self.nextButton setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];

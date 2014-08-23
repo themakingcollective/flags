@@ -287,6 +287,7 @@
                         <outlet property="nextButton" destination="xi0-X8-3sg" id="dMx-a6-fAe"/>
                         <outlet property="socialLabel" destination="0LA-yh-uO2" id="u34-2S-J2Q"/>
                         <outlet property="titleLabel" destination="olp-0z-Hos" id="zsn-Nl-yei"/>
+                        <outlet property="yoursLabel" destination="pqj-p0-5lc" id="SID-2m-pcy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OqP-2h-gme" userLabel="First Responder" sceneMemberID="firstResponder"/>
