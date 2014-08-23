@@ -41,6 +41,10 @@
     self.scoreLabel.text = [NSString stringWithFormat:@"%d", [ScoringService sharedInstance].correctCount];
     self.totalLabel.text = [NSString stringWithFormat:@"%d", total];
     
+    if ([[ScoringService sharedInstance] correctCount] >= 10) {
+        [self.scoreLabel setFrame:CGRectOffset(self.scoreLabel.frame, -7, 0)];
+    }
+    
     [self showHighlightsIfApplicable];
 }
 
