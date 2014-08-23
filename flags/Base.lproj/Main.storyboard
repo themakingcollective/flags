@@ -482,10 +482,10 @@
             </objects>
             <point key="canvasLocation" x="2105" y="133"/>
         </scene>
-        <!--Base View Controller - build-->
+        <!--Build Menu Controller - build-->
         <scene sceneID="uQL-1p-G8R">
             <objects>
-                <viewController id="hWC-i2-gza" customClass="BaseViewController" sceneMemberID="viewController">
+                <viewController id="hWC-i2-gza" customClass="BuildMenuController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5bP-PC-pYa">
                         <rect key="frame" x="0.0" y="44" width="320" height="436"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -503,7 +503,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="LVE-5r-Cca" kind="push" id="oLE-sH-Syf"/>
+                                    <action selector="optionOne:" destination="hWC-i2-gza" eventType="touchUpInside" id="Jka-Lg-hr6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jGd-9P-Hbp">
@@ -513,7 +513,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="R2e-D7-tC1" kind="push" id="k2l-nE-vb1"/>
+                                    <action selector="optionTwo:" destination="hWC-i2-gza" eventType="touchUpInside" id="9Y4-cE-lcs"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -798,6 +798,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="DRB-3Y-QWP"/>
+        <segue reference="8Sg-cL-wfr"/>
     </inferredMetricsTieBreakers>
 </document>
