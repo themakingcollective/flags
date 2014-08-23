@@ -312,15 +312,17 @@
 {
     self.mode = @"puzzle";
     
-    NSInteger previousIndex = [self.navigationController.viewControllers count] - 2;
-    BaseViewController *previousController = [self.navigationController.viewControllers objectAtIndex:previousIndex];
-    
-    if (previousController.variant) {
-        self.variant = previousController.variant;
-    }
-    else {
-        NSString *previousTitle = previousController.navigationItem.title;
-        self.variant = [previousTitle isEqualToString:@"colours"] ? @"easy" : @"hard";
+    if (!self.variant) {
+        NSInteger previousIndex = [self.navigationController.viewControllers count] - 2;
+        BaseViewController *previousController = [self.navigationController.viewControllers objectAtIndex:previousIndex];
+        
+        if (previousController.variant) {
+            self.variant = previousController.variant;
+        }
+        else {
+            NSString *previousTitle = previousController.navigationItem.title;
+            self.variant = [previousTitle isEqualToString:@"colours"] ? @"easy" : @"hard";
+        }
     }
 }
 
