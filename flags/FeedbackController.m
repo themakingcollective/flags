@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *correctFlagView;
 @property (weak, nonatomic) IBOutlet UILabel *socialLabel;
 @property (weak, nonatomic) IBOutlet UIButton *nextButton;
+@property (weak, nonatomic) IBOutlet UIImageView *iconView;
 
 @end
 
@@ -77,6 +78,10 @@
     [self.nextButton setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     
     self.socialLabel.text = [[AggregatesService sharedInstance] textForFlag:self.correctFlag andMode:@"puzzle" andVariant:self.variant andCorrectness:YES];
+    
+    if (!self.playerWasCorrect) {
+        self.iconView.image = [UIImage imageNamed:@"Transparent-Cross"];
+    }
 }
 
 - (void)viewDidLayoutSubviews

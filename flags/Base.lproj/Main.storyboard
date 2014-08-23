@@ -278,12 +278,17 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Transparent-Tick.png" id="nev-fg-q55">
+                                <rect key="frame" x="261" y="20" width="39" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                     </view>
                     <navigationItem key="navigationItem" id="zU0-jd-Tdr"/>
                     <connections>
                         <outlet property="correctFlagView" destination="FLG-8b-2Da" id="0d2-YZ-7yI"/>
                         <outlet property="flagLabel" destination="4EF-BW-d2T" id="weV-Ji-ehp"/>
+                        <outlet property="iconView" destination="nev-fg-q55" id="2hW-y1-82D"/>
                         <outlet property="nextButton" destination="xi0-X8-3sg" id="dMx-a6-fAe"/>
                         <outlet property="socialLabel" destination="0LA-yh-uO2" id="u34-2S-J2Q"/>
                         <outlet property="titleLabel" destination="olp-0z-Hos" id="zsn-Nl-yei"/>
@@ -802,6 +807,7 @@
         <image name="Quiz-Answer.png" width="252" height="40"/>
         <image name="Quiz-View-Button.png" width="1364" height="238"/>
         <image name="Small-Green-Rosette.png" width="272" height="315"/>
+        <image name="Transparent-Tick.png" width="145" height="163"/>
         <image name="Which-Country-Button.png" width="1364" height="238"/>
         <image name="Which-Flag-Button.png" width="1364" height="238"/>
     </resources>

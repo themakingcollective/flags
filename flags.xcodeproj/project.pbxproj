@@ -36,6 +36,10 @@
 		8343D99819A91A6B00BE951F /* Build-Menu-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8343D99419A91A6B00BE951F /* Build-Menu-Button.png */; };
 		8343D99A19A91ADA00BE951F /* All-Flags-Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 8343D99919A91ADA00BE951F /* All-Flags-Blue.png */; };
 		8343D99B19A91ADA00BE951F /* All-Flags-Blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 8343D99919A91ADA00BE951F /* All-Flags-Blue.png */; };
+		8343D9A719A92B2000BE951F /* Transparent-Cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 8343D9A519A92B2000BE951F /* Transparent-Cross.png */; };
+		8343D9A819A92B2000BE951F /* Transparent-Cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 8343D9A519A92B2000BE951F /* Transparent-Cross.png */; };
+		8343D9A919A92B2000BE951F /* Transparent-Tick.png in Resources */ = {isa = PBXBuildFile; fileRef = 8343D9A619A92B2000BE951F /* Transparent-Tick.png */; };
+		8343D9AA19A92B2000BE951F /* Transparent-Tick.png in Resources */ = {isa = PBXBuildFile; fileRef = 8343D9A619A92B2000BE951F /* Transparent-Tick.png */; };
 		83454D0419A282C2005A5DDB /* Quiz-Answer.png in Resources */ = {isa = PBXBuildFile; fileRef = 83454D0319A282C2005A5DDB /* Quiz-Answer.png */; };
 		83454D0519A282C2005A5DDB /* Quiz-Answer.png in Resources */ = {isa = PBXBuildFile; fileRef = 83454D0319A282C2005A5DDB /* Quiz-Answer.png */; };
 		83454D0719A28307005A5DDB /* Quiz-Answer-Correct.png in Resources */ = {isa = PBXBuildFile; fileRef = 83454D0619A28307005A5DDB /* Quiz-Answer-Correct.png */; };
@@ -188,6 +192,8 @@
 		8343D99319A91A6B00BE951F /* Guess-Menu-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Guess-Menu-Button.png"; path = "../../../Flags/Guess-Menu-Button.png"; sourceTree = "<group>"; };
 		8343D99419A91A6B00BE951F /* Build-Menu-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Build-Menu-Button.png"; path = "../../../Flags/Build-Menu-Button.png"; sourceTree = "<group>"; };
 		8343D99919A91ADA00BE951F /* All-Flags-Blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "All-Flags-Blue.png"; path = "../../../Flags/All-Flags-Blue.png"; sourceTree = "<group>"; };
+		8343D9A519A92B2000BE951F /* Transparent-Cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Transparent-Cross.png"; sourceTree = "<group>"; };
+		8343D9A619A92B2000BE951F /* Transparent-Tick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Transparent-Tick.png"; sourceTree = "<group>"; };
 		83454D0319A282C2005A5DDB /* Quiz-Answer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Answer.png"; sourceTree = "<group>"; };
 		83454D0619A28307005A5DDB /* Quiz-Answer-Correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Answer-Correct.png"; sourceTree = "<group>"; };
 		83454D0C19A2833D005A5DDB /* Quiz-Answer-Outlined.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Answer-Outlined.png"; sourceTree = "<group>"; };
@@ -377,6 +383,8 @@
 		8378487E18DDBCC500C5AC61 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8343D9A519A92B2000BE951F /* Transparent-Cross.png */,
+				8343D9A619A92B2000BE951F /* Transparent-Tick.png */,
 				8343D99919A91ADA00BE951F /* All-Flags-Blue.png */,
 				8343D98119A9194A00BE951F /* Play-Again-Green.png */,
 				8343D98219A9194A00BE951F /* Play-Again-Yellow.png */,
@@ -588,7 +596,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8343D9A919A92B2000BE951F /* Transparent-Tick.png in Resources */,
 				83454D1019A28364005A5DDB /* Quiz-Answer-Incorrect.png in Resources */,
+				8343D9A719A92B2000BE951F /* Transparent-Cross.png in Resources */,
 				83A6D931198565D600A97596 /* flags_production-Info.plist in Resources */,
 				8378485918DDAF8E00C5AC61 /* Images.xcassets in Resources */,
 				8378488818DDBCD500C5AC61 /* BPreplay-Italic.ttf in Resources */,
@@ -642,7 +652,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8343D9AA19A92B2000BE951F /* Transparent-Tick.png in Resources */,
 				83454D1119A28364005A5DDB /* Quiz-Answer-Incorrect.png in Resources */,
+				8343D9A819A92B2000BE951F /* Transparent-Cross.png in Resources */,
 				83FCBBA01985639500415369 /* Images.xcassets in Resources */,
 				83FCBBA11985639500415369 /* BPreplay-Italic.ttf in Resources */,
 				83FCBBA21985639500415369 /* Done-Button-Easy-Enabled.png in Resources */,
