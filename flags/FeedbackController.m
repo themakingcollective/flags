@@ -26,6 +26,7 @@
 
 @synthesize playerWasCorrect=_playerWasCorrect;
 @synthesize yourFlagView=_yourFlagView;
+@synthesize chosenFlag=_chosenFlag;
 @synthesize correctFlag=_correctFlag;
 
 - (void)viewDidLoad
@@ -81,6 +82,8 @@
         [Utils resizeFrameToFitImage:(UIImageView *)self.yourFlagView];
     }
     
+    [self removeBordersIfNepal];
+    
     [super viewDidLayoutSubviews];
 }
 
@@ -109,6 +112,22 @@
     results.variant = self.variant;
     
     [self.navigationController pushViewController:results animated:YES];
+}
+
+- (void)removeBordersIfNepal
+{
+    if ([[self.chosenFlag name] isEqualToString:@"Nepal"]) {
+        if ([self.yourFlagView isKindOfClass:[LayeredView class]]) {
+            [(LayeredView *)self.yourFlagView removeBorders];
+        }
+        else {
+            self.yourFlagView.layer.borderColor = [UIColor clearColor].CGColor;
+        }
+    }
+    
+    if ([[self.correctFlag name] isEqualToString:@"Nepal"]) {
+        self.correctFlagView.layer.borderColor = [UIColor clearColor].CGColor;
+    }
 }
 
 - (NSArray *)goodPhrases

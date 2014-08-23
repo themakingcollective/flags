@@ -23,5 +23,6 @@
 - (void)setBlank;
 - (void)setPaintColor:(UIColor *)color;
 - (BOOL)isCorrect;
+- (void)removeBorders;
 
 @end

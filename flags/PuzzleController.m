@@ -101,6 +101,10 @@
         [self setSubmitButtonState:NO];
         [self.nameLabel setText:[flag name]];
         [self setupChoices:flag];
+        if ([[flag name] isEqualToString:@"Nepal"]) {
+            [self.layeredView removeBorders];
+        }
+        
         return YES;
     }
     else {
@@ -115,7 +119,7 @@
     [self recordEvent:playerWasCorrect flag:correctFlag];
     
     if (playerWasCorrect) {
-        [[ScoringService sharedInstance] correctForFlag:correctFlag andMode:@"puzzle" andVariant:self.self.variant];
+        [[ScoringService sharedInstance] correctForFlag:correctFlag andMode:@"puzzle" andVariant:self.variant];
     }
     else {
         [[ScoringService sharedInstance] incorrectForFlag:correctFlag andMode:@"puzzle" andVariant:self.variant];
@@ -130,8 +134,14 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
     FeedbackController *feedback = [storyboard instantiateViewControllerWithIdentifier:@"FeedbackController"];
     
+    Flag *chosenFlag = self.currentPatternFlag;
+    if (!chosenFlag) {
+        chosenFlag = correctFlag;
+    }
+    
     feedback.yourFlagView = [Utils copyView:self.layeredView];
     feedback.playerWasCorrect = playerWasCorrect;
+    feedback.chosenFlag = chosenFlag;
     feedback.correctFlag = correctFlag;
     feedback.mode = self.mode;
     feedback.variant = self.variant;

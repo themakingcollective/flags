@@ -61,6 +61,14 @@
     return YES;
 }
 
+- (void)removeBorders
+{
+    for (LayerView *layer in [self subviews]) {
+        layer.layer.borderColor = [UIColor clearColor].CGColor;
+    }
+    [self setNeedsDisplay];
+}
+
 - (NSArray *)layerViewsFor:(Flag *)flag
 {
     NSMutableArray *layerViews = [[NSMutableArray alloc] init];

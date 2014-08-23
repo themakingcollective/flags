@@ -16,6 +16,7 @@
 
 @property (nonatomic, assign) BOOL playerWasCorrect;
 @property (nonatomic, strong) UIView *yourFlagView;
+@property (nonatomic, strong) Flag *chosenFlag;
 @property (nonatomic, strong) Flag *correctFlag;
 
 @end
