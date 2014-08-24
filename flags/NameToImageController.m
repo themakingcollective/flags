@@ -125,7 +125,7 @@
         [self recordEvent:YES flag:correctFlag];
         [[ScoringService sharedInstance] correctForFlag:correctFlag andMode:@"quiz" andVariant:self.variant];
         flagView.layer.borderColor = [UIColor greenColor].CGColor;
-        delay = 0.5f;
+        delay = 0.2f;
     }
     else {
         [self recordEvent:NO flag:correctFlag];

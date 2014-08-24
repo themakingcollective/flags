@@ -122,7 +122,7 @@
         [self recordEvent:YES flag:correctFlag];
         [[ScoringService sharedInstance] correctForFlag:correctFlag andMode:@"quiz" andVariant:self.variant];
         [button setBackgroundImage:[UIImage imageNamed:@"Quiz-Answer-Correct"] forState:UIControlStateNormal];
-        delay = 0.5f;
+        delay = 0.2f;
     }
     else {
         [self recordEvent:NO flag:correctFlag];
