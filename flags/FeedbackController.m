@@ -77,7 +77,7 @@
     NSString *imageName = [self.variant isEqualToString:@"easy"] ? @"Next-Button-Easy-Enabled" : @"Next-Button-Hard-Enabled";
     [self.nextButton setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     
-    self.socialLabel.text = [[AggregatesService sharedInstance] textForFlag:self.correctFlag andMode:@"puzzle" andVariant:self.variant andCorrectness:YES];
+    [self setSocialText];
     
     if (!self.playerWasCorrect) {
         self.iconView.image = [UIImage imageNamed:@"Transparent-Cross"];
@@ -139,6 +139,23 @@
     if ([[self.correctFlag name] isEqualToString:@"Nepal"]) {
         self.correctFlagView.layer.borderColor = [UIColor clearColor].CGColor;
     }
+}
+
+- (void)setSocialText
+{
+    UIFont *normal = [UIFont fontWithName:@"BPreplay" size:17];
+    UIFont *bold = [UIFont fontWithName:@"BPreplay-Bold" size:17];
+    
+    NSString *socialText = [[AggregatesService sharedInstance] textForFlag:self.correctFlag andMode:@"puzzle" andVariant:self.variant andCorrectness:YES];
+    
+    NSRange range = NSMakeRange(0, [socialText rangeOfString:@"%"].location + 1);
+    NSString *percentage = [socialText substringWithRange:range];
+    
+    self.socialLabel.font = normal;
+    self.socialLabel.attributedText = [Utils style:socialText with:@{
+         @"right":bold,
+         percentage:bold
+    }];
 }
 
 - (NSArray *)goodPhrases
