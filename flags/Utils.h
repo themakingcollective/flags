@@ -24,5 +24,6 @@
 + (NSFileHandle *)fileAtDocumentsPath:(NSString *)path;
 + (void)deleteDocument:(NSString *)path;
 + (NSString *)documentsPath:(NSString *)path;
++ (NSMutableAttributedString *)style:(NSString *)text with:(NSDictionary *)styles;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "GuessMenuController.h"
+#import "Utils.h"
 
 @interface GuessMenuController ()
 
@@ -21,9 +22,19 @@
 {
     [super viewDidLoad];
     
-    UIFont *font = [UIFont fontWithName:@"BPreplay" size:13];
-    self.topLabel.font = font;
-    self.bottomLabel.font = font;
+    UIFont *defaultFont = [UIFont fontWithName:@"BPreplay" size:13];
+    
+    self.topLabel.font = defaultFont;
+    self.topLabel.attributedText = [Utils style:self.topLabel.text with:@{
+        @"country":[UIFont fontWithName:@"BPreplay-Italic" size:13],
+        @"flag":[UIFont fontWithName:@"BPreplay-Bold" size:13]
+    }];
+    
+    self.bottomLabel.font = defaultFont;
+    self.bottomLabel.attributedText = [Utils style:self.bottomLabel.text with:@{
+       @"flag":[UIFont fontWithName:@"BPreplay-Italic" size:13],
+       @"country":[UIFont fontWithName:@"BPreplay-Bold" size:13]
+    }];
 }
 
 @end

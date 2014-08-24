@@ -7,6 +7,7 @@
 //
 
 #import "Utils.h"
+#import <CoreText/CoreText.h>
 
 @implementation Utils
 
@@ -236,6 +237,22 @@
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
     return [NSString stringWithFormat:@"%@/%@", documentsDirectory, path];
+}
+
++ (NSMutableAttributedString *)style:(NSString *)text with:(NSDictionary *)styles
+{
+    NSMutableAttributedString *string = [[NSMutableAttributedString alloc] initWithString:text];
+    [string beginEditing];
+    
+    for (NSString *substring in styles) {
+        UIFont *font = [styles objectForKey:substring];
+        NSRange range = [text rangeOfString:substring];
+        
+        [string addAttribute:NSFontAttributeName value:font range:range];
+    }
+    
+    [string endEditing];
+    return string;
 }
 
 @end

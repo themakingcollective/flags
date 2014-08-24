@@ -99,6 +99,8 @@
 		83A6D934198569E800A97596 /* AggregatesService.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A6D933198569E800A97596 /* AggregatesService.m */; };
 		83A6D935198569E800A97596 /* AggregatesService.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A6D933198569E800A97596 /* AggregatesService.m */; };
 		83AEBCEA19851B6A00EE8211 /* EventRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AEBCE919851B6A00EE8211 /* EventRecorder.m */; };
+		83C4EAA619A9C67000E94DC0 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C4EAA519A9C67000E94DC0 /* CoreText.framework */; };
+		83C4EAA719A9C67600E94DC0 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C4EAA519A9C67000E94DC0 /* CoreText.framework */; };
 		83C906C0199AB301006FCD42 /* Play-Colours-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 83C906BE199AB301006FCD42 /* Play-Colours-Button.png */; };
 		83C906C1199AB301006FCD42 /* Play-Colours-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 83C906BE199AB301006FCD42 /* Play-Colours-Button.png */; };
 		83C906C2199AB301006FCD42 /* Play-Patterns-Colours-Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 83C906BF199AB301006FCD42 /* Play-Patterns-Colours-Button.png */; };
@@ -250,6 +252,7 @@
 		83A6D933198569E800A97596 /* AggregatesService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AggregatesService.m; sourceTree = "<group>"; };
 		83AEBCE819851B6A00EE8211 /* EventRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventRecorder.h; sourceTree = "<group>"; };
 		83AEBCE919851B6A00EE8211 /* EventRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventRecorder.m; sourceTree = "<group>"; };
+		83C4EAA519A9C67000E94DC0 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		83C906BE199AB301006FCD42 /* Play-Colours-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play-Colours-Button.png"; sourceTree = "<group>"; };
 		83C906BF199AB301006FCD42 /* Play-Patterns-Colours-Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play-Patterns-Colours-Button.png"; sourceTree = "<group>"; };
 		83D09E061971212D0088965E /* Done-Button-Hard-Disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Done-Button-Hard-Disabled.png"; sourceTree = "<group>"; };
@@ -281,6 +284,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C4EAA719A9C67600E94DC0 /* CoreText.framework in Frameworks */,
 				8378484318DDAF8E00C5AC61 /* CoreGraphics.framework in Frameworks */,
 				8378484518DDAF8E00C5AC61 /* UIKit.framework in Frameworks */,
 				8378484118DDAF8E00C5AC61 /* Foundation.framework in Frameworks */,
@@ -291,6 +295,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C4EAA619A9C67000E94DC0 /* CoreText.framework in Frameworks */,
 				83FCBB9B1985639500415369 /* CoreGraphics.framework in Frameworks */,
 				83FCBB9C1985639500415369 /* UIKit.framework in Frameworks */,
 				83FCBB9D1985639500415369 /* Foundation.framework in Frameworks */,
@@ -332,6 +337,7 @@
 		8378483F18DDAF8E00C5AC61 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				83C4EAA519A9C67000E94DC0 /* CoreText.framework */,
 				8378484018DDAF8E00C5AC61 /* Foundation.framework */,
 				8378484218DDAF8E00C5AC61 /* CoreGraphics.framework */,
 				8378484418DDAF8E00C5AC61 /* UIKit.framework */,
