@@ -37,6 +37,10 @@
 - (void)setImage
 {
     [self setImage:[self.flag image]];
+    
+    if ([[self.flag name] isEqualToString:@"Nepal"]) {
+        self.layer.borderColor = [UIColor clearColor].CGColor;
+    }
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
