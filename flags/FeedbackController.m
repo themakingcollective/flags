@@ -148,6 +148,10 @@
     
     NSString *socialText = [[AggregatesService sharedInstance] textForFlag:self.correctFlag andMode:@"puzzle" andVariant:self.variant andCorrectness:YES];
     
+    if ([socialText isEqualToString:@""]) {
+        return;
+    }
+    
     NSRange range = NSMakeRange(0, [socialText rangeOfString:@"%"].location + 1);
     NSString *percentage = [socialText substringWithRange:range];
     
