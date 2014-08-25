@@ -240,6 +240,7 @@
         [pattern setFlag:patternFlag];
         [pattern setFlagImage];
         [pattern setDelegate:self];
+        [pattern setHighlighted:NO];
     }
 }
 
