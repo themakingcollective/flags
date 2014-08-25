@@ -33,11 +33,6 @@
 
 @implementation PuzzleController
 
-- (IBAction)shuffle:(id)sender {
-    [self setupChoices:[self.quiz currentElement]];
-    [self showPaintPots];
-}
-
 - (void)viewDidLoad
 {
     [self setModeAndVariant];
