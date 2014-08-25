@@ -627,11 +627,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="hZX-Vf-5j6" customClass="FlagView">
-                                <rect key="frame" x="20" y="173" width="130" height="90"/>
+                                <rect key="frame" x="20" y="178" width="130" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ca8-3a-cBG" customClass="FlagView">
-                                <rect key="frame" x="170" y="173" width="130" height="90"/>
+                                <rect key="frame" x="170" y="178" width="130" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>

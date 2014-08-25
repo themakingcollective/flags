@@ -29,6 +29,9 @@
 @property (nonatomic, strong) DifficultyScaler *difficultyScaler;
 @property (nonatomic, strong) NSArray *choices;
 
+@property (nonatomic, strong) UIImageView *tick;
+@property (nonatomic, strong) UIImageView *cross;
+
 @end
 
 @implementation NameToImageController
@@ -78,6 +81,9 @@
 - (void)nextFlag:(NSTimer *)timer
 {
     [self.view setUserInteractionEnabled:YES];
+    [self.tick removeFromSuperview];
+    [self.cross removeFromSuperview];
+    
     Flag *flag = [self.quiz currentElement];
     
     if (flag) {
@@ -115,14 +121,16 @@
         [self recordEvent:YES flag:correctFlag];
         [[ScoringService sharedInstance] correctForFlag:correctFlag andMode:@"quiz" andVariant:self.variant];
         [flagView correct];
-        delay = 0.2f;
+        [self addTick:flagView];
+        delay = 0.5f;
     }
     else {
         [self recordEvent:NO flag:correctFlag];
         [[ScoringService sharedInstance] incorrectForFlag:correctFlag andMode:@"quiz" andVariant:self.variant];
         [flagView incorrect];
+        [self addCross:flagView];
         [[self correctFlagView] correct];
-        delay = 1;
+        delay = 1.5f;
     }
     
     [self.quiz nextRound];
@@ -168,6 +176,34 @@
         return self.dFlagView;
     }
     return nil;
+}
+
+- (void)addTick:(FlagView *)view
+{
+    self.tick = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Opaque-Tick"]];
+    
+    self.tick.frame = CGRectMake(
+        view.frame.origin.x + view.frame.size.width - 22,
+        view.frame.origin.y - 12,
+        30,
+        32
+    );
+    
+    [self.view addSubview:self.tick];
+}
+
+- (void)addCross:(FlagView *)view
+{
+    self.cross = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Opaque-Cross"]];
+    
+    self.cross.frame = CGRectMake(
+        view.frame.origin.x + view.frame.size.width - 22,
+        view.frame.origin.y - 12,
+        30,
+        30
+    );
+
+    [self.view addSubview:self.cross];
 }
 
 @end
