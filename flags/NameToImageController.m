@@ -14,6 +14,7 @@
 #import "ScoringService.h"
 #import "ResultsController.h"
 #import "EventRecorder.h"
+#import "Utils.h"
 
 @interface NameToImageController () <FlagViewDelegate>
 
@@ -45,23 +46,21 @@
 {
     [super viewDidLoad];
     
+    self.label.font = [UIFont fontWithName:@"BPreplay-Bold" size:30];
+    
     self.difficultyScaler = [[DifficultyScaler alloc] initWithDifficultyKey:@"name-to-image-quiz"];
     
     NSArray *flags = [self.difficultyScaler scale:[Flag all]];
     self.quiz = [[Quiz alloc] initWithArray:flags andRounds:10];
     
     [[ScoringService sharedInstance] reset];
+    
+    self.aFlagView.delegate = self;
+    self.bFlagView.delegate = self;
+    self.cFlagView.delegate = self;
+    self.dFlagView.delegate = self;
+    
     [self nextFlag:nil];
-    
-    [self.aFlagView setDelegate:self];
-    [self.bFlagView setDelegate:self];
-    [self.cFlagView setDelegate:self];
-    [self.dFlagView setDelegate:self];
-    
-    self.aFlagView.layer.borderWidth = 3.0f;
-    self.bFlagView.layer.borderWidth = 3.0f;
-    self.cFlagView.layer.borderWidth = 3.0f;
-    self.dFlagView.layer.borderWidth = 3.0f;
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -85,7 +84,11 @@
         [self.difficultyScaler increaseDifficulty];
         self.label.text = [flag name];
         self.choices = [self.quiz choices:4];
-        [self updateFlagViews];
+
+        [self updateFlagView:self.aFlagView index:0];
+        [self updateFlagView:self.bFlagView index:1];
+        [self updateFlagView:self.cFlagView index:2];
+        [self updateFlagView:self.dFlagView index:3];
     }
     else {
         [UIView setAnimationsEnabled:YES];
@@ -93,25 +96,12 @@
     }
 }
 
-- (void)updateFlagViews
+- (void)updateFlagView:(FlagView *)view index:(NSInteger)index
 {
-    UIColor *blue = [UIColor colorWithRed:(110 / 255.0) green:(149 / 255.0) blue:(233 / 255.0) alpha:1.0f];
-    
-    Flag *aFlag = [self.choices objectAtIndex:0];
-    self.aFlagView.flag = aFlag; [self.aFlagView setImage];
-    self.aFlagView.layer.borderColor = blue.CGColor;
-    
-    Flag *bFlag = [self.choices objectAtIndex:1];
-    self.bFlagView.flag = bFlag; [self.bFlagView setImage];
-    self.bFlagView.layer.borderColor = blue.CGColor;
-    
-    Flag *cFlag = [self.choices objectAtIndex:2];
-    self.cFlagView.flag = cFlag; [self.cFlagView setImage];
-    self.cFlagView.layer.borderColor = blue.CGColor;
-    
-    Flag *dFlag = [self.choices objectAtIndex:3];
-    self.dFlagView.flag = dFlag; [self.dFlagView setImage];
-    self.dFlagView.layer.borderColor = blue.CGColor;
+    [view reset];
+    view.flag = [self.choices objectAtIndex:index];
+    [view setImage];
+    [Utils resizeFrameToFitImage:view];
 }
 
 - (void)touchedFlagView:(FlagView *)flagView;
@@ -124,13 +114,14 @@
     if ([guessedFlag isEqualTo:correctFlag]) {
         [self recordEvent:YES flag:correctFlag];
         [[ScoringService sharedInstance] correctForFlag:correctFlag andMode:@"quiz" andVariant:self.variant];
-        flagView.layer.borderColor = [UIColor greenColor].CGColor;
+        [flagView correct];
         delay = 0.2f;
     }
     else {
         [self recordEvent:NO flag:correctFlag];
         [[ScoringService sharedInstance] incorrectForFlag:correctFlag andMode:@"quiz" andVariant:self.variant];
-        flagView.layer.borderColor = [UIColor redColor].CGColor;
+        [flagView incorrect];
+        [[self correctFlagView] correct];
         delay = 1;
     }
     
@@ -160,6 +151,23 @@
      }];
 }
 
-
+- (FlagView *)correctFlagView
+{
+    NSString *answer = [[self.quiz currentElement] name];
+    
+    if ([answer isEqualToString:self.aFlagView.flag.name]) {
+        return self.aFlagView;
+    }
+    if ([answer isEqualToString:self.bFlagView.flag.name]) {
+        return self.bFlagView;
+    }
+    if ([answer isEqualToString:self.cFlagView.flag.name]) {
+        return self.cFlagView;
+    }
+    if ([answer isEqualToString:self.dFlagView.flag.name]) {
+        return self.dFlagView;
+    }
+    return nil;
+}
 
 @end

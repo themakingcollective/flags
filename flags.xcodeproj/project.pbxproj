@@ -31,6 +31,10 @@
 		83454D1019A28364005A5DDB /* Quiz-Answer-Incorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = 83454D0F19A28364005A5DDB /* Quiz-Answer-Incorrect.png */; };
 		83454D1119A28364005A5DDB /* Quiz-Answer-Incorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = 83454D0F19A28364005A5DDB /* Quiz-Answer-Incorrect.png */; };
 		83523D1A1968C1E500D8B9E9 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83523D191968C1E500D8B9E9 /* BaseViewController.m */; };
+		835FA3A519ABC51100768E91 /* Opaque-Tick.png in Resources */ = {isa = PBXBuildFile; fileRef = 835FA3A419ABC51100768E91 /* Opaque-Tick.png */; };
+		835FA3A619ABC51100768E91 /* Opaque-Tick.png in Resources */ = {isa = PBXBuildFile; fileRef = 835FA3A419ABC51100768E91 /* Opaque-Tick.png */; };
+		835FA3A819ABC52200768E91 /* Opaque-Cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 835FA3A719ABC52200768E91 /* Opaque-Cross.png */; };
+		835FA3A919ABC52200768E91 /* Opaque-Cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 835FA3A719ABC52200768E91 /* Opaque-Cross.png */; };
 		8378484118DDAF8E00C5AC61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378484018DDAF8E00C5AC61 /* Foundation.framework */; };
 		8378484318DDAF8E00C5AC61 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378484218DDAF8E00C5AC61 /* CoreGraphics.framework */; };
 		8378484518DDAF8E00C5AC61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378484418DDAF8E00C5AC61 /* UIKit.framework */; };
@@ -193,6 +197,8 @@
 		83454D0F19A28364005A5DDB /* Quiz-Answer-Incorrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quiz-Answer-Incorrect.png"; sourceTree = "<group>"; };
 		83523D181968C1E500D8B9E9 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		83523D191968C1E500D8B9E9 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		835FA3A419ABC51100768E91 /* Opaque-Tick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Opaque-Tick.png"; sourceTree = "<group>"; };
+		835FA3A719ABC52200768E91 /* Opaque-Cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Opaque-Cross.png"; sourceTree = "<group>"; };
 		8378483D18DDAF8E00C5AC61 /* Flags!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flags!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8378484018DDAF8E00C5AC61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8378484218DDAF8E00C5AC61 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -391,6 +397,8 @@
 			children = (
 				8343D9A519A92B2000BE951F /* Transparent-Cross.png */,
 				8343D9A619A92B2000BE951F /* Transparent-Tick.png */,
+				835FA3A419ABC51100768E91 /* Opaque-Tick.png */,
+				835FA3A719ABC52200768E91 /* Opaque-Cross.png */,
 				83FB197B19AB81FC00A5B2FF /* All-Flags-Blue.png */,
 				83793CE419A7F267009F3956 /* Small-Green-Rosette.png */,
 				83793CC819A7868D009F3956 /* Highlight-45x37.png */,
@@ -649,6 +657,8 @@
 				83D4A02C1968304500C0D694 /* Pacifico.ttf in Resources */,
 				8378488C18DDCEB600C5AC61 /* Puzzles-Easy-Button.png in Resources */,
 				83D4A01819680E8F00C0D694 /* Done-Button-Easy-Disabled.png in Resources */,
+				835FA3A519ABC51100768E91 /* Opaque-Tick.png in Resources */,
+				835FA3A819ABC52200768E91 /* Opaque-Cross.png in Resources */,
 				83793CCB19A7868D009F3956 /* Highlight-45x37.png in Resources */,
 				83D09E091971212D0088965E /* Done-Button-Hard-Enabled.png in Resources */,
 			);
@@ -705,6 +715,8 @@
 				83FCBBBD1985639500415369 /* Pacifico.ttf in Resources */,
 				83FCBBBE1985639500415369 /* Puzzles-Easy-Button.png in Resources */,
 				83FCBBBF1985639500415369 /* Done-Button-Easy-Disabled.png in Resources */,
+				835FA3A619ABC51100768E91 /* Opaque-Tick.png in Resources */,
+				835FA3A919ABC52200768E91 /* Opaque-Cross.png in Resources */,
 				83793CCC19A7868D009F3956 /* Highlight-45x37.png in Resources */,
 				83FCBBC11985639500415369 /* Done-Button-Hard-Enabled.png in Resources */,
 			);

@@ -21,5 +21,8 @@
 @property (weak, nonatomic) id delegate;
 
 - (void)setImage;
+- (void)correct;
+- (void)incorrect;
+- (void)reset;
 
 @end
