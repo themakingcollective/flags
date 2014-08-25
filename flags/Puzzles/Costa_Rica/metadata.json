@@ -7,11 +7,11 @@
   "area": 51100,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Costa_Rica_%28state%29.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "FF9900",
     "000000",
     "FAE042",
     "007A5E",
-    "0DB02B"
+    "CC00CC"
   ],
   "incorrect_patterns": [
     "Cyprus",

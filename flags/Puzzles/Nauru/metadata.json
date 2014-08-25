@@ -7,11 +7,11 @@
   "area": 21,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/3/30/Flag_of_Nauru.svg",
   "incorrect_colors": [
-    "DE2910",
+    "000000",
     "CC0000",
     "FFFFFF",
     "007A5E",
-    "12AD2B"
+    "993399"
   ],
   "incorrect_patterns": [
     "Namibia",

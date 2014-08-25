@@ -7,7 +7,7 @@
   "area": 181,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/2/2e/Flag_of_the_Marshall_Islands.svg",
   "incorrect_colors": [
-    "DE2910",
+    "FFFF66",
     "000000",
     "CC0000",
     "007A5E",
@@ -15,7 +15,7 @@
   ],
   "incorrect_patterns": [
     "Trinidad_and_Tobago",
-    "Nauru",
+    "Qatar",
     "Namibia",
     "Argentina",
     "Haiti",

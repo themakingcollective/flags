@@ -7,16 +7,16 @@
   "area": 112492,
   "image_url": "http://upload.wikimedia.org/wikipedia/commons/8/82/Flag_of_Honduras.svg",
   "incorrect_colors": [
-    "FFFFFF",
+    "009900",
     "000000",
     "FCD116",
-    "CC0000",
+    "CC0099",
     "F77F00"
   ],
   "incorrect_patterns": [
     "Guatemala",
     "Haiti",
-    "Kiribati",
+    "Japan",
     "Kyrgyzstan",
     "Vatican_City",
     "Trinidad_and_Tobago"
