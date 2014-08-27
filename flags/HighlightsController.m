@@ -31,9 +31,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *rosette;
 
 @property (weak, nonatomic) IBOutlet UILabel *maxScoreTitle;
-@property (weak, nonatomic) IBOutlet UILabel *maxScoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *minScoreTitle;
-@property (weak, nonatomic) IBOutlet UILabel *minScoreLabel;
 
 @property (weak, nonatomic) IBOutlet UIButton *allFlagsButton;
 
@@ -123,7 +121,6 @@
     else {
         self.bestView.hidden = YES;
         self.minScoreTitle.hidden = NO;
-        self.minScoreLabel.hidden = NO;
         
         self.rosette.hidden = YES;
     }
@@ -139,7 +136,6 @@
     else {
         self.worstView.hidden = YES;
         self.maxScoreTitle.hidden = NO;
-        self.maxScoreLabel.hidden = NO;
     }
 }
 
@@ -154,10 +150,6 @@
     UIFont *labelFont = [UIFont fontWithName:@"BPreplay-Bold" size:20];
     [self.bestLabel setFont:labelFont];
     [self.worstLabel setFont:labelFont];
-    
-    UIFont *maxminFont = [UIFont fontWithName:@"BPreplay-Bold" size:16];
-    [self.maxScoreLabel setFont:maxminFont];
-    [self.minScoreLabel setFont:maxminFont];
 
     UIColor *socialColor = [UIColor colorWithRed:(26 / 255.0) green:(97 / 255.0) blue:(139 / 255.0) alpha:1.0f];
     self.bestSocialLabel.textColor = socialColor;
@@ -209,32 +201,26 @@
         @"A perfect score. That's really impressive!",
         @"You got every single answer right!",
         @"Wow, that was definitely your round!",
-        @"You got everything right, yet again!",
+        @"You got everything right!",
+        @"Pat yourself on the back, an awesome job!",
+        @"You're a superstar!",
+        @"There's no fooling you. Perfect round!",
+        @"Not a single one wrong. Flagtastic!"
     ];
     self.maxScoreTitle.text = [[Utils shuffle:maxTitles] firstObject];
-    
-    NSArray *maxLabels = @[
-        @"Pat yourself on the back for doing an awesome job! You're a superstar.",
-        @"There's no fooling you. Well done for getting everything right.",
-        @"How on earth did you manage that? You must have been practicing."
-    ];
-    self.maxScoreLabel.text = [[Utils shuffle:maxLabels] firstObject];
     
     NSArray *minTitles = @[
         @"You didn't do so great that round",
         @"Hmm, that round didn't go so well",
         @"That was a bit of a tricky round",
         @"Don't worry, you'll get the hang of it soon",
-        @"Oh well. There's always next time!"
+        @"Oh well, there's always next time",
+        @"Unfortunately, there is room for improvement",
+        @"Not great, but try again. You'll improve",
+        @"Not so good. A bit of study might help",
+        @"Bad luck. Maybe study the list of flags?"
     ];
     self.minScoreTitle.text = [[Utils shuffle:minTitles] firstObject];
-    
-    NSArray *minLabels = @[
-        @"Why not take a look at the flags and have another go?",
-        @"It might help to take a look through the different flags.",
-        @"How about trying something else, or looking through some flags?"
-    ];
-    self.minScoreLabel.text = [[Utils shuffle:minLabels] firstObject];
 }
 
 @end
