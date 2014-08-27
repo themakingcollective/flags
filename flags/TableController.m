@@ -52,8 +52,7 @@
     
     Flag *flag = self.groupedFlags[indexPath.section][indexPath.row];
 
-    tableView.separatorColor = [UIColor clearColor];
-    self.view.backgroundColor = [Utils backgroundColor];
+    [self setColors:tableView];
     
     cell.textLabel.text = [flag name];
     cell.imageView.image = flag.image;
@@ -84,6 +83,13 @@
     UIView *header = [[UIView alloc] init];
     header.backgroundColor = [Utils backgroundColor];
     return header;
+}
+
+- (void)setColors:(UITableView *)tableView
+{
+    tableView.separatorColor = [UIColor clearColor];
+    self.view.backgroundColor = [Utils backgroundColor];
+    [tableView setSectionIndexBackgroundColor:[Utils backgroundColor]];
 }
 
 @end
