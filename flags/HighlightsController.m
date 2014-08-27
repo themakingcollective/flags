@@ -62,9 +62,9 @@
     
     [self setViews];
     [self setPlayAgainImage];
+    [self setFonts];
     [self setBest];
     [self setWorst];
-    [self setFonts];
     [self setImageBorders];
     [self setAllFlags];
     [self setMinMaxPhrases];
@@ -116,7 +116,7 @@
     if (self.bestFlag) {
         self.bestImage.image = [self.bestFlag image];
         self.bestLabel.text = [self.bestFlag name];
-        self.bestSocialLabel.text = [self socialTextForFlag:self.bestFlag];
+        self.bestSocialLabel.attributedText = [self socialTextForFlag:self.bestFlag];
     }
     else {
         self.bestView.hidden = YES;
@@ -131,7 +131,7 @@
     if (self.worstFlag) {
         self.worstImage.image = [self.worstFlag image];
         self.worstLabel.text = [self.worstFlag name];
-        self.worstSocialLabel.text = [self socialTextForFlag:self.worstFlag];
+        self.worstSocialLabel.attributedText = [self socialTextForFlag:self.worstFlag];
     }
     else {
         self.worstView.hidden = YES;
@@ -151,6 +151,10 @@
     [self.bestLabel setFont:labelFont];
     [self.worstLabel setFont:labelFont];
 
+    UIFont *socialFont = [UIFont fontWithName:@"BPreplay" size:17];
+    [self.bestSocialLabel setFont:socialFont];
+    [self.worstSocialLabel setFont:socialFont];
+    
     UIColor *socialColor = [UIColor colorWithRed:(26 / 255.0) green:(97 / 255.0) blue:(139 / 255.0) alpha:1.0f];
     self.bestSocialLabel.textColor = socialColor;
     self.worstSocialLabel.textColor = socialColor;
@@ -172,12 +176,25 @@
     [self.worstImage.layer setCornerRadius:3.0f];
 }
 
-- (NSString *)socialTextForFlag:(Flag *)flag
+- (NSMutableAttributedString *)socialTextForFlag:(Flag *)flag
 {
-    return [[AggregatesService sharedInstance] textForFlag:flag
-                                                   andMode:self.mode
-                                             andVariant:self.variant
-                                            andCorrectness:YES];
+    NSString *socialText = [[AggregatesService sharedInstance] textForFlag:flag
+                                                                   andMode:self.mode
+                                                                andVariant:self.variant
+                                                            andCorrectness:YES];
+    
+    if ([socialText isEqualToString:@""]) {
+        return nil;
+    }
+    
+    NSRange range = NSMakeRange(0, [socialText rangeOfString:@"%"].location + 1);
+    NSString *percentage = [socialText substringWithRange:range];
+    
+    UIFont *bold = [UIFont fontWithName:@"BPreplay-Bold" size:17];
+    return [Utils style:socialText with:@{
+        @"right":bold,
+        percentage:bold
+    }];
 }
 
 - (IBAction)playAgainTouched:(id)sender {
@@ -202,7 +219,7 @@
         @"You got every single answer right!",
         @"Wow, that was definitely your round!",
         @"You got everything right!",
-        @"Pat yourself on the back, an awesome job!",
+        @"Pat yourself on the back. Awesome job!",
         @"You're a superstar!",
         @"There's no fooling you. Perfect round!",
         @"Not a single one wrong. Flagtastic!"
