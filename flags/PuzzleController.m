@@ -295,6 +295,10 @@
     self.currentPatternFlag = pattern.flag;
     [self.layeredView setFlag:pattern.flag];
     
+    if ([[pattern.flag name] isEqualToString:@"Nepal"]) {
+        [self.layeredView removeBorders];
+    }
+    
     for (PatternView *v in self.patterns) {
         [v setHighlighted:NO];
     }
