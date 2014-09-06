@@ -105,22 +105,27 @@
 
 - (void)updateBest:(NSDictionary *)aggregate
 {
-    NSInteger incorrectPercent = [aggregate[@"correct_percent"] intValue];
-    NSInteger incorrectCount = [aggregate[@"total_count"] intValue];
-    NSInteger lowestIncorrectPercent = [self.bestAggregate[@"correct_percent"] intValue];
-    NSInteger lowestIncorrectCount = [self.bestAggregate[@"total_count"] intValue];
+    NSInteger correctPercent = [aggregate[@"correct_percent"] intValue];
+    NSInteger correctCount = [aggregate[@"total_count"] intValue];
+    NSInteger lowestCorrectPercent = [self.bestAggregate[@"correct_percent"] intValue];
+    NSInteger lowestCorrectCount = [self.bestAggregate[@"total_count"] intValue];
 
+    NSLog(@"correctPercent: %d, correctCount: %d, lowestCorrectPercent: %d, lowestCorrectCount: %d", correctPercent, correctCount, lowestCorrectPercent, lowestCorrectCount);
+    
     // First time since reset.
-    if (!lowestIncorrectPercent) {
+    if (!self.bestAggregate) {
         self.bestAggregate = aggregate;
+        NSLog(@"** setting best flag - first time");
     }
     // Fewer people got this flag right.
-    else if (lowestIncorrectPercent > incorrectPercent) {
+    else if (lowestCorrectPercent > correctPercent) {
         self.bestAggregate = aggregate;
+        NSLog(@"** setting best flag - fewer people got this right");
     }
     // The same percentage got this flag right, but it's over a larger sample size.
-    else if (lowestIncorrectPercent == incorrectPercent && lowestIncorrectCount < incorrectCount) {
+    else if (lowestCorrectPercent == correctPercent && lowestCorrectCount < correctCount) {
         self.bestAggregate = aggregate;
+        NSLog(@"** setting best flag - larger sample size");
     }
 }
 
@@ -131,17 +136,22 @@
     NSInteger highestCorrectPercent = [self.worstAggregate[@"correct_percent"] intValue];
     NSInteger highestCorrectCount = [self.worstAggregate[@"total_count"] intValue];
 
+    NSLog(@"correctPercent: %d, correctCount: %d, lowestCorrectPercent: %d, lowestCorrectCount: %d", correctPercent, correctCount, highestCorrectPercent, highestCorrectCount);
+    
     // First time since reset.
-    if (!highestCorrectPercent) {
+    if (!self.worstAggregate) {
         self.worstAggregate = aggregate;
+        NSLog(@"** setting worst flag - first time");
     }
     // More people got this flag right.
     else if (highestCorrectPercent < correctPercent) {
         self.worstAggregate = aggregate;
+        NSLog(@"** setting worst flag - more people got this right");
     }
     // The same percentage got this flag right, but it's over a larger sample size.
     else if (highestCorrectPercent == correctPercent && highestCorrectCount < correctCount) {
         self.worstAggregate = aggregate;
+        NSLog(@"** setting worst flag - larger sample size");
     }
 }
 
