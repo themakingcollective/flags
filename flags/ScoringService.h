@@ -14,6 +14,8 @@
 @property (nonatomic, assign) NSInteger roundsCount;
 @property (nonatomic, assign) NSInteger correctCount;
 @property (nonatomic, assign) NSInteger incorrectCount;
+@property (nonatomic, assign) BOOL allCorrect;
+@property (nonatomic, assign) BOOL allIncorrect;
 
 + (ScoringService *)sharedInstance;
 

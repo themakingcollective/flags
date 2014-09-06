@@ -118,7 +118,10 @@
     }
     else {
         self.bestView.hidden = YES;
-        self.minScoreTitle.hidden = NO;
+        
+        if ([ScoringService sharedInstance].allIncorrect) {
+            self.minScoreTitle.hidden = NO;
+        }
     }
 }
 
@@ -131,7 +134,10 @@
     }
     else {
         self.worstView.hidden = YES;
-        self.maxScoreTitle.hidden = NO;
+        
+        if ([ScoringService sharedInstance].allCorrect) {
+            self.maxScoreTitle.hidden = NO;
+        }
     }
 }
 

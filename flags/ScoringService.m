@@ -39,12 +39,15 @@
     self.incorrectCount = 0;
     self.bestAggregate = nil;
     self.worstAggregate = nil;
+    self.allCorrect = YES;
+    self.allIncorrect = YES;
 }
 
 - (void)correctForFlag:(Flag *)flag andMode:(NSString *)mode andVariant:(NSString *)variant
 {
     self.correctCount++;
     self.roundsCount++;
+    self.allIncorrect = NO;
 
     NSDictionary *aggregate = [self aggregate:flag mode:mode variant:variant];
     [self updateBestWorst:YES aggregate:aggregate];
@@ -54,6 +57,7 @@
 {
     self.incorrectCount++;
     self.roundsCount++;
+    self.allCorrect = NO;
 
     NSDictionary *aggregate = [self aggregate:flag mode:mode variant:variant];
     [self updateBestWorst:NO aggregate:aggregate];
