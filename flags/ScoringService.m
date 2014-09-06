@@ -136,7 +136,7 @@
     NSInteger highestCorrectPercent = [self.worstAggregate[@"correct_percent"] intValue];
     NSInteger highestCorrectCount = [self.worstAggregate[@"total_count"] intValue];
 
-    NSLog(@"correctPercent: %d, correctCount: %d, lowestCorrectPercent: %d, lowestCorrectCount: %d", correctPercent, correctCount, highestCorrectPercent, highestCorrectCount);
+    NSLog(@"correctPercent: %d, correctCount: %d, highestCorrectPercent: %d, highestCorrectCount: %d", correctPercent, correctCount, highestCorrectPercent, highestCorrectCount);
     
     // First time since reset.
     if (!self.worstAggregate) {
