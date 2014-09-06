@@ -28,8 +28,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *worstLabel;
 @property (weak, nonatomic) IBOutlet UILabel *worstSocialLabel;
 
-@property (weak, nonatomic) IBOutlet UIImageView *rosette;
-
 @property (weak, nonatomic) IBOutlet UILabel *maxScoreTitle;
 @property (weak, nonatomic) IBOutlet UILabel *minScoreTitle;
 
@@ -121,8 +119,6 @@
     else {
         self.bestView.hidden = YES;
         self.minScoreTitle.hidden = NO;
-        
-        self.rosette.hidden = YES;
     }
 }
 

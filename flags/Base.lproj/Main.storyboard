@@ -376,6 +376,10 @@
                                         <color key="textColor" red="0.28627450980392155" green="0.5607843137254902" blue="0.36862745098039218" alpha="1" colorSpace="deviceRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Transparent-Tick.png" id="07e-fN-AEO">
+                                        <rect key="frame" x="240" y="8" width="30" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -427,13 +431,13 @@
                                         <color key="textColor" red="0.76862745099999996" green="0.12941176469999999" blue="0.1529411765" alpha="1" colorSpace="deviceRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Transparent-Cross.png" id="J1V-24-Brc">
+                                        <rect key="frame" x="240" y="12" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Small-Green-Rosette.png" id="qed-91-Puk">
-                                <rect key="frame" x="250" y="7" width="61" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You couldn't have done it better!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NWg-fj-5Df">
                                 <rect key="frame" x="20" y="247" width="280" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -461,7 +465,6 @@
                         <outlet property="maxScoreTitle" destination="NWg-fj-5Df" id="a0z-IL-14c"/>
                         <outlet property="minScoreTitle" destination="aeW-ow-dTP" id="PGg-K1-VY0"/>
                         <outlet property="playAgainButton" destination="AYY-oH-tOJ" id="K1b-V2-n0e"/>
-                        <outlet property="rosette" destination="qed-91-Puk" id="PLM-vH-kxO"/>
                         <outlet property="worstImage" destination="IqW-x1-dHw" id="glJ-Yp-US5"/>
                         <outlet property="worstLabel" destination="LzA-Iq-Yvs" id="WqR-fQ-KKU"/>
                         <outlet property="worstSocialLabel" destination="vvZ-AH-A3C" id="znv-hf-3Oo"/>
@@ -779,7 +782,7 @@
         <image name="Puzzles-Hard-Explain.png" width="1372" height="1392"/>
         <image name="Quiz-Answer.png" width="252" height="40"/>
         <image name="Quiz-View-Button.png" width="1364" height="238"/>
-        <image name="Small-Green-Rosette.png" width="272" height="315"/>
+        <image name="Transparent-Cross.png" width="123" height="139"/>
         <image name="Transparent-Tick.png" width="145" height="163"/>
         <image name="Which-Country-Button.png" width="1364" height="238"/>
         <image name="Which-Flag-Button.png" width="1364" height="238"/>
@@ -790,7 +793,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="OCp-Nk-mj2"/>
         <segue reference="DRB-3Y-QWP"/>
-        <segue reference="gju-SA-WUJ"/>
     </inferredMetricsTieBreakers>
 </document>
