@@ -24,7 +24,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="hWC-i2-gza" kind="push" id="cwE-iA-hH9"/>
+                                            <segue destination="hWC-i2-gza" kind="push" identifier="toBuildMenu" id="cwE-iA-hH9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lVy-PJ-fOd">
@@ -34,7 +34,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="oBj-Ec-OQp" kind="push" id="NJ4-5X-1rG"/>
+                                            <segue destination="oBj-Ec-OQp" kind="push" identifier="toGuessMenu" id="NJ4-5X-1rG"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -64,7 +64,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="5AU-KU-zeq" kind="push" id="8Sg-cL-wfr"/>
+                                    <segue destination="5AU-KU-zeq" kind="push" identifier="toEasyBuild" id="8Sg-cL-wfr"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Puzzles-Easy-Explain.png" id="utF-lO-gU0">
@@ -107,7 +107,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="5AU-KU-zeq" kind="push" id="DRB-3Y-QWP"/>
+                                    <segue destination="5AU-KU-zeq" kind="push" identifier="toHardBuild" id="DRB-3Y-QWP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to select the correct pattern and colour of the flag" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RV5-zf-dhf">
@@ -212,7 +212,7 @@
                         <outlet property="layeredView" destination="gMj-bp-hFz" id="WgS-7W-2bM"/>
                         <outlet property="nameLabel" destination="JoW-bV-coG" id="2xy-Qc-hqN"/>
                         <outlet property="submitButton" destination="wIF-RH-ZVO" id="ObS-41-ja7"/>
-                        <segue destination="ONH-41-49H" kind="push" id="kB0-10-ohF"/>
+                        <segue destination="ONH-41-49H" kind="push" identifier="toFeedback" id="kB0-10-ohF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pZR-ar-UH3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -333,7 +333,7 @@
                         <outlet property="rosetteImageView" destination="6Bx-dp-ysk" id="Vdk-AW-oHE"/>
                         <outlet property="scoreLabel" destination="XFo-Cz-W3T" id="bAE-bY-WYv"/>
                         <outlet property="totalLabel" destination="Leg-SX-4Bg" id="4OT-5j-idK"/>
-                        <segue destination="zOS-4b-pff" kind="push" id="HaQ-qy-zSt"/>
+                        <segue destination="zOS-4b-pff" kind="push" identifier="toHighlights" id="HaQ-qy-zSt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GT3-TV-fS8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -400,7 +400,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="dc5-RQ-q7j" kind="push" id="OCp-Nk-mj2"/>
+                                    <segue destination="dc5-RQ-q7j" kind="push" identifier="toLearnFlags" id="OCp-Nk-mj2"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" id="zLY-pc-r0o">
@@ -657,7 +657,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Uh4-XN-ftO" kind="push" id="ahS-ek-PKA"/>
+                                    <segue destination="Uh4-XN-ftO" kind="push" identifier="toWhichFlag" id="ahS-ek-PKA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VoI-YJ-aGM">
@@ -667,7 +667,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="0oG-BK-24b" kind="push" id="jS1-rl-2pg"/>
+                                    <segue destination="0oG-BK-24b" kind="push" identifier="toWhichCountry" id="jS1-rl-2pg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GBq-7n-w3v">
@@ -677,7 +677,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="dc5-RQ-q7j" kind="push" id="gju-SA-WUJ"/>
+                                    <segue destination="dc5-RQ-q7j" kind="push" identifier="toAllFlags" id="gju-SA-WUJ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="match the country with the flag" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IR7-B9-Vcf">
@@ -793,7 +793,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="OCp-Nk-mj2"/>
+        <segue reference="gju-SA-WUJ"/>
         <segue reference="DRB-3Y-QWP"/>
     </inferredMetricsTieBreakers>
 </document>
