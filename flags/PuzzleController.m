@@ -28,6 +28,7 @@
 @property (nonatomic, weak) IBOutlet UIButton *submitButton;
 @property (nonatomic, strong) DifficultyScaler *difficultyScaler;
 @property (nonatomic, strong) Flag *currentPatternFlag;
+@property (nonatomic, assign) BOOL viewDidLayoutSubviewsCalled;
 
 @end
 
@@ -59,6 +60,11 @@
 - (void)viewDidLayoutSubviews
 {
     [super viewDidLayoutSubviews];
+    
+    if (self.viewDidLayoutSubviewsCalled) {
+        return;
+    }
+    self.viewDidLayoutSubviewsCalled = YES;
     
     if ([self.variant isEqualToString:@"easy"]) {
         NSInteger y = 266 + 14; // 14 points padding below layered view.
