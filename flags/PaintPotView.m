@@ -43,11 +43,14 @@
     [self setBackgroundColor:color];
 
     if ([Utils equalColors:color and:[UIColor whiteColor]]) {
-        self.layer.borderColor = [Utils colorWithHexString:@"d1d2d4"].CGColor;
-        self.layer.borderWidth = 2.0f;
+        self.layer.masksToBounds = NO;
+        self.layer.shadowColor = [UIColor blackColor].CGColor;
+        self.layer.shadowOpacity = 0.5;
+        self.layer.shadowRadius = 1.0f;
+        self.layer.shadowOffset = CGSizeMake(0, 0);
     }
     else {
-        self.layer.borderColor = [UIColor clearColor].CGColor;
+        self.layer.masksToBounds = YES;
     }
 }
 
