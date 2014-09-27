@@ -587,6 +587,9 @@
 					8378483C18DDAF8E00C5AC61 = {
 						DevelopmentTeam = DUES25LPH4;
 					};
+					83FCBB861985639500415369 = {
+						DevelopmentTeam = DUES25LPH4;
+					};
 				};
 			};
 			buildConfigurationList = 8378483818DDAF8E00C5AC61 /* Build configuration list for PBXProject "flags" */;
@@ -896,6 +899,7 @@
 				INFOPLIST_FILE = "flags/flags_production-Info.plist";
 				PRODUCT_NAME = "Flags!";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -912,6 +916,7 @@
 				INFOPLIST_FILE = "flags/flags_production-Info.plist";
 				PRODUCT_NAME = "Flags!";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
