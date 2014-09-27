@@ -43,20 +43,20 @@
     [self setBackgroundColor:color];
 
     if ([Utils equalColors:color and:[UIColor whiteColor]]) {
-        self.layer.masksToBounds = NO;
         self.layer.shadowColor = [UIColor blackColor].CGColor;
         self.layer.shadowOpacity = 0.5;
         self.layer.shadowRadius = 1.0f;
         self.layer.shadowOffset = CGSizeMake(0, 0);
     }
     else {
-        self.layer.masksToBounds = YES;
+        self.layer.shadowOpacity = 0;
     }
 }
 
 - (void)setupHighlights
 {
     self.clipsToBounds = NO;
+    self.layer.masksToBounds = NO;
     
     [self setupHighlightView];
     [self addSubview:self.highlightView];
