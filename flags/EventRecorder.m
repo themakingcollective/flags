@@ -59,26 +59,36 @@
 
 - (void)transmit
 {
-    NSFileHandle *file = [Utils fileAtDocumentsPath:[self path]];
-    NSData *data = [file readDataToEndOfFile];
-    NSData *postData = [self convertToValidJson:data];
-    [file closeFile];
+    NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
+    NSString *permission = [preferences valueForKey:@"transmit"];
 
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[self url]];
-    [request setHTTPBody:postData];
-    [request setHTTPMethod:@"POST"];
-    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    
-    NSHTTPURLResponse *response;
-    NSError *error;
-    [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
-    
-    if ([response statusCode] == 200) {
-        [Utils deleteDocument:[self path]];
+    if ([permission isEqualToString:@"allow"]) {
+        NSFileHandle *file = [Utils fileAtDocumentsPath:[self path]];
+        NSData *data = [file readDataToEndOfFile];
+        NSData *postData = [self convertToValidJson:data];
+        [file closeFile];
+
+        NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[self url]];
+        [request setHTTPBody:postData];
+        [request setHTTPMethod:@"POST"];
+        [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+        
+        NSHTTPURLResponse *response;
+        NSError *error;
+        [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+        
+        if ([response statusCode] == 200) {
+            [Utils deleteDocument:[self path]];
+        }
+        else {
+            // NSLog(@"Failed to transmit to %@. code: %d, error: %@", [self url], [response statusCode], error);
+            NSLog(@"Could not transmit events.");
+        }
     }
     else {
-        // NSLog(@"Failed to transmit to %@. code: %d, error: %@", [self url], [response statusCode], error);
-        NSLog(@"Could not transmit events.");
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"Permission has not been granted to transmit events.");
+        });
     }
 }
 

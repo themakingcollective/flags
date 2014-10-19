@@ -28,7 +28,8 @@
 //    }
     // -----
 
-
+    [self requestTransmitPermissions];
+    
     UIFont *font = [UIFont fontWithName:@"BPreplay" size:17];
     [[UILabel appearance] setFont:font];
 
@@ -59,6 +60,30 @@
         [[EventRecorder sharedInstance] transmit];
         [[AggregatesService sharedInstance] fetch];
     }
+}
+
+- (void)requestTransmitPermissions
+{
+    NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
+    NSString *permission = [preferences valueForKey:@"transmit"];
+    
+    if (!permission) {
+        [[[UIAlertView alloc] initWithTitle:@"“Flags!” Would Like to Keep Track of Your Results" message:@"Your answers are used to compare your effort against the rest of the world." delegate:self cancelButtonTitle:@"Don't allow" otherButtonTitles:@"Allow", nil] show];
+    }
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
+    
+    if (buttonIndex == 1) {
+        [preferences setValue:@"allow" forKey:@"transmit"];
+    }
+    else {
+        [preferences setValue:@"disallow" forKey:@"transmit"];
+    }
+    
+    [preferences synchronize];
 }
 
 @end
