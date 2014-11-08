@@ -21,7 +21,8 @@
     [self.navigationController setNavigationBarHidden:YES animated:animated];
     [super viewWillAppear:animated];
     
-    NSInteger points = [PointsService sharedInstance].totalPoints;
+    [[PointsService sharedInstance] reset];
+    NSInteger points = [[PointsService sharedInstance] totalPoints];
     self.totalPointsLabel.text = [NSString stringWithFormat:@"Total points: %ld", points];
 }
 

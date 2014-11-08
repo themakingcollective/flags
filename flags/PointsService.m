@@ -3,7 +3,6 @@
 @implementation PointsService
 
 @synthesize gamePoints=_gamePoints;
-@synthesize totalPoints=_totalPoints;
 
 + (PointsService *)sharedInstance
 {
@@ -24,7 +23,19 @@
 - (void)correct
 {
     self.gamePoints++;
-    NSLog(@"Game points: %ld, Total points: %ld", self.gamePoints, self.totalPoints);
+}
+
+- (void)setTotalPoints:(NSInteger)totalPoints
+{
+    NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
+    [preferences setInteger:totalPoints forKey:@"totalPoints"];
+    [preferences synchronize];
+}
+
+- (NSInteger)totalPoints
+{
+    NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
+    return [preferences integerForKey:@"totalPoints"];
 }
 
 @end
