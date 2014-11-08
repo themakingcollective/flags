@@ -55,13 +55,13 @@
         NSInteger threshold = [(NSNumber *)[thresholds objectAtIndex:i] intValue];
 
         if (numberSeen < threshold) {
-            NSLog(@"Current difficulty: %d, seen %d flags for %@", i + 1, numberSeen, self.key);
+            NSLog(@"Current difficulty: %ld, seen %ld flags for %@", i + 1, numberSeen, self.key);
             return i + 1;
         }
     }
     
     NSInteger difficulty = [thresholds count] + 1;
-    NSLog(@"Current difficulty: %d, seen %d flags for %@", difficulty, numberSeen, self.key);
+    NSLog(@"Current difficulty: %ld, seen %ld flags for %@", difficulty, numberSeen, self.key);
     
     return difficulty;
 }

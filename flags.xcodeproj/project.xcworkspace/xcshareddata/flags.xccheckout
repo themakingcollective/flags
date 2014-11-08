@@ -14,7 +14,7 @@
 		<string>https://bitbucket.org/tuzz/flags.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>flags.xcodeproj/project.xcworkspace</string>
+	<string>flags.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>16FC5AF142FD4E08DA147BA1FC51BEC9D5258912</key>

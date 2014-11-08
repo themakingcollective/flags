@@ -9,6 +9,7 @@
 #import "ResultsController.h"
 #import "HighlightsController.h"
 #import "ScoringService.h"
+#import "PointsService.h"
 
 @interface ResultsController ()
 
@@ -16,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
 @property (weak, nonatomic) IBOutlet UIButton *playAgainButton;
 @property (weak, nonatomic) IBOutlet UIImageView *rosetteImageView;
+@property (weak, nonatomic) IBOutlet UILabel *gamePointsLabel;
 
 @property (strong, nonatomic) HighlightsController *highlightsController;
 
@@ -38,8 +40,11 @@
     [self.scoreLabel setFont:font];
     [self.totalLabel setFont:font];
     
-    self.scoreLabel.text = [NSString stringWithFormat:@"%d", [ScoringService sharedInstance].correctCount];
-    self.totalLabel.text = [NSString stringWithFormat:@"%d", total];
+    self.scoreLabel.text = [NSString stringWithFormat:@"%ld", [ScoringService sharedInstance].correctCount];
+    self.totalLabel.text = [NSString stringWithFormat:@"%ld", total];
+    
+    NSInteger points = [PointsService sharedInstance].gamePoints;
+    self.gamePointsLabel.text = [NSString stringWithFormat:@"You scored %ld points", points];
     
     if ([[ScoringService sharedInstance] correctCount] >= 10) {
         [self.scoreLabel setFrame:CGRectOffset(self.scoreLabel.frame, -7, 0)];

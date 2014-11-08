@@ -8,6 +8,7 @@
 
 #import "ScoringService.h"
 #import "AggregatesService.h"
+#import "PointsService.h"
 
 @interface ScoringService ()
 
@@ -41,6 +42,8 @@
     self.worstAggregate = nil;
     self.allCorrect = YES;
     self.allIncorrect = YES;
+    
+    [[PointsService sharedInstance] reset];
 }
 
 - (void)correctForFlag:(Flag *)flag andMode:(NSString *)mode andVariant:(NSString *)variant
@@ -48,6 +51,7 @@
     self.correctCount++;
     self.roundsCount++;
     self.allIncorrect = NO;
+    [[PointsService sharedInstance] correct];
 
     NSDictionary *aggregate = [self aggregate:flag mode:mode variant:variant];
     [self updateBestWorst:YES aggregate:aggregate];
